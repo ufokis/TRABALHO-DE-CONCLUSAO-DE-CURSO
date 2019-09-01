@@ -1,0 +1,288 @@
+% Template para uso no TCC do Departamento de Física de Ji-Paraná
+% da Universidade Federal de Rondônia
+% Elaborado em 10 de junho de 2017 por Marco Polo Moreno de Souza com base no template book.
+% Aperfeiçoado em 07 de março de 2019, com a introdução de macros
+
+\documentclass[a4paper,reqno,12pt,oneside]{book}
+
+\usepackage{amsmath}%
+\usepackage{amsfonts}%
+\usepackage{amssymb}%
+\usepackage{graphicx}
+
+%Veja o arquivo abaixo antes de adicionar outras bibliotecas
+\input{bibliotecas.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Preencha os campos abaixo conforme seu TCC
+\newcommand{\Titulo}{Título do trabalho, seguido do subtítulo, se houver}
+\newcommand{\Nome}{Seu nome}
+\newcommand{\curso}{Licenciatura Plena} %Digite Licenciatura Plena ou Bacharelado
+\newcommand{\graduacao}{Licenciado} %Digite Licenciado ou Bacharel conforme o caso
+\newcommand{\orientador}{Nome do orientador} %Nome com título. Ex: Dr. Marco Polo Moreno de Souza
+\newcommand{\primeiromembro}{Nome do professor da banca} %Nome com título. Ex: Dr. Fulano de Tal
+\newcommand{\segundomembro}{Nome do professor da banca} %Nome com título. Ex: MSc. Beltrano
+\newcommand{\instituicao}{xxxxx} %Instituição do segundo membro. Se for interno, digite DEFIJI/CJP/UNIR
+\newcommand{\Cidade}{Ji-Paraná, RO}
+\newcommand{\Data}{Mês e ano da defesa}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Dados da defesa, a ser preenchido pelo orientador
+\newcommand{\dia}{xxx} %Ex: quinze
+\newcommand{\mes}{xxx} %Ex: abril
+\newcommand{\ano}{xxx} %Ex: 2019
+\newcommand{\inicio}{xxx} %Início da defesa. Ex: 10:15 h
+\newcommand{\fim}{xxx} %Fim da sessão. Ex: 11:45 h
+\newcommand{\arguicao}{xxx} %Duração da arguição da banca em minutos. Ex: 45
+\newcommand{\arguicaoextenso}{xxx} %Idem acima, por extenso. Ex: quarenta e cinco
+\newcommand{\local}{xxx} %Ex: auditório do Campus da UNIR de Ji-Paraná
+\newcommand{\nota}{xxx} %Ex: 8,5
+\newcommand{\notaextenso}{xxx} %Ex: oito inteiros e cinco décimos
+
+\input{macros.tex}
+\input{estilo.tex}
+
+\begin{document}
+\renewcommand{\bibname}{Referências}
+
+\input{capa.tex}
+\input{contra-capa.tex}
+\input{ata.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Dedicatória}
+\thispagestyle{empty}
+%A organização das páginas de dedicatória, agradecimentos e epígrafe ficam a critério do aluno, sendo opcionais.
+
+Digite a dedicatória aqui.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Agradecimentos}
+\thispagestyle{empty}
+
+Digite os agradecimentos aqui.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Epígrafe}
+\thispagestyle{empty}
+
+Digite a epígrafe aqui.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Resumo}
+\thispagestyle{empty}
+\noindent
+O resumo em língua portuguesa deverá conter no mínimo 150 e no máximo 500 palavras.
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+
+\vspace{1.0cm}
+\noindent
+\textbf{Palavras-chave}: palavra-chave 1. palavra-chave 2. palavra-chave 3.
+% Minimo de 3 e máximo de 6 palavras-chave.
+
+\input{listas-sumario.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introdução}
+\label{introducao}
+
+Digite a introdução aqui.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Título do Segundo Capítulo}
+\label{capitulo2}
+%Para cada capítulo adicional, digite o comando \chapter{Título do Capítulo}
+
+Digite o conteúdo do segundo capítulo aqui.
+
+\section{Título de uma seção}
+\label{secao2.1}
+
+Digite o conteúdo do uma seção aqui.
+
+\subsection{Subseção}
+
+Digite o conteúdo do uma subseção aqui.
+
+\section{Figuras}
+
+Exemplo de figura:
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=0.60\textwidth]{fig1.eps}
+	\label{fig1}
+	\caption{Espectro de um laser de femtossegundos.}
+\end{figure}
+
+%Citação de figura: \ref{fig1}.
+
+\section{Equações}
+
+Exemplo de equação centralizada:
+
+\begin{equation}
+\label{pitagoras}
+	a^2 = b^2 + c^2.
+\end{equation}
+
+Exemplo de equação no texto: $e^{ix} = \cos{x} + i\sin{x}$. Citação de equação: \ref{pitagoras}.
+
+\section{Tabelas}
+
+Exemplo de tabela:
+
+\begin{table}[H]
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		$\sin{x}$ & $\cos{x}$ & $\tan{x}$ \\
+		\hline
+		$\sec{x}$ & $\csc{x}$ & $\cot{x}$ \\
+		\hline
+		$\arcsin{x}$ & $\arccos{x}$ & $\arctan{x}$ \\
+		\hline
+		$\sinh{x}$ & $\cosh{x}$ & $\tanh{x}$ \\
+		\hline
+	\end{tabular}
+	\vspace{0.3cm}
+	\caption{Funções trigonométricas e hiperbólicas.}
+	\label{funcoes}
+\end{center}
+\end{table}
+
+%Citação de tabela: \ref{funcoes}
+
+\section{Códigos}
+
+Exemplo de código (linguagem C):
+
+\vspace{0.5cm}
+\begin{lstlisting}
+#include<stdio.h>
+
+int k;
+
+main()
+{
+	for (k=1; k<=5; k++)
+		printf("Física - UNIR - Ji-Paraná\n");
+}
+\end{lstlisting}
+
+\section{Citação}
+
+Exemplo de citação:
+
+\vspace{0.5cm}
+\begin{addmargin}[3cm]{0.0cm}\small{
+		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
+		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
+		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
+		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
+		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
+		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
+		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
+}\end{addmargin}
+\vspace{0.5cm}
+
+Citando um trabalho: \cite{ARAUJO} ou (ARAÚJO, 2004).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter[Outro capítulo]{Outro capítulo}
+
+Digite aqui o conteúdo de outro capítulo.
+
+\begin{table}[H]
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		$\sin{x}$ & $\cos{x}$ & $\tan{x}$ \\
+		\hline
+		$\sec{x}$ & $\csc{x}$ & $\cot{x}$ \\
+		\hline
+		$\arcsin{x}$ & $\arccos{x}$ & $\arctan{x}$ \\
+		\hline
+		$\sinh{x}$ & $\cosh{x}$ & $\tanh{x}$ \\
+		\hline
+	\end{tabular}
+	\vspace{0.3cm}
+	\caption{Funções trigonométricas e hiperbólicas.}
+	\label{funcoes2}
+\end{center}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=0.60\textwidth]{fig1.eps}
+	\label{fig2}
+	\caption{Espectro de um laser de femtossegundos.}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Conclusão}
+
+Digite a conclusão do TCC aqui.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Digite as referências abaixo
+\begin{thebibliography}{99}
+\bibitem {ARAUJO} Inês Lacerda Araújo. \textbf{Do signo ao discurso}: introdução à filosofia da linguagem. São Paulo: Parábola, 2004.
+\vspace{0.4cm}
+
+\bibitem {ABNT-12225} ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. \textbf{NBR 12225}: informação e documentação: lombada: apresentação. Rio de Janeiro, 2004.
+\vspace{0.4cm}
+
+\bibitem {BITENCOURT} Cezar Roberto Bitencourt. Atentado violento ao pudor. In: BITENCOURT, Cezar Roberto. \textbf{Tratado de direito penal}. São Paulo: Saraiva, 2008. v. 4, p. 8-16.
+\vspace{0.4cm}
+
+\bibitem {BRASIL} BRASIL. Ministério da Saúde. Atentado violento ao pudor. In: BITENCOURT, Cezar Roberto. \textbf{ABC do SUS}: doutrinas e princípios. Brasília: Ministério da Saúde, 1990.
+\vspace{0.4cm}
+
+\bibitem {HOWARD} Barbara J. Howard (Ed.) \textbf{Clinical and pathogenic microbiology}. 2nd ed. St. Louis, MO: Mosby, 1994.
+\vspace{0.4cm}
+\end{thebibliography}
+
+\backmatter \appendix
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Título do Primeiro Apêndice}
+
+Digite o primeiro apêndice aqui.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Título do Segundo Apêndice}
+%Para cada apêndice adicional, insira o comando \chapter{Título do Apêndice}
+
+Digite o segundo apêndice aqui.
+
+\end{document}
