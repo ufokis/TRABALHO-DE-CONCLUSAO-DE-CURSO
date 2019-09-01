@@ -1,0 +1,55 @@
+\usepackage{scrextend}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage[brazilian]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[final]{pdfpages}
+\usepackage{epstopdf}
+\usepackage[top=3cm,bottom=2cm,left=3cm,right=2cm,marginparsep=0pt]{geometry}
+\usepackage{multirow}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=red,urlcolor=black,bookmarks=true,pdfstartview=FitB]{hyperref} %uso de links
+%\usepackage[hyphenbreaks]{breakurl}
+%\usepackage{makeidx}
+%\makeindex
+\usepackage{wrapfig}
+\usepackage{flashmovie}
+\usepackage{fancyhdr} %cabeçalho
+\usepackage{setspace} %espaçamento entre linhas
+
+\usepackage{titlesec}    
+\titleformat{\chapter}[display]
+{\normalfont%
+    \Large% %change this size to your needs for the first line
+    \bfseries}{\chaptertitlename\ \thechapter}{20pt}{%
+    \Large %change this size to your needs for the second line
+    }
+
+\usepackage{xcolor}
+\definecolor{verde}{rgb}{0,0.5,0}
+\usepackage{showexpl} % exibe codigos de figuras
+\usepackage{listings}
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{blue}, 
+  stringstyle=\color{verde}, 
+  commentstyle=\color{red}, 
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{yellow!20}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+	emph={main, printf, scanf},
+	emphstyle={\color{black}\bf},
+	morekeywords={comando1, comando2},
+}
+
+\usepackage[font=footnotesize, labelfont=bf, margin=0.5cm]{caption} %Altera formatação das legendas
+\usepackage{indentfirst} %Espaçamento aplicado à primeira linha do primeiro parágrafo
