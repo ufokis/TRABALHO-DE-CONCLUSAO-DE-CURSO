@@ -1,15 +1,27 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{física atômica}
+\chapter{Mecânica Quântica e Operador Densidade ($\rho$) }
 \label{capitulo2}
+
 %Para cada capítulo adicional, digite o comando \chapter{Título do Capítulo}
 
-Digite o conteúdo do segundo capítulo aqui.
+Neste capitulo nos dedicamos a discutir sobre formalismo do operador densidade , desenvolvido por J.von Neumann em 1917, e suas vantagens em relação ao formalismos de autoestados e autovetores no estudo de sistema quânticos.
 
-\section{Título de uma seção}
+\section{Matriz densidade}
 \label{secao2.1}
 
-Digite o conteúdo do uma seção aqui.
+Como sabemos, o formalismo usual da mecânica quântica (formalismo de dirac) nos permite fazer previsões sobre um conjunto de sistemas físicos elaborados de forma idêntica (ensemble puro). Em termos mais especifico, garantimos que todos o sistemas membros deste ensemble seja caracterizado por um mesmo ket de estados $\ket{\alpha}$. Assim, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\alpha}$ e $30\%$ pelo ket de estado $\ket{\beta}$(ensemble misto). Para lidar com essa situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros ou, até mesmo, ensemble mistos completamente aleatórios. 
+
+Consideremos o ensemble misto, onde uma fração de membros com população relativa $\alpha^{(1)}$ é caracterizada por $\ket{\alpha^{(1)}}$; outra fração $\alpha^{(^2)}$ é caracterizada por $\ket{\alpha^{(2)}}$ e assim sucessivamente. Podemos dizer, com certa precisão, que um ensemble misto pode ser visto como uma mistura de ensembles puros. As populações $\alpha^{(i)}$ devem satisfazer a condição de normalização, ou seja:
+
+\begin{equation} \label{eq:1}
+	\sum_i \alpha^{(i)} = 1 
+\end{equation}
+   
+Não é necessário que $\alpha^{(1)}$, $\alpha^{(2)}$,..., $\alpha^{(i)}$ sejam ortogonais entre si e o número de termos na soma em $i$ \eqref{eq:1} não precisam igual ao numero de dimensões $N$ no espaço de Hilbert.
+Vamos supor que realizamos a medida de um observável A em um ensemble misto. É possível calcular o valor médio se houver um numero grande de medidas. O resultado é dado pela média sobre o ensembles, definida por:
+
+
 
 \subsection{Subseção}
 
