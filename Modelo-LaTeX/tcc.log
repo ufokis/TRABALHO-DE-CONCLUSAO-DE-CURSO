@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.25)  6 FEB 2020 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.25)  7 FEB 2020 17:32
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1072,90 +1072,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 26.
+
+Underfull \vbox (badness 3989) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 30.
-Package epstopdf Info: Source file: <figuras_do_trabalho/fig1.eps>
-(epstopdf)                    date: 2020-02-06 09:42:39
-(epstopdf)                    size: 127273 bytes
-(epstopdf)             Output file: <figuras_do_trabalho/fig1-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2020-02-06 09:42:39
-(epstopdf)                    size: 5785 bytes
-(epstopdf)             Command: <epstopdf --outfile=figuras_do_trabalho/fig1-ep
-s-converted-to.pdf figuras_do_trabalho/fig1.eps>
-(epstopdf)             \includegraphics on input line 36.
-Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=200, 333.245pt x 190.7125pt>
-
-File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
-<use figuras_do_trabalho/fig1-eps-converted-to.pdf>
-Package pdftex.def Info: figuras_do_trabalho/fig1-eps-converted-to.pdf  used on
- input line 36.
-(pdftex.def)             Requested size: 273.14923pt x 156.32996pt.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 37.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 40.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 30.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 
+l.30 
       [3]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 56.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 81.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 86.
- (C:\latex\Miktex\tex\latex\psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 91.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 91.
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.91 main(
-          ) [4 <./figuras_do_trabalho/fig1-eps-converted-to.pdf>]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 91.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 98.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 118.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 118.
-pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.118 \chapter
-              [Outro capítulo]{Outro capítulo} [5]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 118.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 118.
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.118 \chapter
-              [Outro capítulo]{Outro capítulo} [6
-
-
-]
-Cap\'{\i }tulo 3.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 39.
 Package epstopdf Info: Source file: <figuras_do_trabalho/fig1.eps>
 (epstopdf)                    date: 2020-02-06 09:42:39
 (epstopdf)                    size: 127273 bytes
@@ -1165,12 +1098,83 @@ pdf>
 (epstopdf)                    size: 5785 bytes
 (epstopdf)             Command: <epstopdf --outfile=figuras_do_trabalho/fig1-ep
 s-converted-to.pdf figuras_do_trabalho/fig1.eps>
-(epstopdf)             \includegraphics on input line 143.
+(epstopdf)             \includegraphics on input line 45.
+Package epstopdf Info: Output file is already uptodate.
+<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=214, 333.245pt x 190.7125pt>
+
+File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
+<use figuras_do_trabalho/fig1-eps-converted-to.pdf>
+Package pdftex.def Info: figuras_do_trabalho/fig1-eps-converted-to.pdf  used on
+ input line 45.
+(pdftex.def)             Requested size: 273.14923pt x 156.32996pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 54.
+
+Underfull \vbox (badness 6428) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 58.
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \begin{equation}
+                      [4 <./figuras_do_trabalho/fig1-eps-converted-to.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 65.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 90.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 95.
+
+(C:\latex\Miktex\tex\latex\psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 100.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 120.
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.120 }\end{addmargin}
+                       [5]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 127.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 127.
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.127 \chapter
+              [Outro capítulo]{Outro capítulo} [6]
+Cap\'{\i }tulo 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 127.
+Package epstopdf Info: Source file: <figuras_do_trabalho/fig1.eps>
+(epstopdf)                    date: 2020-02-06 09:42:39
+(epstopdf)                    size: 127273 bytes
+(epstopdf)             Output file: <figuras_do_trabalho/fig1-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2020-02-06 09:42:39
+(epstopdf)                    size: 5785 bytes
+(epstopdf)             Command: <epstopdf --outfile=figuras_do_trabalho/fig1-ep
+s-converted-to.pdf figuras_do_trabalho/fig1.eps>
+(epstopdf)             \includegraphics on input line 152.
 Package epstopdf Info: Output file is already uptodate.
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/fig1-eps-converted-to.pdf  used on
- input line 143.
+ input line 152.
 (pdftex.def)             Requested size: 273.14923pt x 156.32996pt.
 ) (conclusao.tex
 Package babel Info: Redefining portuges shorthand "|
@@ -1182,7 +1186,10 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.3 \chapter
-            {Conclusão} [7]
+            {Conclusão} [7
+
+
+]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
@@ -1294,35 +1301,29 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `tcc.out' has not changed.
 (rerunfilecheck)             Checksum: 766BB488CD9936151BC95879635706AF;803.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 23998 strings out of 492973
- 405134 string characters out of 3141237
- 695714 words of memory out of 3000000
- 27438 multiletter control sequences out of 15000+200000
+ 24001 strings out of 492973
+ 405160 string characters out of 3141237
+ 700714 words of memory out of 3000000
+ 27440 multiletter control sequences out of 15000+200000
  560835 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,12n,75p,828b,1962s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{equation.2.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-{C:/latex/Miktex/fonts/enc/dvips/base/8r.enc}<C:/latex/Miktex/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmmi12
-.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/latex/Miktex
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/latex/Miktex/fonts/type1/public/a
-msfonts/cm/cmr6.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
-:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/latex/Miktex/fonts
-/type1/urw/courier/ucrr8a.pfb><C:/latex/Miktex/fonts/type1/urw/times/utmb8a.pfb
-><C:/latex/Miktex/fonts/type1/urw/times/utmr8a.pfb><C:/latex/Miktex/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on tcc.pdf (35 pages, 404104 bytes).
+ 63i,13n,75p,830b,1231s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/latex/Miktex/fonts/enc/dvips/base/8r.enc}<C:/latex/Miktex/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/latex/Mikt
+ex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/latex/Miktex/fonts/type1/public
+/amsfonts/cm/cmr8.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/latex/Miktex/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/latex/Miktex/fonts/type1/urw/courier
+/ucrr8a.pfb><C:/latex/Miktex/fonts/type1/urw/times/utmb8a.pfb><C:/latex/Miktex/
+fonts/type1/urw/times/utmr8a.pfb><C:/latex/Miktex/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on tcc.pdf (35 pages, 416984 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
+ 334 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
  120 words of extra memory for PDF output out of 10000 (max. 10000000)
 

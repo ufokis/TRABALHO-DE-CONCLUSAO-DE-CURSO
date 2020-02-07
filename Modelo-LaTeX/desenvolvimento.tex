@@ -10,19 +10,28 @@ Neste capitulo nos dedicamos a discutir sobre formalismo do operador densidade ,
 \section{Matriz densidade}
 \label{secao2.1}
 
-Como sabemos, o formalismo usual da mecânica quântica (formalismo de dirac) nos permite fazer previsões sobre um conjunto de sistemas físicos elaborados de forma idêntica (ensemble puro). Em termos mais especifico, garantimos que todos o sistemas membros deste ensemble seja caracterizado por um mesmo ket de estados $\ket{\alpha}$. Assim, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\alpha}$ e $30\%$ pelo ket de estado $\ket{\beta}$(ensemble misto). Para lidar com essa situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros ou, até mesmo, ensemble mistos completamente aleatórios. 
+Como sabemos, o formalismo usual da mecânica quântica (formalismo de dirac) nos permite fazer previsões sobre um conjunto de sistemas físicos elaborados de forma idêntica (ensemble puro). Em termos mais específicos, garantimos que todos o sistemas membros deste ensemble seja caracterizado por um mesmo ket de estados $\ket{\alpha}$. Assim, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\alpha}$ e $30\%$ pelo ket de estado $\ket{\beta}$ (ensemble misto). Para lidar com essa situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros ou, até mesmo, ensemble mistos completamente aleatórios. 
 
-Consideremos o ensemble misto, onde uma fração de membros com população relativa $\alpha^{(1)}$ é caracterizada por $\ket{\alpha^{(1)}}$; outra fração $\alpha^{(^2)}$ é caracterizada por $\ket{\alpha^{(2)}}$ e assim sucessivamente. Podemos dizer, com certa precisão, que um ensemble misto pode ser visto como uma mistura de ensembles puros. As populações $\alpha^{(i)}$ devem satisfazer a condição de normalização, ou seja:
+Consideremos o ensemble misto, onde uma fração de membros com população relativa $w_1$ é caracterizada por $\ket{\alpha^{(1)}}$; outra fração $w_2$ é caracterizada por $\ket{\alpha^{(2)}}$ e assim sucessivamente. Podemos dizer, com certa precisão, que um ensemble misto pode ser visto como uma mistura de ensembles puros. As populações $w_i$ devem satisfazer a condição de normalização, ou seja:
 
 \begin{equation} \label{eq:1}
-	\sum_i \alpha^{(i)} = 1 
+	\sum_i w_i = 1 
 \end{equation}
    
-Não é necessário que $\alpha^{(1)}$, $\alpha^{(2)}$,..., $\alpha^{(i)}$ sejam ortogonais entre si e o número de termos na soma em $i$ \eqref{eq:1} não precisam igual ao numero de dimensões $N$ no espaço de Hilbert.
-Vamos supor que realizamos a medida de um observável A em um ensemble misto. É possível calcular o valor médio se houver um numero grande de medidas. O resultado é dado pela média sobre o ensembles, definida por:
+Não é necessário que $\ket*{\alpha^{(1)}}$, $\ket*{\alpha^{(2)}}$,..., $\ket*{\alpha^{(i)}}$ sejam ortogonais entre si e o número de termos na soma $i$ na equação \eqref{eq:1} não precisam igual ao numero de dimensões $N$ no espaço de Hilbert.
+Vamos supor que realizamos a medida de um operador $\hat{A}$ em um ensemble misto. É possível calcular o valor médio se houver um número grande de medidas. O resultado é dado pela média sobre o ensembles, definida por:
 
 
+\begin{eqnarray}\label{eq:2} 
+[\hat{A}] & = & \sum_i w_i \mel{\alpha^{(i)}}{\hat{A}}{\alpha^{(i)}} \nonumber\\  & = & \sum_i w_i \mel{\alpha^{(i)}}{\hat{A}\sum_{a'} \dyad{a'}{a'} }{\alpha^{(i)}}\nonumber\\& = & \sum_i \sum_{a'} w_i \mel{\alpha^{(i)}}{\hat{A}\dyad{a'}{a'} }{\alpha^{(i)}} \nonumber\\ & = & \sum_i \sum_{a'} w_i \braket{\alpha^{(i)}}{a'}\braket{a'}{\alpha^{(i)}}a' \nonumber\\ & = & \sum_i \sum_{a'} w_i \braket{\alpha^{(i)}}{a'}^*\braket{\alpha^{(i)}}{a'}a' \nonumber\\ & = & \sum_i \sum_{a'} w_i \norm{\braket{a'}{\alpha^{(i)}}}^2a' 
+\end{eqnarray}
 
+Sendo que $\ket{a'}$ é um autovetor do operador $\hat{A}$ e que $\mel{\alpha^{(i)}}{\hat{A}}{\alpha^{(i)}}$ trata-se do valor esperado usual para $\hat{A}$ em relação a um estado $\ket{\alpha^{(i)}}$. Vemos na equação \eqref{eq:2} que este valores esperados precisam ser considerados pelas populações relativas $w_i$. E possível observar também que que $\norm*{\braket*{a'}{\alpha^{(i)}}}^2$ é a probabilidade do estado $\ket*{\alpha{(i)}}$ de ser encontrado em um autoestado $\ket*{a'}$ e que $w_i$ identifica a probabilidade de encontrarmos uma estado quântico caracterizado por $\ket*{\alpha^{(i)}}$.  
+
+Se aplicarmos uma base genérica ({$\ket*{b'}$}), podemos rescrever a média sobre o ensemble \eqref{eq:2} da seguinte forma:
+\begin{eqnarray}\label{eq:3} 
+[\hat{A}] & = & \sum_i w_i \mel{\alpha^{(i)}}{\sum_{b'} \dyad{b'}{b'}\hat{A}\sum_{b''} \dyad{b''}{b''} }{\alpha^{(i)}}\nonumber\\& = & \sum_i \sum_{b'} \sum_{b''} w_i \braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''}\braket{b''}{\alpha^{(i)}} \nonumber\\ & = & \sum_i \sum_{b'} \sum_{b''} w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''} \nonumber\\ & = & \sum_{b'} \sum_{b''} \sum_i w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''} \\ 
+\end{eqnarray} 
 \subsection{Subseção}
 
 Digite o conteúdo do uma subseção aqui.
