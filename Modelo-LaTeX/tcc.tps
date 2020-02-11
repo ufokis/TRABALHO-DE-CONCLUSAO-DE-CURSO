@@ -17,7 +17,7 @@ Class=LaTeXView
 Document=tcc.tex
 
 [Frame0_View0,0]
-TopLine=25
+TopLine=34
 Cursor=527
 
 [Frame1]
@@ -32,11 +32,11 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=desenvolvimento.tex
+Document=introducao.tex
 
 [Frame1_View0,0]
-TopLine=29
-Cursor=1310
+TopLine=0
+Cursor=65
 
 [Frame2]
 Flags=0
@@ -50,11 +50,11 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=..\..\..\..\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
+Document=desenvolvimento.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=2936
+TopLine=77
+Cursor=3472
 
 [Frame3]
 Flags=0
@@ -68,7 +68,7 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=dedicatoria.tex
+Document=contra-capa.tex
 
 [Frame3_View0,0]
 TopLine=0
@@ -86,7 +86,7 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=bibliotecas.tex
+Document=conclusao.tex
 
 [Frame4_View0,0]
 TopLine=0
@@ -104,7 +104,7 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=listas-sumario.tex
+Document=ata.tex
 
 [Frame5_View0,0]
 TopLine=0
@@ -122,11 +122,11 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=introducao.tex
+Document=apendice.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=65
+Cursor=0
 
 [Frame7]
 Flags=0
@@ -140,11 +140,11 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=resumo.tex
+Document=estilo.tex
 
 [Frame7_View0,0]
 TopLine=0
-Cursor=32
+Cursor=0
 
 [Frame8]
 Flags=0
@@ -158,11 +158,11 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=epigrafe.tex
+Document=macros.tex
 
 [Frame8_View0,0]
 TopLine=0
-Cursor=65
+Cursor=0
 
 [Frame9]
 Flags=0
@@ -176,11 +176,11 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=agradecimentos.tex
+Document=capa.tex
 
 [Frame9_View0,0]
 TopLine=0
-Cursor=67
+Cursor=117
 
 [Frame10]
 Flags=0
@@ -194,11 +194,11 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=capa.tex
+Document=..\..\..\..\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
 
 [Frame10_View0,0]
 TopLine=0
-Cursor=117
+Cursor=2936
 
 [Frame11]
 Flags=0
@@ -212,7 +212,7 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=macros.tex
+Document=dedicatoria.tex
 
 [Frame11_View0,0]
 TopLine=0
@@ -230,7 +230,7 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=estilo.tex
+Document=bibliotecas.tex
 
 [Frame12_View0,0]
 TopLine=0
@@ -248,7 +248,7 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=apendice.tex
+Document=listas-sumario.tex
 
 [Frame13_View0,0]
 TopLine=0
@@ -266,11 +266,11 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=ata.tex
+Document=resumo.tex
 
 [Frame14_View0,0]
 TopLine=0
-Cursor=0
+Cursor=32
 
 [Frame15]
 Flags=0
@@ -284,11 +284,11 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=conclusao.tex
+Document=epigrafe.tex
 
 [Frame15_View0,0]
 TopLine=0
-Cursor=0
+Cursor=65
 
 [Frame16]
 Flags=0
@@ -302,13 +302,13 @@ NormalPos.top=26
 NormalPos.right=600
 NormalPos.bottom=758
 Class=LaTeXView
-Document=contra-capa.tex
+Document=agradecimentos.tex
 
 [Frame16_View0,0]
 TopLine=0
-Cursor=0
+Cursor=67
 
 [SessionInfo]
 FrameCount=17
-ActiveFrame=1
+ActiveFrame=2
 

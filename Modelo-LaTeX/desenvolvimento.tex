@@ -30,13 +30,96 @@ Sendo que $\ket{a'}$ é um autovetor do operador $\hat{A}$ e que $\mel{\alpha^{(i
 
 Se aplicarmos uma base genérica ({$\ket*{b'}$}), podemos rescrever a média sobre o ensemble \eqref{eq:2} da seguinte forma:
 \begin{eqnarray}\label{eq:3} 
-[\hat{A}] & = & \sum_i w_i \mel{\alpha^{(i)}}{\sum_{b'} \dyad{b'}{b'}\hat{A}\sum_{b''} \dyad{b''}{b''} }{\alpha^{(i)}}\nonumber\\& = & \sum_i \sum_{b'} \sum_{b''} w_i \braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''}\braket{b''}{\alpha^{(i)}} \nonumber\\ & = & \sum_i \sum_{b'} \sum_{b''} w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''} \nonumber\\ & = & \sum_{b'} \sum_{b''} \sum_i w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''} \\ 
-\end{eqnarray} 
-\subsection{Subseção}
+[\hat{A}] & = & \sum_i w_i \mel{\alpha^{(i)}}{\sum_{b'} \dyad{b'}{b'}\hat{A}\sum_{b''} \dyad{b''}{b''} }{\alpha^{(i)}}\nonumber\\& = & \sum_i \sum_{b'} \sum_{b''} w_i \braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''}\braket{b''}{\alpha^{(i)}} \nonumber\\ & = & \sum_i \sum_{b'} \sum_{b''} w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''} \nonumber\\ & = & \sum_{b'} \sum_{b''} \qty( \sum_i w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'})\mel{b'}{\hat{A}}{b''}
+\end{eqnarray}
 
-Digite o conteúdo do uma subseção aqui.
+O termo destacado entre parenteses é definido como elemento de matriz de um certo operador hermitiano, que denominamos matriz densidade ou ainda, operador densidade $\rho$,
 
+\begin{equation}\label{eq:4}
+\mel{b''}{\hat{\rho}}{b'}= \sum_i w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}
+\end{equation}
+De forma geral, o operador densidade é definido como  
+\begin{equation}\label{eq:5}
+\hat{\rho} \equiv \sum_i w_i \dyad{a^{(i)}}{a^{(i)}}
+\end{equation} 
+
+Uma vez determinado o operador densidade do sistema, podemos caracterizar o ensemble quântico em questão de modo a obter todas as informações físicas encerradas por tal operador. Substituindo \eqref{eq:4} em \eqref{eq:3}, podemos rescrever o valor esperado de $\hat{A}$ como:
+
+\begin{eqnarray}\label{eq:6} 
+[\hat{A}] & = & \sum_{b'} \sum_{b''} \mel{b''}{\hat{\rho}}{b'}\mel{b'}{\hat{A}}{b''}\nonumber\\ & = & \Tr(\hat{\rho}\hat{A})
+\end{eqnarray}
+
+Onde a operação $\Tr(\hat{\rho}\hat{A})$ corresponde ao traço do operador resultante do produto entre $\hat{\rho}\hat{A}$, ficando assim explicito o poder desta construção, pois o traço independe da representação e pode ser calculado usando uma base conveniente.
+
+
+\subsection{Propriedade do Operador Densidade}
+
+Vamos agora nos ater à algumas propriedade do operador densidade:
+ 
+Primeira propriedade: O operador densidade é hermitiano, ou seja:
+
+\begin{equation}\label{eq:7}
+\hat{\rho} = \hat{\rho}^\dag
+\end{equation} 
+
+Segunda propriedade: O operador densidade satisfaz a condição de normalização 
+
+\begin{eqnarray}\label{eq:8}
+\Tr\rho & = & \sum_i \sum_{b'} w_i \braket{b'}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}\nonumber\\& = & \sum_i w_i \braket{\alpha^{(i)}}{\alpha^{(i)}}\nonumber\\& = & 1
+\end{eqnarray}
+
+Terceira propriedade: Podemos ainda substituir o operador $\hat{A}$ pelo próprio operador densidade obtendo: 
+
+\begin{eqnarray}\label{eq:9}
+\Tr(\hat{\rho}^2)& = & \Tr(\hat{\rho}\hat{\rho})\nonumber\\
+& = & \sum_i w_i \bra{\alpha^{(i)}}\qty(\sum_j w_j \dyad{\alpha^{(j)}}{\alpha^{(j)}})\ket{\alpha^{(i)}} \nonumber\\& = & \sum_i \sum_j w_i w_j \braket{\alpha^{(i)}}{\alpha^{(j)}}\braket{\alpha^{(j)}}{\alpha^{(i)}}\nonumber\\& = & \sum_i \sum_j w_i w_j \braket{\alpha^{(i)}}{\alpha^{(j)}}\braket{\alpha^{(i)}}{\alpha^{()}}^*\nonumber\\& = & \sum_i \sum_j w_i w_j \norm{\braket{\alpha^{(i)}}{\alpha^{(j)}}}^2
+\end{eqnarray}
+
+Esse resultado precisa ser analisado, observando a desigualdade de Cauchy-Schwarz
+\begin{equation}\label{eq:10}
+\norm{\braket{\alpha^{(i)}}{\alpha^{(j)}}}^2 \leq \braket{\alpha^{(i)}}{\alpha^{(i)}}\braket{\alpha^{(j)}}{\alpha^{(j)}}
+\end{equation} 
+
+Como os kets $\ket*{\alpha^{(i)}}$ são ortogonais, ou seja, $\braket*{\alpha^{(i)}}{\alpha^{(i)}}=\braket*{\alpha^{(j)}}{\alpha^{(j)}} =1$, obtemos a seguinte propriedade:
+
+\begin{equation}\label{eq:11}
+\Tr(\hat{\rho}^2) \leq 1
+\end{equation}
+
+É possível observar que quando se trata de um ensemble puro, ou seja, um dos pesos $w_i$ tem valor 1 e o restante de valor 0, $\Tr(\hat{\rho}^2)$ tem valor máximo, isto é,
+\begin{equation}\label{eq:12}
+\Tr(\hat{\rho}^2) = 1
+\end{equation} 
+
+Assim, é facil provar que o operador densidade de um ensemble puro puro é idempotente, ou seja:
+
+\begin{equation}\label{eq:13}
+\hat{\rho}^2 = \hat{\rho}
+\end{equation} 
+
+\subsection{Evolução Temporal do Operador Densidade}
+
+Agora, precisamos determinar como o operador densidade evolui no tempo. Para isso, devemos supor que para um tempo $t_0$ o operador densidade corresponde a
+ 
+\begin{equation}\label{eq:14}
+\hat{\rho(t_0)} = \sum_i w_i \dyad{\alpha^{(i)}}{\alpha^{(i)}}.
+\end{equation}
+
+Consideremos que o ensemble não sofre pertubação conforme evolui no tempo, ou seja, a populações relativas $w_i$ se mantém estática. Assim, a alteração de $\hat{\rho}$ acontece unicamente pela evolução temporal dos kets de estado $\ket{\alpha^{(i)}}$.
+
+\begin{equation}\label{eq:15}
+\ket{\alpha^{(i)}} \text{ 	em		}  t_0 \rightarrow \ket{\alpha^{(i)},t_0;t}
+\end{equation}
+
+Sabemos que $\ket{\alpha^{(i)},t_0;t}$ que satisfaz equação de Schrödinger 
+
+\begin{equation}\label{eq:16}
+i\hbar\pdv{t}\ket{\alpha^{(i)},t_0;t} = \hat{H}\ket{\alpha^{(i)},t_0;t},
+\end{equation}
+ 
 \section{Figuras}
+
+
 
 Exemplo de figura:
 

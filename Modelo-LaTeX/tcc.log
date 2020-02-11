@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.25)  7 FEB 2020 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.25)  10 FEB 2020 21:53
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -834,7 +834,7 @@ pdf>
 s-converted-to.pdf figuras_do_template/logo.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_template/logo-eps-converted-to.pdf, id=55, 410.53375pt x 96.36pt>
+<figuras_do_template/logo-eps-converted-to.pdf, id=59, 410.53375pt x 96.36pt>
 File: figuras_do_template/logo-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_template/logo-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_template/logo-eps-converted-to.pdf  used on
@@ -893,7 +893,7 @@ Package epstopdf Info: Source file: <figuras_do_template/logo-ata.eps>
 a-eps-converted-to.pdf figuras_do_template/logo-ata.eps>
 (epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_template/logo-ata-eps-converted-to.pdf, id=86, 425.59pt x 66.2475pt
+<figuras_do_template/logo-ata-eps-converted-to.pdf, id=90, 425.59pt x 66.2475pt
 >
 File: figuras_do_template/logo-ata-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1086,9 +1086,34 @@ been already used, duplicate ignored
 l.30 
       [3]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 61.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 61.
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.61 \begin{equation}
+                     \label{eq:7} [4]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 100.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 104.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 104.
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 \begin{equation}
+                      \label{eq:14} [5]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 120.
 Package epstopdf Info: Source file: <figuras_do_trabalho/fig1.eps>
 (epstopdf)                    date: 2020-02-06 09:42:39
 (epstopdf)                    size: 127273 bytes
@@ -1098,68 +1123,68 @@ pdf>
 (epstopdf)                    size: 5785 bytes
 (epstopdf)             Command: <epstopdf --outfile=figuras_do_trabalho/fig1-ep
 s-converted-to.pdf figuras_do_trabalho/fig1.eps>
-(epstopdf)             \includegraphics on input line 45.
+(epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=214, 333.245pt x 190.7125pt>
+<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=239, 333.245pt x 190.7125pt>
 
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/fig1-eps-converted-to.pdf  used on
- input line 45.
+ input line 128.
 (pdftex.def)             Requested size: 273.14923pt x 156.32996pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 129.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 54.
-
-Underfull \vbox (badness 6428) has occurred while \output is active []
-
+(babel)             in language  on input line 137.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 58.
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+(babel)             in language  on input line 169.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 169.
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 \begin{equation}
-                      [4 <./figuras_do_trabalho/fig1-eps-converted-to.pdf>]
+l.169 \end{table}
+                  [6 <./figuras_do_trabalho/fig1-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 65.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 90.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 95.
+(babel)             in language  on input line 173.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 178.
 
 (C:\latex\Miktex\tex\latex\psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 100.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 183.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 210.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 120.
-pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+(babel)             in language  on input line 210.
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 }\end{addmargin}
-                       [5]
+l.210 \chapter
+              [Outro capítulo]{Outro capítulo} [7]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 127.
+(babel)             in language  on input line 210.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 127.
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+(babel)             in language  on input line 210.
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.127 \chapter
-              [Outro capítulo]{Outro capítulo} [6]
+l.210 \chapter
+              [Outro capítulo]{Outro capítulo} [8
+
+
+]
 Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 127.
+(babel)             in language  on input line 210.
 Package epstopdf Info: Source file: <figuras_do_trabalho/fig1.eps>
 (epstopdf)                    date: 2020-02-06 09:42:39
 (epstopdf)                    size: 127273 bytes
@@ -1169,37 +1194,34 @@ pdf>
 (epstopdf)                    size: 5785 bytes
 (epstopdf)             Command: <epstopdf --outfile=figuras_do_trabalho/fig1-ep
 s-converted-to.pdf figuras_do_trabalho/fig1.eps>
-(epstopdf)             \includegraphics on input line 152.
+(epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/fig1-eps-converted-to.pdf  used on
- input line 152.
+ input line 235.
 (pdftex.def)             Requested size: 273.14923pt x 156.32996pt.
 ) (conclusao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
-pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.3 \chapter
-            {Conclusão} [7
-
-
-]
+            {Conclusão} [9]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
-pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.3 \chapter
-            {Conclusão} [8
+            {Conclusão} [10
 
 
 ]
@@ -1211,22 +1233,22 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
-pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.64 	\begin{thebibliography}{99}
-                                  [9]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 64.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 64.
-pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.64 	\begin{thebibliography}{99}
-                                  [10
+                                  [11]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 64.
+pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 	\begin{thebibliography}{99}
+                                  [12
 
 
 ] (apendice.tex
@@ -1234,22 +1256,22 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \backmatter
-                \appendix [11]
+                \appendix [13]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \backmatter
-                \appendix [12
+                \appendix [14
 
 
 ]
@@ -1259,12 +1281,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
-pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.9 \chapter
-            {Título do Segundo Apêndice} [13
+            {Título do Segundo Apêndice} [15
 
 
 ]
@@ -1272,12 +1294,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
-pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.9 \chapter
-            {Título do Segundo Apêndice} [14
+            {Título do Segundo Apêndice} [16
 
 
 ]
@@ -1289,26 +1311,26 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 84.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 84.
-pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
+pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.84 \end{document}
-                    [15]
+                    [17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (tcc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: 766BB488CD9936151BC95879635706AF;803.
+(rerunfilecheck)             Checksum: F7C7F0AFDE939EEFF22BE2652784C0C4;922.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 24001 strings out of 492973
- 405160 string characters out of 3141237
+ 24030 strings out of 492973
+ 405481 string characters out of 3141237
  700714 words of memory out of 3000000
- 27440 multiletter control sequences out of 15000+200000
- 560835 words of font info for 62 fonts, out of 3000000 for 9000
+ 27455 multiletter control sequences out of 15000+200000
+ 562479 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,13n,75p,830b,1231s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/latex/Miktex/fonts/enc/dvips/base/8r.enc}<C:/latex/Miktex/fonts/type1/pub
@@ -1317,13 +1339,13 @@ lic/amsfonts/cm/cmex10.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmmi
 ex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/latex/Miktex/fonts/type1/public
 /amsfonts/cm/cmr8.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/latex/Miktex/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/latex/Miktex/fonts/type1/urw/courier
-/ucrr8a.pfb><C:/latex/Miktex/fonts/type1/urw/times/utmb8a.pfb><C:/latex/Miktex/
-fonts/type1/urw/times/utmr8a.pfb><C:/latex/Miktex/fonts/type1/urw/times/utmri8a
-.pfb>
-Output written on tcc.pdf (35 pages, 416984 bytes).
+nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/latex/Miktex/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb><C:/latex/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><C:
+/latex/Miktex/fonts/type1/urw/times/utmb8a.pfb><C:/latex/Miktex/fonts/type1/urw
+/times/utmr8a.pfb><C:/latex/Miktex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tcc.pdf (37 pages, 432371 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
- 120 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
