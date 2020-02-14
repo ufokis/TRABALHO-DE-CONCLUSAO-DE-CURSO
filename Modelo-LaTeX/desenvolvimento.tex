@@ -5,12 +5,12 @@
 
 %Para cada capítulo adicional, digite o comando \chapter{Título do Capítulo}
 
-Neste capitulo nos dedicamos a apresentar o formalismo do operador densidade , desenvolvido por J.von Neumann em 1917, e suas vantagens em relação ao representação de autoestados e autovetores no estudo de sistema quânticos \cite{sakurai2013mecanica}.
+Neste capitulo nos dedicamos a apresentar o formalismo do operador densidade , desenvolvido por J.von Neumann em 1977, e suas vantagens em relação ao representação de autoestados e autovetores no estudo de sistema quânticos \cite{sakurai2013mecanica}.
 
 \section{Matriz densidade}
 \label{secao2.1}
 
-Como sabemos, o formalismo usual da mecânica quântica, onde trabalhamos com autoestados e autovetores (formalismo de dirac), nos permite fazer previsões sobre um conjunto de sistemas físicos elaborados de forma idêntica (ensemble puro). Em termos mais específicos, garantimos que todos o sistemas membros deste ensemble seja caracterizado por um mesmo ket de estados $\ket{\alpha}$. Assim, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\alpha}$ e $30\%$ pelo ket de estado $\ket{\beta}$ (ensemble misto). Para lidar com essa situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros ou, até mesmo, ensemble mistos completamente aleatórios. 
+Como sabemos, o formalismo usual da mecânica quântica, onde trabalhamos com autoestados e autovetores (formalismo de Dirac), nos permite fazer previsões sobre um conjunto de sistemas físicos elaborados de forma idêntica \cite{breuer2002theory}. Em termos mais específicos, garantimos que todos o sistemas membros deste ensemble seja caracterizado por um mesmo ket de estados $\ket{\alpha}$. Assim, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\alpha}$ e $30\%$ pelo ket de estado $\ket{\beta}$ (ensemble misto). Para lidar com essa situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros ou, até mesmo, ensemble mistos completamente aleatórios. 
 
 Consideremos o ensemble misto, onde uma fração de membros com população relativa $w_1$ é caracterizada por $\ket{\alpha^{(1)}}$; outra fração $w_2$ é caracterizada por $\ket{\alpha^{(2)}}$ e assim sucessivamente. Podemos dizer, com certa precisão, que um ensemble misto pode ser visto como uma mistura de ensembles puros. As populações $w_i$ devem satisfazer a condição de normalização, ou seja:
 
@@ -126,17 +126,22 @@ Substituindo \eqref{eq:17} em \eqref{eq:18}, obtemos
 \pdv{t}\hat{\rho(t)} &= &\frac{1}{i\hbar}\hat{H}\qty(\sum_i w_i \ket{\alpha^{(i)}}\bra{\alpha^{(i)}}) -\frac{1}{i\hbar}\qty(\sum_i w_i \ket{\alpha^{(i)}} \bra{\alpha^{(i)}})\hat{H}\nonumber\\ & = &\frac{1}{i\hbar}\hat{H}\hat{\rho} -\frac{1}{i\hbar}\hat{\rho}\hat{H},
 \end{eqnarray}
 resultando na equação de \textbf{Liouville-von Neumann} que descreve a evolução temporal do
-operador densidade:
+operador densidade \cite{sakurai2013mecanica,RobertField}:
 
 \begin{eqnarray}\label{eq:20}
 \pdv{t}\hat{\rho(t)} & = &-\frac{1}{i\hbar}\qty[\hat{\rho},\hat{H}].
 \end{eqnarray}
 
 Embora a equação \eqref{eq:20} seja semelhante a equação de Heisenberg, exceto por um sinal negativo ($-$), é preciso lembrar que estamos trabalhando na formulação Schrödinger, visto que $\hat{\rho}$ é construído a partir de kets e bras que evoluem no tempo e obedece a equação de Schrödinger.
-\section{Figuras}
+
+\chapter{Campo Eletromagnético}
+
+Neste capitulo aplicaremos 
+
+\label{capitulo2}
 
 
-
+\blinddocument
 Exemplo de figura:
 
 \begin{figure}[H]

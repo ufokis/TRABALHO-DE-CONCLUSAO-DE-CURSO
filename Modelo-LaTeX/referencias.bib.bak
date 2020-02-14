@@ -1,10 +1,31 @@
 % Encoding: UTF-8
 
 @Book{sakurai2013mecanica,
-  title     = {Mec{\^a}nica qu{\^a}ntica moderna},
-  publisher = {bookman},
-  year      = {2013},
-  author    = {Sakurai, Jun Jon and Napolitano, Jim},
+  title         = {Mec{\^a}nica qu{\^a}ntica moderna},
+  publisher     = {Bookman},
+  year          = {2013},
+  author        = {Sakurai, J.J. and Napolitano, J. and Dahmen, S.R.},
+  isbn          = {9788565837095},
+  __markedentry = {[Eliton:6]},
+  url           = {https://books.google.com.br/books?id=vcI4kgEACAAJ},
+}
+
+@Book{breuer2002theory,
+  title     = {The Theory of Open Quantum Systems},
+  publisher = {Oxford University Press},
+  year      = {2002},
+  author    = {Breuer, H.P. and Petruccione, F. and Petruccione, S.P.A.P.F.},
+  isbn      = {9780198520634},
+  lccn      = {2002075713},
+  url       = {https://books.google.com.br/books?id=0Yx5VzaMYm8C},
+}
+
+@Book{RobertField,
+  title     = {5.74 Introductory Quantum Mechanics II},
+  publisher = {Massachusetts Institute of Technology: MIT OpenCourseWare},
+  year      = {Spring 2004},
+  author    = {Robert Field and Andrei Tokmakoff},
+  url       = { https://ocw.mit.edu},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

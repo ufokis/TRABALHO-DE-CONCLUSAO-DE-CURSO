@@ -1,8 +1,18 @@
 \begin{thebibliography}{1}
 
 \bibitem{sakurai2013mecanica}
-{\sc Sakurai, J.~J., and Napolitano, J.}
-\newblock {\em Mec{\^a}nica qu{\^a}ntica moderna}.
-\newblock bookman, 2013.
+J.~Sakurai, J.~Napolitano, and S.~Dahmen, {\em Mec{\^a}nica qu{\^a}ntica
+  moderna}.
+\newblock Bookman, 2013.
+
+\bibitem{breuer2002theory}
+H.-P. Breuer, F.~Petruccione, {\em et~al.}, {\em The theory of open quantum
+  systems}.
+\newblock Oxford University Press on Demand, 2002.
+
+\bibitem{RobertField}
+R.~Field and A.~Tokmakoff, {\em 5.74 Introductory Quantum Mechanics II}.
+\newblock Massachusetts Institute of Technology: MIT OpenCourseWare, Spring
+  2004.
 
 \end{thebibliography}

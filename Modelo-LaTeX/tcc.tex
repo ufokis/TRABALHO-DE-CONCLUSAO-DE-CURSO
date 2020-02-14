@@ -7,11 +7,14 @@
 
 \documentclass[a4paper,reqno,12pt,twoside]{book}
 
+%\documentclass{ufpethesis}
+
 \usepackage{amsmath}%
 \usepackage{amsfonts}%
 \usepackage{amssymb}%
 \usepackage{graphicx}%
 \usepackage{physics}%
+\usepackage{blindtext}
 
 %Veja o arquivo abaixo antes de adicionar outras bibliotecas
 \input{bibliotecas.tex}
@@ -49,7 +52,7 @@
 \begin{document}
 	
 	\renewcommand{\bibname}{Referências}
-	\input{capa.tex}
+	\input{capa}
 	\input{contra-capa.tex}
 	\input{ata.tex}
 	\input{dedicatoria.tex}
@@ -59,10 +62,9 @@
 	\input{introducao.tex}
 	\input{desenvolvimento.tex}
 	\input{conclusao.tex}
-
 	%Digite as referências abaixo
 	\bibliography{referencias}
-  \bibliographystyle{acm}
+  \bibliographystyle{ieeetr}
 
 
 	\input{apendice.tex}
