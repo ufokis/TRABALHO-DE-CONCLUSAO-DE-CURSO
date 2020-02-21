@@ -11,13 +11,11 @@
 }
 
 @Book{breuer2002theory,
-  title     = {The Theory of Open Quantum Systems},
-  publisher = {Oxford University Press},
+  title     = {The theory of open quantum systems},
+  publisher = {Oxford University Press on Demand},
   year      = {2002},
-  author    = {Breuer, H.P. and Petruccione, F. and Petruccione, S.P.A.P.F.},
-  isbn      = {9780198520634},
-  lccn      = {2002075713},
-  url       = {https://books.google.com.br/books?id=0Yx5VzaMYm8C},
+  author    = {Breuer, Heinz-Peter and Petruccione, Francesco and others},
+  url       = {https://books.google.com.br/books?id=0Yx5VzaMYm8C&lpg=PA8&ots=RT3oI8mH2E&dq=the%20theory%20of%20open%20quantum%20systems%20breuer&lr&hl=pt-BR&pg=PA64#v=onepage&q=the%20theory%20of%20open%20quantum%20systems%20breuer&f=false},
 }
 
 @Book{RobertField,
@@ -26,6 +24,47 @@
   year      = {Spring 2004},
   author    = {Robert Field and Andrei Tokmakoff},
   url       = { https://ocw.mit.edu},
+}
+
+@Book{jackson1998classical,
+  title     = {CLASSICAL ELECTRODYNAMICS, 3RD ED},
+  publisher = {Jhon Wiley},
+  year      = {1998},
+  author    = {Jackson, J.D.},
+  isbn      = {9788126510948},
+  lccn      = {97046873},
+  url       = {https://books.google.com.br/books?id=2hZ0CgAAQBAJ},
+}
+
+@Book{allen1987optical,
+  title     = {Optical Resonance and Two-level Atoms},
+  publisher = {Dover},
+  year      = {1987},
+  author    = {Allen, L. and Eberly, J.H.},
+  series    = {Dover books on physics and chemistry},
+  isbn      = {9780486655338},
+  lccn      = {87019985},
+  url       = {https://books.google.com.br/books?id=1q0ae-XNmWwC},
+}
+
+@Book{diels2006ultrashort,
+  title     = {Ultrashort Laser Pulse Phenomena},
+  publisher = {Elsevier Science},
+  year      = {2006},
+  author    = {Diels, J.C. and Rudolph, W. and Liao, P.F. and Kelley, P.},
+  series    = {Electronics \& Electrical},
+  isbn      = {9780122154935},
+  lccn      = {2007279739},
+  url       = {https://books.google.com.br/books?id=Nib8PrKIjDQC},
+}
+
+@Book{griffiths2011elet,
+  title     = {Eletrodin{\^a}mica},
+  publisher = {Pearson Addison Wesley},
+  year      = {2011},
+  author    = {Griffiths, D.J.},
+  isbn      = {9788576058861},
+  url       = {https://books.google.com.br/books?id=4q9BYgEACAAJ},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

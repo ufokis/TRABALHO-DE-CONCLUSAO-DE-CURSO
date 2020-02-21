@@ -174,15 +174,147 @@ Embora a equação \eqref{eq:28} seja semelhante a equação de Heisenberg, exceto p
 
 \chapter{Campo Eletromagnético}
 
-Neste capitulo, utilizamos a Equação de Maxwell para obtermos a equação de Maxwell-Bloch para interação de pulsos ultracurtos com meios não lineares. 
+Neste capitulo, revisitamos conceito importantes do eletromagnetismo, para estudarmos a propagação de pulsos eletromagnéticos com meios atômicos. Assim, primeiramente apresentaremos a propagação em um meio linear e depois expandiremos para um caso de um meio atômico não-linear de dois níveis. 
 \label{capitulo2}
 
 \section{Equações de Maxwell}
 \label{secao3.1}
-A princípio, sabemos que as 4 equações de maxwell na forma diferencial são:
+A princípio, sabemos que as leis do electromagnetismo pa um meio podem ser resumidas por quatro equações de Maxwell\cite{jackson1998classical}:
 
+\begin{eqnarray}
+\div{\vb{D}} & = & \varrho_l\textrm{~~(Lei de Gauss)},\label{eq:3.1}\\\nonumber\\
+\curl{\vb{H}} - \pdv{\vb{D}}{t} & = & \vb{J}_l\textrm{~~(Lei de Ampère)},\label{eq:3.2}\\\nonumber\\
+\curl{\vb{E}} + \pdv{\vb{B}}{t} & = & 0 \textrm{~~(Lei de Faraday)}\label{eq:3.3}\\\nonumber\\
+\div{\vb{B}} & = & 0\textrm{~~(Lei de Gauss para o magnetismo)},\label{eq:3.4}
+\end{eqnarray}
+onde $\vb{E}$ e $\vb{B}$ correspondem aos o vetores de campo elétrico e magnético, $\vb{D}$ e $\vb{H}$ são o deslocamento elétrico e campo campo magnetizante, que se relacionam com $\vb{E}$ and $\vb{B}$ a partir das equações:
 
-Como estamos em uma material dielétrico, podemos fazer "`"'e, também podemos considerar
+\begin{equation}
+\vb{D}  =  \epsilon_0\vb{E} + \vb{P}\label{eq:3.5}
+\end{equation}
+e
+\begin{equation}
+\vb{B} = \mu_0\vb{H} + \vb{M},\label{eq:3.6}
+\end{equation}
+onde $\vb{P}$ é a polarização e $\vb{M}$ magnetização de um meio material. $\varrho_l$ e $\vb{J}_l$ correspondem a densidade de carga livre e  densidade de corrente volumétrica livre. Levando em conta que o meio atômico estudado neste trabalho é neutro e não magnético, podemos desconsiderar $\varrho_l$ , $\vb{J}_l$ e $\vb{M}$, fazendo \begin{equation}
+\norm{\varrho_l} = \norm{\vb{J}_l} = \norm{\vb{M}} = 0.
+\label{eq:3.7}
+\end{equation}
+
+Aplicando o operador rotacional à equação \eqref{eq:3.3}, obtemos:
+\begin{eqnarray}
+\curl{\curl{\vb{E}}} + \curl{\pdv{\vb{B}}{t}} & = & 0\nonumber\\
+\div{(\div{\vb{E}})} - \laplacian{\vb{E}} + \pdv{t}\curl{\vb{B}} & = & 0.
+\label{eq:3.8}
+\end{eqnarray}
+Substituindo \eqref{eq:3.5} e \eqref{eq:3.6} em \eqref{eq:3.2}, respeitando as condições \eqref{eq:3.7}, obtemos:
+\begin{equation}
+\curl{\vb{B}} = \mu_0 \pdv{t}(\epsilon_0\vb{E} + \vb{P}).\label{eq:3.9}
+\end{equation}
+
+Substituindo esse resultado em \eqref{eq:3.8} e usando o fato de que $\div(\div\vb{E})=0$, obtemos a seguinte equação de onda para o campo elétrico que se propaga em uma dimensão\cite{allen1987optical}:  
+
+\begin{equation}
+\pdv[2]{\vb{E}}{z} - \frac{1}{c^2}\pdv[2]{\vb{E}}{t}= \mu_0 \pdv[2]{t}\vb{P}.\label{eq:3.10}
+\end{equation}
+
+O lado esquerdo é a equação de ondas para a propagação da luz no vácuo, enquanto que o termo no lado direito representa a interação do campo eletromagnético com o meio material.
+
+A polarização $\vb{P}$ é comumente decomposta em duas partes:
+\begin{equation}
+\vb{P} = \vb{P^L} + \vb{P^{NL}},
+\label{eq:3.11}
+\end{equation}
+
+onde $ \vb{P^L} $ representa contribuições que variam de forma linear e $\vb{P^{NL}}$ as contribuições que variam de forma não-linear. 
+
+No próximo subcapítulo \ref{sec:linear} apresentamos a solução para um caso linear desprezamos os termos não lineares, e no subcapítulo \ref{sec:naolinear} apresentamos o caso não linear que Aplicaremos no sistema atômico de dois níveis no Capítulo \ref{cap:maxwellbloch}.
+
+\section{Solução para equações para um meio com polarização linear}\label{sec:linear}
+  
+A equação \eqref{eq:3.10}, normalmente é resolvida somente usando métodos numérico. No entanto, podemos realizar simplificações e aproximações que, ainda assim, nos permita  lidar com problemas práticos da propagação de pulsos em um meio material \cite{diels2006ultrashort}. Em um meio linear podemos reescrever a equação \eqref{eq:3.10} da seguinte forma:
+ 
+\begin{equation}
+\pdv[2]{\vb{E}}{z} - \frac{1}{c^2}\pdv[2]{\vb{E}}{t}= \mu_0 \pdv[2]{\vb{P^L}}{t}.\label{eq:3.12}
+\end{equation}
+
+Sabemos que em um meio linear, a polarização se relaciona com o Campo elétrico a partir da Susceptibilidade Elétrica $\chi_e$ \cite{jackson1998classical,griffiths2011elet}, seguindo a seguinte expressão: 
+\begin{equation}
+\vb{P^L}(z,t) = \epsilon_0\int_{-\infty}^{t}dt'\chi_e(t')\vb{E}(z,t-t').
+\label{eq:3.13}
+\end{equation}
+Reescrevendo no domínio das frequência, obtemos:
+
+\begin{equation}
+\vb{P^L}(z,\omega) = \epsilon_0\chi_e(z,\omega)\vb{E}(z,\omega).
+\label{eq:3.14}
+\end{equation}
+
+Realizando transformação de Fourier sobre \eqref{eq:3.12}, obtemos:
+
+\begin{eqnarray}
+\qty[\pdv[2]{z} - \frac{1}{c^2}\pdv[2]{t}]\vb{E}(z,t)&=& \mu_0 \pdv[2]{t}\vb{P^L}(z,t)\nonumber\\\nonumber\\
+\qty[\pdv[2]{z} - \frac{1}{c^2}\pdv[2]{t}]\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega \vb{E}(z,\omega)e^{i\omega t}]&=& \mu_0 \pdv[2]{t}\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega \vb{P^L}(z,\omega)e^{i\omega t}]\nonumber\\\nonumber\\
+\qty[\pdv[2]{z} + \omega^2]\vb{E}(z,\omega) &=& -\mu_0 \omega^2\vb{P^L}(z,\omega).
+\label{eq:3.15}
+\end{eqnarray}
+
+Substituindo \eqref{eq:3.14} em \eqref{eq:3.15} e usando o fato de que $c^2=\frac{1}{\mu_0\epsilon_0}$ , obtemos: 
+
+\begin{eqnarray}
+\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon_0]\vb{E}(z,\omega) &=& -\mu_0 \omega^2\epsilon_0\chi_e(z,\omega)\vb{E}(z,\omega)\nonumber\\\nonumber\\
+\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon_0\qty(1+\chi_e(z,\omega))]\vb{E}(z,\omega) &=& 0\nonumber\\\nonumber\\
+\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon(\omega)]\vb{E}(z,\omega) &=& 0,
+\label{eq:3.16}
+\end{eqnarray}
+onde 
+
+\begin{equation}
+\epsilon(\omega) = \epsilon_0(1+\chi_e(z,\omega))
+\label{3.17}
+\end{equation}
+é a contante dielétrica.
+
+Para resolvermos a equação \eqref{eq:3.16}, assumimos uma susceptibilidade e constante dielétrica real. Assim, a solução geral da E.D.P. na direção $+z$ é:      
+
+\begin{equation}
+\vb{E}(z,\omega) = \vb{E}(0,\omega)e^{-iK(\omega)z}
+\label{eq:3.18}
+\end{equation}
+
+Aqui, a constante de propagação $k(\omega)$ é obtida a partir da relação de dispersão da óptica linear
+
+\begin{equation}
+k^2(\omega) = \omega^2\epsilon(\omega)\mu_0=\frac{\omega^2}{c^2}n(\omega),\label{eq:3.19}
+\end{equation}
+
+sendo $n(\omega)$ o índice de reflação do material. Pra uma analise mais minuciosa, vamos expandir $k(\omega)$ em serie de Taylor, fixando $\omega_0$ na frequência central $\omega_c$
+
+\begin{equation}
+k(\omega) = k(\omega_l) + \underbrace{\leftrightarrow{\pdv{k}{\omega}\Big|_{\omega_l}(\omega-\omega_l) + \frac{1}{2}\pdv[2]{k}{\omega}\Big|_{\omega_l}(\omega-\omega_l)^2 + \cdots}}_{\delta\kappa}
+\label{eq:3.20}
+\end{equation}  
+Assim, 
+
+\begin{equation}
+k(\omega) = k(\omega_l) + \delta\kappa.
+\label{eq:3.21}
+\end{equation}  
+Substituindo na equação \eqref{eq:3.18}, a expressão \eqref{eq:3.21}, temos:
+
+\begin{equation}
+\vb{E}(z,\omega) = \vb{E}(0,\omega)e^{-iK(\omega_l)z}e^{-i\delta\kappa z},
+\label{eq:3.22}
+\end{equation}
+onde 
+\begin{equation}
+k^2(\omega) = \omega_l^2\epsilon(\omega_l)\mu_0=\frac{\omega_l^2}{c^2}n(\omega_l).\label{eq:3.23}
+\end{equation}
+Na maior parte dos casos práticos que nos interessam nesse trabalho, a amplitude Fourier será centrada em um vetor de onda médio $k_l$, e só terá valor significativo para o intervalo $\nabla k$ pequeno comparado a $k_l$. 
+
+\section{Solução para equações para um meio atômico de 2 níveis}\label{sec:naolinear}
+
+\chapter{sistema atômico de dois níveis}\label{cap:maxwellbloch}
 
 \blinddocument
 Exemplo de figura:
