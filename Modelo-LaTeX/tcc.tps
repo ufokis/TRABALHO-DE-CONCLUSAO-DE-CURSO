@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=desenvolvimento.tex
+Document=capa.tex
 
 [Frame0_View0,0]
-TopLine=343
-Cursor=13121
+TopLine=0
+Cursor=99
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=dedicatoria.tex
+Document=conclusao.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=0
+Cursor=65
 
 [Frame2]
 Flags=0
@@ -47,10 +47,10 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
-Class=LaTeXView
-Document=bibliotecas.tex
+Class=BibTeXView
+Document=referencias.bib
 
 [Frame2_View0,0]
 TopLine=0
@@ -65,10 +65,10 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=listas-sumario.tex
+Document=ata.tex
 
 [Frame3_View0,0]
 TopLine=0
@@ -83,14 +83,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=macros.tex
+Document=desenvolvimento.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=0
+TopLine=582
+Cursor=26566
 
 [Frame5]
 Flags=0
@@ -101,10 +101,10 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=apendice.tex
+Document=estilo.tex
 
 [Frame5_View0,0]
 TopLine=0
@@ -119,14 +119,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=introducao.tex
+Document=resumo.tex
 
 [Frame6_View0,0]
 TopLine=0
-Cursor=65
+Cursor=32
 
 [Frame7]
 Flags=0
@@ -137,14 +137,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=capa.tex
+Document=epigrafe.tex
 
 [Frame7_View0,0]
 TopLine=0
-Cursor=99
+Cursor=65
 
 [Frame8]
 Flags=0
@@ -155,14 +155,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=conclusao.tex
+Document=agradecimentos.tex
 
 [Frame8_View0,0]
 TopLine=0
-Cursor=101
+Cursor=67
 
 [Frame9]
 Flags=0
@@ -173,10 +173,10 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
-Class=BibTeXView
-Document=referencias.bib
+Class=LaTeXView
+Document=bibliotecas.tex
 
 [Frame9_View0,0]
 TopLine=0
@@ -191,14 +191,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=tcc.tex
+Document=dedicatoria.tex
 
 [Frame10_View0,0]
-TopLine=20
-Cursor=603
+TopLine=0
+Cursor=0
 
 [Frame11]
 Flags=0
@@ -209,14 +209,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=contra-capa.tex
+Document=tcc.tex
 
 [Frame11_View0,0]
-TopLine=0
-Cursor=0
+TopLine=39
+Cursor=2726
 
 [Frame12]
 Flags=0
@@ -227,10 +227,10 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=ata.tex
+Document=contra-capa.tex
 
 [Frame12_View0,0]
 TopLine=0
@@ -245,14 +245,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=estilo.tex
+Document=introducao.tex
 
 [Frame13_View0,0]
 TopLine=0
-Cursor=0
+Cursor=65
 
 [Frame14]
 Flags=0
@@ -263,14 +263,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=resumo.tex
+Document=apendice.tex
 
 [Frame14_View0,0]
 TopLine=0
-Cursor=32
+Cursor=0
 
 [Frame15]
 Flags=0
@@ -281,14 +281,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=epigrafe.tex
+Document=macros.tex
 
 [Frame15_View0,0]
 TopLine=0
-Cursor=65
+Cursor=0
 
 [Frame16]
 Flags=0
@@ -299,16 +299,19 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=600
+NormalPos.right=823
 NormalPos.bottom=754
 Class=LaTeXView
-Document=agradecimentos.tex
+Document=listas-sumario.tex
 
 [Frame16_View0,0]
 TopLine=0
-Cursor=67
+Cursor=0
 
 [SessionInfo]
 FrameCount=17
-ActiveFrame=0
+ActiveFrame=4
+
+[Bookmarks]
+desenvolvimento.tex=383 
 
