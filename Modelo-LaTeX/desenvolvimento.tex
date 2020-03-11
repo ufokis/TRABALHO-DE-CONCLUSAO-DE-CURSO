@@ -175,12 +175,12 @@ Embora a equação \eqref{eq:28} seja semelhante a equação de Heisenberg, exceto p
 
 \chapter{Campo Eletromagnético}
 
-Neste capitulo, revisitamos conceitos importantes do eletromagnetismo, para estudarmos a propagação de pulsos eletromagnéticos em meios atômicos. Assim, primeiramente apresentaremos a propagação em um meio linear e depois expandiremos para um caso de um meio atômico não-linear de dois níveis. 
+Neste capítulo, revisitamos conceitos importantes do eletromagnetismo, para estudarmos a propagação de pulsos eletromagnéticos no meio atômico de 2 níveis . Assim, primeiramente apresentaremos a propagação em um meio linear e depois expandiremos para um caso de um meio atômico de dois níveis. 
 \label{capitulo2}
 
 \section{Equações de Maxwell}
 \label{secao3.1}
-A princípio, sabemos que as leis do electromagnetismo pa um meio podem ser resumidas por quatro equações de Maxwell\cite{jackson1998classical}:
+Em princípio, sabemos que as leis do electromagnetismo para um meio podem ser resumidas nas quatro equações de Maxwell\cite{jackson1998classical}:
 
 \begin{eqnarray}
 \div{\vb{D}} & = & \varrho_l\textrm{~~(Lei de Gauss)},\label{eq:3.1}\\\nonumber\\
@@ -188,7 +188,7 @@ A princípio, sabemos que as leis do electromagnetismo pa um meio podem ser resum
 \curl{\vb{E}} + \pdv{\vb{B}}{t} & = & 0 \textrm{~~(Lei de Faraday)}\label{eq:3.3}\\\nonumber\\
 \div{\vb{B}} & = & 0\textrm{~~(Lei de Gauss para o magnetismo)},\label{eq:3.4}
 \end{eqnarray}
-onde $\vb{E}$ e $\vb{B}$ correspondem aos o vetores de campo elétrico e magnético, $\vb{D}$ e $\vb{H}$ são o deslocamento elétrico e campo campo magnetizante, que se relacionam com $\vb{E}$ and $\vb{B}$ a partir das equações:
+onde $\vb{E}$ e $\vb{B}$ correspondem aos o vetores de campo elétrico e magnético, $\vb{D}$ e $\vb{H}$ são, respectivamente, o deslocamento elétrico e o campo magnetizante, que se relacionam com $\vb{E}$ and $\vb{B}$ a partir das equações:
 
 \begin{equation}
 \vb{D}  =  \epsilon_0\vb{E} + \vb{P}\label{eq:3.5}
@@ -226,45 +226,45 @@ A polarização $\vb{P}$ é comumente decomposta em duas partes:
 \vb{P} = \vb{P^L} + \vb{P^{NL}},
 \label{eq:3.11}
 \end{equation}
-onde $ \vb{P^L} $ representa contribuições que variam de forma linear e $\vb{P^{NL}}$ as contribuições que variam de forma não-linear. 
+onde $ P^L $ representa contribuições que variam de forma linear e $\vb{P^{NL}}$ as contribuições que variam de forma não-linear. 
 
 No próximo subcapítulo \ref{sec:linear} apresentamos a solução para um caso linear onde são desprezados os termos não lineares e, posteriormente, no subcapítulo \ref{sec:naolinear} apresentamos o caso não linear que se aplica ao sistema atômico de dois níveis, ao qual, estudaremos no Capítulo \ref{cap:maxwellbloch}.
 
-\section{Solução das equações para polarização em um meio linear}\label{sec:linear}
+\section{propagação de onda em meio linear}\label{sec:linear}
   
-A equação \eqref{eq:3.10}, normalmente é resolvida somente usando métodos numérico. No entanto, podemos realizar simplificações e aproximações que, ainda assim, nos permita  lidar com problemas práticos da propagação de pulsos em um meio material \cite{diels2006ultrashort}. Em um meio linear podemos reescrever a equação \eqref{eq:3.10} da seguinte forma:
+A equação \eqref{eq:3.10}, normalmente é resolvida somente usando métodos numérico. No entanto, podemos realizar simplificações e aproximações que, ainda assim, nos permita  lidar com problemas práticos da propagação de pulsos em um meio material \cite{diels2006ultrashort}. Para um meio linear, podemos reescrever a equação \eqref{eq:3.10} da seguinte forma:
  
 \begin{equation}
-\pdv[2]{\vb{E}}{z} - \frac{1}{c^2}\pdv[2]{\vb{E}}{t}= \mu_0 \pdv[2]{\vb{P^L}}{t}.\label{eq:3.12}
+\pdv[2]{z}E(z,t) - \frac{1}{c^2}\pdv[2]{t}E(z,t)= \mu_0 \pdv[2]{t}P^L(z,t).
+\label{eq:3.12}
 \end{equation}
 
 Sabemos que em um meio linear, a polarização se relaciona com o Campo elétrico a partir da Susceptibilidade Elétrica $\chi_e$ \cite{jackson1998classical,griffiths2011elet}, seguindo a seguinte expressão: 
 \begin{equation}
-\vb{P^L}(z,t) = \epsilon_0\int_{-\infty}^{t}dt'\chi_e(t')\vb{E}(z,t-t').
+P^L(z,t) = \epsilon_0\int_{-\infty}^{t}dt'\chi_e(t')E(z,t-t').
 \label{eq:3.13}
 \end{equation}
 Reescrevendo no domínio das frequência, obtemos:
 
 \begin{equation}
-\vb{P^L}(z,\omega) = \epsilon_0\chi_e(z,\omega)\vb{E}(z,\omega).
+P^L(z,\omega) = \epsilon_0\chi_e(z,\omega)E(z,\omega).
 \label{eq:3.14}
 \end{equation}
 
 Realizando transformação de Fourier sobre \eqref{eq:3.12}, obtemos:
 
 \begin{eqnarray}
-\qty[\pdv[2]{z} - \frac{1}{c^2}\pdv[2]{t}]\vb{E}(z,t)&=& \mu_0 \pdv[2]{t}\vb{P^L}(z,t)\nonumber\\\nonumber\\
-\qty[\pdv[2]{z} - \frac{1}{c^2}\pdv[2]{t}]\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega \vb{E}(z,\omega)e^{i\omega t}]&=& \mu_0 \pdv[2]{t}\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega \vb{P^L}(z,\omega)e^{i\omega t}]\nonumber\\\nonumber\\
-\qty[\pdv[2]{z} + \omega^2]\vb{E}(z,\omega) &=& -\mu_0 \omega^2\vb{P^L}(z,\omega).
+\qty[\pdv[2]{z} - \frac{1}{c^2}\pdv[2]{t}]E(z,t)&=& \mu_0 \pdv[2]{t}P^L(z,t)\nonumber\\\nonumber\\
+\qty[\pdv[2]{z} - \frac{1}{c^2}\pdv[2]{t}]\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega E(z,\omega)e^{i\omega t}]&=& \mu_0 \pdv[2]{t}\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega P^L(z,\omega)e^{i\omega t}]\nonumber\\\nonumber\\
+\qty[\pdv[2]{z} + \omega^2]E(z,\omega) &=& -\mu_0 \omega^2P^L(z,\omega).
 \label{eq:3.15}
 \end{eqnarray}
-
 Substituindo \eqref{eq:3.14} em \eqref{eq:3.15} e usando o fato de que $c^2=\frac{1}{\mu_0\epsilon_0}$ , obtemos: 
 
 \begin{eqnarray}
-\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon_0]\vb{E}(z,\omega) &=& -\mu_0 \omega^2\epsilon_0\chi_e(z,\omega)\vb{E}(z,\omega)\nonumber\\\nonumber\\
-\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon_0\qty(1+\chi_e(z,\omega))]\vb{E}(z,\omega) &=& 0\nonumber\\\nonumber\\
-\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon(\omega)]\vb{E}(z,\omega) &=& 0,
+\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon_0]E(z,\omega) &=& -\mu_0 \omega^2\epsilon_0\chi_e(z,\omega)E(z,\omega)\nonumber\\\nonumber\\
+\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon_0\qty(1+\chi_e(z,\omega))]E(z,\omega) &=& 0\nonumber\\\nonumber\\
+\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon(\omega)]E(z,\omega) &=& 0,
 \label{eq:3.16}
 \end{eqnarray}
 onde 
@@ -273,87 +273,79 @@ onde
 \epsilon(\omega) = \epsilon_0(1+\chi_e(z,\omega))
 \label{3.17}
 \end{equation}
-é a contante dielétrica.
+é a permissividade do material.
 
-Para resolvermos a equação \eqref{eq:3.16}, assumimos a  susceptibilidade e constante dielétrica são reais. Assim, a solução geral da E.D.P. na direção $+z$ é:      
+Para resolvermos a equação \eqref{eq:3.16}, assumimos a  susceptibilidade elétrica e a permissividade do material são reais. Assim, a solução geral da E.D.P. na direção $+z$ é:      
 
 \begin{equation}
-\vb{E}(z,\omega) = \vb{E}(0,\omega)e^{-ik(\omega)z}
+E(z,\omega) = E(0,\omega)e^{-ik(\omega)z},
 \label{eq:3.18}
 \end{equation}
-
-Aqui, a constante de propagação $k(\omega)$ é obtida a partir da relação de dispersão da óptica linear
-
+onde $k(\omega)$ é a constante de propagação,obtida a partir da relação de dispersão da óptica linear
 \begin{equation}
 k^2(\omega) = \omega^2\epsilon(\omega)\mu_0=\frac{\omega^2}{c^2}n(\omega),\label{eq:3.19}
 \end{equation}
-
-sendo $n(\omega)$ o índice de reflação do material. Pra uma analise mais minuciosa, vamos expandir $k(\omega)$ em serie de Taylor, fixando $\omega_0$ na frequência central $\omega_c$
+em que, $n(\omega)$ é o índice de reflação do material. Pra uma análise mais minuciosa, precisamos expandir $k(\omega)$ em serie de Taylor, fixando $\omega_0$ na frequência central $\omega_c$
 
 \begin{equation}
-k(\omega) = k(\omega_c) + \underbrace{\pdv{k}{\omega}\Big|_{\omega_c}(\omega-\omega_c) + \frac{1}{2}\pdv[2]{k}{\omega}\Big|_{\omega_c}(\omega-\omega_c)^2 + \cdots}_{\delta\kappa}
+k(\omega) = k(\omega_c) + \underbrace{\pdv{k}{\omega}\Big|_{\omega_c}(\omega-\omega_c) + \frac{1}{2}\pdv[2]{k}{\omega}\Big|_{\omega_c}(\omega-\omega_c)^2 + \cdots}_{\Delta\kappa}
 \label{eq:3.20}
 \end{equation}  
 Assim, 
 
 \begin{equation}
-k(\omega) = k(\omega_c) + \delta\kappa.
+k(\omega) = k(\omega_c) + \Delta\kappa.
 \label{eq:3.21}
 \end{equation}  
-Substituindo na equação \eqref{eq:3.18}, a expressão \eqref{eq:3.21}, temos:
+Substituindo \eqref{eq:3.21} na equação de onda \eqref{eq:3.18}, temos:
 
 \begin{equation}
-\vb{E}(z,\omega) = \vb{E}(0,\omega)e^{-iK(\omega_c)z}e^{-i\delta\kappa z},
+E(z,\omega) = E(0,\omega)e^{-ik_cz}e^{-i\Delta\kappa z},
 \label{eq:3.22}
 \end{equation}
 onde 
 \begin{equation}
-k^2(\omega_c) = \omega_c^2\epsilon(\omega_c)\mu_0=\frac{\omega_c^2}{c^2}n(\omega_c).\label{eq:3.23}
+k_c^2 = k^2(\omega_c) = \omega_c^2\epsilon(\omega_c)\mu_0=\frac{\omega_c^2}{c^2}n(\omega_c).\label{eq:3.23}
 \end{equation}
-Para o casos práticos que nos interessam nesse trabalho, podemos centralizar a amplitude Fourier em um vetor de numero de onda médio $k_c$, e só terá valor significativo para o intervalo $\Delta k$ pequeno comparado a $k_c$. 
 
-No apêndice "A" é introduzido de uma função envelope que varia lentamente no tempo, após a separação de um termo que oscila rapidamente, cf. Eqs."'"', podemos definir agora uma amplitude que varia lentamente na coordenada espacial:
+Para o caso prático que nos interessa nesse trabalho, podemos centralizar a amplitude Fourier em um vetor de número de onda médio $k_c$, tendo valor significativo apenas quando o intervalo $\Delta \kappa$ é pequeno comparado a $k_c$. No apêndice $A$ é introduzido uma função envelope que varia lentamente no tempo, após a separação de um termo que oscila rapidamente. Partindo desse princípio, podemos definir uma amplitude que varia lentamente na coordenada espacial:
 
 \begin{equation}
-\tilde{\mathcal{E}}(\omega,z) \equiv \tilde{E}(\omega + \omega_c, 0)e^{-i\delta k z}
+\tilde{\mathcal{E}}(\omega,z) \equiv \tilde{E}(\omega + \omega_c, 0)e^{-i\Delta \kappa z}.
 \label{eq:3.24}
 \end{equation}  
-
-Isso requer que:
-
+Isso requer que
 \begin{equation}
-\norm{\dv{z}\tilde{\mathcal{E}}(\omega,z)} \ll k_l\tilde{\mathcal{E}}(\omega,z)
+\norm{\dv{z}\tilde{\mathcal{E}}(\omega,z)} \ll k_c\tilde{\mathcal{E}}(\omega,z)
 \label{eq:3.25}
 \end{equation}
 pois, partimos do fato que:
-
 \begin{equation}
-\norm{\frac{\Delta k}{k_l}} \ll 1
+\norm{\frac{\Delta \kappa}{k_c}} \ll 1.
 \label{eq:3.26}
 \end{equation}
 
-Aplicando a transformada de Fourier inversa à equação \eqref{eq:3.22} na forma complexa e substituindo o resultado \eqref{eq:3.2} , obtemos:
-
+Aplicando a transformada de Fourier inversa à equação \eqref{eq:3.22} na forma complexa, obtemos:
 \begin{eqnarray}
-E(z,t) & = & \frac{1}{2\pi}\int_{-\infty}^\infty d\omega E(z,\omega)e^{i\omega t}\nonumber\\
-			 & = & \frac{1}{2\pi}\int_{-\infty}^\infty d\omega E(0,\omega)e^{-ik_cz - i\delta z}e^{i\omega t}\nonumber\\
-			 & = & \frac{1}{2\pi}\qty{\int_{-\infty}^\infty d\omega E(0,\omega)e^{-ik_cz - i\delta z}e^{i\omega t} }  e^{iw_ct}e^{-iw_ct}\nonumber\\
-			 & = & \frac{1}{2\pi}\qty{\int_{-\infty}^\infty d\omega E(0,\omega)e^{ - i\delta z}e^{i(\omega-w_c)t} }  e^{iw_ct-ik_cz}\nonumber\\
-			 & = & \frac{1}{2\pi}\qty{\int_{-\infty}^\infty d\omega E(0,\omega + \omega_c)e^{ - i\delta z}e^{i\omega t} }  e^{iw_ct-ik_cz}
+\tilde{E}(z,t) & = & \frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{E}(z,\omega)e^{i\omega t}\nonumber\\
+			 & = & \frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{E}(0,\omega)e^{-ik_cz - i\delta z}e^{i\omega t}\nonumber\\
+			 & = & \frac{1}{2\pi}\qty{\int_{-\infty}^\infty d\omega \tilde{E}(0,\omega)e^{-ik_cz - i\delta z}e^{i\omega t} }  e^{iw_ct}e^{-iw_ct}\nonumber\\
+			 & = & \frac{1}{2\pi}\qty{\int_{-\infty}^\infty d\omega \tilde{E}(0,\omega)e^{ - i\delta z}e^{i(\omega-w_c)t} }  e^{iw_ct-ik_cz}\nonumber\\
+			 & = & \frac{1}{2\pi}\qty{\int_{-\infty}^\infty d\omega \tilde{E}(0,\omega + \omega_c)e^{ - i\delta z}e^{i\omega t} }  e^{iw_ct-ik_cz}
 \label{eq:3.27}
 \end{eqnarray}
 
 Substituindo  \eqref{eq:3.24} em \eqref{eq:3.27}, temos:
 
 \begin{equation}
-E(z,t)  =  \frac{1}{2}\qty{\frac{1}{\pi}\int_{-\infty}^\infty d\omega \mathcal{E}(z,\omega)e^{i\omega t} }  e^{iw_ct-ik_cz}
+\tilde{E}(z,t)  =  \frac{1}{2}\qty{\frac{1}{\pi}\int_{-\infty}^\infty d\omega \mathcal{\tilde{E}}(z,\omega)e^{i\omega t} }  e^{iw_ct-ik_cz}
 \label{eq:3.28}
 \end{equation}
 
-Assim, usando relação do apêndice " ", obtemos 
+Assim, usando relação do apêndice $A$, obtemos 
 
 \begin{equation}
-E(z,t)  =  \frac{1}{2}\mathcal{E}(z,\omega)e^{iw_ct-ik_cz}
+\tilde{E}(z,t)  =  \frac{1}{2}\mathcal{\tilde{E}}(z,\omega)e^{iw_ct-ik_cz}
 \label{eq:3.29}
 \end{equation}
 onde $\mathcal{E}(z,t)$ é o envelope do pulso que varia lentamente no espaço e no tempo.
@@ -379,22 +371,77 @@ P^L(z,t) & = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega \qty[							 \epsi
 Substituindo \eqref{eq:3.24} em \eqref{eq:3.31} e considerando 
 o fato que $\pdv[n]{\epsilon}{\omega}\Big|_{\omega_c} = \epsilon^{(n)}(\omega_c)$ , obtemos:
 \begin{eqnarray}
-P^L(z,t) & = & \frac{e^{i\omega t - ik_cz}}{2\pi} \int_{-\infty}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{\epsilon^{(n)}(\omega_c)}{n!}\omega^n]\mathcal{E}(z, \omega)e^{i\omega t }\nonumber\\
-				 & = & \frac{e^{i\omega t - ik_cz}}{2}\Bigg[\frac{\epsilon(\omega_c) - \epsilon_0 }{\pi} \int_{-\infty}^{\infty} d\omega \mathcal{E}(z, \omega)e^{i\omega t }\nonumber\\
-				 & + & \frac{1}{\pi}\int_{-\infty}^{\infty} d\omega\sum_{n=1}^\infty \frac{\epsilon^{(n)}(\omega_c)}{n!}\omega^n\mathcal{E}(z, \omega)e^{i\omega t }\Bigg]\nonumber\\
+P^L(z,t) & = & \frac{e^{i\omega t - ik_cz}}{2\pi} \int_{-\infty}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{\epsilon^{(n)}(\omega_c)}{n!}\omega^n]\mathcal{E}(z, \omega)e^{i\omega t }\nonumber\\\nonumber\\				 & = & \frac{e^{i\omega t - ik_cz}}{2}\Bigg[\frac{\epsilon(\omega_c) - \epsilon_0 }{\pi} \int_{-\infty}^{\infty} d\omega \mathcal{E}(z, \omega)e^{i\omega t }\nonumber\\
+				 & + & \frac{1}{\pi}\int_{-\infty}^{\infty} d\omega\sum_{n=1}^\infty \frac{\epsilon^{(n)}(\omega_c)}{n!}\omega^n\mathcal{E}(z, \omega)e^{i\omega t }\Bigg]\nonumber\\\nonumber\\
 				 & = & \frac{e^{i\omega t - ik_cz}}{2} \Bigg[ \frac{\epsilon(\omega_c) - \epsilon_0 }{\pi} \int_{-\infty}^{\infty} d\omega \mathcal{E}(z, \omega)e^{i\omega t }\nonumber\\
-				 & + & \frac{1}{\pi}\int_{-\infty}^{\infty} d\omega\sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\mathcal{E}(z, \omega)\pdv{t}e^{i\omega t}\Bigg]\nonumber\\
+				 & + & \frac{1}{\pi}\int_{-\infty}^{\infty} d\omega\sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\mathcal{E}(z, \omega)\pdv{t}e^{i\omega t}\Bigg]\nonumber\\\nonumber\\
 				& = & \frac{e^{i\omega t - ik_cz}}{2} \Bigg[ \frac{\epsilon(\omega_c) - \epsilon_0 }{\pi} \int_{-\infty}^{\infty} d\omega \mathcal{E}(z, \omega)e^{i\omega t }\nonumber\\
-				& + & \frac{1}{\pi}\sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\pdv{t}\int_{-\infty}^{\infty} d\omega\mathcal{E}(z, \omega)e^{i\omega t}\Bigg]\nonumber\\
-				& = & \frac{1}{2} \qty{\qty[\epsilon(\omega_c) - \epsilon_0] \mathcal{E}(z, t) + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\pdv[n]{t}\mathcal{E}(z, \omega)}e^{i\omega t - ik_cz}\nonumber\\
+				& + & \frac{1}{\pi}\sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\pdv{t}\int_{-\infty}^{\infty} d\omega\mathcal{E}(z, \omega)e^{i\omega t}\Bigg]\nonumber\\\nonumber\\
+				& = & \frac{1}{2} \qty{\qty[\epsilon(\omega_c) - \epsilon_0] \mathcal{E}(z, t) + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\pdv[n]{t}\mathcal{E}(z, \omega)}e^{i\omega t - ik_cz}\nonumber\\\nonumber\\
 				& = & \frac{1}{2} \mathcal{P^L}(z,t)e^{i\omega t - ik_cz},
 \label{eq:3.32}
 \end{eqnarray}
 onde $\mathcal{P^L}(z,t)$, é o envelope da polarização que varia lentamente em relação o espaço e tempo. o próximo passo é substituir o campo elétrico \eqref{eq:3.29} e a polarização \eqref{eq:3.32} na equação de propagação de onda \eqref{eq:3.12}. Assim, temos: 
+
 \begin{eqnarray}
-\frac{1}{2}\qty[\pdv[2]{z}\mathcal{E}(z,t) - 2ik_c\pdv{z}\mathcal{E}(z,t) - {k_c}^2\mathcal{E}(z,t)] &=& \frac{1}{2c^2}\qty[\pdv[2]{t}\mathcal{E}(z,t) + 2i\omega_c\pdv{t}\mathcal{E}(z,t) - {\omega_c}^2\mathcal{E}(z,t)] \\&+& \frac{\mu_0}{2c^2}\qty[\pdv[2]{t}\mathcal{E}(z,t) + 2i\omega_c\pdv{t}\mathcal{E}(z,t) - {\omega_c}^2\mathcal{E}(z,t)]
-\label{eq:}
+\frac{1}{2}\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\mathcal{E}(z,t)  & = & \frac{1}{2c^2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\mathcal{E}(z,t)  +  \frac{\mu_0}{2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t}\nonumber\\      & - & {\omega_c}^2\bigg]\mathcal{P}(z,t) 
+\label{eq:3.33}
 \end{eqnarray}
+
+Substituindo $\mathcal{P}(z,t)$, levando e conta que $(c^2)^{-1} = \mu_0\epsilon_0$, temos:
+\begin{eqnarray}
+\frac{1}{2}\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\mathcal{E}(z,t)  & = & \frac{\mu_0\epsilon_0}{2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\mathcal{E}(z,t)  +  \frac{\mu_0}{2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t}\nonumber\\      																																 & - & {\omega_c}^2\bigg]\qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\pdv[n]{t}]\mathcal{E}(z, t)\nonumber\\\nonumber\\																																			& = & \frac{\mu_0\epsilon_0}{2}\bigg[\cancel{\pdv[2]{t}} + \cancel{2i\omega_c\pdv{t}} - \cancel{{\omega_c}^2}\bigg]\mathcal{E}(z,t)  +  \frac{\mu_0\epsilon(\omega_c)}{2}\bigg[\pdv[2]{t}\nonumber\\																						   	 & + & 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\mathcal{E}(z, \omega) - \frac{\mu_0\epsilon_0}{2}\bigg[\cancel{\pdv[2]{t}} + \cancel{2i\omega_c\pdv{t}} \nonumber\\																																			 & - & \cancel{{\omega_c}^2}\bigg]\mathcal{E}(z,t) + \sum_{n=1}^\infty \frac{(-i)^n}{2n!}\mu_0\epsilon^{(n)}(\omega_c)\bigg[\pdv[n+2]{t} + 2i\omega_c\pdv[n+1]{t}\nonumber\\
+																																			& - & {\omega_c}^2\pdv[n]{t}\bigg]\mathcal{E}(z, t)\nonumber\\\nonumber\\
+																																			& = & \frac{\mu_0\epsilon(\omega_c)}{2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\mathcal{E}(z, \omega) \nonumber\\ 																	 & - & \frac{i\mu_0\epsilon(\omega_c)}{2}\bigg[2i\omega_c\pdv[2]{t} - {\omega_c}^2\pdv{t} + \frac{i\epsilon(\omega_c){\omega_c}^2}{2}\pdv[2]{t}\bigg]\mathcal{E}(z, t)\nonumber\\  																																		 & - & \sum_{n=3}^\infty \frac{(-i)^{n}}{2n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c)\nonumber\\            					 & + & \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\mathcal{E}(z, t)\nonumber\\																																			
+\label{eq:3.34}
+\end{eqnarray}
+
+Partindo do fato que $k^2=\mu_0\epsilon(\omega_c){\omega_c}^2$, temos
+\begin{eqnarray}
+\frac{1}{2}\qty[\pdv[2]{z} - 2ik_c\pdv{z} - \cancel{{k_c}^2}]\mathcal{E}(z,t)  & = & - \cancel{\frac{{k_c}^2}{2}\mathcal{E}(z,t)} + \frac{i\mu_0\omega_c\epsilon(\omega_c)}{2}\big[\omega_c + 2\big]\pdv{t}\mathcal{E}(z,t)\nonumber\\ & + &\frac{\mu_0\epsilon(\omega_c)}{2}\bigg[1 + 2\omega_c + \frac{{\omega_c}^2\epsilon(\omega_c)}{2}\bigg]\pdv[2]{t}\mathcal{E}(z, t)\nonumber\\  & - & \sum_{n=3}^\infty \frac{(-i)^{n}}{2n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c)\nonumber\\														& + & \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\mathcal{E}(z, t)
+\label{eq:3.35}
+\end{eqnarray}
+
+Calculando a velocidade de grupo $(v_g)^{-1} = \pdv{k}{\omega}\big|_{\omega_c}$ e $k_c''=\pdv[2]{k}{\omega}\big|_{\omega_c}$, obtemos:
+\begin{equation}
+\frac{1}{v_g}  = \frac{\mu_0\omega_c\epsilon(\omega_c)}{2k_c}\qty[\omega_c+2] 
+\label{eq:3.36}
+\end{equation}
+e
+\begin{equation}
+k'' = -\frac{1}{k_cv^2}+ \frac{\mu_0\epsilon(\omega_c)}{k_c}\qty[1 + 2\omega_c + \frac{{\omega_c}^2\epsilon(\omega_c)}{2}]
+\label{eq:3.37}
+\end{equation}
+
+Substituindo \eqref{eq:3.36} e \eqref{eq:3.37} em \eqref{eq:3.35}, obtemos:
+\begin{eqnarray}
+\frac{1}{2}\qty[\pdv[2]{z} - 2ik_c\pdv{z} ]\mathcal{E}(z,t)  & = & \frac{ik_c}{v_g}\pdv{t}\mathcal{E}(z,t)\nonumber + \frac{k_ck''}{2}\pdv[2]{t}\mathcal{E}(z, t) + \frac{1}{2{v_g}^2}\pdv[2]{t}\mathcal{E}(z, t)\nonumber\\  & - & \sum_{n=3}^\infty \frac{(-i)^{n}}{2n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c)\nonumber\\	& + & \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\mathcal{E}(z, t)\nonumber\\\nonumber\\ & = & \qty[\frac{1}{2{v_g}^2}\pdv[2]{t} + \frac{ik_c}{v_g}\pdv{t}]\mathcal{E}(z,t) + \frac{k_ck''}{2}\pdv[2]{t}\mathcal{E}(z, t) + \nonumber\\  & - & \sum_{n=3}^\infty \frac{(-i)^{n}}{2n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c)\nonumber\\	& + & \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\mathcal{E}(z, t)
+\label{eq:3.38}
+\end{eqnarray}
+
+Partindo do fato que 
+\begin{equation}
+\norm{\pdv[2]{z}\mathcal{E}(z,t)}\ll k_c\norm{\pdv{z}\mathcal{E}(z,t)}
+\label{eq:3.39}
+\end{equation}
+e
+\begin{equation}
+\norm{\pdv[2]{t}\mathcal{E}(z,t)}\ll \omega_c\norm{\pdv{t}\mathcal{E}(z,t)},
+\label{eq:3.40}
+\end{equation}
+reduzimos a equação de propagação de onda \eqref{eq:3.38} à:
+\begin{equation}
+\pdv{z}\mathcal{E}(z,t) + \frac{1}{v_g}\pdv{t}\mathcal{E}(z,t) - \frac{ik''}{2}\pdv[2]{t}\mathcal{E}(z,t) + \mathcal{D} = 0
+\label{eq:3.41}
+\end{equation}
+onde 
+\begin{equation}
+ \mathcal{D} = \frac{i\mu_0}{2k_c}\sum_{n=3}^\infty \frac{(-i)^{n}}{2n!} \bigg[n(n-1)\epsilon^{(n-2)}(\omega_c) + 2n\omega_c\epsilon^{(n-1)}(\omega_c) + {\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\mathcal{E}(z, t) 
+\label{eq:3.42}
+\end{equation}  
+
+Não temos interesse de resolver esta equação. Apenas a utilizaremos essa aproximação para derivar a equação para o meio atômico de dois níveis no subcapítulo a seguir.
+
 \section{Solução para equações para um meio atômico de 2 níveis}\label{sec:naolinear}
 
 \chapter{sistema atômico de dois níveis}\label{cap:maxwellbloch}

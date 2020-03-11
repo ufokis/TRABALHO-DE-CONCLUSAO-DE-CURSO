@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.25)  6 MAR 2020 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.25)  10 MAR 2020 22:02
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -314,6 +314,9 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count275
 \c@blind@pangrammax=\count276
 ) (bibliotecas.tex
+(C:\Users\Eliton\AppData\Roaming\MiKTeX\2.9\tex\latex\cancel\cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
 (C:\Users\Eliton\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrextend.sty
 Package: scrextend 2020/01/24 v3.29 KOMA-Script package (extend other classes w
 ith features of KOMA-Script classes)
@@ -1204,172 +1207,189 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
                    \relax 
 l.264 \begin{eqnarray}
                        [10]
+Underfull \vbox (badness 1824) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 321.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 321.
 pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.324 \begin{equation}
-                       [11]
-Underfull \vbox (badness 7704) has occurred while \output is active []
+l.321 \end{equation}
+                     [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 370.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 370.
 pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.378 \end{eqnarray}
+l.370 \end{eqnarray}
                      [12]
-Overfull \hbox (16.17072pt too wide) in alignment at lines 394--397
- [][][] []
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 397.
+(babel)             in language  on input line 389.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 397.
+(babel)             in language  on input line 389.
 pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.397 \end{eqnarray}
+l.389 \end{eqnarray}
                      [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 398.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 400.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 400.
+(babel)             in language  on input line 409.
 pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.400 \chapter
-              {sistema atômico de dois níveis}\label{cap:maxwellbloch} [14]
-Cap\'{\i }tulo 4.
+l.409 \end{equation}
+                     [14]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 400.
+(babel)             in language  on input line 445.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 447.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 447.
 pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.402 \blinddocument
-                     [15
-
-
-]
+l.447 \chapter
+              {sistema atômico de dois níveis}\label{cap:maxwellbloch} [15]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 447.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 447.
 pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.402 \blinddocument
-                     [16
+l.447 \chapter
+              {sistema atômico de dois níveis}\label{cap:maxwellbloch} [16]
+Cap\'{\i }tulo 4.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 447.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 449.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 449.
+pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.449 \blinddocument
+                     [17
+
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 449.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 449.
+pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.449 \blinddocument
+                     [18
 
 
 ]
 Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 449.
 
 Package blindtext Warning: brazilian not defined, using English instead.
-(blindtext)                 on input line 402.
+(blindtext)                 on input line 449.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 449.
 
 Package blindtext Warning: brazilian not defined, using English instead.
-(blindtext)                 on input line 402.
+(blindtext)                 on input line 449.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 449.
 
 Package blindtext Warning: brazilian not defined, using English instead.
-(blindtext)                 on input line 402.
+(blindtext)                 on input line 449.
 
 
 Package blindtext Warning: brazilian not defined, using English instead.
-(blindtext)                 on input line 402.
+(blindtext)                 on input line 449.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 449.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
-pdfTeX warning (ext4): destination with the same identifier (name{page.17}) has
+(babel)             in language  on input line 449.
+pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.402 \blinddocument
-                     [17]
+l.449 \blinddocument
+                     [19]
 
 Package blindtext Warning: brazilian not defined, using English instead.
-(blindtext)                 on input line 402.
+(blindtext)                 on input line 449.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 449.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 449.
 
 Package blindtext Warning: brazilian not defined, using English instead.
-(blindtext)                 on input line 402.
+(blindtext)                 on input line 449.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 402.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 449.
 
 (C:\latex\Miktex\tex\latex\psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 402.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 449.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 449.
 
 
 Package blindtext Warning: brazilian not defined, using English instead.
-(blindtext)                 on input line 402.
+(blindtext)                 on input line 449.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 449.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
-pdfTeX warning (ext4): destination with the same identifier (name{page.18}) has
+(babel)             in language  on input line 449.
+pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.402 \blinddocument
-                     [18]
+l.449 \blinddocument
+                     [20]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 449.
 
 
 Package blindtext Warning: brazilian not defined, using English instead.
-(blindtext)                 on input line 402.
+(blindtext)                 on input line 449.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
+(babel)             in language  on input line 449.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
-pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.402 \blinddocument
-                     [19]
+(babel)             in language  on input line 449.
+[21]
 Package epstopdf Info: Source file: <figuras_do_trabalho/fig1.eps>
 (epstopdf)                    date: 2020-02-06 09:42:39
 (epstopdf)                    size: 127273 bytes
@@ -1379,60 +1399,56 @@ pdf>
 (epstopdf)                    size: 5785 bytes
 (epstopdf)             Command: <epstopdf --outfile=figuras_do_trabalho/fig1-ep
 s-converted-to.pdf figuras_do_trabalho/fig1.eps>
-(epstopdf)             \includegraphics on input line 407.
+(epstopdf)             \includegraphics on input line 454.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=454, 333.245pt x 190.7125pt>
+<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=474, 333.245pt x 190.7125pt>
 
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/fig1-eps-converted-to.pdf  used on
- input line 407.
+ input line 454.
 (pdftex.def)             Requested size: 273.14923pt x 156.32996pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 408.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 455.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 416.
+(babel)             in language  on input line 463.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 427.
+(babel)             in language  on input line 474.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 452.
+(babel)             in language  on input line 499.
 
 Underfull \vbox (badness 1924) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 457.
+(babel)             in language  on input line 504.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 457.
-pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.457 \begin{lstlisting}
-                         [20 <./figuras_do_trabalho/fig1-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 457.
+(babel)             in language  on input line 504.
+ [22 <./figuras_do_trabalho/fig1-eps-converted-to.pdf>]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 504.
+
 (C:\latex\Miktex\tex\latex\psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 462.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 509.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 469.
+(babel)             in language  on input line 516.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 489.
+(babel)             in language  on input line 536.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 489.
- [21]
+(babel)             in language  on input line 536.
+ [23]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 489.
+(babel)             in language  on input line 536.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 489.
- [22
+(babel)             in language  on input line 536.
+ [24
 
 
 ]
 Cap\'{\i }tulo 6.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 489.
+(babel)             in language  on input line 536.
 Package epstopdf Info: Source file: <figuras_do_trabalho/fig1.eps>
 (epstopdf)                    date: 2020-02-06 09:42:39
 (epstopdf)                    size: 127273 bytes
@@ -1442,24 +1458,24 @@ pdf>
 (epstopdf)                    size: 5785 bytes
 (epstopdf)             Command: <epstopdf --outfile=figuras_do_trabalho/fig1-ep
 s-converted-to.pdf figuras_do_trabalho/fig1.eps>
-(epstopdf)             \includegraphics on input line 514.
+(epstopdf)             \includegraphics on input line 561.
 Package epstopdf Info: Output file is already uptodate.
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/fig1-eps-converted-to.pdf  used on
- input line 514.
+ input line 561.
 (pdftex.def)             Requested size: 273.14923pt x 156.32996pt.
 ) (conclusao.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
- [23]
+ [25]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
- [24
+ [26
 
 
 ]
@@ -1467,19 +1483,6 @@ Cap\'{\i }tulo 7.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 ) (tcc.bbl
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [25]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [26
-
-
-]) (apendice.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
@@ -1492,6 +1495,19 @@ Package babel Info: Redefining portuges shorthand "|
  [28
 
 
+]) (apendice.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [29]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [30
+
+
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
@@ -1499,7 +1515,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
- [29
+ [31
 
 
 ]
@@ -1507,7 +1523,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
- [30
+ [32
 
 
 ]
@@ -1519,13 +1535,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 72.
- [31]
+ [33]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
  (tcc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: 12C0605FA8FAD9A580920F2DBDAF231F;1857.
+(rerunfilecheck)             Checksum: F9618B131A7AF72823AE77056B3A977C;1823.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1533,13 +1549,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 24399 strings out of 492973
- 410811 string characters out of 3141237
- 703489 words of memory out of 3000000
- 27722 multiletter control sequences out of 15000+200000
+ 24440 strings out of 492973
+ 411396 string characters out of 3141237
+ 705313 words of memory out of 3000000
+ 27748 multiletter control sequences out of 15000+200000
  566326 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,17n,75p,928b,1231s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,18n,75p,1134b,1231s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/latex/Miktex/fonts/enc/dvips/base/8r.enc}<C:/latex/Miktex/fonts/type1/pub
 lic/amsfonts/cm/cmbsy10.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/latex/Mik
@@ -1550,13 +1566,14 @@ ic/amsfonts/cm/cmmi12.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmmi6
 msfonts/cm/cmr6.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
 :/latex/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/latex/Miktex/fonts
 /type1/public/amsfonts/cm/cmsy6.pfb><C:/latex/Miktex/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-<C:/latex/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><C:/latex/Miktex/fonts/type
-1/urw/times/utmb8a.pfb><C:/latex/Miktex/fonts/type1/urw/times/utmr8a.pfb><C:/la
-tex/Miktex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tcc.pdf (51 pages, 551892 bytes).
+s/cm/cmsy8.pfb><C:/latex/Miktex/fonts/type1/public/amsfonts/latxfont/line10.pfb
+><C:/latex/Miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/latex/Mikt
+ex/fonts/type1/urw/courier/ucrr8a.pfb><C:/latex/Miktex/fonts/type1/urw/times/ut
+mb8a.pfb><C:/latex/Miktex/fonts/type1/urw/times/utmr8a.pfb><C:/latex/Miktex/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on tcc.pdf (53 pages, 563811 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 163 named destinations out of 1000 (max. 500000)
+ 642 PDF objects out of 1000 (max. 8388607)
+ 174 named destinations out of 1000 (max. 500000)
  216 words of extra memory for PDF output out of 10000 (max. 10000000)
 
