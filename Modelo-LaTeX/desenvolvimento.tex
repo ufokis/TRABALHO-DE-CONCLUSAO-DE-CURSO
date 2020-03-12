@@ -179,7 +179,7 @@ conhecida como equação de \textbf{Liouville-von Neumann}, que descreve a evoluçã
 
 \chapter{PROPAGAÇÃO DE ONDAS ELETROMAGNETICA EM MEIOS POLARIZADOS}
 
-Neste capítulo, revisitamos conceitos importantes do eletromagnetismo, para estudarmos a propagação de pulsos eletromagnéticos no meio atômico de 2 níveis . Assim, primeiramente apresentaremos a propagação em um meio linear e depois expandiremos para um caso de um meio atômico de dois níveis. 
+Neste capítulo, revisitamos conceitos importantes do eletromagnetismo, que permitira estudarmos a propagação de pulsos eletromagnéticos no meio atômico de 2 níveis . Para isso, primeiramente apresentaremos a propagação em um meio linear e depois expandiremos para um caso de um meio atômico. 
 \label{capitulo2}
 
 \section{Equações de Maxwell}
@@ -302,7 +302,7 @@ onde
 k_c^2 = k^2(\omega_c) = \omega_c^2\epsilon(\omega_c)\mu_0=\frac{\omega_c^2}{c^2}n(\omega_c).\label{eq:3.23}
 \end{equation}
 
-Para o caso prático que nos interessa nesse trabalho, centralizamos a amplitude Fourier em um número de onda médio $k_c$, tendo valor significativo apenas quando o intervalo $\Delta \kappa$ é pequeno comparado a $k_c$. No apêndice $A$ é introduzido uma função envelope que varia lentamente no tempo, após a separação de um termo que oscila rapidamente. Partindo desse princípio, podemos definir uma amplitude que varia lentamente na coordenada espacial:
+Para o caso prático que nos interessa nesse trabalho, centralizamos a amplitude Fourier em um número de onda médio $k_c$, tendo valor significativo apenas quando o intervalo $\Delta \kappa$ é pequeno comparado a $k_c$. No apêndice $A$ é introduzido uma função da envoltória que varia lentamente no tempo, após a separação de um termo que oscila rapidamente. Partindo desse princípio, podemos definir uma envoltória que varia lentamente na coordenada espacial:
 \begin{equation}
 \tilde{\mathcal{E}}(\omega,z) \equiv \tilde{E}(\omega + \omega_c, 0)e^{-i\Delta \kappa z}.
 \label{eq:3.24}
@@ -331,10 +331,10 @@ Substituindo  \eqref{eq:3.24} em \eqref{eq:3.27}, temos:
 \end{equation}
 Assim, usando relação do apêndice $A$, obtemos 
 \begin{equation}
-\tilde{E}(z,t)  =  \frac{1}{2}\mathcal{\tilde{E}}(z,\omega)e^{iw_ct-ik_cz}
+\tilde{E}(z,t)  =  \frac{1}{2}\mathcal{\tilde{E}}(z,i)e^{iw_ct-ik_cz}
 \label{eq:3.29}
 \end{equation}
-onde $\mathcal{E}(z,t)$ é o envelope do pulso que varia lentamente no espaço e no tempo.
+onde $\mathcal{E}(z,t)$ é a envoltória do pulso que varia lentamente no espaço e no tempo.
 
 Agora, precisamos obter uma expressão para $P^L(z,t)$. Para isso, reescrevemos \eqref{eq:3.14} em termos de $\epsilon(w)$ e expandimos $\epsilon(w)$ em serie de Taylor em torno de $\omega_c$, assim como fizemos para $k(\omega)$, de forma que:  
 \begin{eqnarray}
@@ -354,7 +354,7 @@ o fato que $\pdv[n]{\epsilon}{\omega}\Big|_{\omega_c} = \epsilon^{(n)}(\omega_c)
 P^L(z,t) & = & \frac{e^{i\omega t - ik_cz}}{2\pi} \int_{-\infty}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{\epsilon^{(n)}(\omega_c)}{n!}\omega^n]\mathcal{E}(z, \omega)e^{i\omega t }\nonumber\\\nonumber\\& = & \frac{e^{i\omega t - ik_cz}}{2}\Bigg[\frac{\epsilon(\omega_c) - \epsilon_0 }{\pi} \int_{-\infty}^{\infty} d\omega \mathcal{E}(z, \omega)e^{i\omega t }\nonumber\\& + & \frac{1}{\pi}\int_{-\infty}^{\infty} d\omega\sum_{n=1}^\infty \frac{\epsilon^{(n)}(\omega_c)}{n!}\omega^n\mathcal{E}(z, \omega)e^{i\omega t }\Bigg]\nonumber\\\nonumber\\& = & \frac{e^{i\omega t - ik_cz}}{2} \Bigg[ \frac{\epsilon(\omega_c) - \epsilon_0 }{\pi} \int_{-\infty}^{\infty} d\omega \mathcal{E}(z, \omega)e^{i\omega t }\nonumber\\& + & \frac{1}{\pi}\int_{-\infty}^{\infty} d\omega\sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\mathcal{E}(z, \omega)\pdv{t}e^{i\omega t}\Bigg]\nonumber\\\nonumber\\& = & \frac{e^{i\omega t - ik_cz}}{2} \Bigg[ \frac{\epsilon(\omega_c) - \epsilon_0 }{\pi} \int_{-\infty}^{\infty} d\omega \mathcal{E}(z, \omega)e^{i\omega t }\nonumber\\& + & \frac{1}{\pi}\sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\pdv{t}\int_{-\infty}^{\infty} d\omega\mathcal{E}(z, \omega)e^{i\omega t}\Bigg]\nonumber\\\nonumber\\& = & \frac{1}{2} \qty{\qty[\epsilon(\omega_c) - \epsilon_0] \mathcal{E}(z, t) + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\pdv[n]{t}\mathcal{E}(z, \omega)}e^{i\omega t - ik_cz}\nonumber\\\nonumber\\& = & \frac{1}{2} \mathcal{P^L}(z,t)e^{i\omega t - ik_cz},
 \label{eq:3.32}
 \end{eqnarray}
-onde $\mathcal{P^L}(z,t)$, é o envelope da polarização que varia lentamente em relação o espaço e tempo. o próximo passo é substituir o campo elétrico \eqref{eq:3.29} e a polarização \eqref{eq:3.32} na equação de propagação de onda \eqref{eq:3.12}. Assim, temos: 
+onde $\mathcal{P^L}(z,t)$, é a envoltória da polarização que varia lentamente em relação o espaço e tempo. o próximo passo é substituir o campo elétrico \eqref{eq:3.29} e a polarização \eqref{eq:3.32} na equação de propagação de onda \eqref{eq:3.12}. Assim, temos: 
 \begin{eqnarray}
 \frac{1}{2}\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\mathcal{E}(z,t) & = & \frac{1}{2c^2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\mathcal{E}(z,t)  + \frac{\mu_0}{2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t}\nonumber\\ & - & {\omega_c}^2\bigg]\mathcal{P}(z,t). 
 \label{eq:3.33}
@@ -415,7 +415,7 @@ Não temos interesse de resolver esta equação. Apenas utilizaremos essa aproximaç
 
 \section{PROPAGAÇÃO DE ONDA em um meio atômico de 2 níveis}\label{sec:naolinear}
 
-A discussão sobre propagação de onda  no subcapítulo \ref{sec:linear} se limitava a interação com meios lineares. Porém, o que nos interessa neste trabalho é descrever a interação de campo elétrico com meio atômico de dois níveis, que possui polarização não linear em ressonância com o campo elétrico. Para isso, vamos  complementar a equação \eqref{eq:3.41} adicionando a polarização do meio atômico não linear, definindo que essa polarização também pode ser decomposta em um envoltório que varia lentamente no tempo e espaço e outra contribuição que oscila rapidamente
+A discussão sobre propagação de onda  no subcapítulo \ref{sec:linear} se limitava a interação com meios lineares. Porém, o que nos interessa neste trabalho é descrever a interação de campo elétrico com meio atômico de dois níveis, que possui polarização não linear em ressonância com o campo elétrico. Para isso, precisamos complementar a equação \eqref{eq:3.41} adicionando a polarização do meio atômico não linear, definindo que essa polarização também pode ser decomposta em um envoltório que varia lentamente no tempo e espaço e outra contribuição que oscila rapidamente
 \begin{equation}
 P^{NL}(z,t) \equiv \mathcal{\tilde{P}}^{NL}(z,t)e^{iw_ct-ik_cz} + c.c.
 \label{eq:3.43}
@@ -455,16 +455,14 @@ Este resultado final é a equação de onda em sua forma reduzida que permite descr
 
 \chapter{Interação sistema atômico de dois níveis com radiação}\label{cap:maxwellbloch}
 
+%Neste capítulo abordaremos a aplicação a equação von-Newmann que obtemos no capitulo 2 e a equação reduzida que obtemos ao final do capitulo 3, para um sistema de dois níveis que sofre pertubação de um pulso de campo elétrico. para isso primeiramente precisamos obter o hamiltoniano desse sistema    
+\section{Hamiltoniano para um sistema de dois níveis }
+
+
+
+
 \blinddocument
 Exemplo de figura:
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/fig1.eps}
-	\caption{ggggggggggggggggg}
-	\label{fig1}
-\end{figure}
-
 
 
 %Citação de figura: \ref{fig1}.
