@@ -19,17 +19,21 @@ R.~Field and A.~Tokmakoff, {\em 5.74 Introductory Quantum Mechanics II}.
 J.~Jackson, {\em CLASSICAL ELECTRODYNAMICS, 3RD ED}.
 \newblock Jhon Wiley, 1998.
 
+\bibitem{griffiths2011elet}
+D.~Griffiths, {\em Eletrodin{\^a}mica}.
+\newblock Pearson Addison Wesley, 2011.
+
 \bibitem{allen1987optical}
 L.~Allen and J.~Eberly, {\em Optical Resonance and Two-level Atoms}.
 \newblock Dover books on physics and chemistry, Dover, 1987.
+
+\bibitem{boyd2008nonlinear}
+R.~W. Boyd, ``The nonlinear optical susceptibility,'' {\em Nonlinear optics},
+  vol.~3, pp.~1--67, 2008.
 
 \bibitem{diels2006ultrashort}
 J.~Diels, W.~Rudolph, P.~Liao, and P.~Kelley, {\em Ultrashort Laser Pulse
   Phenomena}.
 \newblock Electronics \& Electrical, Elsevier Science, 2006.
-
-\bibitem{griffiths2011elet}
-D.~Griffiths, {\em Eletrodin{\^a}mica}.
-\newblock Pearson Addison Wesley, 2011.
 
 \end{thebibliography}
