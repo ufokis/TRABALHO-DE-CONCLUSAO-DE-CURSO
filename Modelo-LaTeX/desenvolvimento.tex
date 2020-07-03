@@ -1,7 +1,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Mecânica Quântica e Operador Densidade ($\rho$) }
-\label{capitulo2}
+\chapter{Mecânica Quântica e Operador Densidade ($\rho$) }\label{cap:capitulo2}
 
 %Para cada capítulo adicional, digite o comando \chapter{Título do Capítulo}
 
@@ -176,11 +175,10 @@ Substituindo \eqref{eq:25} em \eqref{eq:26}, obtemos aequação
 \end{eqnarray}
 conhecida como equação de \textbf{Liouville-von Neumann}, que descreve a evolução temporal do operador densidade \cite{sakurai2013mecanica,RobertField}. Embora essa equação seja semelhante a equação de Heisenberg, exceto por um sinal negativo ($-$), é preciso lembrar que estamos trabalhando na formulação Schrödinger, visto que $\hat{\rho}$ é construído a partir de kets e bras que evoluem no tempo e obedecem a equação de Schrödinger.
 
-
-\chapter{PROPAGAÇÃO DE ONDAS ELETROMAGNETICA EM MEIOS POLARIZADOS}
+\chapter{PROPAGAÇÃO DE ONDAS ELETROMAGNETICA EM MEIOS POLARIZADOS}\label{cap:capitulo3}
 
 Neste capítulo, revisitamos conceitos importantes do eletromagnetismo, que permitirá estudarmos a propagação de pulsos eletromagnéticos no meio atômico de 2 níveis. Para isso, primeiramente apresentaremos a propagação em um meio linear e depois expandiremos para um caso de um meio atômico. 
-\label{capitulo2}
+
 
 \section{Equações de Maxwell}
 \label{secao3.1}
@@ -243,7 +241,7 @@ A polarização $\vb{P}$ pode ser decomposta em duas partes :
 \end{equation}
 onde $\vb{P^L}$ representa contribuições que variam de forma linear e $\vb{P^{NL}}$ as contribuições que variam de forma não-linear com o campo elétrico aplicado \cite{boyd2008nonlinear, diels2006ultrashort}. 
 
-No próximo subcapítulo \ref{sec:linear} apresentamos a solução para um pulso de campo eletromagnético que interagem com material linear e, posteriormente, no subcapítulo \ref{sec:naolinear}, apresentamos o caso não linear que se aplica ao sistema atômico de dois níveis, ao qual estudaremos no Capítulo \ref{cap:maxwellbloch}.
+No próximo subcapítulo \ref{sec:linear} apresentamos a solução para um pulso de campo eletromagnético que interagem com material linear e, posteriormente, no subcapítulo \ref{sec:naolinear}, apresentamos o caso não linear que se aplica ao sistema atômico de dois níveis, ao qual estudaremos no Capítulo \ref{cap:capitulo4}.
 
 \section{propagação de onda em meio linear}\label{sec:linear}
   
@@ -464,19 +462,93 @@ Desse modo, podemos reescrever  a  equação\eqref{eq:3.46} da seguinte forma:
 \label{eq:3.46}
 \end{equation}
 
-Este resultado final é a equação de onda em sua forma reduzida que permite descrever o comportamento da propagação do campo eletromagnético através de um certo meio atômico. Ela será aplicada no capitulo \ref{cap:maxwellbloch} para meio atômico de dois níveis.
+Este resultado final é a equação de onda em sua forma reduzida que permite descrever o comportamento da propagação do campo eletromagnético através de um certo meio atômico. Ela será aplicada no capitulo \ref{cap:capitulo4} para meio atômico de dois níveis.
 
-\chapter{Interação sistema atômico de dois níveis com radiação}\label{cap:maxwellbloch}
+\chapter{Interação sistema atômico de dois níveis com radiação}\label{cap:capitulo4}
 
-Neste capítulo abordaremos a aplicação a equação von-Newmann que obtemos no capitulo 2 e a equação reduzida que obtemos ao final do capitulo 3, para um sistema de dois níveis que sofre pertubação de um pulso de campo elétrico. para isso primeiramente precisamos obter o hamiltoniano desse sistema.    
+Neste capítulo abordaremos a aplicação a equação von-Newmann que obtemos no capitulo \ref{cap:capitulo2} e a equação reduzida que obtemos ao final do capitulo \ref{cap:capitulo3}, para um sistema de dois níveis que sofre pertubação de um pulso de campo elétrico. Para isso, primeiramente, precisamos obter o hamiltoniano desse sistema.    
 
 \section{Hamiltoniano para um sistema de dois níveis }
 
+Para obtermos o hamiltoniano para um sistema de dois níveis, vamos partir do eletromagnetismo clássico. Nesta condição, a força que atua para a partícula com carga $q$ corresponde à 
 
+\begin{equation}
+\vb{F} = q\qty(\vb{E}+\vb{v}\cross\vb{B})
+\label{eq:4.1}
+\end{equation}
 
-
-\blinddocument
+Podemos reescrever o campo elétrico ($\vb{E}$) e magnético ($\vb{B}$), escolhendo o potencial escalar e  
+$\phi(\vb{r},t)$ e o potencial $\vb{A}(\vb{r},t)$ 
+\begin{eqnarray}
+\vb{E} & = &-\pdv{\vb{A}}{t} - \grad{\phi}\label{eq:4.2}\\\nonumber\\
+\vb{B} & = &\curl{\vb{A}}\label{eq:4.3}.
+\end{eqnarray} 
+Assim, reescrevendo a forca de Lorentz \eqref{eq:4.1} em termos deste potenciais, obtemos
+\begin{equation}
+\vb{F} = q\qty(-\pdv{\vb{A}}{t} - \grad{\phi}+\vb{v}\cross\curl{\vb{A}}).
+\label{eq:4.4}
+\end{equation}
+Sabendo que
+\begin{equation}
+\vb{v}\cross\curl{\vb{A}} = \grad(\vb{v}\vdot\vb{A}) - (\vb{v}\vdot\grad)\vb{A},
+\label{eq:4.5}
+\end{equation}
+obtemos
+\begin{equation}
+\vb{F} = q\qty[-\pdv{\vb{A}}{t} - \grad{\phi}+\grad(\vb{v}\vdot\vb{A}) - (\vb{v}\vdot\grad)\vb{A}].
+\label{eq:4.6}
+\end{equation}
+Partindo do fato que $\vb{A}$ varia no tempo e no espaço, sua derivada total é dada por
+\begin{eqnarray}
+\dd\vb{A} & \equiv & \vb{A}(\vb{r}+\vb{v}\dd t, t+\dd t) - \vb{A}(\vb{r}, t)
+\nonumber\\\nonumber\\
+& = & \qty(v_x\pdv{\vb{A}}{x} + v_y\pdv{\vb{A}}{y} + v_z\pdv{\vb{A}}{z} + \pdv{\vb{A}}{t})\dd t
+\nonumber\\\nonumber\\
+& = & \qty[(\vb{v}\cross\grad)\vb{A} +\pdv{\vb{A}}{t}]\dd t
+\label{eq:4.7}
+\end{eqnarray}  
+Logo,
+\begin{equation}
+\dv{\vb{A}}{t} = (\vb{v}\cross\grad)\vb{A} +\pdv{\vb{A}}{t}.
+\label{eq:4.8}
+\end{equation}
+Substituindo esse resultado na equação \eqref{eq:4.6}, temos:
+\begin{equation}
+\vb{F} = q\qty[-\dv{\vb{A}}{t} - \grad{\phi}+\grad(\vb{v}\vdot\vb{A})].
+\label{eq:4.9}
+\end{equation}
+Assim, a equação de movimento para uma partícula carregada é
+\begin{equation}
+m\dv{\vb{v}}{t} = q\qty[-\dv{\vb{A}}{t} - \grad{\phi}+\grad(\vb{v}\vdot\vb{A})].
+\label{eq:4.10}
+\end{equation}
+ou
+\begin{equation}
+m\dv{t}[\vb{v} + q\vb{A}] = - \grad{\qty[q\phi+q(\vb{v}\vdot\vb{A})]}.
+\label{eq:4.11}
+\end{equation}
+Examinando esta equação, podemos reescreve-la na forma de uma equação de Euler-Lagrange
+\begin{equation}
+\dv{t}(\pdv{L}{\vb{v}}) = \grad L,
+\label{eq:4.12}
+\end{equation}
+se adotarmos o a lagrangiana
+\begin{equation}
+L = \frac{1}{2}m\vb{v}^2 + q(\vb{v}\cross\vb{A}) - q\phi.
+\label{eq:4.13}
+\end{equation}
+Comparando com a definição
 Exemplo de figura:
+\begin{equation}
+L = T - U,
+\label{eq:4.14}
+\end{equation}
+temos 
+
+\begin{equation}
+U =  q\phi - q(\vb{v}\cross\vb{A})
+\label{eq:4.15}
+\end{equation}
 
 
 %Citação de figura: \ref{fig1}.

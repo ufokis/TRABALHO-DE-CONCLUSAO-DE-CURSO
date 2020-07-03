@@ -6,7 +6,7 @@ Version=4
 MainFile=tcc.tex
 UseBibTeX=1
 UseMakeIndex=0
-ActiveProfile=LaTeX ⇨ PDF(SUMATRA)
+ActiveProfile=LaTeX ⇨ PDF
 ProjectLanguage=pt
 ProjectDialect=BR
 

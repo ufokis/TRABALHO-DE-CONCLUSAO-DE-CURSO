@@ -1,3 +1,48 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: tcc.aux
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: tcc.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
 Database file #1: referencias.bib
+You've used 8 entries,
+            1876 wiz_defined-function locations,
+            522 strings with 4417 characters,
+and the built_in function-call counts, 1435 in all, are:
+= -- 132
+> -- 64
+< -- 0
++ -- 25
+- -- 17
+* -- 75
+:= -- 221
+add.period$ -- 15
+call.type$ -- 8
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 76
+empty$ -- 166
+format.name$ -- 17
+if$ -- 357
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 15
+newline$ -- 34
+num.names$ -- 8
+pop$ -- 40
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 19
+stack$ -- 0
+substring$ -- 19
+swap$ -- 12
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 11
+width$ -- 9
+write$ -- 77
