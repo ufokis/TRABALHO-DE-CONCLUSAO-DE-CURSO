@@ -1,6 +1,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Mecânica Quântica e Operador Densidade ($\rho$) }\label{cap:capitulo2}
+\chapter{Mecânica Quântica e Operador Densidade ($\rho$)}\label{cap:capitulo2}
 
 %Para cada capítulo adicional, digite o comando \chapter{Título do Capítulo}
 
@@ -68,7 +68,7 @@ Vamos agora nos ater a algumas propriedades do operador densidade:
 \label{eq:8}
 \end{eqnarray}
 
-\textbf{Terceira propriedade:} Podemos substituir o operador $\hat{A}$ em \eqref{eq:6} pelo próprio operador densidade obtendo: 
+\textbf{Terceira propriedade:} Podemos substituir o operador $\hat{A}$ em \eqref{eq:6} pelo próprio operador densidade, obtendo: 
 \begin{eqnarray}
 \Tr(\hat{\rho}^2) & = & \Tr(\hat{\rho}\hat{\rho})\nonumber\\\nonumber\\
 & = & \sum_i w_i \bra{\alpha^{(i)}}\qty(\sum_j w_j \dyad{\alpha^{(j)}}{\alpha^{(j)}})\ket{\alpha^{(i)}} \nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \braket{\alpha^{(i)}}{\alpha^{(j)}}\braket{\alpha^{(j)}}{\alpha^{(i)}}\nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \braket{\alpha^{(i)}}{\alpha^{(j)}}\braket{\alpha^{(i)}}{\alpha^{(j)}}^*\nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \norm{\braket{\alpha^{(i)}}{\alpha^{(j)}}}^2.
@@ -168,7 +168,7 @@ então podemos derivar a equação \eqref{eq:23} de modo que:
 \label{eq:26}
 \end{eqnarray}
 
-Substituindo \eqref{eq:25} em \eqref{eq:26}, obtemos aequação
+Substituindo \eqref{eq:25} em \eqref{eq:26}, obtemos a equação
 \begin{eqnarray}
 \pdv{t}\hat{\rho}(t) &= &\frac{1}{i\hbar}\hat{H}\qty(\sum_i w_i \ket{\alpha^{(i)}(t)}\bra{\alpha^{(i)}(t)}) -\frac{1}{i\hbar}\qty(\sum_i w_i \ket{\alpha^{(i)}(t)} \bra{\alpha^{(i)}(t)})\hat{H}\nonumber\\\nonumber\\ & = &\frac{1}{i\hbar}\hat{H}\hat{\rho} -\frac{1}{i\hbar}\hat{\rho}\hat{H}\nonumber\\\nonumber\\& = & -\frac{1}{i\hbar}\qty[\hat{\rho},\hat{H}],
 \label{eq:27}
@@ -190,7 +190,7 @@ Em princípio, sabemos que as leis do electromagnetismo para um meio podem ser re
 \curl{\vb{E}} + \pdv{\vb{B}}{t} & = & 0 \textrm{~~(Lei de Faraday)},\label{eq:3.3}\\\nonumber\\
 \div{\vb{B}} & = & 0\textrm{~~(Lei de Gauss para o magnetismo)}.\label{eq:3.4}
 \end{eqnarray}
- A lei de Gauss  apresenta a existência de cargas elétricas positiva e negativa, sendo $\varrho_l~(C/m^3)$ a densidade de carga elétrica livre. A lei de Àmpere estabelece que uma densidade de corrente elétrica $\vb{J}_l~(A/m^2)$, ou, um deslocamento elétrico $\vb{D}~(C/m^2)$ variável no tempo produz uma distribuição de campo magnetizante $\vb{H}~(A/m)$. A lei de Faraday estabelece que a variação no campo magnético $\vb{B}~(Wb/m^2)$ produz uma distribuição de campo elétrico $\vb{E}~(V/m)$. A lei de Gauss para o magnetismo de informa a não existência de cargas magnéticas. O  deslocamento elétrico $\vb{D}$ e o campo magnetizante $\vb{H}$ se relacionam com $\vb{E}$ and $\vb{B}$ a partir das equações:
+ A lei de Gauss  apresenta a existência de cargas elétricas positiva e negativa, sendo $\varrho_l~(C/m^3)$ a densidade de carga elétrica livre. A lei de Àmpere estabelece que uma densidade de corrente elétrica $\vb{J}_l~(A/m^2)$, ou, um deslocamento elétrico $\vb{D}~(C/m^2)$ variável no tempo produz uma distribuição de campo magnetizante $\vb{H}~(A/m)$. A lei de Faraday estabelece que a variação no campo magnético $\vb{B}~(Wb/m^2)$ produz uma distribuição de campo elétrico $\vb{E}~(V/m)$. A lei de Gauss para o magnetismo informa a não existência de cargas magnéticas. O  deslocamento elétrico $\vb{D}$ e o campo magnetizante $\vb{H}$ se relacionam com $\vb{E}$ and $\vb{B}$ a partir das equações:
 
 \begin{equation}
 \vb{D}  =  \epsilon_0\vb{E} + \vb{P}\label{eq:3.5}
@@ -199,12 +199,12 @@ e
 \begin{equation}
 \vb{B} = \mu_0\vb{H} + \vb{M},\label{eq:3.6}
 \end{equation}
-sendo $\vb{P}$ a polarização elétrica e $\vb{M}$ magnetização de um meio material. A polarização ocorre quando sujeitamos um dielétrico a um campo elétrico. Isso acarreta uma distorção da distribuição interna de cargas, gerando dipolo elétricos que contribuem com o campo elétrico interno total no meio, ou seja, o campo externo separa as carga positiva e negativa do material, e esta contribuem para uma componente adicional para o campo. Assim, o momento dipolar por unidade de volume é o que chamamos de polarização elétrica e obedece a seguinte definição:
+sendo $\vb{P}$ a polarização elétrica e $\vb{M}$ magnetização de um meio material. A polarização ocorre quando sujeitamos um dielétrico a um campo elétrico. Isso acarreta uma distorção da distribuição interna de cargas, gerando dipolo elétricos que contribuem com o campo elétrico interno total no meio, ou seja, o campo externo separa as carga positiva e negativa do material, e esta contribui para uma componente adicional para o campo. Assim, o momento dipolar por unidade de volume é o que chamamos de polarização elétrica e obedece a seguinte definição:
 \begin{equation}
 \vb{P} \equiv \frac{1}{V}\sum_i \vb{p_i}.
 \label{eq:}
 \end{equation}
-A magnetização da matéria ocorre quando aplicado um campo magnético externo. Dois mecanismos atômicos que justificam esse fenômeno são: o paramagnetismos, em que os dipolos referentes aos spin (momento angular intrínseco) de elétrons sem par se alinham ao campo magnético externo, e o diamagnetismo, no qual o campo magnético externo provoca mudança na velocidade orbital, ocasionado, mudança no momento de dipolo orbital em sentido oposto a campo magnético externo. Portanto, podemos definir a magnetização $\vb{M}$ como momento do dipolo magnético resultante por unidade de volume, conforme equação:
+A magnetização da matéria ocorre quando é aplicado um campo magnético externo. Dois mecanismos atômicos que justificam esse fenômeno são: o paramagnetismos, em que os dipolos referentes aos spin (momento angular intrínseco) de elétrons sem par se alinham ao campo magnético externo, e o diamagnetismo, no qual o campo magnético externo provoca mudança na velocidade orbital, ocasionado, mudança no momento de dipolo orbital em sentido oposto a campo magnético externo. Portanto, podemos definir a magnetização $\vb{M}$ como momento do dipolo magnético resultante por unidade de volume, conforme equação:
 \begin{equation}
 \vb{P} \equiv \frac{1}{V}\sum_i \vb{p_i}.
 \label{eq:}
@@ -424,7 +424,7 @@ onde $k_c''$ é o termos de dispersão de velocidade de grupo GVD e
 
 Não temos interesse de resolver esta equação. Apenas utilizaremos essa aproximação para derivar a equação para o meio atômico de dois níveis no subcapítulo \ref{sec:naolinear}.
 
-\section{PROPAGAÇÃO DE ONDA em um meio atômico de 2 níveis}\label{sec:naolinear}
+\section{Propagação de onda em um meio atômico de 2 níveis}\label{sec:naolinear}
 
 A discussão sobre propagação de onda  no subcapítulo \ref{sec:linear} se limitava a interação com meios lineares. Porém, o que nos interessa neste TCC é descrever a interação de campo elétrico com meio atômico de dois níveis, que possui polarização não linear em ressonância com o campo elétrico. Para isso, precisamos complementar a equação \eqref{eq:3.41} adicionando a polarização do meio atômico não linear, definindo que essa polarização também pode ser decomposta em uma envoltória que varia lentamente no tempo e no espaço e outra contribuição que oscila rapidamente:
 \begin{equation}
@@ -435,12 +435,12 @@ Assim, obtemos a seguinte equação de propagação
 \begin{equation}
 \pdv{z}\tilde{\mathcal{E}}(z,t) + \frac{1}{v_g}\pdv{t}\tilde{\mathcal{E}}(z,t) - \frac{ik_c''}{2}\pdv[2]{t}\tilde{\mathcal{E}}(z,t) + \mathcal{D} = \frac{i\mu_0}{2k_c}\qty(\pdv[2]{t}+2i\omega_c\pdv{t} - {\omega_c}^2)\tilde{\mathcal{P}}^{NL}(z,t).\label{eq:3.44}
 \end{equation}
-Como estamos interessados em efeito não lineares da matéria, vamos negligenciar os termos de dispersão GVD e os termos de ordem superior $k_c''= \mathcal{D} = 0$ e, além disso, considerando o fato que
+Como estamos interessados em efeito não lineares da matéria, desconsideramos o termo de dispersão  de velocidade de grupo GVD e os termos de ordem superior ($k_c''= \mathcal{D} = 0$) e  partimos do  fato que
 \begin{equation}
 \qty|\pdv[2]{t}\tilde{\mathcal{P}}^{NL}(z,t)| \ll \omega_c\qty|\pdv[]{t}\tilde{\mathcal{P}}^{NL}(z,t)| \ll {\omega_c}^2\qty|\tilde{\mathcal{P}}^{NL}(z,t)|, 
 \label{eq:3.45}
 \end{equation}  
-obtemos
+para obtermos, a seguinte aproximação para equação de onda:
 \begin{equation}
 \pdv{z}\tilde{\mathcal{E}}(z,t) + \frac{1}{v_g}\pdv{t}\tilde{\mathcal{E}}(z,t) = -\frac{i\mu_0}{2k_c}{\omega_c}^2\tilde{\mathcal{P}}^{NL}(z,t).
 \label{eq:3.46}
@@ -448,10 +448,10 @@ obtemos
 
 Por conveniência, vamos fazer uma mudança para um sistema de coordenadas ($\eta, \tau$) movendo-se com a velocidade do grupo $v_g = \qty(\dv{k}{\omega}\Big|_{w_c})^{-1}$, realizando as seguintes trocas de variáveis:
 \begin{equation}
-\eta = z~~~~~~~\tau = t-\frac{z}{v_g},
+\eta = z~~~~~~~\tau = t-\frac{z}{v_g}
 \label{eq:3.47}
 \end{equation}
-temos que
+e
 \begin{equation}
 \pdv{z} = \pdv{\eta} - \frac{1}{v_g}\pdv{\tau}~~~~~~~\pdv{t} = \pdv{\tau}.
 \label{eq:3.48}
@@ -466,29 +466,28 @@ Este resultado final é a equação de onda em sua forma reduzida que permite descr
 
 \chapter{Interação sistema atômico de dois níveis com radiação}\label{cap:capitulo4}
 
-Neste capítulo abordaremos a aplicação a equação von-Newmann que obtemos no capitulo \ref{cap:capitulo2} e a equação reduzida que obtemos ao final do capitulo \ref{cap:capitulo3}, para um sistema de dois níveis que sofre pertubação de um pulso de campo elétrico. Para isso, primeiramente, precisamos obter o hamiltoniano desse sistema.    
+Neste capítulo abordaremos a aplicação a equação von-Newmann que obtemos no capitulo \ref{cap:capitulo2} e a equação reduzida que obtemos ao final do capitulo \ref{cap:capitulo3}, para um sistema de dois níveis que sofre pertubação de um pulso de campo elétrico. Para isso, primeiramente, vamos obter o hamiltoniano que  descreve a interação do átomo de dois níveis com a onda eletromagnética.    
 
 \section{Hamiltoniano para um sistema de dois níveis }
 
-Para obtermos o hamiltoniano para um sistema de dois níveis, vamos partir do eletromagnetismo clássico. Nesta condição, a força que atua para a partícula com carga $q$ corresponde à 
+Antes de obtermos o hamiltoniano de um sistema de dois níveis, vamos nos ater a um sistema clássico composto de uma partícula  carregada na presença de um campo eletromagnético. Nesta condição, a força que atua para a partícula com carga $q$ corresponde à 
 
 \begin{equation}
-\vb{F} = q\qty(\vb{E}+\vb{v}\cross\vb{B})
+\vb{F} = q\qty(\vb{E}+\vb{v}\cross\vb{B}).
 \label{eq:4.1}
 \end{equation}
 
-Podemos reescrever o campo elétrico ($\vb{E}$) e magnético ($\vb{B}$), escolhendo o potencial escalar e  
-$\phi(\vb{r},t)$ e o potencial $\vb{A}(\vb{r},t)$ 
+Podemos reescrever o campo elétrico ($\vb{E}$) e magnético ($\vb{B}$), escolhendo o potencial escalar $\phi(\vb{r},t)$ e o potencial $\vb{A}(\vb{r},t)$ 
 \begin{eqnarray}
 \vb{E} & = &-\pdv{\vb{A}}{t} - \grad{\phi}\label{eq:4.2}\\\nonumber\\
 \vb{B} & = &\curl{\vb{A}}\label{eq:4.3}.
 \end{eqnarray} 
-Assim, reescrevendo a forca de Lorentz \eqref{eq:4.1} em termos deste potenciais, obtemos
+Assim, reescrevendo a forca de Lorentz \eqref{eq:4.1} em termos destes potenciais, temos que
 \begin{equation}
 \vb{F} = q\qty(-\pdv{\vb{A}}{t} - \grad{\phi}+\vb{v}\cross\curl{\vb{A}}).
 \label{eq:4.4}
 \end{equation}
-Sabendo que
+Usando a identidade vetorial
 \begin{equation}
 \vb{v}\cross\curl{\vb{A}} = \grad(\vb{v}\vdot\vb{A}) - (\vb{v}\vdot\grad)\vb{A},
 \label{eq:4.5}
@@ -504,12 +503,12 @@ Partindo do fato que $\vb{A}$ varia no tempo e no espaço, sua derivada total é d
 \nonumber\\\nonumber\\
 & = & \qty(v_x\pdv{\vb{A}}{x} + v_y\pdv{\vb{A}}{y} + v_z\pdv{\vb{A}}{z} + \pdv{\vb{A}}{t})\dd t
 \nonumber\\\nonumber\\
-& = & \qty[(\vb{v}\cross\grad)\vb{A} +\pdv{\vb{A}}{t}]\dd t
+& = & \qty[(\vb{v}\vdot\grad)\vb{A} +\pdv{\vb{A}}{t}]\dd t.
 \label{eq:4.7}
 \end{eqnarray}  
 Logo,
 \begin{equation}
-\dv{\vb{A}}{t} = (\vb{v}\cross\grad)\vb{A} +\pdv{\vb{A}}{t}.
+\dv{\vb{A}}{t} = (\vb{v}\vdot\grad)\vb{A} +\pdv{\vb{A}}{t}.
 \label{eq:4.8}
 \end{equation}
 Substituindo esse resultado na equação \eqref{eq:4.6}, temos:
@@ -532,26 +531,91 @@ Examinando esta equação, podemos reescreve-la na forma de uma equação de Euler-L
 \dv{t}(\pdv{L}{\vb{v}}) = \grad L,
 \label{eq:4.12}
 \end{equation}
-se adotarmos o a lagrangiana
+se adotarmos a lagrangiana
 \begin{equation}
-L = \frac{1}{2}m\vb{v}^2 + q(\vb{v}\cross\vb{A}) - q\phi.
+L = \frac{1}{2}m\vb{v}^2 + q(\vb{v}\vdot\vb{A}) - q\phi.
 \label{eq:4.13}
 \end{equation}
-Comparando com a definição
-Exemplo de figura:
+Como vamos trabalhar com um sistema atômico, é necessário adicionar a essa equação o potencial eletrostático $V(\vb{r})$, referente a interação do elétron com o núcleo atômico, e usar a carga do elétron $q=e$. Assim, obtemos 
 \begin{equation}
-L = T - U,
+L = \frac{1}{2}m\vb{v}^2 + e(\vb{v}\vdot\vb{A}) - e\phi - V(\vb{r}).
 \label{eq:4.14}
 \end{equation}
-temos 
 
+Aplicando a transformação de legendre apropriada a lagrangiana, usando a definição de momento conjugado $p_i \equiv \pdv{L}{\dot{r}_i} = mv_i + eA_i$, obtemos o hamiltoniano de acoplamento mínimo
 \begin{equation}
-U =  q\phi - q(\vb{v}\cross\vb{A})
-\label{eq:4.15}
+H =  (\vb{p}-e\vb{A})^2 + e\phi + V(\vb{r}).
+\label{eq:4.16}
+\end{equation}
+Esse hamiltoniano é invariante à transformação de calibre  
+\begin{eqnarray}
+\vb{A}' & = & A + \grad \gamma \label{eq:4.17}\\\nonumber\\
+ \phi' & = & \phi - \pdv{\gamma}{t}, \label{eq:4.18}
+\end{eqnarray}
+onde $\lambda$ é a função de calibre.
+
+A equação de schrödinger dependente do tempo é 
+\begin{equation}
+\hat{H}\psi=i\hbar\pdv{t}\psi.
+\label{eq:4.19}
+\end{equation}
+Para resolvermos esta equação é ideal realizar uma transformação unitária $\hat{U}$, considerando que $\psi' = \hat{U}\psi$. Isso é necessário para simplificarmos  a equação que obteremos do termo responsável pela interação da radiação com o átomo. Precisamos manter a equação de Schrödinger invariante a esta transformação unitária, então escrevemos o novo hamiltoniano da seguinte forma: \begin{equation}
+\hat{H}' = \hat{U}\hat{H}\hat{U}^\dag + i\hbar\pdv{\hat{U}}{t}\hat{U}^\dag.
+\label{eq:4.20}
+\end{equation}
+Escolhendo a transformação unitária $\hat{U} = e^{i\frac{e}{\hbar}\gamma}$, obtemos o seguinte hamiltoniano $\hat{H}'$ 
+\begin{equation}
+\hat{H}' =  (\vb{p}-e\vb{A}')^2 + q\phi' + V(\vb{r}),
+\label{eq:4.21}
+\end{equation}
+onde $\vb{A}'$ e $\phi'$ são dados pelas equações \eqref{eq:4.17} e \eqref{eq:4.18}.
+
+Fazendo $\phi = 0$ e realizando a escolha do calibre de Coulomb, onde $\div \vb{A} = 0$, temos:
+\begin{equation}
+\hat{H}' =  (\vb{p}-e\vb{A}-e\grad\gamma)^2 - e\pdv{\gamma}{t} + V(\vb{r}).
+\label{eq:4.22}
 \end{equation}
 
+Supondo que os átomos estão imerso em uma onda plana monocromática, podemos escrever o potencial vetor da seguinte forma:
+\begin{equation}
+\vb{A}(\vb{r},t) =\frac{A_0(\omega)\hat{\epsilon}}{2} e^{i(\vb{K}\vdot\vb{r} - \omega t)} + c.c.
+\label{eq:4.23}
+\end{equation}
+$\vb{k}\vdot\vb{r}  = 2\pi\vdot\frac{r}{\lambda}$, onde $\lambda$ é o comprimento de onda do campo. Em geral, o comprimento de onda é muito maior, $4000\leq 8000\leq ^0A$, comparadas as dimensões atômicas, $|\vb{r}|\simeq 10 ^0A$. Por isso, $\vb{k}\vdot\vb{r}\ll 1$ . Assim, podemos desconsiderar os termos de ordem maior que $0$ da seguinte expansão em série de Taylor de $\vb{A}(\vb{r}, t)$
 
-%Citação de figura: \ref{fig1}.
+\begin{equation}
+\vb{A}(\vb{r}, t) = \frac{A_0(\omega)\hat{\epsilon}}{2}e^{-i\omega t}\qty[1 + (i\vb{k}\vdot\vb{r}) + \frac{1}{2}(i\vb{k}\vdot\vb{r})^2 +\cdots],
+\label{eq:4.24}
+\end{equation}
+implicando que $\vb{A}(\vb{r}, t) \simeq \vb{A}(t) = \frac{A_0(\omega)\hat{\epsilon}}{2}e^{-i\omega t} $. Agora, escolhendo a função de calibre de Coulomb como $\gamma = -\vb{A}(t)\vdot \vb{r}$, obtemos
+\begin{equation}
+\grad{\lambda} = -\vb{A}(t)
+\label{eq:4.25}
+\end{equation}
+e
+\begin{equation}
+\pdv{\lambda}{t} = -\vb{r}\pdv{\vb{A}(t)}{t} = \vb{r}\vdot\vb{E}(t).
+\label{eq:4.26}
+\end{equation}
+Substituindo este resultados na equação do hamiltoniano $\hat{H}'$ \eqref{eq:4.22}, obtemos
+\begin{equation}
+\hat{H}'=\frac{\vb{p}^2}{2m} + V(\vb{r}) - \vb{d}\vdot\vb{E},
+\label{eq:}
+\end{equation}
+onde $\vb{d}=e\vb{r}$ é o momento de dipolo elétrico e $e$ é a carga do elétron. Os dois primeiro termos se referem ao átomo não perturbado ($H_0 =\vb{p}^2/2m + V(\vb{r})$) e o último termo é referente a interação com o campo elétrico na aproximação de dipolo $(H_{int} = -\vb{d}\vb{E})$. Esta aproximação  será utilizada no decorrer deste trabalho.
+
+\section{SISTEMA ATÔMICO DE DOIS NÍVEIS}\label{sec:2niveis}
+
+Neste TCC, usaremos o sistema de dois níveis, sistema quântico simples que é descrito em duas dimensões no espaço de Hibert. Com esse sistema, poderemos estudar de maneira simples e detalhada as principais propriedades físicas inerente ao processo de iteração de radiação com a matéria. Isso é possível, pois, apesar de sua simplicidade, existem fenômeno quântico em que a sua utilização é satisfatória. Alguns exemplos  são problemas que envolvem polarização de fótons, spin do elétron, oscilações dos neutrino e o caso em que aplicaremos, um sistema atômico que possui dois níveis em ressonância (ou próximo da ressonância) com o campo eletromagnético aplicado e os demais níveis estão em dessintonia total com esse campo.
+
+Para um sistema de dois níveis interagindo com campo eletromagnético, utilizamos o Hamiltoniano com aproximação dipolar, obtido anteriormente no subcapitulo 4.1 
+\begin{figure}[H]
+\centering 
+\input{figuras_do_trabalho/5555.tpx}
+\label{fig2}
+	\caption{Níveis de energia de um hipotético "atomo de dois níveis". A "dessintonia" $ \delta = \omega_0 - \omega$ é a diferença entre $(E_2-E_1)/\hbar$ e $\omega$. A radiação da frequência angular $\omega$ é quase ressonante com a transição $E_1\rightarrow E_2$, quando $\delta\ll\omega_0 - \omega$} 
+\end{figure}
+%organizar algumas citações depois
 
 \section{Equações}
 
@@ -561,6 +625,8 @@ Exemplo de equação centralizada:
 \label{pitagoras}
 	a^2 = b^2 + c^2.
 \end{equation}
+
+Substituindo esse resultado o hamiltoniana H'
 
 Exemplo de equação no texto: $e^{ix} = \cos{x} + i\sin{x}$. Citação de equação: \ref{pitagoras}.
 

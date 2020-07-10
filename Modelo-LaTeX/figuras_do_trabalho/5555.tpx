@@ -1,0 +1,40 @@
+%<TpX v="5" TeXFormat="tikz" PdfTeXFormat="tikz" ArrowsSize="0.7" StarsSize="1" DefaultFontHeight="5" DefaultSymbolSize="30" ApproximationPrecision="0.01" PicScale="1" Border="1.33739" BitmapRes="20000" HatchingStep="1.33739" DottedSize="0.334348" DashSize="0.668695" LineWidth="0.200609">
+%  <line x1="8.81309E-7" y1="48.3479" x2="33.1019" y2="48.3479" lw="2.00"/>
+%  <line x1="8.81309E-7" y1="2.13783" x2="33.1019" y2="2.13783" lw="2.00"/>
+%  <line x1="26.6069" y1="46.8557" x2="26.6069" y2="3.54669" arr1="h44" arr2="h44" lw="2.00" lc="blue"/>
+%  <text x="34.4178" y="47.3787" t="$E_1$" h="3.34348" fill="black"/>
+%  <text x="34.4178" y="1.18052" t="E1" h="3.34348"/>
+%  <line x1="2.61112" y1="35.2159" x2="15.926" y2="35.2159" arrs="22" li="dash" lw="2.00" lc="red"/>
+%  <text x="8.38089" y="40.5344" t="a" h="3.3435" li="dash" lw="2.00"/>
+%  <line x1="6.48661" y1="35.2085" x2="6.48661" y2="3.54669" arr1="h44" arr2="h44" lw="2.00" lc="blue"/>
+%  <line x1="6.48661" y1="46.8557" x2="6.48661" y2="35.2085" arr1="h44" arr2="h44" lw="2.00" lc="blue"/>
+%  <text x="8.38089" y="17.6032" t="A" h="3.3435" li="dash" lw="2.00"/>
+%  <text x="29.093" y="24.2607" t="aa" h="3.3435" li="dash" lw="2.00"/>
+%</TpX>
+
+\begin{tikzpicture}[x=1.00mm, y=1.00mm, inner xsep=0pt, inner ysep=0pt, outer xsep=0pt, outer ysep=0pt]
+\path[line width=0mm] (-1.34,-0.88) rectangle +(45.82,52.22);
+\definecolor{L}{rgb}{0,0,0}
+\path[line width=0.40mm, draw=L] (0.00,48.35) -- (33.10,48.35);
+\path[line width=0.40mm, draw=L] (0.00,2.14) -- (33.10,2.14);
+\definecolor{L}{rgb}{0,0,1}
+\path[line width=0.40mm, draw=L] (26.61,46.86) -- (26.61,3.55);
+\definecolor{F}{rgb}{0,0,1}
+\path[line width=0.40mm, draw=L, fill=F] (26.61,46.86) -- (25.91,44.06) -- (27.31,44.06) -- (26.61,46.86) -- cycle;
+\path[line width=0.40mm, draw=L, fill=F] (26.61,3.55) -- (27.31,6.35) -- (25.91,6.35) -- (26.61,3.55) -- cycle;
+\draw(34.42,47.38) node[anchor=base west]{\fontsize{9.51}{11.42}\selectfont $E_2$};
+\draw(34.42,1.18) node[anchor=base west]{\fontsize{9.51}{11.42}\selectfont $E_1$};
+\definecolor{L}{rgb}{1,0,0}
+\path[line width=0.40mm, draw=L, dash pattern=on 1.34mm off 0.67mm] (2.61,35.22) -- (15.93,35.22);
+\draw(8.38,40.53) node[anchor=base west]{\fontsize{9.51}{11.42}\selectfont $\delta$};
+\definecolor{L}{rgb}{0,0,1}
+\path[line width=0.40mm, draw=L] (6.49,35.21) -- (6.49,3.55);
+\path[line width=0.40mm, draw=L, fill=F] (6.49,35.21) -- (5.79,32.41) -- (7.19,32.41) -- (6.49,35.21) -- cycle;
+\path[line width=0.40mm, draw=L, fill=F] (6.49,3.55) -- (7.19,6.35) -- (5.79,6.35) -- (6.49,3.55) -- cycle;
+\path[line width=0.40mm, draw=L] (6.49,46.86) -- (6.49,35.21);
+\path[line width=0.40mm, draw=L, fill=F] (6.49,46.86) -- (5.79,44.06) -- (7.19,44.06) -- (6.49,46.86) -- cycle;
+\path[line width=0.40mm, draw=L, fill=F] (6.49,35.21) -- (7.19,38.01) -- (5.79,38.01) -- (6.49,35.21) -- cycle;
+\draw(8.38,17.60) node[anchor=base west]{\fontsize{9.51}{11.42}\selectfont $\omega$};
+\draw(29.09,24.26) node[anchor=base west]{\fontsize{9.51}{11.42}\selectfont $\omega_o$};
+\end{tikzpicture}%
+
