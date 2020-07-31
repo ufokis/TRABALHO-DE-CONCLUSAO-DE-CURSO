@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.31)  31 JUL 2020 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.31)  31 JUL 2020 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,6 +24,13 @@ File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
+(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
@@ -93,30 +100,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks19
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen144
-\Gin@req@width=\dimen145
-)
 (/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 
@@ -175,6 +158,10 @@ asics and keyval usage)
 Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
 ))))
@@ -201,7 +188,7 @@ Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/02/14 3.40 Babel common definitions
 \babel@savecnt=\count278
-\U@D=\dimen146
+\U@D=\dimen144
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -240,8 +227,8 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count280
 \calc@Bcount=\count281
-\calc@Adimen=\dimen147
-\calc@Bdimen=\dimen148
+\calc@Adimen=\dimen145
+\calc@Bdimen=\dimen146
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 80.
@@ -271,6 +258,10 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -281,6 +272,23 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+)
 \AM@pagewidth=\dimen149
 \AM@pageheight=\dimen150
 
@@ -927,43 +935,32 @@ Package: floatflt 1997/07/16 v. 1.31
 \fltitemwidth=\dimen305
 \outputpretest=\toks43
 ))
-(./macros.tex) (./estilo.tex) (./tcc.aux
-
-LaTeX Warning: Label `eq:' multiply defined.
-
-
-LaTeX Warning: Label `eq:3.24' multiply defined.
-
-
-LaTeX Warning: Label `eq:3.46' multiply defined.
-
-
-LaTeX Warning: Label `eq:' multiply defined.
-
-)
+(./macros.tex) (./estilo.tex) (./tcc.aux)
 \openout1 = `tcc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+\AtBeginShipoutBox=\box74
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count351
 \scratchdimen=\dimen306
-\scratchbox=\box74
+\scratchbox=\box75
 \nofMPsegments=\count352
 \nofMParguments=\count353
 \everyMPshowfont=\toks44
@@ -972,9 +969,7 @@ LaTeX Font Info:    ... okay on input line 52.
 \MPnumerator=\count355
 \makeMPintoPDFobject=\count356
 \everyMPtoPDFconversion=\toks45
-)
-\AtBeginShipoutBox=\box75
- (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
@@ -1016,7 +1011,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 52.
+Package hyperref Info: Link coloring ON on input line 66.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1028,9 +1023,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count357
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
 
 (./tcc.out) (./tcc.out)
 \@outlinefile=\write5
@@ -1151,22 +1146,10 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 \chapter
-            {Mecânica Quântica e Operador Densidade}\label{cap:capitulo2}
 [1
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 \chapter
-            {Mecânica Quântica e Operador Densidade}\label{cap:capitulo2}
-[2
+] [2
 
 
 ]
@@ -1174,136 +1157,48 @@ Cap\'{\i }tulo 2.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.27 \end{eqnarray}
-                    [3]
+ [3]
 Underfull \vbox (badness 4792) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.48 
-      [4]
+ [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.81 \end{equation}
-                    [5]
+ [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.123 \end{eqnarray}
-                     [6]
+ [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \end{eqnarray}
-                     [7]pdfTeX warning (ext4): destination with the same identi
-fier (name{page.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.178 \chapter
-              {Propagação de ondas eletromagnéticas em meio linear}\label{ca...
+ [7]
 [8]
 Cap\'{\i }tulo 3.
 
 Underfull \vbox (badness 1281) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.207 \begin{equation}
-                       [9
+ [9
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.248 \begin{equation}
-                       [10]
-
-LaTeX Warning: Reference `eq:3.18' on page 11 undefined on input line 276.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.281 \end{eqnarray}
-                     [11]
-
-LaTeX Warning: Reference `eq:3.18' on page 12 undefined on input line 287.
-
-
+ [10]
+[11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.331 \end{equation}
-                     [12]
+ [12]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.361 \end{eqnarray}
-                     [13]
+ [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.378 \end{eqnarray}
-                     [14]
+ [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.401 \end{eqnarray}
-                     [15]
+ [15]
 Underfull \vbox (badness 1910) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.437 \end{equation}
-                     [16]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.17}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.467 \chapter
-              {Interação sistema atômico de dois níveis com radiação}\label{...
-[17]pdfTeX warning (ext4): destination with the same identifier (name{page.18})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.467 \chapter
-              {Interação sistema atômico de dois níveis com radiação}\label{...
-[18
+ [16]
+[17] [18
 
 
 ]
@@ -1311,44 +1206,16 @@ Cap\'{\i }tulo 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.19}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.518 \end{equation}
-                     [19]
+ [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.20}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.573 F
-       azendo $\phi = 0$ e realizando a escolha do calibre de Coulomb, onde ...
-[20]
+ [20]
 
 LaTeX Warning: Citation `scullyquantum' on page 21 undefined on input line 579.
 
 
 [21] (./figuras_do_trabalho/5555.tpx
 LaTeX Font Info:    Calculating math sizes for size <9.51> on input line 25.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <9.51> not available
-(Font)              size <10> substituted on input line 25.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <9.51> not available
-(Font)              size <10> substituted on input line 25.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <9.51> not available
-(Font)              size <10> substituted on input line 25.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <9.51> not available
-(Font)              size <10> substituted on input line 25.
-
 )
 Underfull \vbox (badness 6016) has occurred while \output is active []
 
@@ -1371,7 +1238,7 @@ pdf>
 ps-converted-to.pdf figuras_do_trabalho/fig1.eps>
 (epstopdf)             \includegraphics on input line 753.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=531, 333.245pt x 190.7125pt>
+<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=551, 333.245pt x 190.7125pt>
 
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
@@ -1400,69 +1267,55 @@ Cap\'{\i }tulo 6.
 
 
 ]) [33]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./tcc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
-
-
-Package rerunfilecheck Warning: File `tcc.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `tcc.out':
-(rerunfilecheck)             Before: 5831F50CFEAF16F1349E5880FA2E993D;1502
-(rerunfilecheck)             After:  7FCBC18D23F8E71F1126A7C3540F60AA;1506.
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.49pt have occurred.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package rerunfilecheck Info: File `tcc.out' has not changed.
+(rerunfilecheck)             Checksum: 7FCBC18D23F8E71F1126A7C3540F60AA;1506.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 25314 strings out of 481239
- 444929 string characters out of 5920377
- 764234 words of memory out of 5000000
- 39780 multiletter control sequences out of 15000+600000
- 576750 words of font info for 103 fonts, out of 8000000 for 9000
+ 25487 strings out of 481239
+ 450054 string characters out of 5920377
+ 765095 words of memory out of 5000000
+ 39926 multiletter control sequences out of 15000+600000
+ 580386 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,18n,74p,1403b,1242s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,18n,74p,1403b,1240s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/la
-txfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
-mbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msbm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tcc.pdf (53 pages, 559546 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/l
+atxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tcc.pdf (53 pages, 558296 bytes).
 PDF statistics:
- 702 PDF objects out of 1000 (max. 8388607)
- 606 compressed objects within 7 object streams
- 195 named destinations out of 1000 (max. 500000)
+ 722 PDF objects out of 1000 (max. 8388607)
+ 627 compressed objects within 7 object streams
+ 215 named destinations out of 1000 (max. 500000)
  188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
