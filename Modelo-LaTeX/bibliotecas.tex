@@ -22,31 +22,31 @@
 \usepackage{titlesec}    
 \titleformat{\chapter}[display]
 {\normalfont%
-    \Large% %change this size to your needs for the first line
-    \bfseries}{\chaptertitlename\ \thechapter}{20pt}{%
-    \Large %change this size to your needs for the second line
-    }
+	\Large% %change this size to your needs for the first line
+	\bfseries}{\chaptertitlename\ \thechapter}{20pt}{%
+	\Large %change this size to your needs for the second line
+}
 
 \usepackage{xcolor}
 \definecolor{verde}{rgb}{0,0.5,0}
 \usepackage{showexpl} % exibe codigos de figuras
 \usepackage{listings}
 \lstset{
-  language=C++,
-  basicstyle=\ttfamily\small, 
-  keywordstyle=\color{blue}, 
-  stringstyle=\color{verde}, 
-  commentstyle=\color{red}, 
-  extendedchars=true, 
-  showspaces=false, 
-  showstringspaces=false, 
-  numbers=left,
-  numberstyle=\tiny,
-  breaklines=true, 
-  backgroundcolor=\color{yellow!20}, 
-  breakautoindent=true, 
-  captionpos=b,
-  xleftmargin=0pt,
+	language=C++,
+	basicstyle=\ttfamily\small, 
+	keywordstyle=\color{blue}, 
+	stringstyle=\color{verde}, 
+	commentstyle=\color{red}, 
+	extendedchars=true, 
+	showspaces=false, 
+	showstringspaces=false, 
+	numbers=left,
+	numberstyle=\tiny,
+	breaklines=true, 
+	backgroundcolor=\color{yellow!20}, 
+	breakautoindent=true, 
+	captionpos=b,
+	xleftmargin=0pt,
 	emph={main, printf, scanf},
 	emphstyle={\color{black}\bf},
 	morekeywords={comando1, comando2},
@@ -54,23 +54,24 @@
 \usepackage{amsmath}
 \usepackage[font=footnotesize, labelfont=bf, margin=0.5cm]{caption} %Altera formatação das legendas
 \usepackage{indentfirst} %Espaçamento aplicado à primeira linha do primeiro parágrafo
-
+%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{color}
 \usepackage{ifpdf}
 \ifpdf %if using pdfLaTeX in PDF mode
-  \usepackage[pdftex]{graphicx}
-  \DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg,.mps}
- \usepackage{pgf}
-  \usepackage{tikz}
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.jpeg,.mps}
+\usepackage{pgf}
+\usepackage{tikz}
 \else %if using LaTeX or pdfLaTeX in DVI mode
-  \usepackage{graphicx}
-  \DeclareGraphicsExtensions{.eps,.bmp}
-  \DeclareGraphicsRule{.emf}{bmp}{}{}% declare EMF filename extension
-  \DeclareGraphicsRule{.png}{bmp}{}{}% declare PNG filename extension
-  \usepackage{pgf}
-  \usepackage{tikz}
-  \usepackage{pstricks}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.eps,.bmp}
+\DeclareGraphicsRule{.emf}{bmp}{}{}% declare EMF filename extension
+\DeclareGraphicsRule{.png}{bmp}{}{}% declare PNG filename extension
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{pstricks}
 \fi
 \usepackage{epic,bez123}
 \usepackage{floatflt}% package for floatingfigure environment
 \usepackage{wrapfig}% package for wrapfigure environment
+%%%%%%%%%%%%%%%
