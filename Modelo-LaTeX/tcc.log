@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.31)  31 JUL 2020 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.31)  31 JUL 2020 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1210,10 +1210,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
-
-LaTeX Warning: Citation `scullyquantum' on page 21 undefined on input line 579.
-
-
 [21] (./figuras_do_trabalho/5555.tpx
 LaTeX Font Info:    Calculating math sizes for size <9.51> on input line 25.
 )
@@ -1238,7 +1234,7 @@ pdf>
 ps-converted-to.pdf figuras_do_trabalho/fig1.eps>
 (epstopdf)             \includegraphics on input line 753.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=551, 333.245pt x 190.7125pt>
+<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=553, 333.245pt x 190.7125pt>
 
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
@@ -1274,17 +1270,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `tcc.out' has not changed.
 (rerunfilecheck)             Checksum: 7FCBC18D23F8E71F1126A7C3540F60AA;1506.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 25487 strings out of 481239
- 450054 string characters out of 5920377
- 765095 words of memory out of 5000000
- 39926 multiletter control sequences out of 15000+600000
+ 25489 strings out of 481239
+ 450087 string characters out of 5920377
+ 765130 words of memory out of 5000000
+ 39927 multiletter control sequences out of 15000+600000
  580386 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,18n,74p,1403b,1240s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1312,10 +1304,10 @@ mbols/msbm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tcc.pdf (53 pages, 558296 bytes).
+Output written on tcc.pdf (53 pages, 557904 bytes).
 PDF statistics:
- 722 PDF objects out of 1000 (max. 8388607)
- 627 compressed objects within 7 object streams
- 215 named destinations out of 1000 (max. 500000)
+ 724 PDF objects out of 1000 (max. 8388607)
+ 629 compressed objects within 7 object streams
+ 216 named destinations out of 1000 (max. 500000)
  188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
