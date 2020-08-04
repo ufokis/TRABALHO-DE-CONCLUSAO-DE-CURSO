@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.31)  31 JUL 2020 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  4 AUG 2020 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -195,7 +195,7 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 \bbl@dirlevel=\count279
 )
 Package babel Info: \l@brazilian = using hyphenrules for portuguese
-(babel)             (\language50) on input line 113.
+(babel)             (\language57) on input line 113.
 Package babel Info: Making " an active character on input line 145.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
@@ -1037,11 +1037,11 @@ Package caption Info: floatflt package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros (./capa.tex
 Package epstopdf Info: Source file: <figuras_do_template/logo.eps>
-(epstopdf)                    date: 2020-07-31 13:39:15
+(epstopdf)                    date: 2020-08-04 10:42:21
 (epstopdf)                    size: 982900 bytes
 (epstopdf)             Output file: <figuras_do_template/logo-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2020-07-31 13:39:15
+(epstopdf)                    date: 2020-08-04 10:42:21
 (epstopdf)                    size: 138725 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras_do_template/logo-e
 ps-converted-to.pdf figuras_do_template/logo.eps>
@@ -1080,11 +1080,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Package epstopdf Info: Source file: <figuras_do_template/logo-ata.eps>
-(epstopdf)                    date: 2020-07-31 13:39:15
+(epstopdf)                    date: 2020-08-04 10:42:21
 (epstopdf)                    size: 447601 bytes
 (epstopdf)             Output file: <figuras_do_template/logo-ata-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2020-07-31 13:39:15
+(epstopdf)                    date: 2020-08-04 10:42:21
 (epstopdf)                    size: 88908 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras_do_template/logo-a
 ta-eps-converted-to.pdf figuras_do_template/logo-ata.eps>
@@ -1217,11 +1217,11 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [23] [24]
 Cap\'{\i }tulo 5.
 Package epstopdf Info: Source file: <figuras_do_trabalho/fig1.eps>
-(epstopdf)                    date: 2020-07-31 13:39:15
+(epstopdf)                    date: 2020-08-04 10:42:21
 (epstopdf)                    size: 127273 bytes
 (epstopdf)             Output file: <figuras_do_trabalho/fig1-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2020-07-31 13:39:15
+(epstopdf)                    date: 2020-08-04 10:42:21
 (epstopdf)                    size: 5785 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras_do_trabalho/fig1-e
 ps-converted-to.pdf figuras_do_trabalho/fig1.eps>
@@ -1267,8 +1267,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
  25489 strings out of 481239
- 450087 string characters out of 5920377
- 765130 words of memory out of 5000000
+ 450087 string characters out of 5920378
+ 765129 words of memory out of 5000000
  39927 multiletter control sequences out of 15000+600000
  580386 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
