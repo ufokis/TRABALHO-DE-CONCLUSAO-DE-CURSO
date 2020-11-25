@@ -440,7 +440,7 @@ Como estamos interessados em efeito não lineares da matéria, desconsideramos o t
 \qty|\pdv[2]{t}\tilde{\mathcal{P}}^{NL}(z,t)| \ll \omega_c\qty|\pdv[]{t}\tilde{\mathcal{P}}^{NL}(z,t)| \ll {\omega_c}^2\qty|\tilde{\mathcal{P}}^{NL}(z,t)|, 
 \label{eq:3.48}
 \end{equation}  
-para obtermos, a seguinte aproximação para equação de onda:
+para obtermos a seguinte aproximação para equação de onda:
 \begin{equation}
 \pdv{z}\tilde{\mathcal{E}}(z,t) + \frac{1}{v_g}\pdv{t}\tilde{\mathcal{E}}(z,t) = -\frac{i\mu_0}{2k_c}{\omega_c}^2\tilde{\mathcal{P}}^{NL}(z,t).
 \label{eq:3.49}
@@ -545,62 +545,62 @@ L = \frac{1}{2}m\vb{v}^2 + e(\vb{v}\vdot\vb{A}) - e\phi - V(\vb{r}).
 Aplicando a transformação de legendre apropriada a lagrangiana, usando a definição de momento conjugado $p_i \equiv \pdv{L}{\dot{r}_i} = mv_i + eA_i$, obtemos o hamiltoniano de acoplamento mínimo
 \begin{equation}
 H =  (\vb{p}-e\vb{A})^2 + e\phi + V(\vb{r}).
-\label{eq:4.16}
+\label{eq:4.15}
 \end{equation}
 Esse hamiltoniano é invariante à transformação de calibre  
 \begin{eqnarray}
-\vb{A}' & = & A + \grad \gamma \label{eq:4.17}\\\nonumber\\
-\phi' & = & \phi - \pdv{\gamma}{t}, \label{eq:4.18}
+\vb{A}' & = & A + \grad \gamma \label{eq:4.16}\\\nonumber\\
+\phi' & = & \phi - \pdv{\gamma}{t}, \label{eq:4.17}
 \end{eqnarray}
 onde $\lambda$ é a função de calibre.
 
-A equação de schrödinger dependente do tempo é 
+A equação de Schrödinger dependente do tempo é 
 \begin{equation}
 \hat{H}\psi=i\hbar\pdv{t}\psi.
-\label{eq:4.19}
+\label{eq:4.18}
 \end{equation}
 Para resolvermos esta equação é ideal realizar uma transformação unitária $\hat{U}$, considerando que $\psi' = \hat{U}\psi$. Isso é necessário para simplificarmos  a equação que obteremos do termo responsável pela interação da radiação com o átomo. Precisamos manter a equação de Schrödinger invariante a esta transformação unitária, então escrevemos o novo hamiltoniano da seguinte forma: \begin{equation}
 \hat{H}' = \hat{U}\hat{H}\hat{U}^\dag + i\hbar\pdv{\hat{U}}{t}\hat{U}^\dag.
-\label{eq:4.20}
+\label{eq:4.19}
 \end{equation}
 Escolhendo a transformação unitária $\hat{U} = e^{i\frac{e}{\hbar}\gamma}$, obtemos o seguinte hamiltoniano $\hat{H}'$ 
 \begin{equation}
 \hat{H}' =  (\vb{p}-e\vb{A}')^2 + q\phi' + V(\vb{r}),
-\label{eq:4.21}
+\label{eq:4.20}
 \end{equation}
-onde $\vb{A}'$ e $\phi'$ são dados pelas equações \eqref{eq:4.17} e \eqref{eq:4.18}.
+onde $\vb{A}'$ e $\phi'$ são dados pelas equações \eqref{eq:4.16} e \eqref{eq:4.17}.
 
 Fazendo $\phi = 0$ e realizando a escolha do calibre de Coulomb, onde $\div \vb{A} = 0$, temos:
 \begin{equation}
 \hat{H}' =  (\vb{p}-e\vb{A}-e\grad\gamma)^2 - e\pdv{\gamma}{t} + V(\vb{r}).
-\label{eq:4.22}
+\label{eq:4.21}
 \end{equation}
 
 Supondo que os átomos estão imersos em uma onda plana monocromática, podemos escrever o potencial vetor da seguinte forma \cite{scullyquantum}:
 \begin{equation}
 \vb{A}(\vb{r},t) =\frac{A_0(\omega)\hat{\epsilon}}{2} e^{i(\vb{K}\vdot\vb{r} - \omega t)} + c.c.
-\label{eq:4.23}
+\label{eq:4.22}
 \end{equation}
 $\vb{k}\vdot\vb{r}  = 2\pi\vdot\frac{r}{\lambda}$, onde $\lambda$ é o comprimento de onda do campo. Em geral, o comprimento de onda é muito maior, $4000\leq 8000\leq ^0A$, comparadas as dimensões atômicas, $|\vb{r}|\simeq 10 ^0A$. Por isso, $\vb{k}\vdot\vb{r}\ll 1$. Assim, podemos desconsiderar os termos de ordem maior que $0$ da seguinte expansão em série de Taylor de $\vb{A}(\vb{r}, t)$
 
 \begin{equation}
 \vb{A}(\vb{r}, t) = \frac{A_0(\omega)\hat{\epsilon}}{2}e^{-i\omega t}\qty[1 + (i\vb{k}\vdot\vb{r}) + \frac{1}{2}(i\vb{k}\vdot\vb{r})^2 +\cdots],
-\label{eq:4.24}
+\label{eq:4.23}
 \end{equation}
 implicando que $\vb{A}(\vb{r}, t) \simeq \vb{A}(t) = \frac{A_0(\omega)\hat{\epsilon}}{2}e^{-i\omega t} $. Agora, escolhendo a função de calibre de Coulomb como $\gamma = -\vb{A}(t)\vdot \vb{r}$, obtemos
 \begin{equation}
 \grad{\lambda} = -\vb{A}(t)
-\label{eq:4.25}
+\label{eq:4.24}
 \end{equation}
 e
 \begin{equation}
 \pdv{\lambda}{t} = -\vb{r}\pdv{\vb{A}(t)}{t} = \vb{r}\vdot\vb{E}(t).
-\label{eq:4.26}
+\label{eq:4.25}
 \end{equation}
-Substituindo estes resultados na equação do hamiltoniano $\hat{H}'$ \eqref{eq:4.22}, obtemos
+Substituindo estes resultados na equação do hamiltoniano $\hat{H}'$ \eqref{eq:4.21}, obtemos
 \begin{equation}
 \hat{H}'=\frac{\vb{p}^2}{2m} + V(\vb{r}) - \vb{d}\vdot\vb{E},
-\label{eq:4.27}
+\label{eq:4.26}
 \end{equation}
 onde $\vb{d}=e\vb{r}$ é o momento de dipolo elétrico e $e$ é a carga do elétron. Os dois primeiro termos se referem ao átomo não perturbado ($H_0 =\vb{p}^2/2m + V(\vb{r})$) e o último termo é referente a interação com o campo elétrico na aproximação de dipolo $(H_{int} = -\vb{d}\vb{E})$. Esta aproximação  será utilizada no decorrer deste trabalho.
 
@@ -612,14 +612,14 @@ Para um sistema de dois níveis interagindo com campo eletromagnético, utilizamos
 
 \begin{equation}
 H_{int}  = - \vb{d}\vdot\vb{E}.
-\label{eq:4.28}
+\label{eq:4.27}
 \end{equation}
-Essa equação representa a energia de um dipolo elétrico inserido num campo elétrico $E$. Para isso, consideramos que um único elétron é o responsável pelo surgimento pelo momento de dipolo elétrico[].
+Essa equação representa a energia de um dipolo elétrico inserido num campo elétrico $E$. Para isso, consideramos que um único elétron é o responsável pelo surgimento do  momento de dipolo elétrico[].
 
 O sistema de dois níveis sem pertubação possui dois valores prováveis de energia. O estado $\ket{1} $ com energia $E_1 = \hbar \omega_1$ e o estado $\ket{2}$ com energia $E_2 = \hbar \omega_2$. De acordo com descrição de Bohr, a transição entre os níveis atômicos $\ket{1}$ e $\ket{2}$ é dada pela frequência 
 \begin{eqnarray}
-\omega_{21} & = & \omega_2 - \omega_1\label{eq:4.29}\\
-& = & (E_2-E_1)/\hbar \label{eq:4.30}.
+\omega_{21} & = & \omega_2 - \omega_1\label{eq:4.28}\\
+& = & (E_2-E_1)/\hbar \label{eq:4.29}.
 \end{eqnarray}
 \begin{figure}[H]
 	\centering 
@@ -631,23 +631,179 @@ O sistema de dois níveis sem pertubação possui dois valores prováveis de energia
 A função de onda para o sistema de dois níveis é 
 \begin{equation}
 \ket{\psi} = c_1\ket{1} + c_2\ket{2},
-\label{eq:4.31}
+\label{eq:4.30}
 \end{equation}
 onde $c_1$ e $c_2$ as amplitudes de probabilidade de encontrar o átomo nos estados $\ket{1}$ e $\ket{2}$, respectivamente. Apesar de ser possível obter as equações de movimento para nosso sistema utilizando a representação de Schrödinger, é mais conveniente utilizarmos o formalismo de matriz densidade, que apresentamos no capitulo \ref{cap:capitulo2}. Isso é necessário, pois estamos trabalhando com um grande número de átomos interagindo com o campo. Neste caso, o cálculo das amplitudes de probabilidade seria muito complexo, pois teríamos que calcular esta amplitude para cada átomo do nosso sistema. Em contrapartida, no formalismo de matriz densidade não precisamos ter a informação completa do vetor  onda, pois nos importamos apenas com as informações estatísticas do operador densidade. Assim, diminuímos o custo computacional para lidar com um número grande de átomos interagindo com o campo.
+
+A matriz densidade para um sistema de dois níveis descrito pela equação \eqref{eq:4.30}, e dado por:
+\begin{equation}
+	\hat{\rho} = \mqty(\overline{\qty|c_1|^2} & \overline{c_1c_2^*} \\ \overline{c_2c_1^*} & \overline{\qty|c_1|^2})= \mqty(\rho_{11} & \rho_{12} \\ \rho_{21} & \rho_{22}).
+	\label{eq:4.31}
+\end{equation}
+Sendo que, as componentes da diagonal principal correspondem as probabilidade de encontrar as populações atômicas no estado fundamental ($\ket{1}$) ou estado excitado ($\ket{2}$). Os elementos fora da diagonal principal correspondem a coerência entre os estados $\ket{1}$ e $\ket{2}$. Os elementos $\rho_{nm}$ da matriz densidade se relaciona às amplitudes de probabilidade da seguinte forma:
+\begin{equation}
+	\rho_{nm} = \sum_i w_i c_n^ic_m^{i*}
+	\label{eq:4.32}
+\end{equation}
 
 O hamiltoniano do átomo livre, com aproximação de dois níveis, é dado por  
 \begin{equation}
 \hat{H_0} = \hbar \omega _1\dyad{1}{1} +\hbar \omega _2\dyad{2}{2}
-\label{eq:4.32}
-\end{equation}
-sendo $\hbar \omega_{1}$ e $\hbar \omega_{2}$ são os valores de energia para os estado $\ket{1}$ e $\ket{2}$, respectivamente. Assim, o hamiltoniano do átomo interagindo com o campo é
-\begin{equation}
-\hat{H} = \hbar \omega _1\dyad{1}{1} +\hbar \omega _2\dyad{2}{2} - \hat{d}\vb{E} 
 \label{eq:4.33}
 \end{equation}
+sendo $\hbar \omega_{1}$ e $\hbar \omega_{2}$ são os valores de energia para os estado $\ket{1}$ e $\ket{2}$, respectivamente. 
 
+Um campo eletromagnético externo clássico, com frequência $\omega_c$, é dado por
+\begin{equation}
+	 \vb{E} =  \frac{1}{2}\vb{E_0}e^{iw_ct} + c.c.
+	\label{eq:4.34}
+\end{equation}
+O átomo não possui momento de dipolo quanto está num estado de energia, então $\mel{1}{\hat{d}}{1}=\mel{2}{\hat{d}}{2}=0$. Assim, podemos definir
+\begin{equation}
+	\hat{d}  =  d_{12}\dyad{1}{2} + d_{21}\dyad{2}{1}.
+	\label{eq:4.35}
+\end{equation} 
+A partir das equações \eqref{eq:4.33} e \eqref{eq:4.34}, podemos reescrever o hamiltoniano da interação na aproximação de dipolo da seguinte forma
+\begin{equation}
+	\hat{H}_{int}  =  -(\frac{1}{2}\vb{E_0}e^{iw_ct}+\frac{1}{2}\vb{E_0*}e^{-iw_ct})d_{12}\dyad{1}{2} - (\frac{1}{2}\vb{E_0}e^{iw_ct}+\frac{1}{2}\vb{E_0*}e^{-iw_ct})d_{21}\dyad{2}{1}.
+	\label{eq:4.36}
+\end{equation}
 
-No capitulo \ref{cap:capitulo2} nos obtemos a equação de J. von - Newman, que descreve a evolução temporal da matriz densidade.
+Agora vamos nos aproveitar do fato que o sistema atômico de dois níveis está próximo à ressonância com o campo eletromagnético, para realizar uma aproximação ao hamiltoniano. Primeiramente, vamos fazer uma transformação unitária ao hamiltoniano \eqref{eq:4.35} para sairmos da representação de Schrödinger para a representação de Dirac. Para isso, aplicamos o operador de transformação unitária  
+\begin{equation}
+	\hat{U}  =  e^{i\frac{\hat{H_0}}{\hbar}t} =  e^{i\omega_{1}t}\dyad{1}{1} + e^{i\omega_{2}t}\dyad{2}{2},
+	\label{eq:4.37}
+\end{equation}
+e, assim, obtemos o seguinte hamiltoniano
+\begin{eqnarray}
+	\hat{H}_{D,int} &  =  & 	\hat{U}\hat{H}_{int}\hat{U}^\dagger\nonumber\\\nonumber\\
+				  &  =  & 	\mqty( e^{i\omega_{1}t} & 0 \\ 0 & e^{i\omega_{2}t}) \mqty(0 & -d_{12}\vb{E} \nonumber\\ -d_{21}\vb{E} & 0) \mqty( e^{-i\omega_{1}t} & 0 \\ 0 & e^{-i\omega_{2}t})\nonumber\\\nonumber\\
+				   &  =  & (\vb{E_0}e^{iw_ct}+\vb{E_0^*}e^{-iw_ct})\frac{d_{12}}{2}e^{-i\omega_{21}t}\dyad{1}{2}\nonumber\\& +& (\vb{E_0}e^{iw_ct}+\vb{E_0^*}e^{-iw_ct})\frac{d_{21}}{2}e^{i\omega_{21}t}\dyad{2}{1}\nonumber\\\nonumber\\
+				   &  =  & (\vb{E_0}e^{i\delta t}+\vb{E_0^*}e^{-i(w_c+\omega_{21})t})\frac{d_{12}}{2}\dyad{1}{2}\nonumber\\& +& (\vb{E_0}e^{i(\omega_c +\omega_{21}) t}+\vb{E_0^*}e^{-i\delta t})\frac{d_{21}}{2}\dyad{2}{1},
+	\label{eq:4.38}
+\end{eqnarray}
+onde $\delta = \omega_c - \omega_{21}$ é a dessintonia entre o campo e o átomo. Como o campo está próximo da ressonância com átomo, $\delta \ll \omega_c + \omega_{21}$. Isso significa que os termos que oscilam com frequência ($\omega_c + \omega_{21}$) oscilam rapidamente em relação ao termos que oscilam com frequência $\delta$, por isso podemos ignorar esse termos, utilizando  a aproximação de onda girante (RWA - Rotating Wave Approximation). Nesta condições, a equação do hamiltoniano (equação anterior) se reduz em
+\begin{equation}
+		\hat{H}_{D,int} = \frac{d_{12}}{2}\vb{E_0}e^{i\delta t}\dyad{1}{2} + \frac{d_{21}}{2}\vb{E_0^*}e^{-i\delta t}\dyad{2}{1},
+	\label{eq:4.39}
+\end{equation}
+Finalmente, podemos retornar o hamiltoniano a representação de Schrödinger:
+\begin{eqnarray}
+	\hat{H}_{int} &  =  & 	\hat{U}^\dagger\hat{H}_{D,int}\hat{U}\nonumber\\\nonumber\\
+	&  =  & 	\mqty( e^{-i\omega_{1}t} & 0 \\ 0 & e^{-i\omega_{2}t}) \mqty(0 & \frac{d_{12}}{2}\vb{E_0}e^{i\delta t} \nonumber\\\nonumber\\ \frac{d_{21}}{2}\vb{E_0^*}e^{-i\delta t}  & 0) \mqty( e^{i\omega_{1}t} & 0 \\ 0 & e^{i\omega_{2}t})\nonumber\\\nonumber\\
+	&  =  & \frac{d_{12}}{2}\vb{E_0}e^{i\delta t}e^{i\omega_{21}t}\dyad{1}{2} + \frac{d_{21}}{2}\vb{E_0^*}e^{-i\delta t}e^{-i\omega_{21}t}\dyad{2}{1}\nonumber\\\nonumber\\
+	&  =  & \frac{d_{12}}{2}\vb{E_0}e^{i\omega_c t}\dyad{1}{2} + \frac{d_{21}}{2}\vb{E_0^*}e^{-i\omega_c t}\dyad{2}{1}.
+	\label{eq:4.40}
+\end{eqnarray}
+Com isso, a expressão para o Hamiltoniano total  do sistema de dois níveis com pertubação de campo eletromagnético é dada por:
+\begin{equation}
+	\hat{H_0} = \hbar \omega _1\dyad{1}{1} +\hbar \omega _2\dyad{2}{2} - \frac{d_{12}}{2}\vb{E_0}e^{i\omega_c t}\dyad{1}{2} - \frac{d_{21}}{2}\vb{E_0^*}e^{-i\omega_c t}\dyad{2}{1}
+	\label{eq:4.41}
+\end{equation}
+
+No capítulo \ref{cap:capitulo2} nós obtemos a equação de J. von-Newman \eqref{eq:27}, que descreve a evolução temporal da matriz densidade. Vamos utilizar essa equação para obtermos a evolução temporal para o sistema interagente, mas precisaremos inserir de forma fenomenológica o termo de decaimento referente a emissão espontânea ou ocasionados por colisões entre átomos\cite{boyd2008nonlinear}. Assim, equação \eqref{eq:27} para o elemento da matriz densidade se torna
+\begin{equation}
+	\dv{\hat{\rho}_{nm}}{t} = \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nm} - \gamma_{nm}(\rho_{nm} - \rho_{nm}^{(eq)})
+\label{eq:4.42}	
+\end{equation}
+O termo à direita é o termo fenomenológico de decaimento, ao qual, indica  que a relaxação da população $\rho_{nm}$ para seu valor de equilíbrio  $\rho_{nm}^{(eq)}$ ocorre  a uma taxa $\gamma_{nm}$. Assumimos que $\gamma_{nm}=\gamma_{mn}$, por se tratar de uma taxa de decaimento. Além disso, supomos que 
+\begin{equation}
+	\rho_{nm}^{(eq)}=0 \textnormal{	para	} n\neq m .
+	\label{eq:4.43}
+\end{equation} 
+Isso significa que em equilíbrio térmico os estados excitados podem conter população ($\rho_{nn}^{(eq)}$ pode ser diferente de zero), porém essa excitação térmica não pode produzir superposição coerente de estados atômicos ($\rho_{nm}^{(eq)}=0$  para $n\neq m$).
+Outra maneira de descrever os fenômenos de decaimento é considerarmos que os elementos fora da diagonal principal da matriz densidade relaxam, conforme descrito acima, mas para descrevermos os termos da diagonal principal, de forma a permitir que a população decaia dos níveis mais altos para níveis mais baixos, representados da seguinte forma:
+\begin{eqnarray}
+	\dv{\hat{\rho}_{nm}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nm} - \gamma_{nm}\rho_{nm} \textnormal{ para } n\neq m	\label{eq:4.44}\\\nonumber\\
+	\dv{\hat{\rho}_{nn}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nn} + \sum_{E_m>E_n}\Gamma_{nm}\rho_{mm} - \sum_{E_m<E_n}\Gamma_{mn}\rho_{nn}
+	\label{eq:4.45}	
+\end{eqnarray}
+onde $\Gamma_{nm}$ representa a taxa por átomo em que a população decai do estado $\ket{m}$ para o estado $\ket{n}$ e $\gamma_{nm}$ representa a taxa de relamento de $\rho_{nm}$.
+
+Considerando que o estado $\ket{n}$ tem um tempo de vida $\tau=1/\Gamma_{n}$, onde $\Gamma_{n}$ é a taxa de decaimento total da população fora do nível $\ket{n}$ dada por 
+\begin{equation}
+	\Gamma_{n}=\sum_{E_n'<E_n}\Gamma_{n'n},
+	\label{eq:4.46}	
+\end{equation}
+podemos dizer que a probabilidade de encontrar o sistema no estado $\ket{n}$ diminui da seguinte forma:
+\begin{equation}
+	\qty|c_n(t)|^2 = \qty|c_n(0)|^2 e^{-\Gamma_n t}.
+	\label{eq:4.47}	
+\end{equation}
+Assim, a amplitude de probabilidade, que varia no tempo, obedece a relação 
+\begin{equation}
+	c_n(t) =c_n(0) e^{-i \omega_{n}t} e^{-\frac{\Gamma_n t}{2}}.
+	\label{eq:4.48}	
+\end{equation}
+A amplitude de probabilidade para um estado $\ket{m}$ obedece a mesma forma 
+\begin{equation}
+	c_m(t) =c_m(0) e^{-i \omega_{m}t} e^{-\frac{\Gamma_m t}{2}}.
+	\label{eq:4.49}	
+\end{equation}
+Isso significa que a coerência entre os dois estados deve variar, conforme
+\begin{equation}
+	c_n(t)c_m^*(t) =c_n(0)c_m^*(0) e^{-i \omega_{mn}t} e^{-(\Gamma_n + \Gamma_m)\frac{t}{2}}.
+	\label{eq:4.50}		
+\end{equation}
+Sabemos que $\rho_{mn}$ é obtido a partir da média dos ensembles de $c_nc_m^*$ e sua taxa de decaimento é $\gamma_{mn}$. Com isso, obtemos uma relação entre as taxas de decaimento dos elementos fora da diagonal principal com os elementos da diagonal principal, dada por
+\begin{equation}
+	\gamma_{mn} =\frac{1}{2}(\Gamma_n + \Gamma_m).
+	\label{eq:4.51}
+\end{equation}
+
+Para calculamos os elementos $\rho_{nm}$ da matriz densidade com $n\neq m$, para sistema de dois níveis, partimos da equação \eqref{eq:4.44}. Assim podemos calcular  $\rho_{12}$ 
+\begin{eqnarray}
+	\pdv{t}\mel{1}{\hat{\rho}}{2} & = &  \frac{i}{\hbar}\mel{1}{\qty[\hat{\rho},\hat{H}]}{2} - \gamma_{12}\rho_{12}\\
+	 							  & = &  \frac{i}{\hbar}\mel{1}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{2} - \gamma_{12}\rho_{12}\\
+	 							  & = &  \frac{i}{\hbar}(\mel{1}{\hat{\rho}\hat{H}}{2} - \mel{1}{\hat{H}\hat{\rho} }{2})- \gamma_{12}\rho_{12}\\
+	 							  & = &  \frac{i}{\hbar}(\hbar \omega_{2}\rho_{12} -  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{11}-\hbar \omega_{1} \rho_{12} +  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{22}) - \gamma_{12}\rho_{12}\\
+	 							  & = &  (i \omega_{21} - \gamma_{12})\rho_{12} +  i\frac{d_{12}}{2\hbar}E_0e^{i\omega_c t}(\rho_{22}-\rho_{11}) 
+\end{eqnarray}
+e  $\rho_{21}$ 
+
+\begin{eqnarray}
+	\pdv{t}\mel{2}{\hat{\rho}}{1} & = &  \frac{i}{\hbar}\mel{2}{\qty[\hat{\rho},\hat{H}]}{1} - \gamma_{21}\rho_{21}\\
+	& = &  \frac{i}{\hbar}\mel{2}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{1} - \gamma_{21}\rho_{21}\\
+	& = &  \frac{i}{\hbar}(\mel{2}{\hat{\rho}\hat{H}}{1} - \mel{2}{\hat{H}\hat{\rho} }{1})- \gamma_{21}\rho_{21}\\
+	& = &  \frac{i}{\hbar}(\hbar \omega_{1}\rho_{21} -  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{22}-\hbar \omega_{2} \rho_{21} +  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{11}) - \gamma_{21}\rho_{21}\\
+	& = &  -(i \omega_{21} + \gamma_{21})\rho_{21} -  i\frac{d_{21}}{2\hbar}E_0^*e^{-i\omega_c t}(\rho_{22}-\rho_{11}). 
+\end{eqnarray}
+O calculo para os elementos da diagonal principal da matriz densidade são obtidos pela equação \eqref{eq:4.45}. Assim, $\rho_{11}$ é dado por 
+\begin{eqnarray}
+	\pdv{t}\mel{1}{\hat{\rho}}{1} & = &  \frac{i}{\hbar}\mel{1}{\qty[\hat{\rho},\hat{H}]}{1} + \Gamma_{21}\rho_{22}\\
+	& = &  \frac{i}{\hbar}\mel{1}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{1} + \Gamma_{21}\rho_{22}\\
+	& = &  \frac{i}{\hbar}(\mel{1}{\hat{\rho}\hat{H}}{1} - \mel{1}{\hat{H}\hat{\rho} }{1})+ \Gamma_{21}\rho_{22}\\
+	& = &  \frac{i}{\hbar}(\hbar \omega_{1}\rho_{11} -  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12}-\hbar \omega_{1} \rho_{11} +  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{21}) + \Gamma_{21}\rho_{22}\\
+	& = &  \frac{d_{12}}{2\hbar}E_0e^{i\omega_c t} \rho_{21} - \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12} + \Gamma_{21}\rho_{22}
+\end{eqnarray}
+e $\rho_{11}$ 
+\begin{eqnarray}
+	\pdv{t}\mel{2}{\hat{\rho}}{2} & = &  \frac{i}{\hbar}\mel{2}{\qty[\hat{\rho},\hat{H}]}{2} - \Gamma_{21}\rho_{22}\\
+	& = &  \frac{i}{\hbar}\mel{2}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{2} - \Gamma_{21}\rho_{22}\\
+	& = &  \frac{i}{\hbar}(\mel{2}{\hat{\rho}\hat{H}}{2} - \mel{2}{\hat{H}\hat{\rho} }{2})- \Gamma_{21}\rho_{22}\\
+	& = &  \frac{i}{\hbar}(\hbar \omega_{2}\rho_{22} -  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{21}-\hbar \omega_{2} \rho_{22} +  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12}) - \Gamma_{21}\rho_{22}\\
+	& = &  -\frac{d_{12}}{2\hbar}E_0e^{i\omega_c t} \rho_{21} + \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12} - \Gamma_{21}\rho_{22}
+\end{eqnarray}
+
+Para simplificarmos essas equações, devemos considerar o fato que  $\rho_{11}+\rho_{22}=1$ e  $\rho_{12}=\rho_{21}^*$. Fazendo $d_{12} = d_{21}$, definimos a frequência de Rabi
+\begin{equation}
+	\Omega_0 = \frac{d_{12}}{\hbar}E_0.
+\end{equation}
+Assim, obtemos
+\begin{eqnarray}
+	\dot{\rho}_{12} & = &  (i \omega_{21} - \gamma_{12})\rho_{12} -  i\frac{\Omega_0}{2}e^{i\omega_c t}(1 - 2\rho_{22})\\
+	\dot{\rho}_{22} & = &  -i\frac{\Omega_0}{2}e^{i\omega_c t} \rho_{12}^* + i\frac{\Omega_0^*}{2}e^{-i\omega_c t} \rho_{12} - \Gamma_{21}\rho_{22}
+\end{eqnarray}
+Podemos reescrever a equações acima, realizando as seguintes mudanças de variáveis
+\begin{eqnarray}
+	\dot{\rho}_{12} & \equiv &  \sigma_{12}e^{i\omega_c t}\\
+	\dot{\rho}_{22} & \equiv &  \sigma_{22}.
+\end{eqnarray}
+Assim, obtemos as equações de bloch ópticas
+\begin{eqnarray}
+	\dot{\sigma}_{12} & = &  (i \delta - \gamma_{12})\sigma_{12} -  i\frac{\Omega_0}{2}(1 - 2\sigma_{22})\\
+	\dot{\sigma}_{22} & = &  -i\frac{\Omega_0}{2}sigma_{12}^* + i\frac{\Omega_0^*}{2} \sigma_{12} - \Gamma_{21}\sigma_{22}
+\end{eqnarray}
 %organizar algumas citações depois
 
 \section{Equações}
