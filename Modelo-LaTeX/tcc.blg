@@ -1,46 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tcc.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
 Database file #1: referencias.bib
-You've used 9 entries,
+You've used 12 entries,
             1876 wiz_defined-function locations,
-            527 strings with 4508 characters,
-and the built_in function-call counts, 1599 in all, are:
-= -- 147
-> -- 72
+            542 strings with 4852 characters,
+and the built_in function-call counts, 2092 in all, are:
+= -- 192
+> -- 95
 < -- 0
-+ -- 28
-- -- 19
-* -- 82
-:= -- 245
-add.period$ -- 17
-call.type$ -- 9
++ -- 37
+- -- 25
+* -- 105
+:= -- 320
+add.period$ -- 23
+call.type$ -- 12
 change.case$ -- 1
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 85
-empty$ -- 186
-format.name$ -- 19
-if$ -- 399
+cite$ -- 12
+duplicate$ -- 112
+empty$ -- 246
+format.name$ -- 25
+if$ -- 524
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 17
-newline$ -- 38
-num.names$ -- 9
-pop$ -- 46
+int.to.str$ -- 12
+missing$ -- 23
+newline$ -- 50
+num.names$ -- 12
+pop$ -- 62
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 21
+skip$ -- 25
 stack$ -- 0
 substring$ -- 19
-swap$ -- 13
+swap$ -- 16
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 12
-width$ -- 10
-write$ -- 86
+while$ -- 15
+width$ -- 14
+write$ -- 114

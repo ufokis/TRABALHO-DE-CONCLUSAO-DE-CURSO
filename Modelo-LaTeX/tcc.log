@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.30)  24 NOV 2020 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.30)  2 DEC 2020 12:28
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1258,8 +1258,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 85
-1.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 84
+9.
 
 (C:\Users\elito\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1275,14 +1275,14 @@ pdf>
 (epstopdf)                    size: 5785 bytes
 (epstopdf)             Command: <epstopdf --outfile=figuras_do_trabalho/fig1-ep
 s-converted-to.pdf figuras_do_trabalho/fig1.eps>
-(epstopdf)             \includegraphics on input line 908.
+(epstopdf)             \includegraphics on input line 906.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=599, 333.245pt x 190.7125pt>
+<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=607, 333.245pt x 190.7125pt>
 
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/fig1-eps-converted-to.pdf  used on
- input line 908.
+ input line 906.
 (pdftex.def)             Requested size: 273.14923pt x 156.32996pt.
 ) (conclusao.tex [29
 
@@ -1310,10 +1310,10 @@ Package rerunfilecheck Info: File `tcc.out' has not changed.
 (rerunfilecheck)             Checksum: 7FCBC18D23F8E71F1126A7C3540F60AA;1506.
  ) 
 Here is how much of TeX's memory you used:
- 25378 strings out of 480257
- 457391 string characters out of 2881437
- 820013 words of memory out of 3000000
- 41050 multiletter control sequences out of 15000+200000
+ 25384 strings out of 480257
+ 457518 string characters out of 2881437
+ 820135 words of memory out of 3000000
+ 41053 multiletter control sequences out of 15000+200000
  583136 words of font info for 120 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,18n,101p,1405b,1239s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1346,9 +1346,9 @@ ts/type1/urw/courier/ucrr8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmb8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmr8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on tcc.pdf (57 pages, 661931 bytes).
+Output written on tcc.pdf (57 pages, 664354 bytes).
 PDF statistics:
- 776 PDF objects out of 1000 (max. 8388607)
- 246 named destinations out of 1000 (max. 500000)
+ 785 PDF objects out of 1000 (max. 8388607)
+ 249 named destinations out of 1000 (max. 500000)
  188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

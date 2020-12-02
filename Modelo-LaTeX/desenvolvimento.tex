@@ -74,7 +74,7 @@ Vamos agora nos ater a algumas propriedades do operador densidade:
 & = & \sum_i w_i \bra{\alpha^{(i)}}\qty(\sum_j w_j \dyad{\alpha^{(j)}}{\alpha^{(j)}})\ket{\alpha^{(i)}} \nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \braket{\alpha^{(i)}}{\alpha^{(j)}}\braket{\alpha^{(j)}}{\alpha^{(i)}}\nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \braket{\alpha^{(i)}}{\alpha^{(j)}}\braket{\alpha^{(i)}}{\alpha^{(j)}}^*\nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \norm{\braket{\alpha^{(i)}}{\alpha^{(j)}}}^2.
 \label{eq:9}
 \end{eqnarray}
-Esse resultado precisa ser analisado, observando a desigualdade de Cauchy-Schwarz
+Esse resultado precisa ser analisado, observando a desigualdade de Cauchy-Schwarz \cite{cohen2019quantum}
 \begin{equation}
 \norm{\braket{\alpha^{(i)}}{\alpha^{(j)}}}^2 \leq \braket{\alpha^{(i)}}{\alpha^{(i)}}\braket{\alpha^{(j)}}{\alpha^{(j)}}.
 \label{eq:10}
@@ -335,7 +335,6 @@ Aplicando a transformada de Fourier inversa à equação \eqref{eq:3.24}, obtemos:
 E(z,t) & = & \frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{E}(z,\omega)e^{i\omega t}\nonumber\\\nonumber\\& = & \frac{1}{2\pi}\int_{0}^\infty d\omega \tilde{E}(z,\omega)e^{i\omega t} + c.c.\nonumber\\\nonumber\\& = & \frac{1}{2\pi}\int_{0}^\infty d\omega \tilde{E}(0,\omega)e^{-ik_cz - i\delta z}e^{i\omega t}+ c.c.\nonumber\\\nonumber\\& = & \frac{1}{2\pi}\int_{0}^\infty d\omega \tilde{E}(0,\omega+\omega_c)e^{-ik_cz - i\delta z}e^{i(\omega + \omega_c)t}+ c.c.\nonumber\\\nonumber\\& = & \frac{1}{2\pi}\qty[\int_{0}^\infty d\omega \tilde{E}(0,\omega + \omega_c)e^{ - i\delta z}e^{i\omega t} ]  e^{iw_ct-ik_cz}+ c.c.
 \label{eq:3.30}
 \end{eqnarray}
-
 Substituindo  \eqref{eq:3.27} em \eqref{eq:3.30}, temos:
 \begin{equation}
 E(z,t)  =  \frac{1}{2}\qty[\frac{1}{\pi}\int_{0}^\infty d\omega \mathcal{\tilde{E}}(z,\omega)e^{i\omega t} ]  e^{iw_ct-ik_cz} + c.c.
@@ -353,7 +352,6 @@ Agora, precisamos obter uma expressão para $P^L(z,t)$. Para isso, reescrevemos \
 \tilde{P}^L(z,\omega) & = & \qty[\epsilon(\omega) - \epsilon_0]\tilde{E}(z, \omega)\nonumber\\\nonumber\\& = & \left[\epsilon(\omega_c) + (\omega-\omega_c) \pdv{\epsilon}{\omega}\Big|_{\omega_c} + \frac{(\omega-\omega_c)^2}{2!} \pdv[2]{\epsilon}{\omega}\Big|_{\omega_c}\right. + \cdots +{}\nonumber\\\nonumber\\& + & \left. \frac{(\omega-\omega_c)^n}{n!} \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c} - \epsilon_0 \right]\tilde{E}(z, \omega)\nonumber\\\nonumber\\& = & \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(\omega-\omega_c)^n}{n!} \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}]\tilde{E}(z, \omega).
 \label{eq:3.33}
 \end{eqnarray}
-
 Aplicando transformada de Fourier inversa à equação \eqref{eq:3.33}, temos:
 \begin{eqnarray}
 \tilde{P}^L(z,t) & = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty (\omega-\omega_c)^n\pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}]\tilde{E}(z, \omega)e^{i\omega t}\nonumber\\\nonumber\\& = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega\Bigg[\epsilon(\omega_c) - \epsilon_0 + \sum_{n=1}^\infty (\omega-\omega_c)^n \pdv[n]{\epsilon}{\omega}\Big |_{\omega_c} \Bigg] \tilde{E}(0, \omega)e^{-ik_cz-i\Delta\kappa z }e^{i\omega t} \nonumber\\\nonumber\\& = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega	\Bigg[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \omega^n \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}\Bigg]\tilde{E}(0, \omega + \omega_c)e^{-ik_cz-i\Delta\kappa z}e^{i(\omega + \omega_c) t }\nonumber\\\nonumber\\& = & \frac{1}{2\pi}\qty{ \int_{-\infty}^{\infty} d\omega	\Bigg[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \omega^n \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}\Bigg]\tilde{E}(0, \omega + \omega_c)e^{-i\Delta\kappa z}e^{i\omega t}}e^{i\omega_c t -ik_cz}\nonumber\\
@@ -470,7 +468,7 @@ Neste capítulo aplicaremos a equação von-Newmann, que obtemos no capitulo \ref{c
 
 \section{Hamiltoniano para um sistema atômico de dois níveis }
 
-Antes de obtermos o hamiltoniano para um sistema de dois níveis, vamos nos ater a um sistema clássico composto de uma partícula  carregada na presença de um campo eletromagnético. Nesta condição, a força que atua para a partícula com carga $q$ corresponde à 
+Antes de obtermos o hamiltoniano para um sistema de dois níveis, vamos nos ater a um sistema clássico composto de uma partícula  carregada na presença de um campo eletromagnético\cite{taylor2013mecanica}. Nesta condição, a força que atua para a partícula com carga $q$ corresponde à 
 
 \begin{equation}
 \vb{F} = q\qty(\vb{E}+\vb{v}\cross\vb{B}).
@@ -542,7 +540,7 @@ L = \frac{1}{2}m\vb{v}^2 + e(\vb{v}\vdot\vb{A}) - e\phi - V(\vb{r}).
 \label{eq:4.14}
 \end{equation}
 
-Aplicando a transformação de legendre apropriada a lagrangiana, usando a definição de momento conjugado $p_i \equiv \pdv{L}{\dot{r}_i} = mv_i + eA_i$, obtemos o hamiltoniano de acoplamento mínimo
+Aplicando a transformação de legendre apropriada a lagrangiana, usando a definição de momento conjugado $p_i \equiv \pdv{L}{\dot{r}_i} = mv_i + eA_i$, obtemos o hamiltoniano de acoplamento mínimo \cite{scullyquantum,meystre2007elements}
 \begin{equation}
 H =  (\vb{p}-e\vb{A})^2 + e\phi + V(\vb{r}).
 \label{eq:4.15}
@@ -576,7 +574,7 @@ Fazendo $\phi = 0$ e realizando a escolha do calibre de Coulomb, onde $\div \vb{
 \label{eq:4.21}
 \end{equation}
 
-Supondo que os átomos estão imersos em uma onda plana monocromática, podemos escrever o potencial vetor da seguinte forma \cite{scullyquantum}:
+Supondo que os átomos estão imersos em uma onda plana monocromática, podemos escrever o potencial vetor da seguinte forma:
 \begin{equation}
 \vb{A}(\vb{r},t) =\frac{A_0(\omega)\hat{\epsilon}}{2} e^{i(\vb{K}\vdot\vb{r} - \omega t)} + c.c.
 \label{eq:4.22}
@@ -602,7 +600,7 @@ Substituindo estes resultados na equação do hamiltoniano $\hat{H}'$ \eqref{eq:4.
 \hat{H}'=\frac{\vb{p}^2}{2m} + V(\vb{r}) - \vb{d}\vdot\vb{E},
 \label{eq:4.26}
 \end{equation}
-onde $\vb{d}=e\vb{r}$ é o momento de dipolo elétrico e $e$ é a carga do elétron. Os dois primeiro termos se referem ao átomo não perturbado ($H_0 =\vb{p}^2/2m + V(\vb{r})$) e o último termo é referente a interação com o campo elétrico na aproximação de dipolo $(H_{int} = -\vb{d}\vb{E})$. Esta aproximação  será utilizada no decorrer deste trabalho.
+onde $\vb{d}=e\vb{r}$ é o momento de dipolo elétrico e $e$ é a carga do elétron. Os dois primeiro termos se referem ao átomo não perturbado ($H_0 =\vb{p}^2/2m + V(\vb{r})$) e o último termo é referente a interação com o campo elétrico na aproximação de dipolo $(H_{int} = -\vb{d}\vb{E})$ \cite{scullyquantum,meystre2007elements}. Esta aproximação  será utilizada no decorrer deste trabalho.
 
 \section{Sistema atômico de dois níveis}\label{sec:2niveis}
 
@@ -796,13 +794,13 @@ Assim, obtemos
 \end{eqnarray}
 Podemos reescrever a equações acima, realizando as seguintes mudanças de variáveis
 \begin{eqnarray}
-	\dot{\rho}_{12} & \equiv &  \sigma_{12}e^{i\omega_c t}\\
-	\dot{\rho}_{22} & \equiv &  \sigma_{22}.
+\rho_{12} & \equiv &  \sigma_{12}e^{i\omega_c t}\\
+\rho_{22} & \equiv &  \sigma_{22}.
 \end{eqnarray}
 Assim, obtemos as equações de bloch ópticas
 \begin{eqnarray}
 	\dot{\sigma}_{12} & = &  (i \delta - \gamma_{12})\sigma_{12} -  i\frac{\Omega_0}{2}(1 - 2\sigma_{22})\\
-	\dot{\sigma}_{22} & = &  -i\frac{\Omega_0}{2}sigma_{12}^* + i\frac{\Omega_0^*}{2} \sigma_{12} - \Gamma_{21}\sigma_{22}
+	\dot{\sigma}_{22} & = &  -i\frac{\Omega_0}{2}\sigma_{12}^* + i\frac{\Omega_0^*}{2} \sigma_{12} - \Gamma_{21}\sigma_{22}
 \end{eqnarray}
 %organizar algumas citações depois
 
