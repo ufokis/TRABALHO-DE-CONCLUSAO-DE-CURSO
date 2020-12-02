@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.30)  2 DEC 2020 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.30)  2 DEC 2020 16:47
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1225,10 +1225,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
-Underfull \vbox (badness 1910) has occurred while \output is active []
-
- [16]
-[17] [18
+[16] [17] [18
 
 
 ]
@@ -1346,7 +1343,7 @@ ts/type1/urw/courier/ucrr8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmb8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmr8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on tcc.pdf (57 pages, 664354 bytes).
+Output written on tcc.pdf (57 pages, 664312 bytes).
 PDF statistics:
  785 PDF objects out of 1000 (max. 8388607)
  249 named destinations out of 1000 (max. 500000)

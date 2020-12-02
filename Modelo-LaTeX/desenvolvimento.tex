@@ -426,7 +426,7 @@ Não temos interesse de resolver esta equação. Apenas utilizaremos essa aproximaç
 
 A discussão sobre propagação de onda  no subcapítulo \ref{sec:linear} se limitava a interação com meios lineares. Porém, o que nos interessa neste TCC é descrever a interação de campo elétrico com meio atômico de dois níveis, que possui polarização não linear em ressonância com o campo elétrico. Para isso, precisamos complementar a equação \eqref{eq:3.44} adicionando a polarização do meio atômico não linear, definindo que essa polarização também pode ser decomposta em uma envoltória que varia lentamente no tempo e no espaço e outra contribuição que oscila rapidamente:
 \begin{equation}
-P^{NL}(z,t) \equiv \mathcal{\tilde{P}}^{NL}(z,t)e^{iw_ct-ik_cz} + c.c.
+P^{NL}(z,t) \equiv \frac{1}{2}\mathcal{\tilde{P}}^{NL}(z,t)e^{iw_ct-ik_cz} + c.c.
 \label{eq:3.46}
 \end{equation}
 Assim, obtemos a seguinte equação de propagação
@@ -749,7 +749,7 @@ Sabemos que $\rho_{mn}$ é obtido a partir da média dos ensembles de $c_nc_m^*$ e
 	\label{eq:4.51}
 \end{equation}
 
-Para calculamos os elementos $\rho_{nm}$ da matriz densidade com $n\neq m$, para sistema de dois níveis, partimos da equação \eqref{eq:4.44}. Assim podemos calcular  $\rho_{12}$ 
+Para calculamos os elementos $\rho_{nm}$ da matriz densidade com $n\neq m$, para sistema de dois níveis, partimos da equação \eqref{eq:4.44}. Assim podemos calcular  $\dot{\rho}_{12}$ 
 \begin{eqnarray}
 	\pdv{t}\mel{1}{\hat{\rho}}{2} & = &  \frac{i}{\hbar}\mel{1}{\qty[\hat{\rho},\hat{H}]}{2} - \gamma_{12}\rho_{12}\\
 	 							  & = &  \frac{i}{\hbar}\mel{1}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{2} - \gamma_{12}\rho_{12}\\
@@ -757,7 +757,7 @@ Para calculamos os elementos $\rho_{nm}$ da matriz densidade com $n\neq m$, para
 	 							  & = &  \frac{i}{\hbar}(\hbar \omega_{2}\rho_{12} -  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{11}-\hbar \omega_{1} \rho_{12} +  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{22}) - \gamma_{12}\rho_{12}\\
 	 							  & = &  (i \omega_{21} - \gamma_{12})\rho_{12} +  i\frac{d_{12}}{2\hbar}E_0e^{i\omega_c t}(\rho_{22}-\rho_{11}) 
 \end{eqnarray}
-e  $\rho_{21}$ 
+e  $\dot{\rho}_{21}$ 
 
 \begin{eqnarray}
 	\pdv{t}\mel{2}{\hat{\rho}}{1} & = &  \frac{i}{\hbar}\mel{2}{\qty[\hat{\rho},\hat{H}]}{1} - \gamma_{21}\rho_{21}\\
@@ -766,7 +766,7 @@ e  $\rho_{21}$
 	& = &  \frac{i}{\hbar}(\hbar \omega_{1}\rho_{21} -  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{22}-\hbar \omega_{2} \rho_{21} +  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{11}) - \gamma_{21}\rho_{21}\\
 	& = &  -(i \omega_{21} + \gamma_{21})\rho_{21} -  i\frac{d_{21}}{2\hbar}E_0^*e^{-i\omega_c t}(\rho_{22}-\rho_{11}). 
 \end{eqnarray}
-O calculo para os elementos da diagonal principal da matriz densidade são obtidos pela equação \eqref{eq:4.45}. Assim, $\rho_{11}$ é dado por 
+O calculo para os elementos da diagonal principal da matriz densidade são obtidos pela equação \eqref{eq:4.45}. Assim, $\dot{\rho}_{11}$ é dado por 
 \begin{eqnarray}
 	\pdv{t}\mel{1}{\hat{\rho}}{1} & = &  \frac{i}{\hbar}\mel{1}{\qty[\hat{\rho},\hat{H}]}{1} + \Gamma_{21}\rho_{22}\\
 	& = &  \frac{i}{\hbar}\mel{1}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{1} + \Gamma_{21}\rho_{22}\\
@@ -774,7 +774,7 @@ O calculo para os elementos da diagonal principal da matriz densidade são obtido
 	& = &  \frac{i}{\hbar}(\hbar \omega_{1}\rho_{11} -  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12}-\hbar \omega_{1} \rho_{11} +  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{21}) + \Gamma_{21}\rho_{22}\\
 	& = &  \frac{d_{12}}{2\hbar}E_0e^{i\omega_c t} \rho_{21} - \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12} + \Gamma_{21}\rho_{22}
 \end{eqnarray}
-e $\rho_{11}$ 
+e $\dot{\rho}_{22}$ 
 \begin{eqnarray}
 	\pdv{t}\mel{2}{\hat{\rho}}{2} & = &  \frac{i}{\hbar}\mel{2}{\qty[\hat{\rho},\hat{H}]}{2} - \Gamma_{21}\rho_{22}\\
 	& = &  \frac{i}{\hbar}\mel{2}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{2} - \Gamma_{21}\rho_{22}\\
@@ -792,7 +792,7 @@ Assim, obtemos
 	\dot{\rho}_{12} & = &  (i \omega_{21} - \gamma_{12})\rho_{12} -  i\frac{\Omega_0}{2}e^{i\omega_c t}(1 - 2\rho_{22})\\
 	\dot{\rho}_{22} & = &  -i\frac{\Omega_0}{2}e^{i\omega_c t} \rho_{12}^* + i\frac{\Omega_0^*}{2}e^{-i\omega_c t} \rho_{12} - \Gamma_{21}\rho_{22}
 \end{eqnarray}
-Podemos reescrever a equações acima, realizando as seguintes mudanças de variáveis
+Podemos reescrever as equações acima, realizando as seguintes mudanças de variáveis
 \begin{eqnarray}
 \rho_{12} & \equiv &  \sigma_{12}e^{i\omega_c t}\\
 \rho_{22} & \equiv &  \sigma_{22}.
