@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.30)  2 DEC 2020 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.30)  3 DEC 2020 11:47
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1274,7 +1274,7 @@ pdf>
 s-converted-to.pdf figuras_do_trabalho/fig1.eps>
 (epstopdf)             \includegraphics on input line 906.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=607, 333.245pt x 190.7125pt>
+<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=608, 333.245pt x 190.7125pt>
 
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
@@ -1343,9 +1343,9 @@ ts/type1/urw/courier/ucrr8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmb8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmr8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on tcc.pdf (57 pages, 664312 bytes).
+Output written on tcc.pdf (57 pages, 664511 bytes).
 PDF statistics:
- 785 PDF objects out of 1000 (max. 8388607)
+ 786 PDF objects out of 1000 (max. 8388607)
  249 named destinations out of 1000 (max. 500000)
  188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
