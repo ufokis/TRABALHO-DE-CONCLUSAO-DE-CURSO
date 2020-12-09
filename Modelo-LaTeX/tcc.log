@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.30)  3 DEC 2020 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.30)  3 DEC 2020 18:00
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1185,55 +1185,49 @@ Cap\'{\i }tulo 1.
 ]
 Cap\'{\i }tulo 2.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1281) has occurred while \output is active []
 
  [3]
-Underfull \vbox (badness 4792) has occurred while \output is active []
-
- [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+ [4]
+[5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-[8]
-Cap\'{\i }tulo 3.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 1281) has occurred while \output is active []
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
+ [9]
+[10] [11] [12
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
-[11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
+Cap\'{\i }tulo 3.
+[13] [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
-[16] [17] [18
+Underfull \vbox (badness 4132) has occurred while \output is active []
 
+ [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [17]
+[18]
 Cap\'{\i }tulo 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
+ [19
+
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
@@ -1255,8 +1249,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 84
-9.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 85
+1.
 
 (C:\Users\elito\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1272,14 +1266,14 @@ pdf>
 (epstopdf)                    size: 5785 bytes
 (epstopdf)             Command: <epstopdf --outfile=figuras_do_trabalho/fig1-ep
 s-converted-to.pdf figuras_do_trabalho/fig1.eps>
-(epstopdf)             \includegraphics on input line 906.
+(epstopdf)             \includegraphics on input line 908.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/fig1-eps-converted-to.pdf, id=608, 333.245pt x 190.7125pt>
 
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/fig1-eps-converted-to.pdf  used on
- input line 906.
+ input line 908.
 (pdftex.def)             Requested size: 273.14923pt x 156.32996pt.
 ) (conclusao.tex [29
 
@@ -1304,12 +1298,12 @@ Cap\'{\i }tulo 6.
 
 ]) [37] (tcc.aux)
 Package rerunfilecheck Info: File `tcc.out' has not changed.
-(rerunfilecheck)             Checksum: 7FCBC18D23F8E71F1126A7C3540F60AA;1506.
+(rerunfilecheck)             Checksum: 03CDE6ADCC56D89B1CA7B789F90CF2C8;1506.
  ) 
 Here is how much of TeX's memory you used:
  25384 strings out of 480257
  457518 string characters out of 2881437
- 820135 words of memory out of 3000000
+ 820130 words of memory out of 3000000
  41053 multiletter control sequences out of 15000+200000
  583136 words of font info for 120 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1343,7 +1337,7 @@ ts/type1/urw/courier/ucrr8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmb8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmr8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on tcc.pdf (57 pages, 664511 bytes).
+Output written on tcc.pdf (57 pages, 664374 bytes).
 PDF statistics:
  786 PDF objects out of 1000 (max. 8388607)
  249 named destinations out of 1000 (max. 500000)

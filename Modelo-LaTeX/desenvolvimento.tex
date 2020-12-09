@@ -1,179 +1,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Mecânica Quântica e Operador Densidade}\label{cap:capitulo2}
 
-%Para cada capítulo adicional, digite o comando \chapter{Título do Capítulo}
-
-Neste capítulo nos dedicamos a apresentar o formalismo do operador densidade, desenvolvido por J. von Neumann em 1927, e suas vantagens em relação à representação de autoestados e autovetores no estudo de sistemas quânticos \cite{sakurai2013mecanica}.
-
-\section{Matriz densidade}
-\label{secao2.1}
-
-Como sabemos, o formalismo usual da mecânica quântica, onde trabalhamos com autoestados e autovalores de um determinado observável (formalismo de Dirac), nos permite fazer previsões sobre um conjunto de sistemas físicos elaborados de forma idêntica \cite{breuer2002theory}. Em termos mais específicos, garantimos que todos os sistemas membros deste ensemble sejam caracterizados por um mesmo ket de estado $\ket{\alpha}$. Assim, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\alpha}$ e $30\%$ pelo ket de estado $\ket{\beta}$ (ensemble misto). Para lidar com essa situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros ou, até mesmo, ensemble mistos completamente aleatórios. 
-
-Consideremos o ensemble misto, onde uma fração de sistemas com população relativa $w_1$ estão no estado $\ket{\alpha^{(1)}}$; outra fração $w_2$ estão no estado $\ket{\alpha^{(2)}}$, e assim sucessivamente. Podemos dizer, com certa precisão, que um ensemble misto pode ser visto como uma mistura de ensembles puros. As populações $w_i$ devem satisfazer a condição de normalização, ou seja,
-\begin{equation} 
-\sum_i w_i = 1.
-\label{eq:1} 
-\end{equation}
-
-Não é necessário que $\ket*{\alpha^{(1)}}$, $\ket*{\alpha^{(2)}}$,..., $\ket*{\alpha^{(i)}}$ sejam ortogonais entre si e o número de termos na soma em $i$ na equação \eqref{eq:1} não precisa ser igual ao número de dimensões $N$ no espaço de Hilbert.
-
-Vamos supor que realizamos a medida de um operador $\hat{A}$ num ensemble misto. É possível calcular o valor médio se houver um número grande de medidas. O resultado é dado pela média sobre o ensembles, definida por:
-
-\begin{eqnarray}
-[\hat{A}] & \equiv & \sum_i w_i \mel{\alpha^{(i)}}{\hat{A}}{\alpha^{(i)}} \nonumber\\\nonumber\\  & = & \sum_i w_i \mel{\alpha^{(i)}}{\hat{A}\sum_{a'} \dyad{a'}{a'} }{\alpha^{(i)}}\nonumber\\\nonumber\\& = & \sum_i \sum_{a'} w_i \mel{\alpha^{(i)}}{\hat{A}\dyad{a'}{a'} }{\alpha^{(i)}} \nonumber\\\nonumber\\ & = & \sum_i \sum_{a'} w_i \braket{\alpha^{(i)}}{a'}\braket{a'}{\alpha^{(i)}}a' \nonumber\\\nonumber\\ & = & \sum_i \sum_{a'} w_i \braket{\alpha^{(i)}}{a'}^*\braket{\alpha^{(i)}}{a'}a' \nonumber\\\nonumber\\ & = & \sum_i \sum_{a'} w_i \norm{\braket{a'}{\alpha^{(i)}}}^2a', 
-\label{eq:2} 
-\end{eqnarray}
-sendo que $\ket{a'}$ é um autovetor do operador $\hat{A}$ e que $\mel{\alpha^{(i)}}{\hat{A}}{\alpha^{(i)}}$ trata-se do valor esperado habitual para $\hat{A}$ em relação a um estado $\ket{\alpha^{(i)}}$. Vemos na equação \eqref{eq:2} que este valores esperados precisam ser ponderados pelas populações relativas $w_i$. É possível observar também que que $\norm*{\braket*{a'}{\alpha^{(i)}}}^2$ é a probabilidade do estado $\ket*{\alpha{(i)}}$ de ser encontrado em um autoestado $\ket*{a'}$ após colapso do ket de estado e que $w_i$ identifica a quantidade relativa de sistemas no estado estado quântico caracterizado por $\ket*{\alpha^{(i)}}$.  
-
-Se considerarmos uma base genérica \{$\ket*{b'}$\}, podemos reescrever a média sobre o ensemble \eqref{eq:2} da seguinte forma:
-\begin{eqnarray} 
-[\hat{A}] & = & \sum_i w_i \mel{\alpha^{(i)}}{\sum_{b'} \dyad{b'}{b'}\hat{A}\sum_{b''} \dyad{b''}{b''} }{\alpha^{(i)}}\nonumber\\\nonumber\\& = & \sum_i \sum_{b'} \sum_{b''} w_i \braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''}\braket{b''}{\alpha^{(i)}} \nonumber\\\nonumber\\ & = & \sum_i \sum_{b'} \sum_{b''} w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''} \nonumber\\\nonumber\\ & = & \sum_{b'} \sum_{b''} \qty( \sum_i w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'})\mel{b'}{\hat{A}}{b''}.
-\label{eq:3}
-\end{eqnarray}
-
-O termo destacado entre parenteses é o elemento de matriz de um certo operador hermitiano, que denominamos \textbf{matriz densidade} ou ainda, \textbf{operador densidade} $\hat{\rho}$, conforme equações \eqref{eq:4} e \eqref{eq:5}:
-\begin{equation}
-\mel{b''}{\hat{\rho}}{b'} = \sum_i w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}
-\label{eq:4}
-\end{equation}
-De forma geral, o operador densidade é definido como  
-\begin{equation}
-\hat{\rho} \equiv \sum_i w_i \dyad{a^{(i)}}{a^{(i)}}.
-\label{eq:5}
-\end{equation} 
-
-Uma vez determinado o operador densidade do sistema, podemos caracterizar o ensemble quântico em questão, de modo a obter todas as informações físicas encerradas por tal operador. Substituindo \eqref{eq:4} em \eqref{eq:3}, podemos reescrever o valor esperado de $\hat{A}$ como:
-
-\begin{eqnarray}
-[\hat{A}] & = & \sum_{b'} \sum_{b''} \mel{b''}{\hat{\rho}}{b'}\mel{b'}{\hat{A}}{b''}\nonumber\\\nonumber\\ & = & \Tr(\hat{\rho}\hat{A}),
-\label{eq:6} 
-\end{eqnarray}
-onde a operação $\Tr(\hat{\rho}\hat{A})$ corresponde ao traço do operador resultante do produto entre $\hat{\rho}$ e $\hat{A}$, ficando assim explícito o poder desta construção, pois o traço independe da representação e pode ser calculado usando uma base conveniente.
-
-\subsection{Propriedades do Operador Densidade}
-
-Vamos agora nos ater a algumas propriedades do operador densidade:
-
-\textbf{Primeira propriedade:} O operador densidade é hermitiano, ou seja:
-\begin{equation}
-\hat{\rho} = \hat{\rho}^\dag.
-\label{eq:7}
-\end{equation} 
-
-\textbf{Segunda propriedade:} O operador densidade satisfaz a condição de normalização 
-\begin{eqnarray}
-\Tr\rho & = & \sum_i \sum_{b'} w_i \braket{b'}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}\nonumber\\\nonumber\\& = & \sum_i w_i \braket{\alpha^{(i)}}{\alpha^{(i)}}\nonumber\\\nonumber\\& = & 1.
-\label{eq:8}
-\end{eqnarray}
-
-\textbf{Terceira propriedade:} Podemos substituir o operador $\hat{A}$ em \eqref{eq:6} pelo próprio operador densidade, obtendo: 
-\begin{eqnarray}
-\Tr(\hat{\rho}^2) & = & \Tr(\hat{\rho}\hat{\rho})\nonumber\\\nonumber\\
-& = & \sum_i w_i \bra{\alpha^{(i)}}\qty(\sum_j w_j \dyad{\alpha^{(j)}}{\alpha^{(j)}})\ket{\alpha^{(i)}} \nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \braket{\alpha^{(i)}}{\alpha^{(j)}}\braket{\alpha^{(j)}}{\alpha^{(i)}}\nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \braket{\alpha^{(i)}}{\alpha^{(j)}}\braket{\alpha^{(i)}}{\alpha^{(j)}}^*\nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \norm{\braket{\alpha^{(i)}}{\alpha^{(j)}}}^2.
-\label{eq:9}
-\end{eqnarray}
-Esse resultado precisa ser analisado, observando a desigualdade de Cauchy-Schwarz \cite{cohen2019quantum}
-\begin{equation}
-\norm{\braket{\alpha^{(i)}}{\alpha^{(j)}}}^2 \leq \braket{\alpha^{(i)}}{\alpha^{(i)}}\braket{\alpha^{(j)}}{\alpha^{(j)}}.
-\label{eq:10}
-\end{equation} 
-Como os kets $\ket*{\alpha^{(i)}}$ são normalizados, ou seja, $\braket*{\alpha^{(i)}}{\alpha^{(i)}}=\braket*{\alpha^{(j)}}{\alpha^{(j)}} =1$, obtemos a seguinte propriedade:
-\begin{equation}
-\Tr(\hat{\rho}^2) \leq 1.
-\label{eq:11}
-\end{equation}
-
-É possível observar que quando se trata de um ensemble puro, ou seja, quando um dos pesos $w_i$ tem valor 1 e o restante de valor 0, então
-\begin{equation}
-\hat{\rho} = \dyad{a^{(i)}}{a^{(i)}}.
-\label{eq:12}
-\end{equation}
-Nesse caso, $\Tr(\hat{\rho}^2)$ tem valor máximo, isto é,
-\begin{equation}
-\Tr(\hat{\rho}^2) = 1.
-\label{eq:13}
-\end{equation} 
-Assim, é fácil provar que o operador densidade de um ensemble puro é idempotente, ou seja:
-\begin{equation}
-\hat{\rho}^2 = \hat{\rho}
-\label{eq:14}
-\end{equation} 
-
-Para melhor compreensão dessas propriedades, vamos supor, por exemplo, um sistema de dois níveis onde o operador densidade é dado pela matriz
-\begin{equation}\label{eq:15}
-\hat{\rho} = \mqty(\rho_{11} & \rho_{12} \\ \rho_{21} & \rho_{22}).
-\end{equation}  
-No primeiro caso, consideramos que $100\%$ dos sistemas estão no ket estado $\ket{\alpha}$, onde
-\begin{equation}
-\ket{\alpha} = \frac{1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1}.
-\label{eq:16}
-\end{equation}
-Então, calculamos:
-\begin{eqnarray}
-\hat{\rho} & = & \dyad{\alpha}{\alpha} \nonumber\\\nonumber\\ & = & \qty(\frac{1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1})\times\qty(\frac{1}{\sqrt{2}}\bra{0} + \frac{1}{\sqrt{2}}\bra{1})\nonumber\\\nonumber\\ & = & \frac{1}{2}\qty(\dyad{0}{0} + \dyad{0}{1} + \dyad{1}{0} + \dyad{1}{1})\nonumber\\\nonumber\\ & = & \mqty(\frac{1}{2} & \frac{1}{2} \\\\ \frac{1}{2} & \frac{1}{2}).
-\label{eq:17}
-\end{eqnarray}
-Neste caso, é fácil observar que $\hat{\rho}$ satisfaz condição de normalização e, como esperado, representa um caso puro, pois
-
-\begin{eqnarray}
-\Tr(\hat{\rho}^2) & = & \Tr{\mqty(\frac{1}{2} & \frac{1}{2} \\\\ \frac{1}{2} & \frac{1}{2})\times\mqty(\frac{1}{2} & \frac{1}{2} \\\\ \frac{1}{2} & \frac{1}{2})} \nonumber\\\nonumber\\ & = & \Tr{\mqty(\frac{1}{2} & \frac{1}{2} \\\\ \frac{1}{2} & \frac{1}{2})} \nonumber\\\nonumber\\ & = & \Tr(\hat{\rho})\nonumber\\\nonumber\\ & = & 1
-\label{eq:18}
-\end{eqnarray} 
-
-Em um segundo caso, temos que $50\%$ dos sistemas estão no ket estado $\ket{\alpha}$ \eqref{eq:16} e $50\%$ estão no ket estado $\ket{\beta}$, onde
-\begin{equation}
-\ket{\beta} = \frac{1}{\sqrt{2}}\ket{0} - \frac{1}{\sqrt{2}}\ket{1}.
-\label{eq:19}
-\end{equation}
-Assim temos:
-\begin{eqnarray}
-\hat{\rho} & = & \frac{1}{2}\dyad{\alpha}{\alpha} + \frac{1}{2}\dyad{\beta}{\beta} \nonumber\\\nonumber\\ & = & \frac{1}{2}\qty(\frac{1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1})\times\qty(\frac{1}{\sqrt{2}}\bra{0} + \frac{1}{\sqrt{2}}\bra{1}) \nonumber\\ & + & \frac{1}{2}\qty(\frac{1}{\sqrt{2}}\ket{0} - \frac{1}{\sqrt{2}}\ket{1})\times\qty(\frac{1}{\sqrt{2}}\bra{0} - \frac{1}{\sqrt{2}}\bra{1})\nonumber\\\nonumber\\ & = & \frac{1}{2}\qty(\dyad{0}{0} + \dyad{1}{1})\nonumber\\\nonumber\\ & = & \mqty(\frac{1}{2} & \frac{0}{0} \\\\ \frac{0}{0} & \frac{1}{2}).
-\label{eq:20}
-\end{eqnarray}
-
-O segundo caso também obedece a condição de normalização, mas diferente do primeiro caso, se trata de ensemble misto, pois
-\begin{eqnarray}
-\Tr(\hat{\rho}^2) & = & \Tr{\mqty(\frac{1}{2} & 0 \\\\ 0 & \frac{1}{2})\times\mqty(\frac{1}{2} & 0 \\\\ 0 & \frac{1}{2})} \nonumber\\\nonumber\\ & = & \Tr{\mqty(\frac{1}{4} & 0 \\\\ 0 & \frac{1}{4})} \nonumber\\\nonumber\\ & = & \frac{1}{2},
-\label{eq:21}
-\end{eqnarray} 
-ou seja,
-
-\begin{eqnarray}
-\Tr(\hat{\rho}^2) & < & 1.
-\label{eq:22}
-\end{eqnarray} 
-
-\subsection{Evolução Temporal do Operador Densidade}
-
-Agora, precisamos determinar como o operador densidade evolui no tempo. Para isso, devemos supor que para um tempo $t_0$ o operador densidade corresponde à
-\begin{equation}
-\hat{\rho}(t_0) = \sum_i w_i \dyad{\alpha^{(i)}(t_0)}{\alpha^{(i)}(t_0)}.
-\label{eq:23}
-\end{equation}
-Consideremos que o ensemble não sofre pertubação conforme evolui no tempo, ou seja, as populações relativas $w_i$ se mantém estáticas. Assim, a alteração de $\hat{\rho}$ acontece unicamente pela evolução temporal dos kets de estado $\ket{\alpha^{(i)}(t_0)}$.
-\begin{equation}
-\ket{\alpha^{(i)}(t_0)} \xrightarrow{\textrm{evolução temporal}} \ket{\alpha^{(i)}(t)}
-\label{eq:24}
-\end{equation}
-Sabemos que $\ket{\alpha^{(i)}(t)}$ satisfaz equação de Schrödinger 
-\begin{equation}
-i\hbar\pdv{t}\ket{\alpha^{(i)}(t)} = \hat{H}\ket{\alpha^{(i)}(t)},
-\label{eq:25}
-\end{equation}
-então podemos derivar a equação \eqref{eq:23} de modo que:
-\begin{eqnarray}
-\pdv{t}\hat{\rho}(t) &= &\pdv{t} \sum_i w_i \dyad{\alpha^{(i)}(t)}{\alpha^{(i)}(t)}\nonumber\\\nonumber\\ &= &\sum_i w_i \pdv{t}(\ket{\alpha^{(i)}(t)})\bra{\alpha^{(i)}(t)} + \sum_i w_i \ket{\alpha^{(i)}(t)}\pdv{t}(\bra{\alpha^{(i)}(t)}).
-\label{eq:26}
-\end{eqnarray}
-
-Substituindo \eqref{eq:25} em \eqref{eq:26}, obtemos a equação
-\begin{eqnarray}
-\pdv{t}\hat{\rho}(t) &= &\frac{1}{i\hbar}\hat{H}\qty(\sum_i w_i \ket{\alpha^{(i)}(t)}\bra{\alpha^{(i)}(t)}) -\frac{1}{i\hbar}\qty(\sum_i w_i \ket{\alpha^{(i)}(t)} \bra{\alpha^{(i)}(t)})\hat{H}\nonumber\\\nonumber\\ & = &\frac{1}{i\hbar}\hat{H}\hat{\rho} -\frac{1}{i\hbar}\hat{\rho}\hat{H}\nonumber\\\nonumber\\& = & -\frac{1}{i\hbar}\qty[\hat{\rho},\hat{H}],
-\label{eq:27}
-\end{eqnarray}
-conhecida como equação de \textbf{Liouville-von Neumann}, que descreve a evolução temporal do operador densidade \cite{sakurai2013mecanica,RobertField}. Embora essa equação seja semelhante a equação de Heisenberg, exceto por um sinal negativo ($-$), é preciso lembrar que estamos trabalhando na formulação Schrödinger, visto que $\hat{\rho}$ é construído a partir de kets e bras que evoluem no tempo e obedecem a equação de Schrödinger.
 
 \chapter{Propagação de ondas eletromagnéticas em meio linear}\label{cap:capitulo3}
 
@@ -461,6 +288,181 @@ Desse modo, podemos reescrever  a  equação\eqref{eq:3.47} da seguinte forma:
 \end{equation}
 
 Este resultado final é a equação de onda em sua forma reduzida que permite descrever o comportamento da propagação do campo eletromagnético através de um certo meio atômico. Ela será aplicada no capitulo \ref{cap:capitulo4} para meio atômico de dois níveis.
+
+\chapter{Mecânica Quântica e Operador Densidade}\label{cap:capitulo2}
+
+%Para cada capítulo adicional, digite o comando \chapter{Título do Capítulo}
+
+Neste capítulo nos dedicamos a apresentar o formalismo do operador densidade, desenvolvido por J. von Neumann em 1927, e suas vantagens em relação à representação de autoestados e autovetores no estudo de sistemas quânticos \cite{sakurai2013mecanica}.
+
+\section{Matriz densidade}
+\label{secao2.1}
+
+Como sabemos, o formalismo usual da mecânica quântica, onde trabalhamos com autoestados e autovalores de um determinado observável (formalismo de Dirac), nos permite fazer previsões sobre um conjunto de sistemas físicos elaborados de forma idêntica \cite{breuer2002theory}. Em termos mais específicos, garantimos que todos os sistemas membros deste ensemble sejam caracterizados por um mesmo ket de estado $\ket{\alpha}$. Assim, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\alpha}$ e $30\%$ pelo ket de estado $\ket{\beta}$ (ensemble misto). Para lidar com essa situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros ou, até mesmo, ensemble mistos completamente aleatórios. 
+
+Consideremos o ensemble misto, onde uma fração de sistemas com população relativa $w_1$ estão no estado $\ket{\alpha^{(1)}}$; outra fração $w_2$ estão no estado $\ket{\alpha^{(2)}}$, e assim sucessivamente. Podemos dizer, com certa precisão, que um ensemble misto pode ser visto como uma mistura de ensembles puros. As populações $w_i$ devem satisfazer a condição de normalização, ou seja,
+\begin{equation} 
+	\sum_i w_i = 1.
+	\label{eq:1} 
+\end{equation}
+
+Não é necessário que $\ket*{\alpha^{(1)}}$, $\ket*{\alpha^{(2)}}$,..., $\ket*{\alpha^{(i)}}$ sejam ortogonais entre si e o número de termos na soma em $i$ na equação \eqref{eq:1} não precisa ser igual ao número de dimensões $N$ no espaço de Hilbert.
+
+Vamos supor que realizamos a medida de um operador $\hat{A}$ num ensemble misto. É possível calcular o valor médio se houver um número grande de medidas. O resultado é dado pela média sobre o ensembles, definida por:
+
+\begin{eqnarray}
+	[\hat{A}] & \equiv & \sum_i w_i \mel{\alpha^{(i)}}{\hat{A}}{\alpha^{(i)}} \nonumber\\\nonumber\\  & = & \sum_i w_i \mel{\alpha^{(i)}}{\hat{A}\sum_{a'} \dyad{a'}{a'} }{\alpha^{(i)}}\nonumber\\\nonumber\\& = & \sum_i \sum_{a'} w_i \mel{\alpha^{(i)}}{\hat{A}\dyad{a'}{a'} }{\alpha^{(i)}} \nonumber\\\nonumber\\ & = & \sum_i \sum_{a'} w_i \braket{\alpha^{(i)}}{a'}\braket{a'}{\alpha^{(i)}}a' \nonumber\\\nonumber\\ & = & \sum_i \sum_{a'} w_i \braket{\alpha^{(i)}}{a'}^*\braket{\alpha^{(i)}}{a'}a' \nonumber\\\nonumber\\ & = & \sum_i \sum_{a'} w_i \norm{\braket{a'}{\alpha^{(i)}}}^2a', 
+	\label{eq:2} 
+\end{eqnarray}
+sendo que $\ket{a'}$ é um autovetor do operador $\hat{A}$ e que $\mel{\alpha^{(i)}}{\hat{A}}{\alpha^{(i)}}$ trata-se do valor esperado habitual para $\hat{A}$ em relação a um estado $\ket{\alpha^{(i)}}$. Vemos na equação \eqref{eq:2} que este valores esperados precisam ser ponderados pelas populações relativas $w_i$. É possível observar também que que $\norm*{\braket*{a'}{\alpha^{(i)}}}^2$ é a probabilidade do estado $\ket*{\alpha{(i)}}$ de ser encontrado em um autoestado $\ket*{a'}$ após colapso do ket de estado e que $w_i$ identifica a quantidade relativa de sistemas no estado estado quântico caracterizado por $\ket*{\alpha^{(i)}}$.  
+
+Se considerarmos uma base genérica \{$\ket*{b'}$\}, podemos reescrever a média sobre o ensemble \eqref{eq:2} da seguinte forma:
+\begin{eqnarray} 
+	[\hat{A}] & = & \sum_i w_i \mel{\alpha^{(i)}}{\sum_{b'} \dyad{b'}{b'}\hat{A}\sum_{b''} \dyad{b''}{b''} }{\alpha^{(i)}}\nonumber\\\nonumber\\& = & \sum_i \sum_{b'} \sum_{b''} w_i \braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''}\braket{b''}{\alpha^{(i)}} \nonumber\\\nonumber\\ & = & \sum_i \sum_{b'} \sum_{b''} w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}\mel{b'}{\hat{A}}{b''} \nonumber\\\nonumber\\ & = & \sum_{b'} \sum_{b''} \qty( \sum_i w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'})\mel{b'}{\hat{A}}{b''}.
+	\label{eq:3}
+\end{eqnarray}
+
+O termo destacado entre parenteses é o elemento de matriz de um certo operador hermitiano, que denominamos \textbf{matriz densidade} ou ainda, \textbf{operador densidade} $\hat{\rho}$, conforme equações \eqref{eq:4} e \eqref{eq:5}:
+\begin{equation}
+	\mel{b''}{\hat{\rho}}{b'} = \sum_i w_i \braket{b''}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}
+	\label{eq:4}
+\end{equation}
+De forma geral, o operador densidade é definido como  
+\begin{equation}
+	\hat{\rho} \equiv \sum_i w_i \dyad{a^{(i)}}{a^{(i)}}.
+	\label{eq:5}
+\end{equation} 
+
+Uma vez determinado o operador densidade do sistema, podemos caracterizar o ensemble quântico em questão, de modo a obter todas as informações físicas encerradas por tal operador. Substituindo \eqref{eq:4} em \eqref{eq:3}, podemos reescrever o valor esperado de $\hat{A}$ como:
+
+\begin{eqnarray}
+	[\hat{A}] & = & \sum_{b'} \sum_{b''} \mel{b''}{\hat{\rho}}{b'}\mel{b'}{\hat{A}}{b''}\nonumber\\\nonumber\\ & = & \Tr(\hat{\rho}\hat{A}),
+	\label{eq:6} 
+\end{eqnarray}
+onde a operação $\Tr(\hat{\rho}\hat{A})$ corresponde ao traço do operador resultante do produto entre $\hat{\rho}$ e $\hat{A}$, ficando assim explícito o poder desta construção, pois o traço independe da representação e pode ser calculado usando uma base conveniente.
+
+\subsection{Propriedades do Operador Densidade}
+
+Vamos agora nos ater a algumas propriedades do operador densidade:
+
+\textbf{Primeira propriedade:} O operador densidade é hermitiano, ou seja:
+\begin{equation}
+	\hat{\rho} = \hat{\rho}^\dag.
+	\label{eq:7}
+\end{equation} 
+
+\textbf{Segunda propriedade:} O operador densidade satisfaz a condição de normalização 
+\begin{eqnarray}
+	\Tr\rho & = & \sum_i \sum_{b'} w_i \braket{b'}{\alpha^{(i)}}\braket{\alpha^{(i)}}{b'}\nonumber\\\nonumber\\& = & \sum_i w_i \braket{\alpha^{(i)}}{\alpha^{(i)}}\nonumber\\\nonumber\\& = & 1.
+	\label{eq:8}
+\end{eqnarray}
+
+\textbf{Terceira propriedade:} Podemos substituir o operador $\hat{A}$ em \eqref{eq:6} pelo próprio operador densidade, obtendo: 
+\begin{eqnarray}
+	\Tr(\hat{\rho}^2) & = & \Tr(\hat{\rho}\hat{\rho})\nonumber\\\nonumber\\
+	& = & \sum_i w_i \bra{\alpha^{(i)}}\qty(\sum_j w_j \dyad{\alpha^{(j)}}{\alpha^{(j)}})\ket{\alpha^{(i)}} \nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \braket{\alpha^{(i)}}{\alpha^{(j)}}\braket{\alpha^{(j)}}{\alpha^{(i)}}\nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \braket{\alpha^{(i)}}{\alpha^{(j)}}\braket{\alpha^{(i)}}{\alpha^{(j)}}^*\nonumber\\\nonumber\\& = & \sum_i \sum_j w_i w_j \norm{\braket{\alpha^{(i)}}{\alpha^{(j)}}}^2.
+	\label{eq:9}
+\end{eqnarray}
+Esse resultado precisa ser analisado, observando a desigualdade de Cauchy-Schwarz \cite{cohen2019quantum}
+\begin{equation}
+	\norm{\braket{\alpha^{(i)}}{\alpha^{(j)}}}^2 \leq \braket{\alpha^{(i)}}{\alpha^{(i)}}\braket{\alpha^{(j)}}{\alpha^{(j)}}.
+	\label{eq:10}
+\end{equation} 
+Como os kets $\ket*{\alpha^{(i)}}$ são normalizados, ou seja, $\braket*{\alpha^{(i)}}{\alpha^{(i)}}=\braket*{\alpha^{(j)}}{\alpha^{(j)}} =1$, obtemos a seguinte propriedade:
+\begin{equation}
+	\Tr(\hat{\rho}^2) \leq 1.
+	\label{eq:11}
+\end{equation}
+
+É possível observar que quando se trata de um ensemble puro, ou seja, quando um dos pesos $w_i$ tem valor 1 e o restante de valor 0, então
+\begin{equation}
+	\hat{\rho} = \dyad{a^{(i)}}{a^{(i)}}.
+	\label{eq:12}
+\end{equation}
+Nesse caso, $\Tr(\hat{\rho}^2)$ tem valor máximo, isto é,
+\begin{equation}
+	\Tr(\hat{\rho}^2) = 1.
+	\label{eq:13}
+\end{equation} 
+Assim, é fácil provar que o operador densidade de um ensemble puro é idempotente, ou seja:
+\begin{equation}
+	\hat{\rho}^2 = \hat{\rho}
+	\label{eq:14}
+\end{equation} 
+
+Para melhor compreensão dessas propriedades, vamos supor, por exemplo, um sistema de dois níveis onde o operador densidade é dado pela matriz
+\begin{equation}\label{eq:15}
+	\hat{\rho} = \mqty(\rho_{11} & \rho_{12} \\ \rho_{21} & \rho_{22}).
+\end{equation}  
+No primeiro caso, consideramos que $100\%$ dos sistemas estão no ket estado $\ket{\alpha}$, onde
+\begin{equation}
+	\ket{\alpha} = \frac{1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1}.
+	\label{eq:16}
+\end{equation}
+Então, calculamos:
+\begin{eqnarray}
+	\hat{\rho} & = & \dyad{\alpha}{\alpha} \nonumber\\\nonumber\\ & = & \qty(\frac{1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1})\times\qty(\frac{1}{\sqrt{2}}\bra{0} + \frac{1}{\sqrt{2}}\bra{1})\nonumber\\\nonumber\\ & = & \frac{1}{2}\qty(\dyad{0}{0} + \dyad{0}{1} + \dyad{1}{0} + \dyad{1}{1})\nonumber\\\nonumber\\ & = & \mqty(\frac{1}{2} & \frac{1}{2} \\\\ \frac{1}{2} & \frac{1}{2}).
+	\label{eq:17}
+\end{eqnarray}
+Neste caso, é fácil observar que $\hat{\rho}$ satisfaz condição de normalização e, como esperado, representa um caso puro, pois
+
+\begin{eqnarray}
+	\Tr(\hat{\rho}^2) & = & \Tr{\mqty(\frac{1}{2} & \frac{1}{2} \\\\ \frac{1}{2} & \frac{1}{2})\times\mqty(\frac{1}{2} & \frac{1}{2} \\\\ \frac{1}{2} & \frac{1}{2})} \nonumber\\\nonumber\\ & = & \Tr{\mqty(\frac{1}{2} & \frac{1}{2} \\\\ \frac{1}{2} & \frac{1}{2})} \nonumber\\\nonumber\\ & = & \Tr(\hat{\rho})\nonumber\\\nonumber\\ & = & 1
+	\label{eq:18}
+\end{eqnarray} 
+
+Em um segundo caso, temos que $50\%$ dos sistemas estão no ket estado $\ket{\alpha}$ \eqref{eq:16} e $50\%$ estão no ket estado $\ket{\beta}$, onde
+\begin{equation}
+	\ket{\beta} = \frac{1}{\sqrt{2}}\ket{0} - \frac{1}{\sqrt{2}}\ket{1}.
+	\label{eq:19}
+\end{equation}
+Assim temos:
+\begin{eqnarray}
+	\hat{\rho} & = & \frac{1}{2}\dyad{\alpha}{\alpha} + \frac{1}{2}\dyad{\beta}{\beta} \nonumber\\\nonumber\\ & = & \frac{1}{2}\qty(\frac{1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1})\times\qty(\frac{1}{\sqrt{2}}\bra{0} + \frac{1}{\sqrt{2}}\bra{1}) \nonumber\\ & + & \frac{1}{2}\qty(\frac{1}{\sqrt{2}}\ket{0} - \frac{1}{\sqrt{2}}\ket{1})\times\qty(\frac{1}{\sqrt{2}}\bra{0} - \frac{1}{\sqrt{2}}\bra{1})\nonumber\\\nonumber\\ & = & \frac{1}{2}\qty(\dyad{0}{0} + \dyad{1}{1})\nonumber\\\nonumber\\ & = & \mqty(\frac{1}{2} & \frac{0}{0} \\\\ \frac{0}{0} & \frac{1}{2}).
+	\label{eq:20}
+\end{eqnarray}
+
+O segundo caso também obedece a condição de normalização, mas diferente do primeiro caso, se trata de ensemble misto, pois
+\begin{eqnarray}
+	\Tr(\hat{\rho}^2) & = & \Tr{\mqty(\frac{1}{2} & 0 \\\\ 0 & \frac{1}{2})\times\mqty(\frac{1}{2} & 0 \\\\ 0 & \frac{1}{2})} \nonumber\\\nonumber\\ & = & \Tr{\mqty(\frac{1}{4} & 0 \\\\ 0 & \frac{1}{4})} \nonumber\\\nonumber\\ & = & \frac{1}{2},
+	\label{eq:21}
+\end{eqnarray} 
+ou seja,
+
+\begin{eqnarray}
+	\Tr(\hat{\rho}^2) & < & 1.
+	\label{eq:22}
+\end{eqnarray} 
+
+\subsection{Evolução Temporal do Operador Densidade}
+
+Agora, precisamos determinar como o operador densidade evolui no tempo. Para isso, devemos supor que para um tempo $t_0$ o operador densidade corresponde à
+\begin{equation}
+	\hat{\rho}(t_0) = \sum_i w_i \dyad{\alpha^{(i)}(t_0)}{\alpha^{(i)}(t_0)}.
+	\label{eq:23}
+\end{equation}
+Consideremos que o ensemble não sofre pertubação conforme evolui no tempo, ou seja, as populações relativas $w_i$ se mantém estáticas. Assim, a alteração de $\hat{\rho}$ acontece unicamente pela evolução temporal dos kets de estado $\ket{\alpha^{(i)}(t_0)}$.
+\begin{equation}
+	\ket{\alpha^{(i)}(t_0)} \xrightarrow{\textrm{evolução temporal}} \ket{\alpha^{(i)}(t)}
+	\label{eq:24}
+\end{equation}
+Sabemos que $\ket{\alpha^{(i)}(t)}$ satisfaz equação de Schrödinger 
+\begin{equation}
+	i\hbar\pdv{t}\ket{\alpha^{(i)}(t)} = \hat{H}\ket{\alpha^{(i)}(t)},
+	\label{eq:25}
+\end{equation}
+então podemos derivar a equação \eqref{eq:23} de modo que:
+\begin{eqnarray}
+	\pdv{t}\hat{\rho}(t) &= &\pdv{t} \sum_i w_i \dyad{\alpha^{(i)}(t)}{\alpha^{(i)}(t)}\nonumber\\\nonumber\\ &= &\sum_i w_i \pdv{t}(\ket{\alpha^{(i)}(t)})\bra{\alpha^{(i)}(t)} + \sum_i w_i \ket{\alpha^{(i)}(t)}\pdv{t}(\bra{\alpha^{(i)}(t)}).
+	\label{eq:26}
+\end{eqnarray}
+
+Substituindo \eqref{eq:25} em \eqref{eq:26}, obtemos a equação
+\begin{eqnarray}
+	\pdv{t}\hat{\rho}(t) &= &\frac{1}{i\hbar}\hat{H}\qty(\sum_i w_i \ket{\alpha^{(i)}(t)}\bra{\alpha^{(i)}(t)}) -\frac{1}{i\hbar}\qty(\sum_i w_i \ket{\alpha^{(i)}(t)} \bra{\alpha^{(i)}(t)})\hat{H}\nonumber\\\nonumber\\ & = &\frac{1}{i\hbar}\hat{H}\hat{\rho} -\frac{1}{i\hbar}\hat{\rho}\hat{H}\nonumber\\\nonumber\\& = & -\frac{1}{i\hbar}\qty[\hat{\rho},\hat{H}],
+	\label{eq:27}
+\end{eqnarray}
+conhecida como equação de \textbf{Liouville-von Neumann}, que descreve a evolução temporal do operador densidade \cite{sakurai2013mecanica,RobertField}. Embora essa equação seja semelhante a equação de Heisenberg, exceto por um sinal negativo ($-$), é preciso lembrar que estamos trabalhando na formulação Schrödinger, visto que $\hat{\rho}$ é construído a partir de kets e bras que evoluem no tempo e obedecem a equação de Schrödinger.
 
 \chapter{Interação sistema atômico de dois níveis com radiação}\label{cap:capitulo4}
 
@@ -908,5 +910,6 @@ Digite aqui o conteúdo de outro capítulo.
 	\caption{Espectro de um laser de femtossegundos.}
 \end{figure}
 
+\input{figuras_do_trabalho/p22.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
