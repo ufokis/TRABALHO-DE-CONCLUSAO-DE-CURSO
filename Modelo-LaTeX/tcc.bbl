@@ -1,25 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{sakurai2013mecanica}
-J.~Sakurai, J.~Napolitano, and S.~Dahmen, {\em Mec{\^a}nica qu{\^a}ntica
-  moderna}.
-\newblock Bookman, 2013.
-
-\bibitem{breuer2002theory}
-H.-P. Breuer, F.~Petruccione, {\em et~al.}, {\em The theory of open quantum
-  systems}.
-\newblock Oxford University Press on Demand, 2002.
-
-\bibitem{cohen2019quantum}
-C.~Cohen-Tannoudji, B.~Diu, and F.~Lalo{\"e}, {\em Quantum Mechanics, Volume 1:
-  Basic Concepts, Tools, and Applications}.
-\newblock Wiley, 2019.
-
-\bibitem{RobertField}
-R.~Field and A.~Tokmakoff, {\em 5.74 Introductory Quantum Mechanics II}.
-\newblock Massachusetts Institute of Technology: MIT OpenCourseWare, Spring
-  2004.
-
 \bibitem{jackson1998classical}
 J.~Jackson, {\em CLASSICAL ELECTRODYNAMICS, 3RD ED}.
 \newblock Jhon Wiley, 1998.
@@ -40,6 +20,26 @@ R.~W. Boyd, ``The nonlinear optical susceptibility,'' {\em Nonlinear optics},
 J.~Diels, W.~Rudolph, P.~Liao, and P.~Kelley, {\em Ultrashort Laser Pulse
   Phenomena}.
 \newblock Electronics \& Electrical, Elsevier Science, 2006.
+
+\bibitem{sakurai2013mecanica}
+J.~Sakurai, J.~Napolitano, and S.~Dahmen, {\em Mec{\^a}nica qu{\^a}ntica
+  moderna}.
+\newblock Bookman, 2013.
+
+\bibitem{breuer2002theory}
+H.-P. Breuer, F.~Petruccione, {\em et~al.}, {\em The theory of open quantum
+  systems}.
+\newblock Oxford University Press on Demand, 2002.
+
+\bibitem{cohen2019quantum}
+C.~Cohen-Tannoudji, B.~Diu, and F.~Lalo{\"e}, {\em Quantum Mechanics, Volume 1:
+  Basic Concepts, Tools, and Applications}.
+\newblock Wiley, 2019.
+
+\bibitem{RobertField}
+R.~Field and A.~Tokmakoff, {\em 5.74 Introductory Quantum Mechanics II}.
+\newblock Massachusetts Institute of Technology: MIT OpenCourseWare, Spring
+  2004.
 
 \bibitem{taylor2013mecanica}
 J.~Taylor, {\em Mec{\^a}nica Cl{\'a}ssica}.

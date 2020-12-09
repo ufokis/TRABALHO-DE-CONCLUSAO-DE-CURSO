@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.30)  3 DEC 2020 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.30)  9 DEC 2020 19:11
 entering extended mode
-**./tcc_content.tex
-(tcc_content.tex
+**./document.tex
+(document.tex
 LaTeX2e <2020-10-01> patch level 1
 L3 programming layer <2020-10-05> xparse <2020-03-03>
 (C:\Users\elito\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -977,34 +977,32 @@ Package: floatflt 1997/07/16 v. 1.31
 \floatfltwidth=\dimen310
 \fltitemwidth=\dimen311
 \outputpretest=\toks44
-)) (macros.tex) (estilo.tex)
-\bwk=\box76
- (tcc_content.aux)
-\openout1 = `tcc_content.aux'.
+)) (macros.tex) (estilo.tex) (document.aux)
+\openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 (C:\Users\elito\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count354
 \scratchdimen=\dimen312
-\scratchbox=\box77
+\scratchbox=\box76
 \nofMPsegments=\count355
 \nofMParguments=\count356
 \everyMPshowfont=\toks45
@@ -1055,7 +1053,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 69.
+Package hyperref Info: Link coloring ON on input line 66.
 (C:\Users\elito\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1065,12 +1063,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count360
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
- (tcc_content.out) (tcc_content.out)
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
+ (document.out) (document.out)
 \@outlinefile=\write5
-\openout5 = `tcc_content.out'.
+\openout5 = `document.out'.
 
 \c@lstlisting=\count361
 Package caption Info: Begin \AtBeginDocument code.
@@ -1088,14 +1086,19 @@ pdf>
 s-converted-to.pdf figuras_do_template/logo.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_template/logo-eps-converted-to.pdf, id=86, 410.53375pt x 96.36pt>
+<figuras_do_template/logo-eps-converted-to.pdf, id=70, 410.53375pt x 96.36pt>
 File: figuras_do_template/logo-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_template/logo-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_template/logo-eps-converted-to.pdf  used on
  input line 12.
 (pdftex.def)             Requested size: 450.69417pt x 105.78604pt.
-) (contra-capa.tex
-[1
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+2.
+
+(C:\Users\elito\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+))
+(contra-capa.tex [1
 
 
 
@@ -1131,7 +1134,7 @@ Package epstopdf Info: Source file: <figuras_do_template/logo-ata.eps>
 a-eps-converted-to.pdf figuras_do_template/logo-ata.eps>
 (epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_template/logo-ata-eps-converted-to.pdf, id=117, 425.59pt x 66.2475p
+<figuras_do_template/logo-ata-eps-converted-to.pdf, id=101, 425.59pt x 66.2475p
 t>
 File: figuras_do_template/logo-ata-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1155,24 +1158,24 @@ d on input line 7.
 ] (listas-sumario.tex [13] [14
 
 
-] (tcc_content.lot)
+] (document.lot)
 \tf@lot=\write6
-\openout6 = `tcc_content.lot'.
+\openout6 = `document.lot'.
 
  [15]
 [16
 
 
-] (tcc_content.lof)
+] (document.lof)
 \tf@lof=\write7
-\openout7 = `tcc_content.lof'.
+\openout7 = `document.lof'.
 
  [17] [18
 
 
-] (tcc_content.toc)
+] (document.toc)
 \tf@toc=\write8
-\openout8 = `tcc_content.toc'.
+\openout8 = `document.toc'.
 
  [19] [20
 
@@ -1188,12 +1191,45 @@ Cap\'{\i }tulo 1.
 ]
 Cap\'{\i }tulo 2.
 
+LaTeX Warning: Citation `jackson1998classical' on page 3 undefined on input lin
+e 12.
+
+
+LaTeX Warning: Citation `griffiths2011elet' on page 3 undefined on input line 1
+2.
+
+
 Underfull \vbox (badness 1281) has occurred while \output is active []
 
  [3]
+
+LaTeX Warning: Citation `allen1987optical' on page 4 undefined on input line 56
+.
+
+
+LaTeX Warning: Citation `boyd2008nonlinear' on page 4 undefined on input line 6
+8.
+
+
+LaTeX Warning: Citation `diels2006ultrashort' on page 4 undefined on input line
+ 68.
+
+
+LaTeX Warning: Citation `diels2006ultrashort' on page 4 undefined on input line
+ 74.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
+
+LaTeX Warning: Citation `jackson1998classical' on page 5 undefined on input lin
+e 80.
+
+
+LaTeX Warning: Citation `griffiths2011elet' on page 5 undefined on input line 8
+0.
+
 [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1212,7 +1248,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Cap\'{\i }tulo 3.
+
+LaTeX Warning: Citation `sakurai2013mecanica' on page 13 undefined on input lin
+e 296.
+
+
+LaTeX Warning: Citation `breuer2002theory' on page 13 undefined on input line 3
+01.
+
 [13] [14]
+
+LaTeX Warning: Citation `cohen2019quantum' on page 15 undefined on input line 3
+66.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
@@ -1222,8 +1271,19 @@ Underfull \vbox (badness 4132) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
+
+LaTeX Warning: Citation `sakurai2013mecanica' on page 18 undefined on input lin
+e 465.
+
+
+LaTeX Warning: Citation `RobertField' on page 18 undefined on input line 465.
+
 [18]
 Cap\'{\i }tulo 4.
+
+LaTeX Warning: Citation `taylor2013mecanica' on page 19 undefined on input line
+ 473.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1231,18 +1291,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
+
+LaTeX Warning: Citation `scullyquantum' on page 20 undefined on input line 545.
+
+
+
+LaTeX Warning: Citation `meystre2007elements' on page 20 undefined on input lin
+e 545.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
+
+LaTeX Warning: Citation `scullyquantum' on page 21 undefined on input line 605.
+
+
+
+LaTeX Warning: Citation `meystre2007elements' on page 21 undefined on input lin
+e 605.
+
+
+LaTeX Warning: Citation `allen1987optical' on page 21 undefined on input line 6
+09.
+
 [21] (figuras_do_trabalho/5555.tpx
 LaTeX Font Info:    Calculating math sizes for size <9.51> on input line 25.
 )
 Underfull \vbox (badness 2237) has occurred while \output is active []
 
  [22]
+
+LaTeX Warning: Citation `scullyquantum' on page 23 undefined on input line 685.
+
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
+
+LaTeX Warning: Citation `boyd2008nonlinear' on page 24 undefined on input line 
+704.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
@@ -1271,79 +1362,44 @@ pdf>
 s-converted-to.pdf figuras_do_trabalho/fig1.eps>
 (epstopdf)             \includegraphics on input line 908.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=608, 333.245pt x 190.7125pt>
+<figuras_do_trabalho/fig1-eps-converted-to.pdf, id=531, 333.245pt x 190.7125pt>
 
 File: figuras_do_trabalho/fig1-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/fig1-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/fig1-eps-converted-to.pdf  used on
  input line 908.
 (pdftex.def)             Requested size: 273.14923pt x 156.32996pt.
-) (conclusao.tex [29
+(figuras_do_trabalho/p22.tex
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
 
+! TeX capacity exceeded, sorry [.6=200000].
+l.6 
+    	\draw[line width=2pt, line join=miter, line cap=rect](47.4501pt,177.541...
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
 
- <./figuras_do_trabalho/fig1-eps-converted-to.pdf>]
-[30
-
-
-]
-Cap\'{\i }tulo 6.
-) (tcc_content.bbl [31] [32
-
-
-]) (apendice.tex [33] [34
-
-
-] [35
-
-
-] [36
-
-
-]) [37]
-(tcc_content.aux)
-Package rerunfilecheck Info: File `tcc_content.out' has not changed.
-(rerunfilecheck)             Checksum: 03CDE6ADCC56D89B1CA7B789F90CF2C8;1506.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 25389 strings out of 480257
- 457768 string characters out of 2881437
- 820304 words of memory out of 3000000
- 41058 multiletter control sequences out of 15000+200000
- 583136 words of font info for 120 fonts, out of 3000000 for 9000
+ 25357 strings out of 480257
+ 457201 string characters out of 2881437
+ 819559 words of memory out of 3000000
+ 41060 multiletter control sequences out of 15000+200000
+ 580599 words of font info for 119 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,18n,101p,1413b,1239s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/elito/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
-/Users/elito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy
-10.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmbx8.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/elito/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/elito/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/elito/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/e
-lito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
-/Users/elito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9
-.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr12.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr6.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/elito/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/elito/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/elito/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/elito/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/el
-ito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.p
-fb><C:/Users/elito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
-mbols/msbm10.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msbm7.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/fon
-ts/type1/urw/courier/ucrr8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
-onts/type1/urw/times/utmb8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
-onts/type1/urw/times/utmr8a.pfb><C:/Users/elito/AppData/Local/Programs/MiKTeX/f
-onts/type1/urw/times/utmri8a.pfb>
-Output written on tcc_content.pdf (57 pages, 664362 bytes).
-PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
- 249 named destinations out of 1000 (max. 500000)
- 188 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 98i,18n,101p,1410b,1239s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
