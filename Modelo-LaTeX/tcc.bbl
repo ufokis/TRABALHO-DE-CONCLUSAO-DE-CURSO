@@ -1,7 +1,7 @@
 \begin{thebibliography}{10}
 
 \bibitem{jackson1998classical}
-J.~Jackson, {\em CLASSICAL ELECTRODYNAMICS, 3RD ED}.
+J.~Jackson, {\em Classical Eletrodynamics, third edition}.
 \newblock Jhon Wiley, 1998.
 
 \bibitem{griffiths2011elet}
@@ -52,5 +52,9 @@ M.~Scully and M.~Zubairy, {\em Quantum Optics}.
 \bibitem{meystre2007elements}
 P.~Meystre and M.~Sargent, {\em Elements of Quantum Optics}.
 \newblock SpringerLink: Springer e-Books, Springer Berlin Heidelberg, 2007.
+
+\bibitem{atkinson1989}
+K.~Atkinson, {\em An Introduction to Numerical Analysis}.
+\newblock Wiley, 1989.
 
 \end{thebibliography}

@@ -1,0 +1,34 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{}}{3}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{}}{3}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{}}{9}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-4}{}}{9}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-5}{}}{13}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-6}{}}{13}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-7000}{QQ2-1-7}{}}{19}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-8000}{QQ2-1-8}{Dedicat\'oria}}{19}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-9000}{QQ2-1-9}{}}{21}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-10000}{QQ2-1-10}{Agradecimentos}}{21}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-11000}{QQ2-1-11}{}}{23}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-12000}{QQ2-1-12}{Ep\IeC {\'\i }grafe}}{23}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-13000}{QQ2-1-13}{}}{25}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-14000}{QQ2-1-14}{Resumo}}{25}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-15000}{QQ2-1-15}{}}{27}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-16000}{QQ2-1-16}{Lista de Tabelas}}{27}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-17000}{QQ2-1-17}{}}{29}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-18000}{QQ2-1-18}{Lista de Figuras}}{29}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-19000}{QQ2-1-19}{}}{31}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-20000}{QQ2-1-20}{Sum\'ario}}{31}\relax 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-210001}{QQ2-1-21}{Introdu\c c\~ao}}{3}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-220002}{QQ2-1-22}{Propaga\c c\~ao de ondas eletromagn\'eticas em meio linear}}{5}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-230001}{QQ2-1-23}{Equa\c c\~oes de Maxwell}}{5}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-240002}{QQ2-1-24}{propaga\c c\~ao de onda em meio linear}}{9}\relax 
+\doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{1}{x1-250003}{QQ2-1-25}{Propaga\c c\~ao de onda em um meio at\^omico de 2 n\IeC {\'\i }veis}}{21}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-260003}{QQ2-1-26}{Mec\^anica Qu\^antica e Operador Densidade}}{25}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-270001}{QQ2-1-27}{Matriz densidade}}{25}\relax 
+\doTocEntry\tocsubsection{3.1.1}{\csname a:TocLink\endcsname{1}{x1-280001}{QQ2-1-28}{Propriedades do Operador Densidade}}{28}\relax 
+\doTocEntry\tocsubsection{3.1.2}{\csname a:TocLink\endcsname{1}{x1-290002}{QQ2-1-29}{Evolu\c c\~ao Temporal do Operador Densidade}}{34}\relax 
+\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{1}{x1-300004}{QQ2-1-30}{Intera\c c\~ao sistema at\^omico de dois n\IeC {\'\i }veis com radia\c c\~ao}}{37}\relax 
+\doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{1}{x1-310001}{QQ2-1-31}{Hamiltoniano para um sistema at\^omico de dois n\IeC {\'\i }veis }}{37}\relax 
+\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{1}{x1-320002}{QQ2-1-32}{Sistema at\^omico de dois n\IeC {\'\i }veis}}{44}\relax 
+\doTocEntry\toclof{}{\csname a:TocLink\endcsname{1}{x1-32004}{}{\numberline {4.1}{\ignorespaces N\IeC {\protect \'\i }veis de energia de um hipot\'etico "\'atomo de dois n\IeC {\protect \'\i }veis". A "dessintonia" $ \delta = \omega _{ab} - \omega $ \'e a diferen\c ca entre $(E_2-E_1)/\hbar $ e $\omega $. A radia\c c\~ao da frequ\^encia angular $\omega $ \'e quase ressonante com a transi\c c\~ao $E_1\rightarrow E_2$, quando $\delta \ll \omega _{ab} - \omega $.\relax }}}{47}\relax 

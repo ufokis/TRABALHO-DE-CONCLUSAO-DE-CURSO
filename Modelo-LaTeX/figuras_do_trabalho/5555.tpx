@@ -35,6 +35,6 @@
 \path[line width=0.40mm, draw=L, fill=F] (6.49,46.86) -- (5.79,44.06) -- (7.19,44.06) -- (6.49,46.86) -- cycle;
 \path[line width=0.40mm, draw=L, fill=F] (6.49,35.21) -- (7.19,38.01) -- (5.79,38.01) -- (6.49,35.21) -- cycle;
 \draw(8.38,17.60) node[anchor=base west]{\fontsize{9.51}{11.42}\selectfont $\omega$};
-\draw(29.09,24.26) node[anchor=base west]{\fontsize{9.51}{11.42}\selectfont $\omega_o$};
+\draw(29.09,24.26) node[anchor=base west]{\fontsize{9.51}{11.42}\selectfont $\omega_{ab}$};
 \end{tikzpicture}%
 

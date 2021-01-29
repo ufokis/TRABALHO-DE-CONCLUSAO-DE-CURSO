@@ -1,4 +1,4 @@
-
+frenicoque
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -198,13 +198,13 @@ onde $\mathcal{P^L}(z,t)$ é a envoltória da polarização que varia lentamente em 
 \end{eqnarray}
 Levando e conta que $(c^2)^{-1} = \mu_0\epsilon_0$, temos:
 \begin{eqnarray}
-\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t)  & = & \mu_0\epsilon_0\bigg[\cancel{\pdv[2]{t}} + \cancel{2i\omega_c\pdv{t}} - \cancel{{\omega_c}^2}\bigg]\tilde{\mathcal{E}}(z,t)  + \mu_0\epsilon(\omega_c)\bigg[\pdv[2]{t} + \nonumber\\& + & 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t) - \mu_0\epsilon_0\bigg[\cancel{\pdv[2]{t}} + \cancel{2i\omega_c\pdv{t}} - \nonumber\\& - & \cancel{{\omega_c}^2}\bigg]\tilde{\mathcal{E}}(z,t) + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\mu_0\epsilon^{(n)}(\omega_c)\bigg[\pdv[n+2]{t} + \nonumber\\& + & 2i\omega_c\pdv[n+1]{t}- {\omega_c}^2\pdv[n]{t}\bigg]\tilde{\mathcal{E}}(z,t)\nonumber\\\nonumber\\\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t) & = & \mu_0\epsilon(\omega_c)\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z, t)  - \nonumber\\ & - & i\mu_0\bigg[2i\omega_c\epsilon^{(1)}(\omega_c)\pdv[2]{t} -  {\omega_c}^2\epsilon^{(1)}(\omega_c)\pdv{t} + \nonumber\\ & + & \frac{i{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}\pdv[2]{t}\bigg]\tilde{\mathcal{E}}(z, t) - \nonumber\\& - & \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + \nonumber\\ & + & 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c) + \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z, t).				 																	
+\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t)  & = &{\color{red} \mu_0\epsilon_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t)}  + \mu_0\epsilon(\omega_c)\bigg[\pdv[2]{t} + \nonumber\\& + & 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t) - {\color{red} \mu_0\epsilon_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - }\nonumber\\& {\color{red}-} & {\color{red}{\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t)} + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\mu_0\epsilon^{(n)}(\omega_c)\bigg[\pdv[n+2]{t} + \nonumber\\& + & 2i\omega_c\pdv[n+1]{t}- {\omega_c}^2\pdv[n]{t}\bigg]\tilde{\mathcal{E}}(z,t)\nonumber\\\nonumber\\\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t) & = & \mu_0\epsilon(\omega_c)\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z, t)  - \nonumber\\ & - & i\mu_0\bigg[2i\omega_c\epsilon^{(1)}(\omega_c)\pdv[2]{t} -  {\omega_c}^2\epsilon^{(1)}(\omega_c)\pdv{t} + \nonumber\\ & + & \frac{i{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}\pdv[2]{t}\bigg]\tilde{\mathcal{E}}(z, t) - \nonumber\\& - & \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + \nonumber\\ & + & 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c) + \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z, t).				 																	
 \label{eq:3.37}
 \end{eqnarray}
 
 Partindo do fato que ${k_c}^2=\mu_0\epsilon(\omega_c){\omega_c}^2$, temos
 \begin{eqnarray}
-\qty[\pdv[2]{z} - 2ik_c\pdv{z} - \cancel{{k_c}^2}]\tilde{\mathcal{E}}(z,t)  & = & - \cancel{{k_c}^2\tilde{\mathcal{E}}(z,t)} + i\mu_0\omega_c\big[\omega_c\epsilon^{(1)}(\omega_c) + 2\epsilon(\omega_c)\big]\pdv{t}\tilde{\mathcal{E}}(z,t)\nonumber\\ & + & \mu_0\bigg[\epsilon(w_c) + 2\omega_c\epsilon^{(1)}(w_c) + \frac{{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}\bigg]\pdv[2]{t}\tilde{\mathcal{E}}(z,t)\nonumber\\  & - & \sum_{n=3}^\infty \frac{(-i)^{n}}{2n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c)\nonumber\\& + & \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t).
+\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {\color{red}{k_c}^2}]\tilde{\mathcal{E}}(z,t)  & = & - {\color{red}{k_c}^2\tilde{\mathcal{E}}(z,t)} + i\mu_0\omega_c\big[\omega_c\epsilon^{(1)}(\omega_c) + 2\epsilon(\omega_c)\big]\pdv{t}\tilde{\mathcal{E}}(z,t)\nonumber\\ & + & \mu_0\bigg[\epsilon(w_c) + 2\omega_c\epsilon^{(1)}(w_c) + \frac{{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}\bigg]\pdv[2]{t}\tilde{\mathcal{E}}(z,t)\nonumber\\  & - & \sum_{n=3}^\infty \frac{(-i)^{n}}{2n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c)\nonumber\\& + & \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t).
 \label{eq:3.38}
 \end{eqnarray}
 
@@ -622,10 +622,11 @@ O sistema de dois níveis sem pertubação possui dois valores prováveis de energia
 & = & (E_2-E_1)/\hbar \label{eq:4.29}.
 \end{eqnarray}
 \begin{figure}[H]
+	\caption{Níveis de energia de um hipotético "átomo de dois níveis". A "dessintonia" $ \delta = \omega_{ab} - \omega$ é a diferença entre $(E_2-E_1)/\hbar$ e $\omega$. A radiação da frequência angular $\omega$ é quase ressonante com a transição $E_1\rightarrow E_2$, quando $\delta\ll\omega_{ab} - \omega$.} 
 	\centering 
 	\input{figuras_do_trabalho/5555.tpx}
 	\label{fig:1}
-	\caption{Níveis de energia de um hipotético "átomo de dois níveis". A "dessintonia" $ \delta = \omega_0 - \omega$ é a diferença entre $(E_2-E_1)/\hbar$ e $\omega$. A radiação da frequência angular $\omega$ é quase ressonante com a transição $E_1\rightarrow E_2$, quando $\delta\ll\omega_0 - \omega$.} 
+\caption*{Fonte: Do autor}
 \end{figure}
 
 A função de onda para o sistema de dois níveis é 
@@ -711,8 +712,7 @@ O termo à direita é o termo fenomenológico de decaimento, ao qual, indica  que a
 	\rho_{nm}^{(eq)}=0 \textnormal{	para	} n\neq m .
 	\label{eq:4.43}
 \end{equation} 
-Isso significa que em equilíbrio térmico os estados excitados podem conter população ($\rho_{nn}^{(eq)}$ pode ser diferente de zero), porém essa excitação térmica não pode produzir superposição coerente de estados atômicos ($\rho_{nm}^{(eq)}=0$  para $n\neq m$).
-Outra maneira de descrever os fenômenos de decaimento é considerarmos que os elementos fora da diagonal principal da matriz densidade relaxam, conforme descrito acima, mas para descrevermos os termos da diagonal principal, de forma a permitir que a população decaia dos níveis mais altos para níveis mais baixos, representados da seguinte forma:
+Isso significa que em equilíbrio térmico os estados excitados podem conter população ($\rho_{nn}^{(eq)}$ pode ser diferente de zero), porém essa excitação térmica não pode produzir superposição coerente de estados atômicos ($\rho_{nm}^{(eq)}=0$  para $n\neq m$). Outra maneira de descrever os fenômenos de decaimento é considerarmos que os elementos fora da diagonal principal da matriz densidade relaxam, conforme descrito acima, mas para descrevermos os termos da diagonal principal, de forma a permitir que a população decaia dos níveis mais altos para níveis mais baixos, representados da seguinte forma:
 \begin{eqnarray}
 	\dv{\hat{\rho}_{nm}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nm} - \gamma_{nm}\rho_{nm} \textnormal{ para } n\neq m	\label{eq:4.44}\\\nonumber\\
 	\dv{\hat{\rho}_{nn}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nn} + \sum_{E_m>E_n}\Gamma_{nm}\rho_{mm} - \sum_{E_m<E_n}\Gamma_{mn}\rho_{nn}
@@ -725,6 +725,14 @@ Considerando que o estado $\ket{n}$ tem um tempo de vida $\tau=1/\Gamma_{n}$, on
 	\Gamma_{n}=\sum_{E_n'<E_n}\Gamma_{n'n},
 	\label{eq:4.46}	
 \end{equation}
+\begin{figure}[H]
+	\caption{Amplitude de probabilidade $c_n(t)$ decai conforme \eqref{eq:4.48}.}
+	\centering
+	\def\svgscale{0.6}
+	\includesvg{figuras_do_trabalho/grafico_decay}
+	\label{fig3}
+	\caption*{Fonte: Do autor}
+\end{figure}
 podemos dizer que a probabilidade de encontrar o sistema no estado $\ket{n}$ diminui da seguinte forma:
 \begin{equation}
 	\qty|c_n(t)|^2 = \qty|c_n(0)|^2 e^{-\Gamma_n t}.
@@ -732,12 +740,13 @@ podemos dizer que a probabilidade de encontrar o sistema no estado $\ket{n}$ dim
 \end{equation}
 Assim, a amplitude de probabilidade, que varia no tempo, obedece a relação 
 \begin{equation}
-	c_n(t) =c_n(0) e^{-i \omega_{n}t} e^{-\frac{\Gamma_n t}{2}}.
+	c_n(t) =c_n(0) e^{-i \omega_{n}t} e^{-\frac{\Gamma_n }{2}t}.
 	\label{eq:4.48}	
 \end{equation}
+
 A amplitude de probabilidade para um estado $\ket{m}$ obedece a mesma forma 
 \begin{equation}
-	c_m(t) =c_m(0) e^{-i \omega_{m}t} e^{-\frac{\Gamma_m t}{2}}.
+	c_m(t) =c_m(0) e^{-i \omega_{m}t} e^{-\frac{\Gamma_m }{2}t}.
 	\label{eq:4.49}	
 \end{equation}
 Isso significa que a coerência entre os dois estados deve variar, conforme
@@ -760,7 +769,6 @@ Para calculamos os elementos $\rho_{nm}$ da matriz densidade com $n\neq m$, para
 	 							  & = &  (i \omega_{21} - \gamma_{12})\rho_{12} +  i\frac{d_{12}}{2\hbar}E_0e^{i\omega_c t}(\rho_{22}-\rho_{11}) 
 \end{eqnarray}
 e  $\dot{\rho}_{21}$ 
-
 \begin{eqnarray}
 	\pdv{t}\mel{2}{\hat{\rho}}{1} & = &  \frac{i}{\hbar}\mel{2}{\qty[\hat{\rho},\hat{H}]}{1} - \gamma_{21}\rho_{21}\\
 	& = &  \frac{i}{\hbar}\mel{2}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{1} - \gamma_{21}\rho_{21}\\
@@ -768,7 +776,7 @@ e  $\dot{\rho}_{21}$
 	& = &  \frac{i}{\hbar}(\hbar \omega_{1}\rho_{21} -  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{22}-\hbar \omega_{2} \rho_{21} +  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{11}) - \gamma_{21}\rho_{21}\\
 	& = &  -(i \omega_{21} + \gamma_{21})\rho_{21} -  i\frac{d_{21}}{2\hbar}E_0^*e^{-i\omega_c t}(\rho_{22}-\rho_{11}). 
 \end{eqnarray}
-O calculo para os elementos da diagonal principal da matriz densidade são obtidos pela equação \eqref{eq:4.45}. Assim, $\dot{\rho}_{11}$ é dado por 
+O cálculo para os elementos da diagonal principal da matriz densidade são obtidos pela equação \eqref{eq:4.45}. Assim, $\dot{\rho}_{11}$ é dado por 
 \begin{eqnarray}
 	\pdv{t}\mel{1}{\hat{\rho}}{1} & = &  \frac{i}{\hbar}\mel{1}{\qty[\hat{\rho},\hat{H}]}{1} + \Gamma_{21}\rho_{22}\\
 	& = &  \frac{i}{\hbar}\mel{1}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{1} + \Gamma_{21}\rho_{22}\\
@@ -804,7 +812,89 @@ Assim, obtemos as equações de bloch ópticas
 	\dot{\sigma}_{12} & = &  (i \delta - \gamma_{12})\sigma_{12} -  i\frac{\Omega_0}{2}(1 - 2\sigma_{22})\\
 	\dot{\sigma}_{22} & = &  -i\frac{\Omega_0}{2}\sigma_{12}^* + i\frac{\Omega_0^*}{2} \sigma_{12} - \Gamma_{21}\sigma_{22}
 \end{eqnarray}
-%organizar algumas citações depois
+\subsection{Solução numérica para campos contínuos}
+As equação de bloch possuem solução exata quando consideramos um campo contínuo. Essa solução é obtida a partir de métodos perturbativos conforme podemos ver em \cite{allen1987optical}. Apesar disso, preferimos resolver essa equações numericamente, pois estamos interessados em análise comparativas. 
+Para obtenção dos resultados, utilizamos o método Runge-cutta de quarta ordem, que oferece uma boa precisão\cite{atkinson1989}. Para uma equação diferencial de primeira ordem  
+\begin{equation}
+	\dv{y}{x}= f(x,y)
+\end{equation}
+o algoritmo de runge-cutta de quarta ordem para $y(x+h)$ é dado por:
+\begin{equation}
+	y(x+h)= y(x)+\frac{1}{6}(k_1+k_2+k_3+k_4).
+\end{equation}
+Sendo que
+\begin{eqnarray}
+	k_1&=&hf(x,y),\\
+	k_2&=&hf(x+\frac{h}{2},y+\frac{k_1}{2} ),\\
+	k_3&=&hf(x+\frac{h}{2},y+\frac{k_2}{2}),\\
+	k_4&=&hf(x+h,y+k_3).
+\end{eqnarray}
+onde k1, k2, k3 e k4 são Como estamos trabalhando com um sistema de duas equações diferencial de primeira ordem com forma
+\begin{eqnarray}
+		\dv{y}{x}&=& f(x,y,z)\\
+		\dv{z}{x}&=& g(x,y,z),
+\end{eqnarray}
+precisamos adaptar o algoritmo da seguinte forma
+\begin{eqnarray}
+	y(x+h)&=& y(x)+\frac{1}{6}(k_{y1}+k_{y2}+k_{y3}+k_{y4})\\
+	z(x+h)&=& z(x)+\frac{1}{6}(k_{z1}+k_{z2}+k_{z3}+k_{z4})),
+\end{eqnarray}
+com
+\begin{eqnarray}
+	k_{y1}&=&hf(x,y,z), k_{z1}=hg(x,y,z)\\
+	k_{y2}&=&hf(x+\frac{h}{2},y+\frac{k_{y1}}{2},z+\frac{k_{z1}}{2}),k_{z2}=hg(x+\frac{h}{2},y+\frac{k_{y1}}{2},z+\frac{k_{z1}}{2} )\\
+	k_{y3}&=&hf(x+\frac{h}{2},y+\frac{k_{y2}}{2},z+\frac{k_{z2}}{2}),k_{z3}=hg(x+\frac{h}{2},y+\frac{k_{y2}}{2},z+\frac{k_{z2}}{2})\\
+	k_{y4}&=&hf(x+h,y+k_{y3},z+k_{z3}),k_{z4}=hg(x+h,y+k_{y3},z+k_{z3}).
+\end{eqnarray}
+
+O método foi implementado em linguagem C, conforme algoritmo que apresentamos a seguir:
+
+\begin{algorithm}[H]
+	\Entrada{$\Gamma_{21}$, $\gamma_{12}$, $\delta$ e $\Omega_0$}
+	\Saida{$\sigma_{12}$ e $\sigma_{22}$ }
+	\Inicio{
+		inicializa\c{c}\~ao\;
+		\Repita{fim do texto}{
+			leia o atual\;
+			\uIf{entendeu}{
+				vá para o próximo\;
+				próximo se torna o atual\;}
+			\Else{volte ao início da seção\;}
+		}
+	}
+	\caption{Algortimo de Runge-Cutta}
+\end{algorithm}
+
+
+Para o exemplo que estamos trabalhando, vamos utilizar uma interação de campo produzido por um laser CW que interage com átomos de Rubídio 87. Estamos interessados em estudar a transição do estado fundamental $5^2 S_{1/2}$ para o estado excitado $5^2 S_{1/2}$. Por isso, precisamos trabalhar com o seguintes parâmetros:
+\begin{table}[H]
+	\caption{Propriedades opticas para transição $D1(5^2S_{1/2}\longrightarrow 5^2P_{1/2})$ do $^{87}Rb$}
+	\centering
+	\begin{tabular}{l|l|l}
+		\hline
+	Frequência & $\omega_{21}$ & $2\pi\cdot377,107 463 5$ THz \\
+	\hline
+	Tempo de vida & $\tau$ & $27,70$ ns \\
+	\hline
+	Taxa de decaimento & $\Gamma_{21}$ & $2\pi\cdot5,746$ MHz \\
+	\hline
+	momento de dipolo da transição $D1(5^2S_{1/2}\longrightarrow 5^2P_{1/2})$ & $d_{12}$ & $2,537\times10^{-29}$Cm  \\
+	\hline
+\end{tabular}
+\caption*{Fonte:Adaptada de 1 }
+\end{table}
+
+O laser CW é identificado usualmente pela sua potência. Podemos obter a potência de um laser a partir da frequência de rabi $\omega_0$, utilizando a seguinte relação\cite{griffiths2011elet}:
+
+\begin{equation}
+	\frac{P}{A} = I = \frac{c\epsilon_0}{2}\qty(\frac{\hbar}{d_{12}})^2\qty(\Omega_0)^2,
+	\label{eq:}
+\end{equation}
+
+onde $P$ é a potência irradiada, $A$ é a área de ""  e I é a intensidade de radiação "". Vamos trabalhar com uma área circular $\pi R^2$, onde o raio $R = 1 mm$.
+
+Apresentamos na figura ""  a evolução temporal da população $\sigma_{22}$ e $Im(\sigma_{12})$ para 3 valores de $\Omega$. No primeiro caso apresentado em (a) e (b), temos $\Omega_0 = \Gamma_{21}/100$. No segundo caso (b) e (c), $\Omega_0 = \Gamma_{21}$ e no terceiro caso (d) e (e) usamos $\Omega_0 = 10\Gamma_{21}$. a figura (a) é possível observar que a população do estado $\ket{2}$ varia muito pouco , isso acontece porque a absorvição do campo pelos átomos e muito pequena, como vemos na figura (b), devido ao campo fraco. Aumentando a frequencia de rabi para $\Omega_0$,  podemos ver em (c) que a população de $\sigma_{22}$ se approxima de $0,3$  e absorçao do cAMPO E DE 0.4, O QUE UM AUMENTO CONSIDERAVEL QUANDO COMPARAMOS COM OS RESULTADO DE (a) e (b). Quando aumentamos o valor de omega para x, popdemos ver um compostamento oscilastório na população em (e), esse resultado recebe o nome de oscilações de rabi, isso ocorre devido a emissao ao processo de emissao estimulda decrita em []. 
+
 
 \section{Equações}
 Exemplo de equação centralizada:
@@ -905,10 +995,39 @@ Digite aqui o conteúdo de outro capítulo.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/fig1.eps}
+	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/Graph2.pdf}
 	\label{fig2}
 	\caption{Espectro de um laser de femtossegundos.}
 \end{figure}
+\begin{figure}[H]
+\centering
+ \def\svgscale{0.6}
+ \includesvg{figuras_do_trabalho/Graph2}
+\label{fig3}
+\caption{Espectro de um laser de femtossegundos.}
+\end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/graficop22theta}
+	\label{fig:graficop22theta}
+	\captionsetup{margin=3cm}
+	\caption[Níveis de energia de um hipotético "átomo de dois níveis".]{Níveis de energia de um hipotético "átomo de dois níveis". A "dessintonia" $ \delta = \omega_{ab} - \omega$ é a diferença entre $(E_2-E_1)/\hbar$ e $\omega$. A radiação da frequência angular $\omega$ é quase ressonante com a transição $E_1\rightarrow E_2$, quando $\delta\ll\omega_{ab} - \omega$.} 
+\end{figure}
+
+\begin{figure}[H]
+	\caption[descrição top]{descrição comum}
+	\centering
+	\label{fig:graficop22theta}
+	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/pulso}
+\end{figure}
+
+\begin{figure}[H]
+	\caption[descrição top]{descrição comum}
+	\centering
+	\label{fig:graficop22theta}
+	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/pulsofinal}
+	\caption*{Fonte:Elaborada pelo Autor}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
