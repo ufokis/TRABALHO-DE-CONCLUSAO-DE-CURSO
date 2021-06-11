@@ -1,16 +1,27 @@
 \babel@toc {brazilian}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Representa\c c\~ao da superposi\c c\~ao de duas ondas plana.\relax }}{10}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Pulso eletromagn\'etico caracterizado por GVD positivo (a) e GVD negativo (b)\relax }}{11}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces (A) representa o pulso em um referencial da amostra e (B) representa o pulso no referencial do pulso\relax }}{13}{figure.caption.15}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces N\IeC {\'\i }veis de energia de um hipot\'etico "\'atomo de dois n\IeC {\'\i }veis". A "dessintonia" $ \delta = \omega _{ab} - \omega $ \'e a diferen\c ca entre $(E_2-E_1)/\hbar $ e $\omega $. A radia\c c\~ao da frequ\^encia angular $\omega $ \'e quase ressonante com a transi\c c\~ao $E_1\rightarrow E_2$, quando $\delta \ll \omega _{ab} - \omega $.\relax }}{22}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Amplitude de probabilidade $c_n(t)$ decai conforme \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces \ref {eq:4.48}\unskip \@@italiccorr )}}.\relax }}{25}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces N\IeC {\'\i }veis de energia de um hipot\'etico \'atomo de dois n\IeC {\'\i }veis. A dessintonia $\delta = \omega _{ab} - \omega $ \'e a diferen\c ca entre $(E_2-E_1)/\hbar $ e $\omega _c$, onde $\omega _c$ \'e a frequ\^encia angular da radia\c c\~ao eletromagn\'etica do laser incidente.\relax }}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Amplitude de probabilidade $c_n(t)$ decai conforme \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces \ref {eq:4.48}\unskip \@@italiccorr )}}.\relax }}{27}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagrama do n\IeC {\'\i }veis de rub\IeC {\'\i }dio\relax }}{31}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Evolu\c c\~ao temporal da popula\c c\~ao $\sigma _{22}$ exitada por um campo cont\IeC {\'\i }nuo, onde (a) $\delta /2\pi =0$ Mhz, (b) $\delta /2\pi =10$ Mhz, (c) $\delta /2\pi =50$ Mhz e (d) $\delta /2\pi =100$ Mhz.\relax }}{32}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Popula\c c\~ao $\sigma _{22}$ em fun\c c\~ao da dessintonia $\delta $ em um estado estacion\'ario.\relax }}{32}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Espectro de um laser de femtossegundos.\relax }}{31}{figure.caption.18}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Espectro de um laser de femtossegundos.\relax }}{31}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces N\IeC {\'\i }veis de energia de um hipot\'etico "\'atomo de dois n\IeC {\'\i }veis".}}{32}{figure.caption.20}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces descri\c c\~ao top}}{32}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces descri\c c\~ao top}}{33}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Resultado num\'erico para varia\c c\~ao da \'area de um pulso ultracurto qualquer, conforme ele se propaga em um meio at\^omico de dois n\IeC {\'\i }veis\relax }}{35}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Fluxograma mostrando os passos do M\'etodo Cient\IeC {\'\i }fico.\relax }}{35}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Pulso sech\relax }}{36}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Resultado\relax }}{36}{figure.caption.25}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Espectro de um laser de femtossegundos.\relax }}{39}{figure.caption.28}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Espectro de um laser de femtossegundos.\relax }}{39}{figure.caption.29}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces N\IeC {\'\i }veis de energia de um hipot\'etico "\'atomo de dois n\IeC {\'\i }veis".}}{40}{figure.caption.30}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces descri\c c\~ao top}}{40}{figure.caption.31}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces descri\c c\~ao top}}{41}{figure.caption.32}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
