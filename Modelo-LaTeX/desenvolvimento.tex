@@ -1,4 +1,4 @@
-frenicoque
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -1128,14 +1128,14 @@ Sendo que $\mathcal{\tilde{P}}$ é a parte lenta da polarização do meio não linea
 \vb{P} &=& \mathcal{N}\qty(\frac{1}{N_{\text{átomos}}}\sum_i \vb{d}_i)\\\\
 \vb{P} &=& \mathcal{N}\langle \vb{d}_i\rangle_{atomos\text{átomos}} \label{eq:5.2}
 \end{eqnarray}
-onde $\mathcal{N}=N_{atomos}/V$ é o número de átomos por unidade de volume e $\langle \vb{d}_i\rangle_{atomos}$ é o momento de dipolo médio da amostra de átomos. Vimos no capitulo \ref{cap:capitulo2} que, na representação de matriz densidade, o valor médio de um dado observável obedece a equação \eqref{eq:6}. Aplicando à equação da polarização \eqref{eq:5.2} para um sistema de dois níveis, obtemos:
+onde $\mathcal{N}=N_{atomos}/V$ é o número de átomos por unidade de volume e $\langle \vb{d}_i\rangle_{atomos}$ é o momento de dipolo médio da amostra de átomos. Vimos no Capítulo \ref{cap:capitulo2} que, na representação de matriz densidade, o valor médio de um dado observável obedece a equação \eqref{eq:6}. Aplicando à equação da polarização \eqref{eq:5.2} para um sistema de dois níveis, obtemos:
 \begin{eqnarray}
 	\vb{P} &=& \mathcal{N}Tr[\hat{\rho} \hat{d}]\\
 	\vb{P} &=& \mathcal{N}(d_{12} p_{21} + d_{21} p_{12}).
 \end{eqnarray}
-O que estabelece  que a polarização está relacionada a coerência atômica. Como estamos trabalhando com campo que se propaga no eixo z, é conveniente redefinirmos  $\rho_{12} \equiv \sigma_{12}e^{i(kz-\omega t)}$. Assim, considerando o fato que $\rho_{12}=\rho_{21}^*$ e usando \eqref{eq:3.46}, temos que:
+O que estabelece, que a polarização varia de acordo com a coerência atômica. Como estamos trabalhando com campo que se propaga no eixo z, é conveniente redefinirmos  $\rho_{12} \equiv \sigma_{12}e^{i(kz-\omega t)}$. Assim, considerando o fato que $\rho_{12}=\rho_{21}^*$ e usando \eqref{eq:3.46}, temos que:
 \begin{eqnarray}
-	\frac{1}{2}\mathcal{P}e^{i(kz-wt)} + \frac{1}{2}\mathcal{P}^*e^{-i(kz-wt)}= \mathcal{N}(d_{12} \sigma_{21}\mathcal{P}e^{i(kz-wt)} + d_{21}\sigma_{12}^*e^{-i(kz-wt)}).
+	\frac{1}{2}\mathcal{P}e^{i(k_cz-\omega_ct)} + \frac{1}{2}\mathcal{P}^*e^{-i((k_cz-\omega_ct)}= \mathcal{N}(d_{12} \sigma_{21}\mathcal{P}e^{i((k_cz-\omega_ct)} + d_{21}\sigma_{12}^*e^{-i((k_cz-\omega_ct)}).
 \end{eqnarray}
 Analisando os dois lados da equação, é razoável concluirmos que 
 \begin{eqnarray}
@@ -1156,7 +1156,7 @@ onde $\alpha\equiv\mu_0{\omega_c}^2\mathcal{N}{d_{12}}^2/k_c\hbar$ é uma constan
 	\pdv{\tau}\sigma_{12}(\eta, \tau) & = &  [i \delta - \gamma_{12}]\sigma_{12}(\eta, \tau) -  i\frac{1}{2}\Omega_0(\eta, \tau)[1 - 2\sigma_{22}(\eta, \tau)]\label{eq:5.13}\\\nonumber\\
 	\pdv{\tau}\sigma_{22}(\eta, \tau) & = &  -i\frac{1}{2}\Omega_0(\eta, \tau)\sigma_{12}^*(\eta, \tau) + i\frac{1}{2}\Omega_0^*(\eta, \tau)\sigma_{12}(\eta, \tau) - \Gamma_{21}\sigma_{22}(\eta, \tau).\label{eq:5.14}
 \end{eqnarray} 
-O conjunto das equações \eqref{eq:5.12}, \eqref{eq:5.13} e \eqref{eq:5.14}  são conhecidas na literatura como equações de Maxwell-Bloch. Estas equações foram resolvidas numericamente, conforme resultados apresentados na seção 1 deste Capítulo.
+O conjunto das equações \eqref{eq:5.12}, \eqref{eq:5.13} e \eqref{eq:5.14}  são conhecidas na literatura como equações de Maxwell-Bloch. Neste TCC, e equações são resolvidas numéricamente, conforme resultados apresentados na seção 1 deste Capítulo.
 
 \section{Teorema de Área}
 
@@ -1167,9 +1167,9 @@ Pra trabalharmos com pulsos eletromagnéticos ultracurtos, é importante conhecerm
 onde $\theta(\eta)$ é a área do pulso e $\Omega_0(\eta, \tau)$ é a frequência de Rabi. Aplicando essa definição as equações de Maxwell-Bloch para um meio ressonante, cujo tempo de decaimento é muito maior que a largura temporal do pulso 
 ($1/\Gamma_{21} \gg FHWM$). É possível calcular a variação da área do pulso, conforme o pulso se propaga no meio,  como descrito em [eberly]. Assim, obtemos que 
 \begin{equation}
-	\pdv{\theta}{\tau} = -\frac{\alpha}{2}sin(\theta)
+	\pdv{\theta}{z} = -\frac{\alpha}{2}sin(\theta)
 \end{equation}
-onde $\alpha$ é  o coeficiente de absorção. Esse equação é conhecida como teorema da área. Por praticidade, integrando numericamente essa equação diferencial, usando método de Euler
+onde $\alpha$ é  o coeficiente de absorção. Esse equação é conhecida como teorema da área. Por praticidade, resolvemos numericamente essa equação diferencial, usando método de Euler
 \begin{equation}
 	\theta(z+\Delta z) = \theta(z) - \frac{\alpha}{2}sin[\theta(z)] \Delta z, 
 \end{equation}
@@ -1185,59 +1185,153 @@ Na figura \ref{fig:teoremaarea}, apresentamos os resultado numérico do teorema d
 
 \section{Resultados}
 
-Nesta seção apresentamos resultados numéricos das equações de Maxwell-Bloch. Esses resultados foram calculados usando algoritmo de Runge-Kutta escrito  em linguagem C. Para essa resolução nos presisamos utilizar o esquema apresentado na figura 2.
+Nesta seção apresentamos resultados numéricos das equações de Maxwell-Bloch. Esses resultados foram calculados usando algoritmo de Runge-Kutta escrito  em linguagem C apresentado no apêndice B, seguindo o fluxograma mostrado na figura 2.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
+	\caption{\label{metodoestatisto.fluxograma} Fluxograma mostrando os passos do Método Científico.}
 	
+	\usetikzlibrary{shapes,arrows}
+	\usetikzlibrary{positioning}
+	\usetikzlibrary{shadows}
 	\centering
 	
 	% Define block styles
-	\tikzstyle{block} = [rectangle, draw, fill=white, 
-	text width=6em, text centered, rounded corners, node distance=2cm, minimum height=2em]
+	\tikzstyle{block} = [rectangle, draw, fill=green, 
+	text width=6em, text centered, rounded corners, node distance=1cm, minimum height=2em]
 	\tikzstyle{line} = [draw, -latex]
-	\tikzstyle{cloud} = [draw, ellipse,fill=white, node distance=2cm,
+	\tikzstyle{cloud} = [draw, ellipse,fill=white, node distance=1cm,
 	minimum height=2em]
+	\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+	text width=4.5em, text badly centered, node distance=1cm, inner sep=0pt]
 	
 	\begin{tikzpicture}[node distance = 3cm, auto]
-		% Place nodes
-		\node [block,red, text=white](omega) {$\Omega_0$};
-		\node [block,green, text=white, below of = omega, xshift=-2cm, yshift=-2cm] (s22) {$\sigma_{22}$};
-		\node [block,blue, text=white,right of = s22, xshift=2cm, yshift=-0cm]   (s12) {$\sigma_{12}$};
-		\node[below of = omega, xshift=0cm, yshift=1cm] (a) {};
-		\node[below of = s22, xshift=0cm, yshift=1cm] (b) {};
-		\node[below of = s12, xshift=0cm, yshift=1cm] (c) {};
-		\node[right of = omega, xshift=2cm, yshift=0cm] (e) {};
-		\node[below of = e, xshift=0cm, yshift=-3cm] (d) {};
-		%\node [block, right of = testar, xshift=2cm, yshift=-1cm]      (refinar) {Refinar as Hipóteses};
-		%\node [block, below of = coletar]     (teorias) {Desenvolver Teorias};
-		% Draw edges
-		\path [line] (omega) -- (a);
-		\path [draw,-latex] (a) -- (s22);
-		\path [line] (a) -- (s12);
-		\path [draw,latex-latex] (s22)   -- (s12);
-		\path [line] (s22) -- (b);
-		\path [line] (s12) -- (c);
-		\path [line] (b) -- (c);
-		\path [line] (c) -- (d);
-		\path [line] (d) -- (e);
-		\path [line] (e) -- (omega);
 		
-		%\path [line] (predicoes)   -- (testar);
-		%\path [line] (testar)      -- (coletar);
-		%\path [line] (coletar)     -- (teorias);
-%		\path [line] (coletar)     -- (refinar);
-%		\path [line] (refinar)     -- (testar);
+		% Place nodes
+		\node[cloud](inicio){início};
+		\node[decision, below=of inicio](does){$z<Z$};
+		\node[decision, below=of does](does2){$t<T$};
+		\node [block, right= of does2 ](omega) {Calcula Runge-Kutta para $\Omega_0(z,t)$};
+		\node [block, right = of omega] (s22) {Calcula Runge-Kutta para $\sigma_{22}(z,t)$ e $\sigma_{12}(z,t)$};
+		\node[cloud,right=of does](fim){fim};
+		
+		% Draw edges
+		\path [line] (inicio) -- (does);
+		\path [line] (does) -- node{sim}(does2);
+		\path [line] (does2) -- node{sim} (omega);
+		\path [line] (omega) -- (s22);
+		\path [line] (s22) |- (5,-7.8) -| (does2);
+		\path [line] (does2) -| node{não}(-2,-5.7) |- (does);
+		\path [line](does) -- node{não}(fim);
+	
 	\end{tikzpicture}
-	
-	\caption{\label{metodoestatisto.fluxograma} Fluxograma mostrando os passos do Método Científico.}
-	
 \end{figure}
 
-OS parâmetros da transição 5s1/2 e 6p1/2 do rubídio 87, apresentados na tabela 1. Para a interação aplicamos com um pulso ultracurto que parte da posição inicial do meio, com formato dado pela secante hiperbólica
+Nos resultados obtidos, foram utilizados os parâmetros da transição 5s1/2 e 6p1/2 do rubídio 87, apresentados na tabela 1, do capitulo 3. Para a interação aplicamos com um pulso ultracurto que parte da posição inicial do meio, com formato dado pela secante hiperbólica
 \begin{equation}
-	\Omega(0,\tau) = \frac{1.76}{T_p}\frac{\theta_0}{\pi}sech\qty(\frac{1.76t}{T_p})
+	\Omega(0,\tau) = \frac{1,76}{T_p}\frac{\theta_0}{\pi}sech\qty(\frac{1,76\tau}{T_p})
+	\label{sech}
 \end{equation} 
-onde $t_p$ é a largura temporal do pulso e $\theta_0$ é a área. Utilizamos um pulso de $T_p=100$ fentosegundos e consideramos que o pulso está em ressonância com os átomos de Rubídio. Como o tempo de vida da trasição  5s1/2 e 6p1/2 é $T_{21}=27,70$ ns conseguimos garantir que o teorema da área seja respeitado, visto que $T_{21}=1/\Gamma_{21}\gg T_p$.
+onde $t_p$ é a largura temporal do pulso e $\theta_0$ é a área. Utilizamos um pulso de $T_p=100$ fs e consideramos que todos os átomos de Rubídio estão em ressonância com o campo, onde ignoramos efeito doppler. Como o tempo de vida da transição  5s1/2 e 6p1/2 é $T_{21}=27,70$ ns, conseguimos garantir que o teorema da área seja respeitado, visto que $T_{21}=1/\Gamma_{21}\gg T_p$.
+
+\subsection{Propagação de pulso com área pequena em meio ressonante}
+
+Na literatura temos solução analítica para equações de Maxwell-Bloch, quando tratamos um pulso com área muito pequena ($\theta \ll 1$), onde é adotado o limite de Beer's Law, conforme vemos em []. Assim, o nosso primeiro resultado foi obtido para um pulso desse tipo com área $\theta = 5,7*10^{-4}\pi$.
+
+Na figura \ref{fig:0pimaxwellbloch} apresentamos o resultado numérico para a frequência de rabi $\Omega_0(z,\tau)$, conforme o pulso interage no meio. Em \ref{fig:0pimaxwellbloch}(a) mostramos o mapa de calor, onde $\Omega_0(z, \tau)$ é representado em cores. Em \ref{fig:0pimaxwellbloch}(b) temos o pulso secante hiperbólico antes de interagir com o meio. Em \ref{fig:0pimaxwellbloch}(c) temos representado o pulso na saída do meio atômico ($z=1$cm). Vemos que a após interagir com o meio atômico a envoltória do pulso adquire um caráter oscilatório que varia entre valores negativos e positivos o que faz com que a área seja aproximadamente $\theta \approx 0$, o que é esperado pelo teorema da área apresentado (ver figura \ref{fig:teoremaarea}).
+\begin{figure}[H]
+	\centering
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubídio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm}
+	\label{fig:0pimaxwellbloch}
+	\includegraphics[width=0.9\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+\end{figure}
+A figura \ref{fig:0pimaxwellbloch_s22} mostra os resultado numéricos para a população $\sigma_{22}$ para todo o meio atômico. Em \ref{fig:0pimaxwellbloch_s22}(a) e \ref{fig:0pimaxwellbloch_s22}(b) temos a excitação da população $\sigma_{22}$, da entrada e saída do meio atômico, respectivamente. Podemos  ver que o campo não consegue produzir excitação significante do nível 5S1/2 para 6p3/2 logo nos primeiros átomos presentes em $z= 0$, e o decaimento espontâneo é desprezível no tempo representado. Os átomos presentes em $z=1$cm  sofrem excitação ainda menor que a encontrada no início e tem um caráter oscilatório, pois o pulso que gera essas transições oscila entre valores negativo e positivos como representados em \ref{fig:0pimaxwellbloch}(c).
+\begin{figure}[H]
+	\centering
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubidio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm}
+	\label{fig:0pimaxwellbloch_s22}
+	\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+\end{figure}
+
+Na figura \ref{fig:0pimaxwellbloch_s12} temos os resultados numéricos para a coerência $\imaginary{(\sigma_{12})}$. A coerência dos primeiro átomos ($z=0$) é representa na figura \ref{fig:0pimaxwellbloch_s12}(a)  e em \ref{fig:0pimaxwellbloch_s12}(b) temos a coerência do últimos átomos ($z=1cm$). A coerência atômica obedece a a taxa de relaxação $\gamma_{12} = \Gamma_{21}/2$. Por isso, é praticamente desprezível em fig. \ref{fig:0pimaxwellbloch_s12}(a) para o tempo representado.
+\begin{figure}[H]
+	\centering
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubidio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm}
+	\label{fig:0pimaxwellbloch_s12}
+	\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+\end{figure}
+ 
+Na figura 11 apresentamos o resultados para $\Omega_0$ no domínio da frequência. Esses resultados foram obtidos a partir de  FFT (Transformada de Fourier rápida) no resultados numéricos obtidos no domínio do tempo. Em Fig.(a) temos o resultado para $z=0$, em Fig.(b) $z = 0,5$ cm e Fig.(c) $z=1,0$ cm. Observamos que ao se propagar pelo meio a frequências proximas ao centro são absorvidas, devido a ressonância com a transição 5s1/2-6p1/2.
+\begin{figure}[ht!]
+	\centering
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubidio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm.}
+	\label{fig:0pimaxwellbloch_s12}
+	\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+\end{figure}
+ 
+ 
+\subsection{Transparência auto induzida} 
+
+O teorema da área apresentado na seção anterior, indica que para pulso com área menor que $\pi$ a área deve  ir a zero, conforme o pulso se propaga no meio. Porém, quando o pulso possui área maior que $\pi$ e menor que $2\pi$, temos que área desse pulso deve aumentar até chegar em $2\pi$. Para verificar esse comportamento, aplicamos um pulso de área de $\theta=0,7\pi$ e $\theta=1,7\pi$ ao nosso algoritmo.
+
+
+Na figura \ref{fig:0.7e1.7pimaxwellbloch} temos representado a propagação de dois pulsos diferentes. Na figura \ref{fig:0.7e1.7pimaxwellbloch}(a) o pulso possui área $\theta = 0,7 \pi$. Neste caso, podemos ver que, ao propaga no meio, sua área se aproxima a $\theta=0$ e o pulso adquire o mesmo comportamento oscilatório que observamos no pulso de pequena área (\ref{fig:0pimaxwellbloch}. A figura \ref{fig:0.7e1.7pimaxwellbloch}(b) mostra um pulso de área $\theta= 1,7\pi$. Neste caso, observamos um aumento da área do pulso que se aproxima de $\theta=2\pi$, o que está de acordo com o teorema da área.
+
+\begin{figure}[H]
+	\centering
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubidio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm}
+	\label{fig:0.7e1.7pimaxwellbloch}
+	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+\end{figure}   
+
+Para pulsos com áreas ($2\pi$,$4\pi$, $6\pi$, $\dots$, $2n\pi$), de acordo com o teorema da área, é esperado que a área não mude conforme o pulso se propaga no meio. Esse fenômeno recebe o nome de transparência auto induzida. Em Eberly \cite{allen1987optical} é obtido a solução para um pulso com $\theta=2\pi$, onde é considerado o fato que $\dv*{\theta}{z}=0$ para obtera seguinte equação para $\Omega_0(z,t)$:
+\begin{equation}
+	\Omega_0(z,t) = \frac{2*1,76}{T_p}sech\qty[\frac{1,76}{T_p}\qty(t-\frac{z}{v_g})], 
+	\label{eq:2pianalitico}
+\end{equation}
+onde a velocidade de grupo é dada por 
+\begin{equation}
+	v_g = \frac{c}{1+\alpha c t}.
+\end{equation}
+
+Na figura \ref{fig:2pimaxwellbloch} temos a solução numérica para frequência de Rabi $\Omega_0$ para a propagação de um pulso de área $\theta=2\pi$. em (A) temos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar por todo o meio. Em (b) temos $\Omega_0$ em $z=0$  e em (c) temos o pulso ao final. Podemos ver que a envoltória do pulso não sofre mudança ao se propagar pelo meio atômico em mantem $\theta \approx 2\pi$. resultado coerente com o teorema da área e o resultado analítico \eqref{eq:2pianalitico}.  
+\begin{figure}[ht!]
+	\centering
+	\caption{Resultado}
+	\label{fig:2pimaxwellbloch}
+	\includegraphics[width=0.8\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+\end{figure}
+
+Outro resultado analítico importante é o encontrado por  G. L. Lamb, Jr [], onde é possível estudar o comportamento de um pulso com área $\theta = 4\pi$. Este caso,  pode se descrito pela colisão de dois pulsos com velocidades de grupos $v_g$ e largura temporal $T_p$ diferentes. Assim, temos a seguinte expressão analítica para $\Omega_0(z,t)$:
+\begin{equation}
+	\Omega_0(z,t) = \qty(\frac{T_{r}^2 - T_{r'}^2}{T_{r}^2 + T_{r'}^2})\frac{\frac{2}{T_{r}}sech\qty(\frac{\tau}{T_{r}})+\frac{2}{T_{r'}}sech\qty(\frac{\tau}{T_{r'}})}{1 - \frac{2T_{r}T_{r'}}{T_{r}^2 + T_{r'}^2}\qty[tanh\qty(\frac{\tau}{T_{r}})tanh\qty(\frac{\tau}{T_{r'}})-sech\qty(\frac{\tau}{T_{r}})sech\qty(\frac{\tau}{T_{r'}})]},
+	\label{eq:4pianalitico}
+\end{equation}
+onde $T_{r} = T_p/1,76$ e $T_{r'} = T_{p'}/1,76$. 
+
+Na figura \ref{fig:4pimaxwellbloch} temos a solução numérica para frequência de Rabi $\Omega_0$ para a propagação de um pulso de área $\theta=4\pi$. Em (A) temos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar pelo meio. Em (b) temos $\Omega_0$ em $z=0$  e em (c) temos o pulso em $z=1$cm. Podemos ver que o pulso de área $\theta = 4\pi$ se divide em dois pulsos de área $\theta\approx2\pi$, com largura temporal diferentes, assim como a descrição analítica \eqref{eq:4pianalitico}. O segundo pulso se afasta do primeiro conforme se propaga pelo meio. Isso significa que possuem velocidades de grupo $v_g$ diferentes, sendo que o primeiro mantem a velocidade grupo do pulso inicial (sem propagação). 
+\begin{figure}[H]
+	\centering
+	\caption{Resultado}
+	\label{fig:4pimaxwellbloch}
+	\includegraphics[width=0.8\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+\end{figure}
+
+
+\begin{figure}[ht!]
+	\centering
+	\caption{Resultado}
+	\label{fig:2pimaxwellbloch}
+	\includegraphics[width=0.8\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+\end{figure}
+
+
+
+\begin{figure}[ht!]
+	\centering
+	\caption{Resultado}
+	\label{fig:6pimaxwellbloch}
+	\includegraphics[width=0.8\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -1245,18 +1339,6 @@ onde $t_p$ é a largura temporal do pulso e $\theta_0$ é a área. Utilizamos um pu
 	\label{fig:pulsosech}
 	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/pulsosech}
 \end{figure}
-
-\begin{figure}[H]
-	\centering
-	\caption{Resultado}
-	\label{fig:6pimaxwellbloch}
-	\includegraphics[width=0.9\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
-\end{figure}
-
-
-
-
-
 
 
 \section{Equações}
