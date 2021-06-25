@@ -1146,7 +1146,7 @@ Assim podemos reescrever a equação \eqref{eq:5.1}, obtendo
 	\pdv{\eta}\tilde{\mathcal{E}}(\eta,\tau)  = -\frac{i\mu_0}{k_c}{\omega_c}^2\mathcal{N}d_{12} \sigma_{21}(\eta,\tau).
 	\label{eq:5.11}
 \end{equation}
-Como as equações de bloch óptica foram escritas  em termos da frequência de rabi, é conveniente substituirmos \eqref{eq:4.56} em \eqref{eq:5.11}. Assim, obtemos
+Como as equações de bloch ópticas foram escritas  em termos da frequência de rabi, é conveniente substituirmos \eqref{eq:4.56} em \eqref{eq:5.11}. Assim, obtemos
 \begin{equation}
 	\pdv{\eta}\Omega_0(\eta,\tau)  = - i\alpha\sigma_{21}(\eta,\tau),
 	\label{eq:5.12}
@@ -1175,7 +1175,7 @@ onde $\alpha$ é  o coeficiente de absorção. Esse equação é conhecida como teorem
 \end{equation}
 conforme algorítimo escrito em linguagem C apresentado no Apendice "A". 
 
-Na figura \ref{fig:teoremaarea}, apresentamos os resultado numérico do teorema da área. Para isso, utilizamos o valor genérico para o coeficiente de absorção $\alpha= 2\pi$ e usamos condições iniciais entre $\theta(0) = 0$ e $\theta(0) = 8 \pi$. Podemos ver que após o pulso ultracurtos ser propagado pela amostra, os valores das áreas tendem para $\theta(z)= \{0, 2\pi, 4\pi, 6\pi~~\text{e}~~8\pi\}$, onde o valor $n$ que acompanha o $\pi$ é par. Para condições iniciais $0<\theta(0)<\pi$, a área do pulso diminui até chegar a zero. Enquanto, para condições iniciais $\pi < \theta(0)< 2\pi$ aumenta para para $2\pi$. A mesma tendência é observada para as demais condições iniciais. A seção (2), discutimos mais a fundo esse comportamento, a partir dos resultados das equações de Maxwell-bloch.    
+Na figura \ref{fig:teoremaarea}, apresentamos os resultado numérico do teorema da área. Para isso, utilizamos o valor genérico para o coeficiente de absorção $\alpha= 2\pi$ e usamos condições iniciais entre $\theta(0) = 0$ e $\theta(0) = 8 \pi$. Podemos ver que após o pulso ultracurtos ao ser propagado pela amostra, os valores das áreas tendem para $\theta(z)= \{0, 2\pi, 4\pi, 6\pi~~\text{e}~~8\pi\}$, onde o valor $n$ que acompanha o $\pi$ é par. Para condições iniciais $0<\theta(0)<\pi$, a área do pulso diminui até chegar a zero. Enquanto, para condições iniciais $\pi < \theta(0)< 2\pi$ aumenta para para $2\pi$. A mesma tendência é observada para as demais condições iniciais. A seção (2), discutimos mais a fundo esse comportamento, a partir dos resultados das equações de Maxwell-bloch.    
 \begin{figure}[H]
 	\centering
 	\caption{Resultado numérico para variação da área de um pulso ultracurto qualquer, conforme ele se propaga em um meio atômico de dois níveis}
@@ -1238,34 +1238,58 @@ onde $t_p$ é a largura temporal do pulso e $\theta_0$ é a área. Utilizamos um pu
 Na literatura temos solução analítica para equações de Maxwell-Bloch, quando tratamos um pulso com área muito pequena ($\theta \ll 1$), onde é adotado o limite de Beer's Law, conforme vemos em []. Assim, o nosso primeiro resultado foi obtido para um pulso desse tipo com área $\theta = 5,7*10^{-4}\pi$.
 
 Na figura \ref{fig:0pimaxwellbloch} apresentamos o resultado numérico para a frequência de rabi $\Omega_0(z,\tau)$, conforme o pulso interage no meio. Em \ref{fig:0pimaxwellbloch}(a) mostramos o mapa de calor, onde $\Omega_0(z, \tau)$ é representado em cores. Em \ref{fig:0pimaxwellbloch}(b) temos o pulso secante hiperbólico antes de interagir com o meio. Em \ref{fig:0pimaxwellbloch}(c) temos representado o pulso na saída do meio atômico ($z=1$cm). Vemos que a após interagir com o meio atômico a envoltória do pulso adquire um caráter oscilatório que varia entre valores negativos e positivos o que faz com que a área seja aproximadamente $\theta \approx 0$, o que é esperado pelo teorema da área apresentado (ver figura \ref{fig:teoremaarea}).
-\begin{figure}[H]
+\begin{figure}[!htb]
 	\centering
-	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubídio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm}
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubídio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm.}
 	\label{fig:0pimaxwellbloch}
-	\includegraphics[width=0.9\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+	\begin{tikzpicture}
+		\node (figura)at(0,0){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/pequenomaxwellbloch}};
+		\node[left of= figura,rotate=90, yshift=0.31\linewidth,xshift=-0.03\linewidth](legendxc){$z$ (cm)};
+		\node[right of= legendxc,rotate=-90, yshift=0.685\linewidth](legendx){$\Omega_0$ (GHz)};
+		\node[right of= legendxc, yshift=0.28\linewidth,  xshift=0.310\linewidth](legendx){$\Omega_0$ (GHz)};
+		\node[below of= figura,yshift=-0.19\linewidth](legendyc){$\tau$ (ps)};
+	\end{tikzpicture}
 \end{figure}
+
 A figura \ref{fig:0pimaxwellbloch_s22} mostra os resultado numéricos para a população $\sigma_{22}$ para todo o meio atômico. Em \ref{fig:0pimaxwellbloch_s22}(a) e \ref{fig:0pimaxwellbloch_s22}(b) temos a excitação da população $\sigma_{22}$, da entrada e saída do meio atômico, respectivamente. Podemos  ver que o campo não consegue produzir excitação significante do nível 5S1/2 para 6p3/2 logo nos primeiros átomos presentes em $z= 0$, e o decaimento espontâneo é desprezível no tempo representado. Os átomos presentes em $z=1$cm  sofrem excitação ainda menor que a encontrada no início e tem um caráter oscilatório, pois o pulso que gera essas transições oscila entre valores negativo e positivos como representados em \ref{fig:0pimaxwellbloch}(c).
 \begin{figure}[H]
 	\centering
 	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubidio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm}
 	\label{fig:0pimaxwellbloch_s22}
-	\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+	\begin{tikzpicture}
+		\node (figura)at(0,0){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/s22pequenomaxwellbloch}};
+		\node[left of= figura,rotate=90, yshift=0.31\linewidth,xshift=-0.03\linewidth](legendxc){$z$ (cm)};
+		\node[right of= legendxc,rotate=-90, yshift=0.68\linewidth](legendx){$\sigma_{22}$x$10^{-7}$};
+		\node[right of= legendxc, yshift=0.26\linewidth,  xshift=0.310\linewidth](legendx){$\sigma_{22}$x$10^{-7}$};
+		\node[below of= figura,yshift=-0.17\linewidth](legendyc){$\tau$ (ps)};
+	\end{tikzpicture}
 \end{figure}
-
-Na figura \ref{fig:0pimaxwellbloch_s12} temos os resultados numéricos para a coerência $\imaginary{(\sigma_{12})}$. A coerência dos primeiro átomos ($z=0$) é representa na figura \ref{fig:0pimaxwellbloch_s12}(a)  e em \ref{fig:0pimaxwellbloch_s12}(b) temos a coerência do últimos átomos ($z=1cm$). A coerência atômica obedece a a taxa de relaxação $\gamma_{12} = \Gamma_{21}/2$. Por isso, é praticamente desprezível em fig. \ref{fig:0pimaxwellbloch_s12}(a) para o tempo representado.
-\begin{figure}[H]
+\begin{figure}[!ht]
 	\centering
 	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubidio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm}
 	\label{fig:0pimaxwellbloch_s12}
-	\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+	\begin{tikzpicture}
+		\node (figura)at(0,0){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/s12pequenomaxwellbloch}};
+		\node[left of= figura,rotate=90, yshift=0.31\linewidth,xshift=-0.03\linewidth](legendxc){$z$ (cm)};
+		\node[right of= legendxc,rotate=-90, yshift=0.68\linewidth](legendx){$\imaginary\{\sigma_{12}\}$x$10^{-4}$};
+		\node[right of= legendxc,yshift=0.26\linewidth,  xshift=0.310\linewidth](legendx){$\imaginary\{\sigma_{12}\}$x$10^{-4}$};
+		\node[below of= figura,yshift=-0.17\linewidth](legendyc){$\tau$ (ps)};
+	\end{tikzpicture}
 \end{figure}
- 
-Na figura 11 apresentamos o resultados para $\Omega_0$ no domínio da frequência. Esses resultados foram obtidos a partir de  FFT (Transformada de Fourier rápida) no resultados numéricos obtidos no domínio do tempo. Em Fig.(a) temos o resultado para $z=0$, em Fig.(b) $z = 0,5$ cm e Fig.(c) $z=1,0$ cm. Observamos que ao se propagar pelo meio a frequências proximas ao centro são absorvidas, devido a ressonância com a transição 5s1/2-6p1/2.
-\begin{figure}[ht!]
+Na figura \ref{fig:0pimaxwellbloch_s12} temos os resultados numéricos para a coerência $\imaginary{(\sigma_{12})}$. A coerência dos primeiro átomos ($z=0$) é representa na figura \ref{fig:0pimaxwellbloch_s12}(a)  e em \ref{fig:0pimaxwellbloch_s12}(b) temos a coerência do últimos átomos ($z=1cm$). A coerência atômica obedece a a taxa de relaxação $\gamma_{12} = \Gamma_{21}/2$. Por isso, é praticamente desprezível em fig. \ref{fig:0pimaxwellbloch_s12}(a) para o tempo representado.
+
+Na figura 11 apresentamos o resultados para $\Omega_0$ no domínio da frequência. Esses resultados foram obtidos a partir de  FFT (Transformada de Fourier rápida) no resultados numéricos obtidos no domínio do tempo. Em Fig.(a) temos o resultado para $z=0$, em Fig.(b) $z = 0,05 cm$ cm e Fig.(c) $z=1,0$ cm. Observamos que ao se propagar pelo meio a frequências proximas ao centro são absorvidas, devido a ressonância com a transição 5s1/2-6p1/2.
+\begin{figure}[H]
 	\centering
 	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubidio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm.}
 	\label{fig:0pimaxwellbloch_s12}
-	\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/6pimaxwellbloch}
+	\usetikzlibrary{arrows}
+	\begin{tikzpicture}[centered]
+		\node at (0,0) (figura){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/absorcao}};
+		\node[left of=figura,rotate=90, yshift=0.31\linewidth] (legendax) {$\Omega_0(z,\omega)$ [Unid. Arbitrária]};
+		\node[below of=figura,yshift=-0.344\linewidth,xshift=0.02\linewidth] (legenday) {($\omega-\omega_0$) [THz]};
+	\end{tikzpicture}
+	
 \end{figure}
  
  
@@ -1294,7 +1318,7 @@ onde a velocidade de grupo é dada por
 \end{equation}
 
 Na figura \ref{fig:2pimaxwellbloch} temos a solução numérica para frequência de Rabi $\Omega_0$ para a propagação de um pulso de área $\theta=2\pi$. em (A) temos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar por todo o meio. Em (b) temos $\Omega_0$ em $z=0$  e em (c) temos o pulso ao final. Podemos ver que a envoltória do pulso não sofre mudança ao se propagar pelo meio atômico em mantem $\theta \approx 2\pi$. resultado coerente com o teorema da área e o resultado analítico \eqref{eq:2pianalitico}.  
-\begin{figure}[ht!]
+\begin{figure}[H]
 	\centering
 	\caption{Resultado}
 	\label{fig:2pimaxwellbloch}
