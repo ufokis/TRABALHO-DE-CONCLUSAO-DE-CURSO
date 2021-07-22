@@ -1,33 +1,33 @@
 \babel@toc {brazilian}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Representa\c c\~ao da superposi\c c\~ao de duas ondas plana.\relax }}{10}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Pulso eletromagn\'etico caracterizado por GVD positivo (a) e GVD negativo (b)\relax }}{11}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces (A) representa o pulso em um referencial da amostra e (B) representa o pulso no referencial do pulso\relax }}{13}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Representa\c c\~ao da superposi\c c\~ao de duas ondas plana, com $\omega = 4$ Hz, $\Delta w = 0.5$ Hz, $A=1$ e $z=0$.\relax }}{10}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Propaga\c c\~ao de um pulso gaussiano (a) em meios dispersivo. Pulso eletromagn\'etico caracterizado por uma meio com $k''$ positivo (b) e $k''$ negativo (c).\relax }}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces O primeiro gr\'afico representa um pulso em um referencial em repouso e o segundo representa um pulso no referencial com velocidade $v_g$ \relax }}{15}{figure.caption.15}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces N\IeC {\'\i }veis de energia de um hipot\'etico \'atomo de dois n\IeC {\'\i }veis. A dessintonia $\delta = \omega _{ab} - \omega $ \'e a diferen\c ca entre $(E_2-E_1)/\hbar $ e $\omega _c$, onde $\omega _c$ \'e a frequ\^encia angular da radia\c c\~ao eletromagn\'etica do laser incidente.\relax }}{24}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Amplitude de probabilidade $c_n(t)$ decai conforme \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces \ref {eq:4.48}\unskip \@@italiccorr )}}.\relax }}{27}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagrama do n\IeC {\'\i }veis de rub\IeC {\'\i }dio\relax }}{31}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Evolu\c c\~ao temporal da popula\c c\~ao $\sigma _{22}$ exitada por um campo cont\IeC {\'\i }nuo, onde (a) $\delta /2\pi =0$ Mhz, (b) $\delta /2\pi =10$ Mhz, (c) $\delta /2\pi =50$ Mhz e (d) $\delta /2\pi =100$ Mhz.\relax }}{32}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Popula\c c\~ao $\sigma _{22}$ em fun\c c\~ao da dessintonia $\delta $ em um estado estacion\'ario.\relax }}{32}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces N\IeC {\'\i }veis de energia de um hipot\'etico \'atomo de dois n\IeC {\'\i }veis. A dessintonia $\delta = \omega _{ab} - \omega $ \'e a diferen\c ca entre $(E_2-E_1)/\hbar $ e $\omega _c$, onde $\omega _c$ \'e a frequ\^encia angular da radia\c c\~ao eletromagn\'etica do laser incidente.\relax }}{25}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Amplitude de probabilidade $c_n(t)$ decai conforme \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces \ref {eq:4.48}\unskip \@@italiccorr )}}.\relax }}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagrama do n\IeC {\'\i }veis de rub\IeC {\'\i }dio\relax }}{32}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Evolu\c c\~ao temporal da popula\c c\~ao $\sigma _{22}$ exitada por um campo cont\IeC {\'\i }nuo, onde (a) $\delta /2\pi =0$ Mhz, (b) $\delta /2\pi =10$ Mhz, (c) $\delta /2\pi =50$ Mhz e (d) $\delta /2\pi =100$ Mhz.\relax }}{33}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Popula\c c\~ao $\sigma _{22}$ em fun\c c\~ao da dessintonia $\delta $ em um estado estacion\'ario.\relax }}{33}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Resultado num\'erico para varia\c c\~ao da \'area de um pulso ultracurto qualquer, conforme ele se propaga em um meio at\^omico de dois n\IeC {\'\i }veis\relax }}{35}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Resultado num\'erico para varia\c c\~ao da \'area de um pulso ultracurto qualquer, conforme ele se propaga em um meio at\^omico de dois n\IeC {\'\i }veis\relax }}{36}{figure.caption.22}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Fluxograma mostrando os passos do M\'etodo Cient\IeC {\'\i }fico.\relax }}{36}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Frequ\^encia de Rabi $\Omega _0(z,t)$ para pulso de \'area pequena $\theta = 5,7*10^{-4}\pi $ que interage sistema de dois n\IeC {\'\i }veis (transi\c c\~ao 5s1/2 6s3/2 do Rub\IeC {\'\i }dio 87). (a) gr\'afico de temperatura para a frequ\^encia de Rabi $\omega _0(z,t)$. (b) Curva de $\Omega _0(z,t)$ para $z=0$. (c) Curva de $\Omega _0(z,t)$ para $z=1$cm.\relax }}{37}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Popula\c c\~ao $\sigma _{22}$ para um sistema de dois n\IeC {\'\i }veis (transi\c c\~ao 5s1/2 6s3/2 do Rub\IeC {\'\i }dio 87) que interage com um pulso de \'area pequena $\theta = 5,7*10^{-4}\pi $. (a) Gr\'afico de temperatura para popula\c c\~ao $\sigma _{22}(z,t)$. (b) Curva de $\sigma _{22}$ para $z=0$. (c) Curva de $\sigma _{22}$ para $z=1$ cm.\relax }}{37}{figure.caption.25}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Coer\^encia at\^omica $\sigma _{12}(z,t)$ para um sistema de dois n\IeC {\'\i }veis (transi\c c\~ao 5s1/2 6s3/2 do Rub\IeC {\'\i }dio 87) que interage com um pulso de \'area pequena $\theta = 5,7*10^{-4}\pi $. (a) Gr\'afico de temperatura para $\sigma _{12}(z,t)$. (b) Curva de $\sigma _{12}$ para $z=0$. (c) Curva de $\sigma _{12}$ para $z=1$ cm.\relax }}{38}{figure.caption.26}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Frequ\^encia de Rabi $\Omega _0(z,t)$ para pulso de \'area pequena $\theta = 5,7*10^{-4}\pi $ que interage sistema de dois n\IeC {\'\i }veis (transi\c c\~ao 5s1/2 6s3/2 do Rubidio 87). (a) gr\'afico de temperatura para a frequ\^encia de Rabi $\omega _0(z,t)$. (b) Curva de $\Omega _0(z,t)$ para $z=0$. (c) Curva de $\Omega _0(z,t)$ para $z=1$cm.\relax }}{39}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Frequ\^encia de Rabi $\Omega _0(z,t)$ para pulso de \'area pequena $\theta = 5,7*10^{-4}\pi $ que interage sistema de dois n\IeC {\'\i }veis (transi\c c\~ao 5s1/2 6s3/2 do Rubidio 87). (a) gr\'afico de temperatura para a frequ\^encia de Rabi $\omega _0(z,t)$. (b) Curva de $\Omega _0(z,t)$ para $z=0$. (c) Curva de $\Omega _0(z,t)$ para $z=1$cm\relax }}{40}{figure.caption.28}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Resultado\relax }}{41}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Resultado\relax }}{42}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Resultado\relax }}{42}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Frequ\^encia de Rabi $\Omega _0(z,t)$ para pulso de \'area pequena $\theta = 5,7*10^{-4}\pi $ que interage sistema de dois n\IeC {\'\i }veis (transi\c c\~ao 5s1/2 6s3/2 do Rub\IeC {\'\i }dio 87). (a) gr\'afico de temperatura para a frequ\^encia de Rabi $\omega _0(z,t)$. (b) Curva de $\Omega _0(z,t)$ para $z=0$. (c) Curva de $\Omega _0(z,t)$ para $z=1$cm.\relax }}{38}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Popula\c c\~ao $\sigma _{22}$ para um sistema de dois n\IeC {\'\i }veis (transi\c c\~ao 5s1/2 6s3/2 do Rub\IeC {\'\i }dio 87) que interage com um pulso de \'area pequena $\theta = 5,7*10^{-4}\pi $. (a) Gr\'afico de temperatura para popula\c c\~ao $\sigma _{22}(z,t)$. (b) Curva de $\sigma _{22}$ para $z=0$. (c) Curva de $\sigma _{22}$ para $z=1$ cm.\relax }}{38}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Coer\^encia at\^omica $\sigma _{12}(z,t)$ para um sistema de dois n\IeC {\'\i }veis (transi\c c\~ao 5s1/2 6s3/2 do Rub\IeC {\'\i }dio 87) que interage com um pulso de \'area pequena $\theta = 5,7*10^{-4}\pi $. (a) Gr\'afico de temperatura para $\sigma _{12}(z,t)$. (b) Curva de $\sigma _{12}$ para $z=0$. (c) Curva de $\sigma _{12}$ para $z=1$ cm.\relax }}{39}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Frequ\^encia de Rabi $\Omega _0(z,t)$ para pulso de \'area pequena $\theta = 5,7*10^{-4}\pi $ que interage sistema de dois n\IeC {\'\i }veis (transi\c c\~ao 5s1/2 6s3/2 do Rubidio 87). (a) gr\'afico de temperatura para a frequ\^encia de Rabi $\omega _0(z,t)$. (b) Curva de $\Omega _0(z,t)$ para $z=0$. (c) Curva de $\Omega _0(z,t)$ para $z=1$cm.\relax }}{40}{figure.caption.27}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Frequ\^encia de Rabi $\Omega _0(z,t)$ para pulso de \'area pequena $\theta = 5,7*10^{-4}\pi $ que interage sistema de dois n\IeC {\'\i }veis (transi\c c\~ao 5s1/2 6s3/2 do Rubidio 87). (a) gr\'afico de temperatura para a frequ\^encia de Rabi $\omega _0(z,t)$. (b) Curva de $\Omega _0(z,t)$ para $z=0$. (c) Curva de $\Omega _0(z,t)$ para $z=1$cm\relax }}{41}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Resultado\relax }}{42}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Resultado\relax }}{43}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Resultado\relax }}{43}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Espectro de um laser de femtossegundos.\relax }}{45}{figure.caption.34}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Espectro de um laser de femtossegundos.\relax }}{45}{figure.caption.35}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces N\IeC {\'\i }veis de energia de um hipot\'etico "\'atomo de dois n\IeC {\'\i }veis".}}{46}{figure.caption.36}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces descri\c c\~ao top}}{46}{figure.caption.37}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces descri\c c\~ao top}}{47}{figure.caption.38}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Espectro de um laser de femtossegundos.\relax }}{46}{figure.caption.34}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Espectro de um laser de femtossegundos.\relax }}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces N\IeC {\'\i }veis de energia de um hipot\'etico "\'atomo de dois n\IeC {\'\i }veis".}}{47}{figure.caption.36}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces descri\c c\~ao top}}{47}{figure.caption.37}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces descri\c c\~ao top}}{48}{figure.caption.38}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

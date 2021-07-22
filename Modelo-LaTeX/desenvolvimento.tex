@@ -11,9 +11,9 @@ Neste Capítulo, revisitamos conceitos importantes do eletromagnetismo, que permi
 \label{secao3.1}
 Em princípio, sabemos que as leis do electromagnetismo para um meio podem ser resumidas nas quatro equações de Maxwell \cite{jackson1998classical,griffiths2011elet}:
 \begin{eqnarray}
-\div{\vb{D}} & = & \varrho_l\textrm{~~(Lei de Gauss)},\label{eq:3.1}\\\nonumber\\
-\curl{\vb{H}} - \pdv{\vb{D}}{t} & = & \vb{J}_l\textrm{~~(Lei de Ampère)},\label{eq:3.2}\\\nonumber\\
-\curl{\vb{E}} + \pdv{\vb{B}}{t} & = & 0 \textrm{~~(Lei de Faraday)},\label{eq:3.3}\\\nonumber\\
+\div{\vb{D}} & = & \varrho_l\textrm{~~(Lei de Gauss)},\label{eq:3.1}\\
+\curl{\vb{H}} - \pdv{\vb{D}}{t} & = & \vb{J}_l\textrm{~~(Lei de Ampère)},\label{eq:3.2}\\
+\curl{\vb{E}} + \pdv{\vb{B}}{t} & = & 0 \textrm{~~(Lei de Faraday)},\label{eq:3.3}\\
 \div{\vb{B}} & = & 0\textrm{~~(Lei de Gauss para o magnetismo)}.\label{eq:3.4}
 \end{eqnarray}
 A lei de Gauss  apresenta a existência de cargas elétricas positiva e negativa, sendo $\varrho_l~\text{(C/m}^\text{3}\text{)}$ a densidade de carga elétrica livre. A lei de Àmpere estabelece que uma densidade de corrente elétrica $\vb{J}_l~\text{(A/m}^\text{2}\text{)}$, ou um deslocamento elétrico $\vb{D}~\text{(C/m}^\text{2}\text{)}$ variável no tempo, produz uma distribuição de campo magnetizante $\vb{H}~\text{(A/m)}$. A lei de Faraday estabelece que a variação no campo magnético $\vb{B}~\text{(Wb/m}^\text{2}\text{)}$ produz uma distribuição de campo elétrico $\vb{E}~\text{(V/m)}$. A lei de Gauss para o magnetismo informa a não existência de cargas magnéticas. O  deslocamento elétrico $\vb{D}$ e o campo magnetizante $\vb{H}$ se relacionam com $\vb{E}$ and $\vb{B}$ a partir das equações:
@@ -35,7 +35,7 @@ A magnetização da matéria ocorre quando é aplicado um campo magnético externo. D
 \vb{M} \equiv \frac{1}{V}\sum_i \vb{m_i}.
 \label{eq:3.8}
 \end{equation}
-Levando em conta que o meio atômico estudado neste TCC é eletricamente neutro e não magnético, podemos desconsiderar $\varrho_l$ , $\vb{J}_l$ e $\vb{M}$, fazendo
+Neste TCC estudamos meio atômico eletricamente neutro e não magnético. Assim, podemos desconsiderar $\varrho_l$ , $\vb{J}_l$ e $\vb{M}$, fazendo
 \begin{equation}
 \qty|\varrho_l| = \qty|\vb{J}_l| = \qty|\vb{M}| = 0.
 \label{eq:3.9}
@@ -55,7 +55,7 @@ Usando as relações \eqref{eq:3.5} e \eqref{eq:3.6} na lei de Ampère \eqref{eq:3.
 
 Substituindo esse resultado em \eqref{eq:3.10} e usando o fato de que $\grad(\div\vb{E})=0$, obtemos a seguinte equação de onda para o campo elétrico em um meio material \cite{allen1987optical}:  
 \begin{equation}
-\pdv[2]{\vb{E}}{z} - \frac{1}{c^2}\pdv[2]{\vb{E}}{t}= \mu_0 \pdv[2]{t}\vb{P}.\label{eq:3.12}
+\laplacian{\vb{E}} - \frac{1}{c^2}\pdv[2]{\vb{E}}{t}= \mu_0 \pdv[2]{t}\vb{P}.\label{eq:3.12}
 \end{equation}
 
 Veja que o termo a esquerda da igualdade é equivalente equação da onda para a propagação da luz no vácuo, enquanto que o termo no lado direito representa a interação do campo eletromagnético com o meio material.
@@ -67,7 +67,7 @@ A polarização $\vb{P}$ pode ser decomposta em duas partes :
 \end{equation}
 onde $\vb{P^L}$ representa contribuições que variam de forma linear e $\vb{P^{NL}}$ as contribuições que variam de forma não-linear com o campo elétrico aplicado \cite{boyd2008nonlinear, diels2006ultrashort}. 
 
-Na próxima Seção \ref{sec:linear} apresentamos a solução da eq. \eqref{eq:3.12} para um pulso de campo eletromagnético que interage com material linear e, posteriormente,na seção \ref{sec:naolinear}, apresentamos o caso não linear que se aplica ao sistema atômico de dois níveis, ao qual estudaremos no Capítulo \ref{cap:capitulo4}.
+Na próxima Seção \ref{sec:linear} apresentamos a solução da equação~\eqref{eq:3.12} para um pulso de campo eletromagnético que interage com material linear e, posteriormente, na Seção \ref{sec:naolinear}, apresentamos o caso não linear que se aplica ao sistema atômico de dois níveis, ao qual estudaremos no Capítulo \ref{cap:capitulo4}.
 
 \section{propagação de onda em meio linear}\label{sec:linear}
 
@@ -76,34 +76,56 @@ A equação de propagação da onda \eqref{eq:3.12}, normalmente é resolvida somente
 \pdv[2]{z}E(z,t) - \frac{1}{c^2}\pdv[2]{t}E(z,t)= \mu_0 \pdv[2]{t}P^L(z,t).
 \label{eq:3.14}
 \end{equation}
-
-Sabemos que, em um meio linear, a polarização se relaciona com o campo elétrico a partir da susceptibilidade elétrica $\chi_e$ \cite{jackson1998classical,griffiths2011elet}, seguindo a seguinte expressão: 
+Para simplificar as operações que faremos com o Campo eletromagnético $E$, decompomos o campo em uma parte com frequências positivas e outra com a frequências negativas:
+\begin{equation}
+	E(z,t) = E^+(z,t) + E^-(z,t)
+	\label{posneg}
+\end{equation}
+onde $E^+(z,t)$ é complexo e  
+\begin{equation}
+	E^-(z,t)= [E^+(z,t)]^*
+\end{equation} 
+Sabemos que, em um meio linear, a polarização se relaciona com o campo elétrico a partir da susceptibilidade elétrica $\chi_e$ \cite{jackson1998classical,griffiths2011elet}, seguindo a seguinte covolução: 
 \begin{equation}
 P^L(z,t) = \epsilon_0\int_{-\infty}^{t}dt'~\chi_e(t-t')E(z,t').
 \label{eq:3.15}
 \end{equation}
-Isso nos diz que um material não pode polarizar instantaneamente em reposta a um campo aplicado, ou seja, a polarização é uma convolução do campo elétrico em tempos anteriores, onde a susceptibilidade é dada por $\chi_e(\Delta t)$. Podemos estender o limite superior desta integral ao infinito considerando que
+Isso nos diz que um material não pode polarizar instantaneamente em reposta a um campo aplicado, ou seja, a polarização é uma convolução do campo elétrico em tempos anteriores, onde a susceptibilidade é dada por $\chi_e(\Delta t)$. Substituindo \ref{posneg} em \ref{eq:3.15}, podemos decompor a polarização da seguinte forma:
+\begin{eqnarray}
+	P^L(z,t) &=& \epsilon_0\int_{-\infty}^{t}dt'~\chi_e(t-t')\qty[E^+(z,t')+E^-(z,t')]\\
+	&=&\epsilon_0\int_{-\infty}^{t}dt'~\chi_e(t-t')E^+(z,t')+\epsilon_0\int_{-\infty}^{t}dt'~\chi_e(t-t')E^-(z,t')\\&=&P^{L+}(z,t)+P^{L-}(z,t).
+	\label{polcov}
+\end{eqnarray}
+onde $P^{L-}(z,t)=[P^{L+}(z,t)]^*.$
+Assim podemos escrever a EDO apenas dos termos com frequência positiva da seguinte forma
+\begin{equation}
+	\pdv[2]{z}E^+(z,t) - \frac{1}{c^2}\pdv[2]{t}E^+(z,t)= \mu_0 \pdv[2]{t}P^{L+}(z,t).
+\end{equation}
+onde
+ \begin{equation}
+	P^{L+}(z,t) = \epsilon_0\int_{-\infty}^{t}dt'~\chi_e(t-t')E^+(z,t').
+\end{equation}
+Podemos estender o limite superior desta integral ao infinito considerando que
 \begin{equation}
 \chi_e(\Delta t) = 0 ~\textrm{para}~\Delta t < 0.
 \label{eq:3.16}
 \end{equation}  
-
-Reescrevendo \eqref{eq:3.15} no domínio da frequência, obtemos:
+e, assim, reescrevemos \eqref{eq:3.15} no domínio da frequência, fazendo a seguinte transformada de Fourier:
 \begin{eqnarray}
-\tilde{P}^L(z,\omega) & = & \epsilon_0\int_{-\infty}^{-\infty}dt~P^L(z,t) e^{-i\omega t}\nonumber\\\nonumber\\& = & \epsilon_0\int_{-\infty}^{-\infty}dt\int_{-\infty}^{\infty}dt'\chi_e(t-t')E(z,t')e^{-i\omega t}\nonumber\\\nonumber\\& = & \epsilon_0\int_{-\infty}^{-\infty}dt\int_{-\infty}^{\infty}dt'\chi_e(t)E(z,t')e^{-i\omega(t+t')}\nonumber\\\nonumber\\& = & \epsilon_0\int_{-\infty}^{-\infty}dt'~E(z,t')\int_{-\infty}^{\infty}dt~\chi_e(t)e^{-i\omega( t + t' )}\nonumber\\\nonumber\\& = & \epsilon_0\int_{-\infty}^{\infty}dt~\chi_e(t)e^{-i\omega t}\int_{-\infty}^{-\infty}dt'~E(z,t')e^{-i\omega t'}\nonumber\\\nonumber\\& = & \epsilon_0\tilde{\chi}_e(\omega)\tilde{E}(z,\omega).
+\tilde{P}^{L+}(z,\omega) & = & \epsilon_0\int_{-\infty}^{\infty}dt~P^{L+}(z,t) e^{-i\omega t}\nonumber\\& = & \epsilon_0\int_{-\infty}^{\infty}dt\int_{-\infty}^{\infty}dt'\chi_e(t-t')E^+(z,t')e^{-i\omega t}\nonumber\\& = & \epsilon_0\int_{-\infty}^{\infty}dt\int_{-\infty}^{\infty}dt'\chi_e(t)E^+(z,t')e^{-i\omega(t+t')}\nonumber\\& = & \epsilon_0\int_{-\infty}^{\infty}dt'~E^+(z,t')\int_{-\infty}^{\infty}dt~\chi_e(t)e^{-i\omega( t + t' )}\nonumber\\& = & \epsilon_0\int_{-\infty}^{\infty}dt~\chi_e(t)e^{-i\omega t}\int_{-\infty}^{\infty}dt'~E^+(z,t')e^{-i\omega t'}\nonumber\\& = & \epsilon_0\tilde{\chi}_e(\omega)\tilde{E}^+(z,\omega).
 \label{eq:3.17}
 \end{eqnarray}
 
 Usando a transformada de Fourier inversa de $E(z,t)$ em \eqref{eq:3.14}, obtemos:
 \begin{eqnarray}
-\qty[\pdv[2]{z} - \frac{1}{c^2}\pdv[2]{t}]E(z,t)&=& \mu_0 \pdv[2]{t}P^L(z,t)\nonumber\\\nonumber\\\qty[\pdv[2]{z} - \frac{1}{c^2}\pdv[2]{t}]\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{E}(z,\omega)e^{i\omega t}]&=& \mu_0 \pdv[2]{t}\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{P}^L(z,\omega)e^{i\omega t}]\nonumber\\\nonumber\\\qty[\pdv[2]{z} + \frac{\omega^2}{c^2}]\tilde{E}(z,\omega) &=& -\mu_0 \omega^2\tilde{P}^L(z,\omega).
+\qty[\pdv[2]{z} - \frac{1}{c^2}\pdv[2]{t}]E^+(z,t)&=& \mu_0 \pdv[2]{t}P^{L+}(z,t)\nonumber\\\qty[\pdv[2]{z} - \frac{1}{c^2}\pdv[2]{t}]\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{E}^+(z,\omega)e^{i\omega t}]&=& \mu_0 \pdv[2]{t}\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{P}^{L+}(z,\omega)e^{i\omega t}]\nonumber\\\qty[\pdv[2]{z} + \frac{\omega^2}{c^2}]\tilde{E}^+(z,\omega) &=& -\mu_0 \omega^2\tilde{P}^{L+}(z,\omega).
 \label{eq:3.18}
 \end{eqnarray}
 
 Substituindo \eqref{eq:3.17} em \eqref{eq:3.18} e usando o fato de que $c^2=\frac{1}{\mu_0\epsilon_0}$ , obtemos: 
 \begin{eqnarray}
-\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon_0]\tilde{E}(z,\omega) &=& -\mu_0 \omega^2\epsilon_0\tilde{\chi}_e(\omega)\tilde{E}(z,\omega)\nonumber\\\nonumber\\\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon_0\qty(1+\chi_e(\omega))]\tilde{E}(z,\omega) &=& 0\nonumber\\\nonumber\\
-\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon(\omega)]\tilde{E}(z,\omega) &=& 0,
+\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon_0]\tilde{E}^+(z,\omega) &=& -\mu_0 \omega^2\epsilon_0\tilde{\chi}_e(\omega)\tilde{E}^+(z,\omega)\nonumber\\\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon_0\qty(1+\chi_e(\omega))]\tilde{E}^+(z,\omega) &=& 0\nonumber\\
+\qty[\pdv[2]{z} + \mu_0\omega^2\epsilon(\omega)]\tilde{E}^+(z,\omega) &=& 0,
 \label{eq:3.19}
 \end{eqnarray}
 onde definimos
@@ -113,10 +135,10 @@ onde definimos
 \end{equation}
 é a permissividade elétrica do material. Para resolvermos a equação \eqref{eq:3.19}, assumimos que a  susceptibilidade elétrica e a permissividade elétrica do material são reais. Assim, a solução da EDO na direção $+z$ é:      
 \begin{equation}
-\tilde{E}(z,\omega) = \tilde{E}(0,\omega)e^{-ik(\omega)z},
+\tilde{E}^+(z,\omega) = \tilde{E}^+(0,\omega)e^{-ik(\omega)z},
 \label{eq:3.21}
 \end{equation}
-onde $k(\omega)$ é o vetor de onda que em consequência  da equação  Em consequência da   em termos de  é a constante de propagação, obtida a partir da relação de dispersão da óptica linear
+onde $k(\omega)$ é o vetor de onda, dado a partir da relação de dispersão da óptica linear
 \begin{equation}
 k^2(\omega) \equiv \omega^2\epsilon(\omega)\mu_0=\frac{\omega^2}{c^2}n(\omega),\label{eq:3.22}
 \end{equation}
@@ -133,7 +155,7 @@ k(\omega) \equiv k(\omega_c) + \Delta\kappa.
 
 Substituindo \eqref{eq:3.24} na equação de onda \eqref{eq:3.21}, temos:
 \begin{equation}
-\tilde{E}(z,\omega) = \tilde{E}(0,\omega)e^{-ik_cz}e^{-i\Delta\kappa z},
+\tilde{E}^+(z,\omega) = \tilde{E}^+(0,\omega)e^{-ik_cz}e^{-i\Delta\kappa z},
 \label{eq:3.25}
 \end{equation}
 onde 
@@ -141,128 +163,168 @@ onde
 k_c^2 \equiv k^2(\omega_c) = \omega_c^2\epsilon(\omega_c)\mu_0=\frac{\omega_c^2}{c^2}n(\omega_c).\label{eq:3.26}
 \end{equation}
 
-Para o caso prático que nos interessa neste TCC, centralizamos a amplitude de Fourier em um número de onda médio $k_c$, tendo valor significativo apenas quando o intervalo $\Delta \kappa$ é pequeno comparado a $k_c$. No apêndice $A$ é introduzido uma função da envoltória que varia lentamente no tempo, após a separação de um termo que oscila rapidamente. Partindo desse princípio, podemos definir uma envoltória que varia lentamente na coordenada espacial:
-\begin{equation}
-\tilde{\mathcal{E}}(\omega,z) \equiv \tilde{E}(\omega + \omega_c, 0)e^{-i\Delta \kappa z}.
-\label{eq:3.27}
-\end{equation}  
-Isso requer que
-\begin{equation}
-\qty|\pdv{z}\tilde{\mathcal{E}}(\omega,z)| \ll k_c\qty|\tilde{\mathcal{E}}(\omega,z)|,
-\label{eq:3.28}
-\end{equation}
-pois partimos do fato que:
-\begin{equation}
-\qty|\frac{\Delta \kappa}{k_c}| \ll 1.
-\label{eq:3.29}
-\end{equation}
-
-Aplicando a transformada de Fourier inversa à equação \eqref{eq:3.25}, obtemos:
+Para o caso prático que nos interessa neste TCC, centralizamos a amplitude de Fourier em uma frequência $\omega_c$. Assim, aplicando a transformada de Fourier inversa à equação \eqref{eq:3.25}, obtemos:
 \begin{eqnarray}
-E(z,t) & = & \frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{E}(z,\omega)e^{i\omega t}\nonumber\\\nonumber\\& = & \frac{1}{2\pi}\int_{0}^\infty d\omega \tilde{E}(z,\omega)e^{i\omega t} + c.c.\nonumber\\\nonumber\\& = & \frac{1}{2\pi}\int_{0}^\infty d\omega \tilde{E}(0,\omega)e^{-ik_cz - i\Delta kz}e^{i\omega t}+ c.c.\nonumber\\\nonumber\\& = & \frac{1}{2\pi}\int_{0}^\infty d\omega \tilde{E}(0,\omega+\omega_c)e^{-ik_cz - i\Delta kz}e^{i(\omega + \omega_c)t}+ c.c.\nonumber\\\nonumber\\& = & \frac{1}{2\pi}\qty[\int_{0}^\infty d\omega \tilde{E}(0,\omega + \omega_c)e^{ - i\Delta kz}e^{i\omega t} ]  e^{iw_ct-ik_cz}+ c.c.
+E^+(z,t) & = & \frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{E}^+(z,\omega)e^{i\omega t}\nonumber\\& = & \frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{E}^+(0,\omega)e^{-ik_cz - i\Delta kz}e^{i\omega t}\nonumber\\& = & \frac{1}{2\pi}\int_{-\infty}^\infty d\omega \tilde{E}^+(0,\omega+\omega_c)e^{-ik_cz - i\Delta kz}e^{i(\omega + \omega_c)t}\nonumber\\& = & \frac{1}{2\pi}\qty[\int_{-\infty}^\infty d\omega \tilde{E}^+(0,\omega + \omega_c)e^{ - i\Delta kz}e^{i\omega t} ]  e^{iw_ct-ik_cz}.
 \label{eq:3.30}
 \end{eqnarray}
+ $k_c$ tem valor significativo apenas quando o intervalo $\Delta \kappa$ é pequeno comparado a $k_c$.
+ Partindo desse princípio, podemos definir uma envoltória que varia lentamente na coordenada espacial:
+\begin{equation}
+	\tilde{\mathcal{E}}(\omega,z) \equiv 2\tilde{E}^+(\omega + \omega_c, 0)e^{-i\Delta \kappa z}.
+	\label{eq:3.27}
+\end{equation}  
+%Isso requer que
+%\begin{equation}
+%	\qty|\pdv{z}\tilde{\mathcal{E}}(\omega,z)| \ll k_c\qty|\tilde{\mathcal{E}}(\omega,z)|,
+%	\label{eq:3.28}
+%\end{equation}
+%pois partimos do fato que:
+%\begin{equation}
+%	\qty|\frac{\Delta \kappa}{k_c}| \ll 1.
+%	\label{eq:3.29}
+%\end{equation}
 Substituindo  \eqref{eq:3.27} em \eqref{eq:3.30}, temos:
-\begin{equation}
-E(z,t)  =  \frac{1}{2}\qty[\frac{1}{\pi}\int_{0}^\infty d\omega \mathcal{\tilde{E}}(z,\omega)e^{i\omega t} ]  e^{iw_ct-ik_cz} + c.c.
-\label{eq:3.31}
-\end{equation}
-Assim, ao aplicarmos a relação do apêndice $A$, obtemos 
-\begin{equation}
-E(z,t)  =  \frac{1}{2}\mathcal{\tilde{E}}(z,t)e^{iw_ct-ik_cz} + c.c.
+\begin{eqnarray}
+E^+(z,t) & = & \frac{1}{2}\qty[\frac{1}{2\pi}\int_{-\infty}^\infty d\omega \mathcal{\tilde{E}}(z,\omega)e^{i\omega t} ]  e^{iw_ct-ik_cz}
+\nonumber\\& = & \frac{1}{2}\mathcal{\tilde{E}}(z,t)e^{i(w_ct-k_cz)}.
 \label{eq:3.32}
-\end{equation}
+\end{eqnarray}
 onde $\mathcal{E}(z,t)$ é a envoltória do pulso que varia lentamente no espaço e no tempo.
 
-Agora, precisamos obter uma expressão para $P^L(z,t)$. Para isso, reescrevemos \eqref{eq:3.17} em termos de $\epsilon(\omega)$ e expandimos $\epsilon(\omega)$ em série de Taylor em torno de $\omega_c$, assim como fizemos para $k(\omega)$, de forma que:  
+Agora, precisamos obter uma expressão para $P^{L+}(z,t)$. Para isso, reescrevemos \eqref{eq:3.17} em termos de $\epsilon(\omega)$ e expandimos $\epsilon(\omega)$ em série de Taylor em torno de $\omega_c$, assim como fizemos para $k(\omega)$, de forma que:  
 \begin{eqnarray}
-\tilde{P}^L(z,\omega) & = & \qty[\epsilon(\omega) - \epsilon_0]\tilde{E}(z, \omega)\nonumber\\\nonumber\\& = & \left[\epsilon(\omega_c) + (\omega-\omega_c) \pdv{\epsilon}{\omega}\Big|_{\omega_c} + \frac{(\omega-\omega_c)^2}{2!} \pdv[2]{\epsilon}{\omega}\Big|_{\omega_c}\right. + \cdots +{}\nonumber\\\nonumber\\& + & \left. \frac{(\omega-\omega_c)^n}{n!} \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c} - \epsilon_0 \right]\tilde{E}(z, \omega)\nonumber\\\nonumber\\& = & \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(\omega-\omega_c)^n}{n!} \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}]\tilde{E}(z, \omega).
+\tilde{P}^{L+}(z,\omega) & = & \qty[\epsilon(\omega) - \epsilon_0]\tilde{E}^+(z, \omega)\nonumber\\& = & \left[\epsilon(\omega_c) + (\omega-\omega_c) \pdv{\epsilon}{\omega}\Big|_{\omega_c} + \frac{(\omega-\omega_c)^2}{2!} \pdv[2]{\epsilon}{\omega}\Big|_{\omega_c}\right. + \cdots +{}\nonumber\\& + & \left. \frac{(\omega-\omega_c)^n}{n!} \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c} - \epsilon_0 \right]\tilde{E}^+(z, \omega)\nonumber\\& = & \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(\omega-\omega_c)^n}{n!} \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}]\tilde{E}^+(z, \omega).
 \label{eq:3.33}
 \end{eqnarray}
 Aplicando transformada de Fourier inversa à equação \eqref{eq:3.33}, temos:
 \begin{eqnarray}
-\tilde{P}^L(z,t) & = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(\omega-\omega_c)^n}{n!}\pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}]\tilde{E}(z, \omega)e^{i\omega t}\nonumber\\\nonumber\\& = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega\Bigg[\epsilon(\omega_c) - \epsilon_0 + \sum_{n=1}^\infty \frac{(\omega-\omega_c)^n}{n!} \pdv[n]{\epsilon}{\omega}\Big |_{\omega_c} \Bigg] \tilde{E}(0, \omega)e^{-ik_cz-i\Delta\kappa z }e^{i\omega t} \nonumber\\\nonumber\\& = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega	\Bigg[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{\omega^n}{n!} \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}\Bigg]\tilde{E}(0, \omega + \omega_c)e^{-ik_cz-i\Delta\kappa z}e^{i(\omega + \omega_c) t }\nonumber\\\nonumber\\& = & \frac{1}{2\pi}\qty{ \int_{-\infty}^{\infty} d\omega	\Bigg[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{\omega^n}{n!} \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}\Bigg]\tilde{E}(0, \omega + \omega_c)e^{-i\Delta\kappa z}e^{i\omega t}}e^{i\omega_c t -ik_cz}\nonumber\\
+P^{L+}(z,t) & = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega \tilde{P}^{L+}(z,\omega) e^{i\omega t}\nonumber\\& = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(\omega-\omega_c)^n}{n!}\pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}]\tilde{E}^+(z, \omega)e^{i\omega t}\nonumber\\& = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega\Bigg[\epsilon(\omega_c) - \epsilon_0 + \sum_{n=1}^\infty \frac{(\omega-\omega_c)^n}{n!} \pdv[n]{\epsilon}{\omega}\Big |_{\omega_c} \Bigg] \tilde{E}^+(0, \omega)e^{-ik_cz-i\Delta\kappa z }e^{i\omega t} \nonumber\\& = & \frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega	\Bigg[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{\omega^n}{n!} \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}\Bigg]\tilde{E}^+(0, \omega + \omega_c)e^{-ik_cz-i\Delta\kappa z}e^{i(\omega + \omega_c) t }\nonumber\\& = & \frac{1}{2\pi}\qty{ \int_{-\infty}^{\infty} d\omega	\Bigg[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{\omega^n}{n!} \pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}\Bigg]\tilde{E}^+(0, \omega + \omega_c)e^{-i\Delta\kappa z}e^{i\omega t}}e^{i\omega_c t -ik_cz}\nonumber\\
 \label{eq:3.34}
 \end{eqnarray}   
 
 Substituindo \eqref{eq:3.27} em \eqref{eq:3.34} e fazendo a mudança de  notação $\pdv[n]{\epsilon}{\omega}\Big|_{\omega_c}= \epsilon^{(n)}(\omega_c)$ , obtemos:
 \small
 \begin{eqnarray}
-P^L(z,t) & = & \frac{1}{2} \qty{\frac{1}{\pi} \int_{0}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{\epsilon^{(n)}(\omega_c)}{n!}\omega^n]\tilde{\mathcal{E}}(z, \omega)e^{i\omega t }}e^{i\omega_c t - ik_cz} + c.c.\nonumber\\\nonumber\\& = & \frac{1}{2} \qty{\frac{1}{\pi}\int_{0}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-1)^n\epsilon^{(n)}(\omega_c)}{n!}\pdv[n]{t}]\tilde{\mathcal{E}}(z, \omega)e^{i\omega t }}e^{i\omega_c t - ik_cz} + c.c.\nonumber\\\nonumber\\& = & \frac{1}{2} \qty{ \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-1)^n\epsilon^{(n)}(\omega_c)}{n!}\pdv[n]{t}]\frac{1}{\pi}\int_{0}^{\infty} d\omega\tilde{\mathcal{E}}(z, \omega)e^{i\omega t }}e^{i\omega_c t - ik_cz} + c.c.\nonumber\\\nonumber\\& = & \frac{1}{2} \qty{ \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-1)^n\epsilon^{(n)}(\omega_c)}{n!}\pdv[n]{t}]\tilde{\mathcal{E}}(z, t)}e^{i\omega_c t - ik_cz} + c.c.\nonumber\\\nonumber\\& = & \frac{1}{2} \tilde{\mathcal{P}}^\mathcal{L}(z,t)e^{i\omega t - ik_cz} + c.c.,
+P^{L+}(z,t) & = & \frac{1}{2} \qty{\frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{\epsilon^{(n)}(\omega_c)}{n!}\omega^n]\tilde{\mathcal{E}}(z, \omega)e^{i\omega t }}e^{i\omega_c t - ik_cz}\nonumber\\& = & \frac{1}{2} \qty{\frac{1}{2\pi}\int_{-\infty}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-1)^n\epsilon^{(n)}(\omega_c)}{n!}\pdv[n]{t}]\tilde{\mathcal{E}}(z, \omega)e^{i\omega t }}e^{i\omega_c t - ik_cz}\nonumber\\& = & \frac{1}{2} \qty{ \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-1)^n\epsilon^{(n)}(\omega_c)}{n!}\pdv[n]{t}]\frac{1}{2\pi}\int_{-\infty}^{\infty} d\omega\tilde{\mathcal{E}}(z, \omega)e^{i\omega t }}e^{i\omega_c t - ik_cz}\nonumber\\& = & \frac{1}{2} \qty{ \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-1)^n\epsilon^{(n)}(\omega_c)}{n!}\pdv[n]{t}]\tilde{\mathcal{E}}(z, t)}e^{i\omega_c t - ik_cz}\nonumber\\& = & \frac{1}{2}\tilde{\mathcal{P}}^\mathcal{L}(z,t)e^{i\omega t - ik_cz},
 \label{eq:3.35}
 \end{eqnarray}
 onde $\tilde{\mathcal{P}}^\mathcal{L}(z,t)$ é a envoltória da polarização que varia lentamente em relação ao espaço e o tempo. O próximo passo é substituir o campo elétrico \eqref{eq:3.32} e a polarização \eqref{eq:3.35} na equação de propagação de onda \eqref{eq:3.14}. Assim, temos: 
 \begin{eqnarray}
-\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t) & = & \frac{1}{c^2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t)+\mu_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {}\nonumber\\\nonumber\\ & - & {\omega_c}^2\bigg]\tilde{\mathcal{P}}^\mathcal{L}(z,t)\nonumber\\\nonumber\\ \qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t) & = & \mu_0\epsilon_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t)  +  \frac{\mu_0}{2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - \nonumber\\\nonumber\\& - & {\omega_c}^2\bigg]\qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\pdv[n]{t}]\tilde{\mathcal{E}}(z, t). 
+&&\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t) -  \frac{1}{c^2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t)\nonumber\\&& =  \mu_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{P}}^\mathcal{L}(z,t)\nonumber\\\nonumber\\\nonumber\\&& \qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t) -  \mu_0\epsilon_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t) \nonumber\\&& =\frac{\mu_0}{2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\pdv[n]{t}]\tilde{\mathcal{E}}(z, t). 
 \label{eq:3.36}
 \end{eqnarray}
 Levando em conta que $(c^2)^{-1} = \mu_0\epsilon_0$, temos:
 \begin{eqnarray}
-\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t)  & = &{\color{red} \mu_0\epsilon_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t)}  + \mu_0\epsilon(\omega_c)\bigg[\pdv[2]{t} + \nonumber\\& + & 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t) - {\color{red} \mu_0\epsilon_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - }\nonumber\\& {\color{red}-} & {\color{red}{\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t)} + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\mu_0\epsilon^{(n)}(\omega_c)\bigg[\pdv[n+2]{t} + \nonumber\\& + & 2i\omega_c\pdv[n+1]{t}- {\omega_c}^2\pdv[n]{t}\bigg]\tilde{\mathcal{E}}(z,t)\nonumber\\\nonumber\\\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t) & = & \mu_0\epsilon(\omega_c)\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z, t)  - \nonumber\\ & - & i\mu_0\bigg[2i\omega_c\epsilon^{(1)}(\omega_c)\pdv[2]{t} -  {\omega_c}^2\epsilon^{(1)}(\omega_c)\pdv{t} + \nonumber\\ & + & \frac{i{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}\pdv[2]{t}\bigg]\tilde{\mathcal{E}}(z, t) - \nonumber\\& - & \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + \nonumber\\ & + & 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c) + \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z, t).				 																	
+&&\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t) - {\color{red} \mu_0\epsilon_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t)}  \nonumber\\ && = \mu_0\epsilon(\omega_c)\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t) - {\color{red} \mu_0\epsilon_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - }{\color{red}{\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t)} +\nonumber\\&& + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\mu_0\epsilon^{(n)}(\omega_c)\bigg[\pdv[n+2]{t} +   2i\omega_c\pdv[n+1]{t}- {\omega_c}^2\pdv[n]{t}\bigg]\tilde{\mathcal{E}}(z,t)\nonumber\\\nonumber\\\nonumber\\&&\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t)  =  \mu_0\epsilon(\omega_c)\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z, t)  - \nonumber\\ && -  i\mu_0\bigg[2i\omega_c\epsilon^{(1)}(\omega_c)\pdv[2]{t} -  {\omega_c}^2\epsilon^{(1)}(\omega_c)\pdv{t} +  \frac{i{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}\pdv[2]{t}\bigg]\tilde{\mathcal{E}}(z, t) - \nonumber\\&& -  \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) +  2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c) + \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z, t).				 															
 \label{eq:3.37}
 \end{eqnarray}
 
 Partindo do fato que ${k_c}^2=\mu_0\epsilon(\omega_c){\omega_c}^2$, temos
 \begin{eqnarray}
-\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {\color{red}{k_c}^2}]\tilde{\mathcal{E}}(z,t)  & = & - {\color{red}{k_c}^2\tilde{\mathcal{E}}(z,t)} + i\mu_0\omega_c\big[\omega_c\epsilon^{(1)}(\omega_c) + 2\epsilon(\omega_c)\big]\pdv{t}\tilde{\mathcal{E}}(z,t)\nonumber\\ & + & \mu_0\bigg[\epsilon(w_c) + 2\omega_c\epsilon^{(1)}(w_c) + \frac{{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}\bigg]\pdv[2]{t}\tilde{\mathcal{E}}(z,t)\nonumber\\  & - & \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c)\nonumber\\& + & \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t)\nonumber\\\nonumber\\
-\qty[\pdv[2]{z} - 2ik_c\pdv{z}]\tilde{\mathcal{E}}(z,t)  & = & i\mu_0\omega_c\big[\omega_c\epsilon^{(1)}(\omega_c) + 2\epsilon(\omega_c)\big]\pdv{t}\tilde{\mathcal{E}}(z,t)\nonumber\\ & + & \mu_0\bigg[\epsilon(w_c) + 2\omega_c\epsilon^{(1)}(w_c) + \frac{{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}\bigg]\pdv[2]{t}\tilde{\mathcal{E}}(z,t)\nonumber\\  & - & \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c)\nonumber\\& + & \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t).
+&&\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {\color{red}{k_c}^2}]\tilde{\mathcal{E}}(z,t)   =  - {\color{red}{k_c}^2\tilde{\mathcal{E}}(z,t)} + i\mu_0\omega_c\big[\omega_c\epsilon^{(1)}(\omega_c) + 2\epsilon(\omega_c)\big]\pdv{t}\tilde{\mathcal{E}}(z,t)\nonumber\\ && +  \mu_0\bigg[\epsilon(w_c) + 2\omega_c\epsilon^{(1)}(w_c) + \frac{{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}\bigg]\pdv[2]{t}\tilde{\mathcal{E}}(z,t) - \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + \nonumber\\&& + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c) +  \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t)\nonumber\\\nonumber\\\nonumber\\&&
+\qty[\pdv[2]{z} - 2ik_c\pdv{z}]\tilde{\mathcal{E}}(z,t)   =  i\mu_0\omega_c\big[\omega_c\epsilon^{(1)}(\omega_c) + 2\epsilon(\omega_c)\big]\pdv{t}\tilde{\mathcal{E}}(z,t) +  \mu_0\bigg[\epsilon(w_c) + 2\omega_c\epsilon^{(1)}(w_c) + \nonumber\\&& +  \frac{{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}\bigg]\pdv[2]{t}\tilde{\mathcal{E}}(z,t) - \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c)\nonumber\\&& +  \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t).
 \label{eq:3.38}
 \end{eqnarray}
 
-Agora, precisamos introduzir as grandezas velocidade de fase, velocidade de grupo e dispersão de velocidade de grupo, que representam caracteristicas importantes da propagação de onda eletromagnéticas. A velocidade de fase $c/n(\omega)$ caracteriza uma onda monocromática idealizada sem inicio e fim. Assim, é impossível de ser realizada, pois toda onda eletromagnética de duração finita possui uma distribuição de frequências, assim quando propagado em um meio dielétrico, apresentam uma distribuição de velocidades de fases. Porém, os pulsos eletromagnéticos se propagam com velocidades bem definidas que chamamos de velocidade de grupo.
+Agora, precisamos introduzir as grandezas velocidade de fase, velocidade de grupo e dispersão de velocidade de grupo que representam características importantes da propagação de onda eletromagnéticas. Quando tratamos de ondas do tipo 
+\begin{equation}
+	\Lambda(z,t) = Ae^{i(\omega t-kz)}
+\end{equation}
+onde a frequência é bem definida a velocidade, ao qual a forma da onda se propaga é chamada de velocidade fase $v_f$ e pode ser obtida  a partir da fase da onda $\phi = \omega t - kz$, pois $\phi$ é constante em qualquer tempo ou posição do espaço (mesmo em $z=\infty$ e $t=\infty$). Assim, temos:
+\begin{eqnarray}
+	d\phi = wdt-kdz=0.
+\end{eqnarray}
+Logo,
+\begin{eqnarray}
+	\dv{z}{t} = v_f = \frac{\omega}{k}.
+\end{eqnarray}
+
+
+Para ondas eletromagnéticas, como vemos em \eqref{eq:3.26}, $k=\omega n/c$. Assim,
+\begin{equation}
+	v_f = \frac{c}{n}
+\end{equation}
+Esse tipo de onda é idealizado, pois ondas eletromagnética tem duração finita e e possuem uma distribuição de frequências e é escrita da seguinte forma 
+\begin{equation}
+	\Lambda(z,t) = \sum_nA_ne^{i(\omega_n t-k_nz)}.
+\end{equation}
+Assim, essa onda possui uma distribuição de velocidades de fases, e deixa de significado físico de velocidade da onda. Felizmente, esse tipo de onda Eletromagnética tem uma velocidade definida que chamamos de velocidade de grupo $v_g$. É complexo derivar essa velocidade de grupo a partir da expressão (), se temos uma distribuição grande de frequências. Por isso, usaremos a superposição de duas ondas com mesma amplitude, com frequências $\omega_1 = \omega-\Delta\omega$ e $\omega_2 = \omega+\Delta\omega$ e números de ondas $k_1 = k - \Delta k $ e $k_2 = k + \Delta k $, como exemplificado na figura \eqref{fig:superposicao}.De forma que:
+\begin{eqnarray}
+	\Lambda(z,t) &=& Ae^{i[(\omega-\Delta\omega)t-(k-\Delta k)z]} + Ae^{i[(\omega+\Delta\omega)t-(k+\Delta k)z]} \nonumber\\ &=& Ae^{i(\omega t - k z)}[e^{-i(\Delta\omega t - \Delta k z)} + e^{i(\Delta\omega t-\Delta kz)}]\nonumber\\ &=& 2Acos(\Delta\omega t-\Delta kz)e^{i(\omega t - k z)}
+\end{eqnarray} 
+onde a exponencial é o termo de propagação com velocidade $v_p = \omega/k = c/n(\omega)$. O cosseno é o termo que modula a equação de onda. Se supormos que  $\Delta\omega$ e $\Delta k$ são muito pequenos comparados a $\omega$ e $k$, respectivamente, a envoltória desse campo varia lentamente no espaço e no tempo, comparado ao temo de propagação. Assim, o termo de modulações propagação com velocidade
+\begin{equation}
+	v_g = \dv{\omega}{k} = \frac{\Delta \omega}{\Delta k}.
+\end{equation}
+
+\begin{sagesilent}
+	t = var('t')
+	z = var('z')
+	A=1
+	c=3e8
+	w=4
+	k=w/c
+	dk=0.5
+	dw=0.5
+	
+	f1(t,z)= A*exp(I*((w-dw)*t-(k-dk)*z))
+	f2(t,z)= A*exp(I*((w+dw)*t-(k+dk)*z))
+	f3(t,z)= 2*A*cos(dw*t-dk*z)*exp(I*(w*t-k*z))
+	f4(t,z)=2*A*cos(dw*t-dk*z)
+	
+	D = plot(f4(t,0), t, -5, 5, linestyle="--", thickness=1, color='black') + plot(-f4(t,0), t, -5, 5, linestyle="--", thickness=1, color='black')
+	
+	E=plot(A, t, -5, 5, linestyle="--", thickness=1, color='black') + plot(-A, t, -5, 5, linestyle="--", thickness=1, color='black')
+	
+	O = plot(real_part(f1(t,0)),t,-5,5,frame=true,figsize=(6,3),thickness=1, color='blue',axes=False) + E
+	
+	B = plot(real_part(f2(t,0)),t,-5,5,frame=true,figsize=(6,3),thickness=1, color='red',axes=False) + E
+	
+	C = plot(real_part(f3(t,0)),t,-5,5,frame=true,figsize=(6,3),thickness=1, color='green',axes=False) + D
+	
+	
+	O.set_axes_range(-5,5,-3,3)
+	B.set_axes_range(-5,5,-3,3)
+	C.set_axes_range(-5,5,-3,3)
+	
+\end{sagesilent}
+
 \begin{figure}[H]
 	\centering
-	\caption{Representação da superposição de duas ondas plana.}
+	\caption{Representação da superposição de duas ondas plana, com $\omega = 4$ Hz, $\Delta w = 0.5$ Hz, $A=1$ e $z=0$.}
+	\begin{tikzpicture}[node distance = 6cm, auto]
+		\node (figura1) {\sageplot[scale=0.8]{O}};
+		\node[below of=figura1] (figura2) {\sageplot[scale=0.8]{B}};
+		\node[below of=figura2] (figura3) {\sageplot[scale=0.8]{C}};
+		\node[rotate=90,above of= figura2,xshift=0.3cm ] {$E(z,t)$};
+		\node[below of= figura3,yshift= 3cm, xshift=0.4cm ] {Tempo};
+		\node[right of = figura1,yshift= 2.4cm, xshift=-0.6cm] (labela) {(a)};
+		\node[right of = figura2,yshift= 2.4cm, xshift=-0.6cm] (labelb) {(b)};
+		\node[right of = figura3,yshift= 2.4cm, xshift=-0.6cm] (labelc) {(c)};	
+	\end{tikzpicture}
 	\label{fig:superposicao}
-	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/superposicao}
-	\caption*{Fonte: Do autor}
 \end{figure}
-
-
-Derivar a fórmula da velocidade de grupo a partir de um pulso com número grande de superposições de onda é demasiadamente complicado.Então pra obter e expressão correta de forma mais simples, vamos calcular a partir de um campo eletromagnético composto da superposição de duas ondas planas  de mesma amplitude e polarização, conforme figura \ref{fig:superposicao}, mas com valores de frequência $\omega$ e número de onda $k$ diferentes entre si, da seguinte forma:
-\begin{eqnarray}
-	E(z,t) & = & cos[(\omega + \Delta \omega)t - (k+\Delta k)z] + cos[(\omega - \Delta \omega)t - (k-\Delta k)z] \nonumber\\
-	& = & 2cos(\omega t - kz)cos\Delta \omega\qty(t - \frac{\Delta k}{\Delta \omega}z)
-\end{eqnarray} 
-onde $cos(\omega t - kz)$ é o termo de propagação que se propaga com velocidade $v_p = \omega/k = c/n(\omega)$. O segundo cosseno é o termo de modulação. Se $\Delta\omega$ e $\Delta k$ são muito pequenos comparados, respectivamente, a $\omega$ e $k$, a envoltória do campo varia lentamente no espaço e tempo em comparação com o termo de propagação com velocidade $\Delta \omega/\Delta k$, de forma que $t - (\Delta \omega/\Delta k)z$ é constante. A partir desse resultado, é possível supor que se temos um conjunto de ondas se propagando com frequência e numero variado em torno de $\omega_c$ e $k_c$, no teremos de forma semelhante um termo de propagação  com velocidade de fase c/n(w) e um termos de modulação que se propaga com velocidade 
+A partir desse resultado podemos dizer que para o caso de sobreposição de um sistema infinito de ondas, onde  a frequências $\omega$  e numero de onda $k_c$ são continuamente distribuídas e variam em torno de uma frequência central $\omega_c$ e numero de onda central $k_c$, que é o caso de um pulso eletromagnético, teremos de forma semelhante um termo de propagação  com velocidade de fase $v_f=c/n(w_c)$ e um termos de modulação que se propaga com velocidade 
 \begin{equation}
-	v_g = \dv{\omega}{k}.
+	\frac{1}{v_g} = \dv{k(\omega)}{\omega}\Big|_{\omega_c}.
 \end{equation}     
-Essa é a formula correta da velocidade de grupo. Como definimos em \eqref{eq:3.26} , $k(\omega) = \omega_c \sqrt{\epsilon(\omega_c) \mu_0}$, então temos \begin{equation}
-	\frac{1}{v_g}  = \frac{\mu_0\omega_c}{2k_c}\qty[\omega_c\epsilon^{(1)}(\omega_c) + 2\epsilon(\omega_c)] 
+Essa é a fórmula correta da velocidade de grupo. Como definimos em \eqref{eq:3.26} , $k(\omega) = \omega_c \sqrt{\epsilon(\omega_c) \mu_0}$, então temos \begin{equation}
+	\frac{1}{v_g}  = \frac{\mu_0\omega_c}{2k_c}\qty[\omega_c\epsilon^{(1)}(\omega_c) + 2\epsilon(\omega_c)] = \frac{n(\omega_c) + \omega_cn^{(1)}(\omega_{c})}{c}.
 	\label{eq:3.39}
 \end{equation}
+Podemos ver que se o meio é não dispersivo ($n(\omega_c) = 0$), $v_g = v_f$. Para um meio dispersivo com $n^{(1)}(\omega_{c}) > 0$, $v_g<v_f$ e se $n^{(1)}(\omega_{c}) < 0$, $v_g > v_f$.
 
 Outro conceito importante quando estamos tratando de pulsos eletromagnéticos, é a dispersão de velocidade de grupo (GVD), uma característica de um meio dispersivo que descreve como este meio altera a duração de um pulso eletromagnético ao se propagar por ele. A dispersão de velocidade de grupo é usualmente definida como
 \begin{equation}
 	k'' \equiv \pdv[2]{k}{\omega}\Big|_{\omega_c} = \pdv{\omega}\qty(\frac{1}{v_g})_{\omega_c} = -\frac{1}{k_c{v_g}^2}+ \frac{\mu_0}{k_c}\qty[\epsilon(w_c) + 2\omega_c\epsilon^{(1)}(w_c) + \frac{{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}].
 	\label{eq:3.40}
 \end{equation}
-Na figura \ref{fig:gvd}, como exemplo, temos dois gráficos que apresentam o perfil de um pulso eletromagnético gaussiano que se propaga por dois meios dispersivos. Observe que para meio com $k''>0$ (GVD positivo) a frequência aumenta para tempos posteriores. Assim, um observador fixo vê frequências mais baixas no pulso chegam primeiro. Para meio com $k''<0$ (GVD negativo), a frequência diminue para tempo posteriores. Logo, o observador vê frequência maiores no pulso chegando primeiro.
-
-\begin{figure}[H]
-	\centering
-	\caption{Pulso eletromagnético caracterizado por GVD positivo (a) e GVD negativo (b)}
-	\label{fig:gvd}
-	\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/gvd}
-	\caption*{Fonte: \url{http://www.mitr.p.lodz.pl/evu/lectures/Abramczyk3.pdf} }
-\end{figure}
-
-
-Calculando a velocidade de grupo $(v_g)^{-1} = \pdv{k}{\omega}\big|_{\omega_c}$ e definindo $k_c''\equiv\pdv[2]{k}{\omega}\big|_{\omega_c}$, obtemos:
-\begin{equation}
-\frac{1}{v_g}  = \frac{\mu_0\omega_c}{2k_c}\qty[\omega_c\epsilon^{(1)}(\omega_c) + 2\epsilon(\omega_c)] 
-\label{eq:3.39}
-\end{equation}
-e
-\begin{equation}
-k'' = -\frac{1}{k_c{v_g}^2}+ \frac{\mu_0}{k_c}\qty[\epsilon(w_c) + 2\omega_c\epsilon^{(1)}(w_c) + \frac{{\omega_c}^2\epsilon^{(2)}(\omega_c)}{2}].
-\label{eq:3.40}
-\end{equation}
+No final dessa Seção apresentamos, como exemplo, efeitos da GVD em um pulso gaussiano. 
 
 Substituindo \eqref{eq:3.39} e \eqref{eq:3.40} em \eqref{eq:3.38}, obtemos:
 \begin{eqnarray}
-\qty[\pdv[2]{z} - 2ik_c\pdv{z} ]\tilde{\mathcal{E}}(z,t)  & = & \frac{2ik_c}{v_g}\pdv{t}\mathcal{E}(z,t)\nonumber + k_ck''\pdv[2]{t}\tilde{\mathcal{E}}(z,t) + \frac{1}{{v_g}^2}\pdv[2]{t}\tilde{\mathcal{E}}(z,t) - \nonumber\\  & - & \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c) + \nonumber\\	& + & \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t)\nonumber\\\nonumber\\ \qty[\pdv[2]{z} - 2ik_c\pdv{z} ]\tilde{\mathcal{E}}(z,t) & = & \qty[\frac{1}{{v_g}^2}\pdv[2]{t} + \frac{2ik_c}{v_g}\pdv{t}]\tilde{\mathcal{E}}(z,t) + k_ck''\pdv[2]{t}\tilde{\mathcal{E}}(z,t) + \nonumber\\  & - & \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c) + \nonumber\\	& + & \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t).
+&&\qty[\pdv[2]{z} - 2ik_c\pdv{z} ]\tilde{\mathcal{E}}(z,t)  =  \frac{2ik_c}{v_g}\pdv{t}\mathcal{E}(z,t)\nonumber + k_ck''\pdv[2]{t}\tilde{\mathcal{E}}(z,t) + \frac{1}{{v_g}^2}\pdv[2]{t}\tilde{\mathcal{E}}(z,t) - \nonumber\\  && -  \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c) +   \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t)\nonumber\\\nonumber\\\nonumber\\ &&\qty[\pdv[2]{z} - 2ik_c\pdv{z} ]\tilde{\mathcal{E}}(z,t)  =  \qty[\frac{1}{{v_g}^2}\pdv[2]{t} + \frac{2ik_c}{v_g}\pdv{t}]\tilde{\mathcal{E}}(z,t) + k_ck''\pdv[2]{t}\tilde{\mathcal{E}}(z,t) + \nonumber\\  && -  \sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\mu_0\epsilon^{(n-2)}(\omega_c) + 2n\mu_0\omega_c\epsilon^{(n-1)}(\omega_c) +  \mu_0{\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t).\nonumber\\
 \label{eq:3.41}
 \end{eqnarray}
 
@@ -286,10 +348,83 @@ onde $k_c''$ é o termos de dispersão de velocidade de grupo GVD (Group Velocity 
 \mathcal{D} = \frac{i\mu_0}{2k_c}\sum_{n=3}^\infty \frac{(-i)^{n}}{n!} \bigg[n(n-1)\epsilon^{(n-2)}(\omega_c) + 2n\omega_c\epsilon^{(n-1)}(\omega_c) + {\omega_c}^2\epsilon^{(n)}(\omega_c)\bigg]\pdv[n]{t}\tilde{\mathcal{E}}(z,t) 
 \label{eq:3.45}
 \end{equation}  
-é o termo que representa a dispersão de ordem superior.
+é o termo que representa a dispersão de ordem superior. Não temos interesse de resolver a equação \eqref{eq:3.44}. Apenas utilizaremos essa aproximação para derivar a equação para o meio atômico na aproximação de dois níveis na Seção \ref{sec:naolinear}. 
 
-Não temos interesse de resolver a equação \eqref{eq:3.44}. Apenas utilizaremos essa aproximação para derivar a equação para o meio atômico na aproximação de dois níveis na Seção \ref{sec:naolinear}.
+Para comprendermos efeitos da dispersão de velocidade grupo em um meio linear, faremos um exemplo simples, onde consideramos um pulso eletromagnético com formato gaussiano na posição inicial de forma que:
+\begin{equation}
+	E^+(z=0,t) = e^{-(t/T)^2}e^{i\omega_ct}.
+\end{equation}
+Realizando transformada de Fourier nessa equação, obtemos
+ \begin{eqnarray}
+ 	E^+(z=0,w) &=& \int_{-\infty}^{\infty}dte^{-(t/T)^2}e^{-i(\omega-\omega_c)t}\nonumber\\
+ 	&=&e^{-\frac{T^2(\omega-\omega_c)^2}{4}}\int_{-\infty}^{\infty}dte^{-\qty[\frac{t}{T} + \frac{T(\omega-\omega_c)}{2}]^2}\nonumber\\&=& \sqrt{\pi}Te^{-\frac{T^2(\omega-\omega_c)^2}{4}}.
+ \end{eqnarray}
+Substituindo esse resultado em \eqref{eq:3.21}, temos que 
+\begin{equation}
+		E^+(z,w) = \sqrt{\pi}Te^{-\frac{(\omega-\omega_c)^2}{4}}e^{-ik(\omega)z}
+\end{equation}
+Realizando transformada de Fourier inversa a equação e considerando apenas o três primeiros termos da expansão \eqref{eq:3.24}, temos que
+\begin{eqnarray}
+	E^+(z,t) &=&\frac{1}{2\pi} \int_{-\infty}^{\infty}dt\sqrt{\pi}Te^{-\frac{T^2[\omega-\omega_c]^2}{4}}e^{-ik(\omega)z}e^{i\omega t}\nonumber\\&=&\frac{T}{2\sqrt{\pi}} \int_{-\infty}^{\infty}dte^{-\frac{T^2[\omega-\omega_c]^2}{4}}e^{-i\{k(\omega_c) + k'(\omega_c)[\omega - \omega_c] + k''(\omega_c)[\omega - \omega_c]^2\}z}e^{i\omega t}\nonumber\\&=&\frac{T}{2\sqrt{\pi}}e^{i[\omega_c t -k(\omega_c)z]} \int_{-\infty}^{\infty}dte^{-\frac{T^2[\omega-\omega_c]^2}{4}}e^{-i\{k'(\omega_c)[\omega - \omega_c] + k''(\omega_c)[\omega - \omega_c]^2\}z}e^{i[\omega-\omega_c] t}\nonumber\\&=&\frac{T}{2\sqrt{\pi}}e^{i[\omega_c t -k(\omega_c)z]} \int_{-\infty}^{\infty}dte^{-[\frac{T^2}{4} + \frac{ik''(\omega_c)z}{2}][\omega-\omega_c]^2-i[k'(\omega_c)z - t][\omega - \omega_c]}.
+\end{eqnarray}
+Fazendo as substituições
+\begin{eqnarray}
+	x &=& \sqrt{\frac{T^2}{4} + \frac{ik''(\omega_c)z}{2}}[\omega-\omega_c]\nonumber\\
+	a &=& \frac{i[k'z - t]}{\sqrt{T^2 + 2ik''(\omega_c)z}},
+\end{eqnarray}
+simplificamos a equação à
+\begin{eqnarray}
+	E^+(z,t) &=&\frac{T}{\sqrt{\pi}\sqrt{T^2 + 2ik''(\omega_c)z}}e^{i[\omega_c t -k(\omega_c)z]} \int_{-\infty}^{\infty}dte^{-x^2-2ax}\nonumber\\&=&\frac{T}{\sqrt{\pi}\sqrt{T^2 + 2ik''(\omega_c)z}}e^{i[\omega_c t -k(\omega_c)z]} \int_{-\infty}^{\infty}dte^{-\{[x+a]^2 - a^2\}}\nonumber\\
+	&=&\frac{T}{\sqrt{T^2 + 2ik''(\omega_c)z}}e^{a^2}e^{i[\omega_c t -k(\omega_c)z]}.
+\end{eqnarray}
 
+Na figura \ref{fig:gvd}, como exemplo, temos dois gráficos que apresentam o perfil de um pulso eletromagnético gaussiano que se propaga por dois meios dispersivos. Veja que a largura do pulso aumenta ao se propagar pelo meio e sua amplitude diminui. Observe, também que para meio com $k''>0$ (GVD positivo) a frequência aumenta para tempos posteriores. Assim, um observador fixo vê frequências mais baixas chegando primeiro. Para meio com $k''<0$ (GVD negativo), a frequência diminue para tempo posteriores. Logo, o observador vê frequência maiores no pulso chegando primeiro.
+
+\begin{sagesilent}
+	t = var('t')
+	k11 = var('k11')
+	Tp=1
+	w=5
+	c=3e8
+	kk=w/c
+	k1=w/kk
+	z=0.000001
+	f(t,k11)= (Tp/sqrt(Tp^2 + I*2*k11*z))*exp(-(t)^2/(Tp^2 + I*2*k11*z))*exp(I*(w*(t+k1*z)-kk*z))
+	
+	f1 = real_part(f)
+	
+	A = plot(f1(t,0),t,-10,10,frame=true,figsize=(6,3),thickness=1, color='green',axes=False)
+	B = plot(f1(t,2e6),t,-10,10,frame=true,figsize=(6,3),thickness=1, color='red',axes=False)
+	C = plot(f1(t,-2e6),t,-10,10,frame=true,figsize=(6,3),thickness=1, color='blue',axes=False)
+	
+	A.set_axes_range(-10,10,-1.2,1.2)
+	B.set_axes_range(-10,10,-1.2,1.2)
+	C.set_axes_range(-10,10,-1.2,1.2)
+	
+	D = graphics_array([[A],[B],[C]])
+
+		
+\end{sagesilent}
+
+
+
+\begin{figure}[H]
+	\centering
+	\caption{Propagação  de um pulso gaussiano (a) em meios dispersivo. Pulso eletromagnético caracterizado por uma meio com $k''$ positivo (b) e $k''$ negativo (c).}
+	\begin{tikzpicture}[node distance = 6cm, auto]
+	\node (figura1) {\sageplot[scale=0.8]{A}};
+	\node[below of=figura1] (figura2) {\sageplot[scale=0.8]{B}};
+	\node[below of=figura2] (figura3) {\sageplot[scale=0.8]{C}};
+	\node[rotate=90,above of= figura2 ] {$E(z,t)$};
+	\node[below of= figura3,yshift= 3cm, xshift=0.4cm ] {Tempo};
+	\node[right of = figura1,yshift= 2.4cm, xshift=-0.6cm] (labela) {(a)};
+	\node[right of = figura2,yshift= 2.4cm, xshift=-0.6cm] (labelb) {(b)};
+	\node[right of = figura3,yshift= 2.4cm, xshift=-0.6cm] (labelc) {(c)};	
+	\end{tikzpicture}
+	\label{fig:gvd}
+\end{figure}
+  
+\sageplot[scale=0.8]{D, figsize=(6,8), axes_labels = ("Tempo","$E(z,t)$")}
 \section{Propagação de onda em um meio não linear}\label{sec:naolinear}
 
 A discussão sobre propagação de onda  na Seção \ref{sec:linear} se limitava a interação com meios lineares. Porém, o que nos interessa neste TCC é descrever a interação de campo elétrico com meio atômico de dois níveis, que possui polarização não linear em ressonância com o campo elétrico. Para isso, precisamos complementar a equação \eqref{eq:3.44} adicionando a polarização do meio atômico não linear, definindo que essa polarização também pode ser decomposta em uma envoltória que varia lentamente no tempo e no espaço e outra contribuição que oscila rapidamente:
@@ -322,10 +457,45 @@ e
 \pdv{z} = \pdv{\eta} - \frac{1}{v_g}\pdv{\tau}~~~~~~~\pdv{t} = \pdv{\tau}.
 \label{eq:3.51}
 \end{equation}
-\begin{figure}[H]
+
+\begin{sagesilent}
+	Tp=1
+	w=5
+	c=1
+	k=w/c
+	k1=w/k
+
+	f(t,z) = exp(-(k1*z-t)^2/Tp^2)
+	f2(t,z) = exp(-(t)^2/Tp^2)
+	
+	A=contour_plot(f(t,z),(t,-2,10),(z,0,12),frame=true,thickness=1, color='green',axes=False, colorbar=true,cmap='jet',plot_points=150,contours=100)
+	p = A[0]
+	opt = p.options()
+	print(opt)
+	opt['colorbar_options']
+	opt['colorbar_options']['label'] = '$E(z,t)$'
+	p.set_options(opt)
+	A[0] = p
+	B=contour_plot(f2(t,z),(t,-2,10),(z,0,12),frame=true,thickness=1, color='green',axes=False, colorbar=true,cmap='jet',plot_points=150,contours=100)
+	p = B[0]
+	opt = p.options()
+	print(opt)
+	opt['colorbar_options']
+	opt['colorbar_options']['label'] = '$E(\eta,\\tau)$'
+	p.set_options(opt)
+	B[0] = p
+	A.show()
+	
+\end{sagesilent}
+
+
+
+
+
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figuras_do_trabalho/referencial}
-	\caption{(A) representa o pulso em um referencial da amostra e (B) representa o pulso no referencial do pulso}
+	\caption{O primeiro gráfico representa um pulso em um referencial em repouso e o segundo representa um pulso no referencial com velocidade $v_g$ }
+    \sageplot[scale=0.50]{A, axes_labels=("$t$","$z$")}\sageplot[scale=0.50]{B, axes_labels=("$\\tau$","$\eta$")}
 	\label{fig:referencial}
 \end{figure}
 Desse modo, podemos reescrever  a  equação\eqref{eq:3.47} da seguinte forma:  
@@ -552,7 +722,7 @@ então podemos derivar a equação \eqref{eq:23} em relação ao tempo $t$ de modo qu
 
 Substituindo \eqref{eq:25} em \eqref{eq:26}, obtemos a equação
 \begin{eqnarray}
-	\pdv{t}\hat{\rho}(t) &= &\frac{1}{i\hbar}\hat{H}\qty(\sum_i w_i \ket{\psi_i(t)}\bra{\psi_i(t)}) -\frac{1}{i\hbar}\qty(\sum_i w_i \ket{\psi_i(t)} \bra{\psi_i(t)})\hat{H}\nonumber\\\nonumber\\ & = &\frac{1}{i\hbar}\hat{H}\hat{\rho} -\frac{1}{i\hbar}\hat{\rho}\hat{H}\nonumber\\\nonumber\\& = & -\frac{1}{i\hbar}\qty[\hat{\rho},\hat{H}],
+	\pdv{t}\hat{\rho}(t) &= &\frac{1}{i\hbar}\hat{H}\qty(\sum_i w_i \ket{\psi_i(t)}\bra{\psi_i(t)}) -\frac{1}{i\hbar}\qty(\sum_i w_i \ket{\psi_i(t)} \bra{\psi_i(t)})\hat{H}\nonumber\\ & = &\frac{1}{i\hbar}\hat{H}\hat{\rho} -\frac{1}{i\hbar}\hat{\rho}\hat{H}\nonumber\\& = & -\frac{1}{i\hbar}\qty[\hat{\rho},\hat{H}],
 	\label{eq:27}
 \end{eqnarray}
 conhecida como equação de \textbf{Liouville-von Neumann}, que descreve a evolução temporal do operador densidade \cite{sakurai2013mecanica,RobertField}. Embora essa equação seja semelhante a equação de Heisenberg, exceto por um sinal negativo ($-$), é preciso lembrar que estamos trabalhando na formulação Schrödinger, visto que $\hat{\rho}$ é construído a partir de kets e bras que evoluem no tempo e obedecem a equação de Schrödinger.
@@ -571,7 +741,7 @@ Antes de obtermos o hamiltoniano para um sistema de dois níveis, vamos nos ater 
 
 Podemos reescrever o campo elétrico ($\vb{E}$) e magnético ($\vb{B}$) escolhendo o potencial escalar $\phi(\vb{r},t)$ e o potencial vetor $\vb{A}(\vb{r},t)$ :
 \begin{eqnarray}
-\vb{E} & = &-\pdv{\vb{A}}{t} - \grad{\phi}\label{eq:4.2}\\\nonumber\\
+\vb{E} & = &-\pdv{\vb{A}}{t} - \grad{\phi}\label{eq:4.2}\\
 \vb{B} & = &\curl{\vb{A}}\label{eq:4.3}.
 \end{eqnarray} 
 Assim, reescrevendo a força de Lorentz \eqref{eq:4.1} em termos destes potenciais, temos que
@@ -592,9 +762,9 @@ obtemos
 Partindo do fato que $\vb{A}$ varia no tempo e no espaço, temos que sua derivada total é 
 \begin{eqnarray}
 \dd\vb{A} & \equiv & \vb{A}(\vb{r}+\vb{v}\dd t, t+\dd t) - \vb{A}(\vb{r}, t)
-\nonumber\\\nonumber\\
+\nonumber\\
 & = & \qty(v_x\pdv{\vb{A}}{x} + v_y\pdv{\vb{A}}{y} + v_z\pdv{\vb{A}}{z} + \pdv{\vb{A}}{t})\dd t
-\nonumber\\\nonumber\\
+\nonumber\\
 & = & \qty[(\vb{v}\vdot\grad)\vb{A} +\pdv{\vb{A}}{t}]\dd t.
 \label{eq:4.7}
 \end{eqnarray}  
@@ -641,7 +811,7 @@ H =  \frac{1}{2m}(\vb{p}-e\vb{A})^2 + e\phi + V(\vb{r}).
 \end{equation}
 Esse hamiltoniano é invariante à transformação de calibre  
 \begin{eqnarray}
-\vb{A}' & = & A + \grad \gamma \label{eq:4.16}\\\nonumber\\
+\vb{A}' & = & A + \grad \gamma \label{eq:4.16}\\
 \phi' & = & \phi - \pdv{\gamma}{t}, \label{eq:4.17}
 \end{eqnarray}
 onde $\lambda$ é a função de calibre.
@@ -777,9 +947,9 @@ Agora vamos nos aproveitar do fato que o sistema atômico de dois níveis está pró
 \end{equation}
 e, assim, obtemos o seguinte hamiltoniano:
 \begin{eqnarray}
-	\hat{H}_{D,int} &  =  & 	\hat{U}\hat{H}_{int}\hat{U}^\dagger\nonumber\\\nonumber\\
-				  &  =  & 	\mqty( e^{i\omega_{1}t} & 0 \\ 0 & e^{i\omega_{2}t}) \mqty(0 & -d_{12}\vb{E} \nonumber\\ -d_{21}\vb{E} & 0) \mqty( e^{-i\omega_{1}t} & 0 \\ 0 & e^{-i\omega_{2}t})\nonumber\\\nonumber\\
-				   &  =  & (\vb{E_0}e^{iw_ct}+\vb{E_0^*}e^{-iw_ct})\frac{d_{12}}{2}e^{-i\omega_{21}t}\dyad{1}{2}\nonumber\\& +& (\vb{E_0}e^{iw_ct}+\vb{E_0^*}e^{-iw_ct})\frac{d_{21}}{2}e^{i\omega_{21}t}\dyad{2}{1}\nonumber\\\nonumber\\
+	\hat{H}_{D,int} &  =  & 	\hat{U}\hat{H}_{int}\hat{U}^\dagger\nonumber\\
+				  &  =  & 	\mqty( e^{i\omega_{1}t} & 0 \\ 0 & e^{i\omega_{2}t}) \mqty(0 & -d_{12}\vb{E} \nonumber\\ -d_{21}\vb{E} & 0) \mqty( e^{-i\omega_{1}t} & 0 \\ 0 & e^{-i\omega_{2}t})\nonumber\\
+				   &  =  & (\vb{E_0}e^{iw_ct}+\vb{E_0^*}e^{-iw_ct})\frac{d_{12}}{2}e^{-i\omega_{21}t}\dyad{1}{2}\nonumber\\& +& (\vb{E_0}e^{iw_ct}+\vb{E_0^*}e^{-iw_ct})\frac{d_{21}}{2}e^{i\omega_{21}t}\dyad{2}{1}\nonumber\\
 				   &  =  & (\vb{E_0}e^{i\delta t}+\vb{E_0^*}e^{-i(w_c+\omega_{21})t})\frac{d_{12}}{2}\dyad{1}{2}\nonumber\\& +& (\vb{E_0}e^{i(\omega_c +\omega_{21}) t}+\vb{E_0^*}e^{-i\delta t})\frac{d_{21}}{2}\dyad{2}{1},
 	\label{eq:4.38}
 \end{eqnarray}
@@ -790,9 +960,9 @@ onde $\delta = \omega_c - \omega_{21}$ é a dessintonia entre o campo e o átomo. 
 \end{equation}
 Finalmente, podemos retornar o hamiltoniano à representação de Schrödinger:
 \begin{eqnarray}
-	\hat{H}_{int} &  =  & 	\hat{U}^\dagger\hat{H}_{D,int}\hat{U}\nonumber\\\nonumber\\
-	&  =  & 	\mqty( e^{-i\omega_{1}t} & 0 \\ 0 & e^{-i\omega_{2}t}) \mqty(0 & \frac{d_{12}}{2}\vb{E_0}e^{i\delta t} \nonumber\\\nonumber\\ \frac{d_{21}}{2}\vb{E_0^*}e^{-i\delta t}  & 0) \mqty( e^{i\omega_{1}t} & 0 \\ 0 & e^{i\omega_{2}t})\nonumber\\\nonumber\\
-	&  =  & \frac{d_{12}}{2}\vb{E_0}e^{i\delta t}e^{i\omega_{21}t}\dyad{1}{2} + \frac{d_{21}}{2}\vb{E_0^*}e^{-i\delta t}e^{-i\omega_{21}t}\dyad{2}{1}\nonumber\\\nonumber\\
+	\hat{H}_{int} &  =  & 	\hat{U}^\dagger\hat{H}_{D,int}\hat{U}\nonumber\\
+	&  =  & 	\mqty( e^{-i\omega_{1}t} & 0 \\ 0 & e^{-i\omega_{2}t}) \mqty(0 & \frac{d_{12}}{2}\vb{E_0}e^{i\delta t} \nonumber\\ \frac{d_{21}}{2}\vb{E_0^*}e^{-i\delta t}  & 0) \mqty( e^{i\omega_{1}t} & 0 \\ 0 & e^{i\omega_{2}t})\nonumber\\
+	&  =  & \frac{d_{12}}{2}\vb{E_0}e^{i\delta t}e^{i\omega_{21}t}\dyad{1}{2} + \frac{d_{21}}{2}\vb{E_0^*}e^{-i\delta t}e^{-i\omega_{21}t}\dyad{2}{1}\nonumber\\
 	&  =  & \frac{d_{12}}{2}\vb{E_0}e^{i\omega_c t}\dyad{1}{2} + \frac{d_{21}}{2}\vb{E_0^*}e^{-i\omega_c t}\dyad{2}{1}.
 	\label{eq:4.40}
 \end{eqnarray}
@@ -814,7 +984,7 @@ O termo à direita é o termo fenomenológico de decaimento, que indica  que a rela
 \end{equation} 
 Isso significa que, no equilíbrio térmico, os estados excitados podem conter população mesmo na ausência do campo eletromagnético do laser ($\rho_{nn}^{(eq)}$ pode ser diferente de zero), porém essa excitação térmica não pode produzir superposição coerente de estados atômicos ($\rho_{nm}^{(eq)}=0$  para $n\neq m$). Outra maneira de descrever os fenômenos de decaimento é considerarmos que os elementos fora da diagonal principal da matriz densidade relaxam, conforme descrito acima, mas para descrevermos os termos da diagonal principal, de forma a permitir que a população decaia dos níveis mais altos para níveis mais baixos, representamos da seguinte forma:
 \begin{eqnarray}
-	\dv{\hat{\rho}_{nm}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nm} - \gamma_{nm}\rho_{nm} \textnormal{ para } n\neq m	\label{eq:4.44}\\\nonumber\\
+	\dv{\hat{\rho}_{nm}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nm} - \gamma_{nm}\rho_{nm} \textnormal{ para } n\neq m	\label{eq:4.44}\\
 	\dv{\hat{\rho}_{nn}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nn} + \sum_{E_m>E_n}\Gamma_{nm}\rho_{mm} - \sum_{E_m<E_n}\Gamma_{mn}\rho_{nn},
 	\label{eq:4.45}	
 \end{eqnarray}
@@ -1137,7 +1307,7 @@ A figura \ref{fig:p22xt} mostra os resultados numéricos obtidos para a evolução 
 	\label{fig:p22xt}
 	\includegraphics[width=0.8\linewidth]{figuras_do_trabalho/p22xt}
 \end{figure}
-Na figura \ref{fig:p22xdelta} apresentamos os resultados numéricos para população $\sigma_{22}$ e coerência $\sigma_{12}$ em função da dessintonia no estado estacionário. Adotamos os mesmos parâmetros $\Omega_0$, $\Gamma_{21}$ e $\gamma_{12}$ utilizados nos resultados mostrados na figura \ref{fig:p22xt}. Na curva (a) podemos ver que quanto mais próximo da ressonância, maior é a Amplitude da população $\sigma_{22}$. Em (b) e (c) temos está representada coerência $\sigma_{12}$. Na componente real (b) podemos ver que na ressonância está a maior taxa de variação. A componente imaginaria (c) possui seu valor mínimo na ressonância. Os três resultados tendem a zero para valores grande de dessintonia.
+Na figura \ref{fig:p22xdelta} apresentamos os resultados numéricos para população $\sigma_{22}$ e coerência $\sigma_{12}$ em função da dessintonia no estado estacionário. Adotamos os mesmos parâmetros $\Omega_0$, $\Gamma_{21}$ e $\gamma_{12}$ utilizados nos resultados mostrados na figura \ref{fig:p22xt}. Na curva (a) podemos ver que quanto mais próximo da ressonância, maior é a Amplitude da população $\sigma_{22}$. Em (b) e (c) está representada coerência $\sigma_{12}$. Na componente real (b) podemos ver que na ressonância está a maior taxa de variação. A componente imaginaria (c) possui seu valor mínimo na ressonância. Os três resultados tendem a zero para valores grande de dessintonia.
 \begin{figure}[H]
 	\centering
 	\caption{População $\sigma_{22}$ em função da dessintonia $\delta$ em um estado estacionário.}
@@ -1149,20 +1319,20 @@ Na figura \ref{fig:p22xdelta} apresentamos os resultados numéricos para populaçã
 \chapter{Propagação de pulso de Luz em sistema atômicos}\label{cap:maxwellbloch}
 
 
-Até aqui, estudamos  as transições populacionais que ocorrem em um ensemble de sistemas de dois níveis que interage com campos eletromagnéticos contínuos. Neste capítulo, pretendemos estudar o que ocorre com o campo eletromagnético após essa interação. Mais especificamente, estudaremos o comportamento de um pulso eletromagnético ultracurto a medida que ele se propaga por uma amostra de muitos átomos ( $N \approx 10^{12}$ átomos$/$cm$^3$), sendo cada átomo um sistema de dois níveis. Pra isso, resolvemos numericamente as equações de Maxwell-Bloch.
+Estudamos até aqui as transições populacionais que ocorrem em um ensemble de sistemas de dois níveis que interage com campos eletromagnéticos contínuos. Neste Capítulo, pretendemos estudar o que ocorre com pulsos eletromagnético após interações deste tipo. Mais especificamente, estudaremos o comportamento de um pulso eletromagnético ultracurto a medida que ele se propaga por uma amostra de muitos átomos, sendo cada átomo um sistema de dois níveis. Para isso, resolvemos numericamente as equações de Maxwell-Bloch.
 
 \section{Equações de Maxwell-bloch para um sistema de dois níveis}
 
-No capítulo 1, reduzimos equação de propagação de onda em meios não lineares, obtendo a seguinte equação:
+No Capítulo \ref{cap:capitulo3}, reduzimos equação de propagação de onda em meios não lineares, obtendo a seguinte equação:
 
 \begin{equation}
 	\pdv{\eta}\tilde{\mathcal{E}}(\eta,\tau)  = -\frac{i\mu_0}{2k_c}{\omega_c}^2\tilde{\mathcal{P}}^{NL}(\eta,\tau).
 	\label{eq:5.1}
 \end{equation}
-Sendo que $\mathcal{\tilde{P}}$ é a parte lenta da polarização do meio não linear. A forma mais geral de representar a polarização é através do somatório dos momentos de dipolos induzido em cada átomo pelo campo por unidade de volume, conforme definimos em \eqref{eq:3.7}. Como estamos trabalhando com um sistema de muitos átomos idênticos, podemos reescrevê-la da seguinte forma:
+Sendo que $\mathcal{\tilde{P}}$ é a parte lenta da polarização do meio não linear. A forma mais geral de representar a polarização é através do somatório dos momentos de dipolos induzidos em cada átomo pelo campo por unidade de volume, conforme definimos em \eqref{eq:3.7}. Como estamos trabalhando com um sistema de muitos átomos idênticos, podemos reescrevê-la da seguinte forma:
 \begin{eqnarray}
-\vb{P} &=& \frac{1}{V}\sum_i \vb{d}_i * \qty(\frac{N_{\text{átomos}}}{N_{\text{átomos}}})\\\\
-\vb{P} &=& \mathcal{N}\qty(\frac{1}{N_{\text{átomos}}}\sum_i \vb{d}_i)\\\\
+\vb{P} &=& \frac{1}{V}\sum_i \vb{d}_i * \qty(\frac{N_{\text{átomos}}}{N_{\text{átomos}}})\\
+\vb{P} &=& \mathcal{N}\qty(\frac{1}{N_{\text{átomos}}}\sum_i \vb{d}_i)\\
 \vb{P} &=& \mathcal{N}\langle \vb{d}_i\rangle_{\text{átomos}} \label{eq:5.2}
 \end{eqnarray}
 onde $\mathcal{N}=N_\text{átomos}/V$ é o número de átomos por unidade de volume e $\langle \vb{d}_i\rangle_{atomos}$ é o momento de dipolo médio da amostra de átomos. Vimos no Capítulo \ref{cap:capitulo2} que, na representação de matriz densidade, o valor médio de um dado observável obedece a equação \eqref{eq:6}. Aplicando à equação da polarização \eqref{eq:5.2} para um sistema de dois níveis, obtemos:
@@ -1190,7 +1360,7 @@ Como as equações de bloch ópticas foram escritas  em termos da frequência de rab
 \end{equation}
 onde $\alpha\equiv\mu_0{\omega_c}^2\mathcal{N}{d_{12}}^2/k_c\hbar$ é uma constante. As equações óptica de bloch \eqref{eq:4.61} e \eqref{eq:4.62} precisam passar pela mesma mudança de coordenadas que aplicamos à \eqref{eq:5.12}. Assim, precisamos rescreve-las da seguinte forma:
 \begin{eqnarray}
-	\pdv{\tau}\sigma_{12}(\eta, \tau) & = &  [i \delta - \gamma_{12}]\sigma_{12}(\eta, \tau) -  i\frac{1}{2}\Omega_0(\eta, \tau)[1 - 2\sigma_{22}(\eta, \tau)]\label{eq:5.13}\\\nonumber\\
+	\pdv{\tau}\sigma_{12}(\eta, \tau) & = &  [i \delta - \gamma_{12}]\sigma_{12}(\eta, \tau) -  i\frac{1}{2}\Omega_0(\eta, \tau)[1 - 2\sigma_{22}(\eta, \tau)]\label{eq:5.13}\\
 	\pdv{\tau}\sigma_{22}(\eta, \tau) & = &  -i\frac{1}{2}\Omega_0(\eta, \tau)\sigma_{12}^*(\eta, \tau) + i\frac{1}{2}\Omega_0^*(\eta, \tau)\sigma_{12}(\eta, \tau) - \Gamma_{21}\sigma_{22}(\eta, \tau).\label{eq:5.14}
 \end{eqnarray} 
 O conjunto das equações \eqref{eq:5.12}, \eqref{eq:5.13} e \eqref{eq:5.14}  são conhecidas na literatura como equações de Maxwell-Bloch. Neste TCC, essa equações são resolvidas numéricamente, conforme resultados apresentados na seção 1 deste Capítulo.
@@ -1205,22 +1375,23 @@ onde $\theta(\eta)$ é a área do pulso e $\Omega_0(\eta, \tau)$ é a frequência de
 ($1/\Gamma_{21} \gg T_p$). É possível calcular a variação da área do pulso, conforme o pulso se propaga no meio,  como descrito em [eberly]. Assim, obtemos que 
 \begin{equation}
 	\pdv{\theta}{z} = -\frac{\alpha'}{2}sin(\theta)
+	\label{eq:theta}
 \end{equation}
-onde $\alpha'$ é  o coeficiente de absorção e difere da constante $\alpha$, pois $\alpha' = \alpha \pi G(0)$. Sendo $G(0)$ o valor máximo da função de desintonia.Esse equação é conhecida como teorema da área. Por praticidade, resolvemos numericamente essa equação diferencial, usando método de Euler
+onde $\alpha'$ é  o coeficiente de absorção e difere da constante $\alpha$, pois $\alpha' = \alpha \pi G(0)$. Sendo $G(0)$ o valor máximo da função de distribuição do efeito doppler, que ignoramos neste trabalho. A equação \eqref{eq:theta} é conhecida como teorema da área. Por praticidade, resolvemos numericamente essa equação diferencial, usando método de Euler
 \begin{equation}
 	\theta(z+\Delta z) = \theta(z) - \frac{\alpha'}{2}sin[\theta(z)] \Delta z, 
 \end{equation}
 conforme algoritmo escrito em linguagem C apresentado no Apêndice "A". 
 
-Na figura \ref{fig:teoremaarea}, apresentamos os resultado numérico do teorema da área. Para isso, utilizamos o valor genérico para o coeficiente de absorção $\alpha= 2\pi$ e usamos condições iniciais entre $\theta(0) = 0$ e $\theta(0) = 8 \pi$. Podemos ver que após o pulso ultracurtos ao ser propagado pela amostra, os valores das áreas tendem para $\theta(z)= \{0, 2\pi, 4\pi, 6\pi~~\text{e}~~8\pi\}$, onde o valor $n$ que acompanha o $\pi$ é par. Para condições iniciais $0<\theta(0)<\pi$, a área do pulso diminui até chegar a zero. Enquanto, para condições iniciais $\pi < \theta(0)< 2\pi$ aumenta para para $2\pi$. A mesma tendência é observada para as demais condições iniciais. A seção (2), discutimos mais a fundo esse comportamento, a partir dos resultados das equações de Maxwell-bloch.    
+Na figura \ref{fig:teoremaarea}, apresentamos os resultado numérico do teorema da área. Para isso, utilizamos o valor genérico para o coeficiente de absorção $\alpha'= 2\pi$ e usamos condições iniciais entre $\theta(0) = 0$ e $\theta(0) = 8 \pi$. Podemos ver que após o pulso ultracurtos ao ser propagado pela amostra, os valores das áreas tendem para $\theta(z)= \{0, 2\pi, 4\pi, 6\pi~~\text{e}~~8\pi\}$, onde o valor $n$ que acompanha o $\pi$ é par. Para condições iniciais $0<\theta(0)<\pi$, a área do pulso diminui até chegar a zero. Enquanto, para condições iniciais $\pi < \theta(0)< 2\pi$ aumenta para para $2\pi$. A mesma tendência é observada para as demais condições iniciais. Na seção 3, discutimos mais a fundo esse comportamento, a partir dos resultados das equações de Maxwell-bloch.    
 \begin{figure}[H]
 	\centering
 	\caption{Resultado numérico para variação da área de um pulso ultracurto qualquer, conforme ele se propaga em um meio atômico de dois níveis}
 	\label{fig:teoremaarea}
-	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/teoremadaarea}
+	\includegraphics[width=0.5\linewidth]{figuras_do_trabalho/teoremadaarea}
 \end{figure}
 
-\section{Resultados}
+\section{Metodologia}
 
 Nesta seção apresentamos resultados numéricos das equações de Maxwell-Bloch. Esses resultados foram calculados usando algoritmo de Runge-Kutta escrito  em linguagem C apresentado no apêndice B, seguindo o fluxograma mostrado na figura 2.
 
@@ -1262,7 +1433,7 @@ Nesta seção apresentamos resultados numéricos das equações de Maxwell-Bloch. Ess
 	
 	\end{tikzpicture}
 \end{figure}
-
+\section{Resultados}
 Nos resultados obtidos, foram utilizados os parâmetros da transição 5s1/2 e 6p1/2 do rubídio 87, apresentados na tabela 1, do capitulo 3. Para a interação aplicamos com um pulso ultracurto que parte da posição inicial do meio, com formato dado pela secante hiperbólica
 \begin{equation}
 	\Omega(0,\tau) = \frac{1,76}{T_p}\frac{\theta_0}{\pi}sech\qty(\frac{1,76\tau}{T_p})
@@ -1275,7 +1446,7 @@ onde $t_p$ é a largura temporal do pulso e $\theta_0$ é a área. Utilizamos um pu
 Na literatura temos solução analítica para equações de Maxwell-Bloch, quando tratamos um pulso com área muito pequena ($\theta \ll 1$), onde é adotado o limite de Beer's Law, conforme vemos em []. Assim, o nosso primeiro resultado foi obtido para um pulso desse tipo com área $\theta = 5,7*10^{-4}\pi$.
 
 Na figura \ref{fig:0pimaxwellbloch} apresentamos o resultado numérico para a frequência de rabi $\Omega_0(z,\tau)$, conforme o pulso interage no meio. Em \ref{fig:0pimaxwellbloch}(a) mostramos o mapa de calor, onde $\Omega_0(z, \tau)$ é representado em cores. Em \ref{fig:0pimaxwellbloch}(b) temos o pulso secante hiperbólico antes de interagir com o meio. Em \ref{fig:0pimaxwellbloch}(c) temos representado o pulso na saída do meio atômico ($z=1$cm). Vemos que a após interagir com o meio atômico a envoltória do pulso adquire um caráter oscilatório que varia entre valores negativos e positivos o que faz com que a área seja aproximadamente $\theta \approx 0$, o que é esperado pelo teorema da área apresentado (ver figura \ref{fig:teoremaarea}).
-\begin{figure}[!htb]
+\begin{figure}[H]
 	\centering
 	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubídio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm.}
 	\label{fig:0pimaxwellbloch}
@@ -1307,7 +1478,7 @@ A figura \ref{fig:0pimaxwellbloch_s22} mostra os resultado numéricos para a popu
 		\node[below of= figura,yshift=0.00\linewidth,xshift=0.32\linewidth](a){(c)};
 	\end{tikzpicture}
 \end{figure}
-\begin{figure}[!ht]
+\begin{figure}[ht]
 	\centering
 	\caption{Coerência atômica $\sigma_{12}(z,t)$ para um sistema de dois níveis (transição 5s1/2 6s3/2 do Rubídio 87) que interage com um pulso de área pequena $\theta = 5,7*10^{-4}\pi$. (a) Gráfico de temperatura para $\sigma_{12}(z,t)$. (b) Curva de $\sigma_{12}$ para $z=0$. (c) Curva de $\sigma_{12}$ para $z=1$ cm.}
 	\label{fig:0pimaxwellbloch_s12}
@@ -1322,6 +1493,7 @@ A figura \ref{fig:0pimaxwellbloch_s22} mostra os resultado numéricos para a popu
 		\node[below of= figura,yshift=0.00\linewidth,xshift=0.31\linewidth](a){(c)};
 	\end{tikzpicture}
 \end{figure}
+\vspace{12cm}
 Na figura \ref{fig:0pimaxwellbloch_s12} temos os resultados numéricos para a coerência $\imaginary{(\sigma_{12})}$. A coerência dos primeiro átomos ($z=0$) é representa na figura \ref{fig:0pimaxwellbloch_s12}(a)  e em \ref{fig:0pimaxwellbloch_s12}(b) temos a coerência do últimos átomos ($z=1$ cm). A coerência atômica obedece a taxa de relaxação $\gamma_{12} = \Gamma_{21}/2$. Por isso, é praticamente desprezível em fig. \ref{fig:0pimaxwellbloch_s12}(a) para o tempo representado.
 
 Na figura \ref{fig:0pimaxwellbloch_freq} apresentamos o resultados para $\Omega_0$ no domínio da frequência. Esses resultados foram obtidos a partir de  FFT (Transformada de Fourier rápida) no resultados numéricos obtidos no domínio do tempo. Em Fig.\ref{fig:0pimaxwellbloch_freq}(a) temos o resultado para $z=0$, em Fig.\ref{fig:0pimaxwellbloch_freq}(b) $z = 0,05$ cm e Fig.\ref{fig:0pimaxwellbloch_freq}(c) $z=1,0$ cm. Observamos que ao se propagar pelo meio a frequências próximas ao centro são absorvidas, pois estão em ressonância com o meio(transição 5s1/2-6p1/2).
@@ -1347,7 +1519,7 @@ Na figura \ref{fig:0pimaxwellbloch_freq} apresentamos o resultados para $\Omega_
 O teorema da área apresentado na seção anterior, indica que para pulso com área menor que $\pi$ a área deve  ir a zero, conforme o pulso se propaga no meio. Porém, quando o pulso possui área maior que $\pi$ e menor que $2\pi$, temos que área desse pulso deve aumentar até chegar em $2\pi$. Para verificar esse comportamento, aplicamos um pulso de área de $\theta=0,7\pi$ e $\theta=1,7\pi$ ao nosso algoritmo.
 
 
-Na figura \ref{fig:0.7e1.7pimaxwellbloch} temos representado a propagação de dois pulsos diferentes. Na figura \ref{fig:0.7e1.7pimaxwellbloch}(a) o pulso possui área $\theta = 0,7 \pi$. Neste caso, podemos ver que, ao propaga no meio, sua área se aproxima a $\theta=0$ e o pulso adquire o mesmo comportamento oscilatório que observamos no pulso de pequena área (\ref{fig:0pimaxwellbloch}. A figura \ref{fig:0.7e1.7pimaxwellbloch}(b) mostra um pulso de área $\theta= 1,7\pi$. Neste caso, observamos um aumento da área do pulso que se aproxima de $\theta=2\pi$, o que está de acordo com o teorema da área.
+Na figura \ref{fig:0.7e1.7pimaxwellbloch} temos representado a propagação de dois pulsos diferentes. Na figura \ref{fig:0.7e1.7pimaxwellbloch}(a) o pulso possui área $\theta = 0,7 \pi$. Neste caso, podemos ver que, ao propaga no meio, sua área se aproxima a $\theta=0$ e o pulso adquire o mesmo comportamento oscilatório que observamos no pulso de pequena área \ref{fig:0pimaxwellbloch}. A figura \ref{fig:0.7e1.7pimaxwellbloch}(b) mostra um pulso de área $\theta= 1,7\pi$. Neste caso, observamos um aumento da área do pulso que se aproxima de $\theta=2\pi$, o que está de acordo com o teorema da área.
 
 \begin{figure}[H]
 	\centering
@@ -1398,7 +1570,7 @@ Na figura \ref{fig:2pimaxwellbloch} temos a solução numérica para frequência de 
 	\end{tikzpicture}
 \end{figure}
 
-Em  G. L. Lamb, Jr~\cite{gl1971analytical,allen1987optical} encostramos resultados analíticos para $\theta = $\{$4\pi$, $6\pi$ e $0pi$\}. Um pulso de área $\theta = 4\pi$ pode ser descrito pela colisão de dois pulsos com velocidades de grupos $v_g$ e largura temporal $T_p$ diferentes. Assim, temos a seguinte expressão analítica para $\Omega_0(z,t)$:
+Em  G. L. Lamb, Jr~\cite{gl1971analytical,allen1987optical} encontramos resultados analíticos para $\theta = $\{$4\pi$, $6\pi$ e $0\pi$\}. Um pulso de área $\theta = 4\pi$ pode ser descrito pela colisão de dois pulsos com velocidades de grupos $v_g$ e largura temporal $T_p$ diferentes. Assim, temos a seguinte expressão analítica para $\Omega_0(z,t)$:
 \begin{equation}
 	\Omega_0(z,t) = \qty(\frac{T_{r}^2 - T_{r'}^2}{T_{r}^2 + T_{r'}^2})\frac{\frac{2}{T_{r}}sech\qty(\frac{\tau}{T_{r}})+\frac{2}{T_{r'}}sech\qty(\frac{\tau'}{T_{r'}})}{1 - \frac{2T_{r}T_{r'}}{T_{r}^2 + T_{r'}^2}\qty[tanh\qty(\frac{\tau}{T_{r}})tanh\qty(\frac{\tau'}{T_{r'}})-sech\qty(\frac{\tau}{T_{r}})sech\qty(\frac{\tau'}{T_{r'}})]},
 	\label{eq:4pianalitico}
@@ -1408,7 +1580,7 @@ onde $T_{r} = T_p/1,76$ e $T_{r'} = T_{p'}/1,76$. Os tempos $\tau$ e $\tau'$ são
 	\tau = t - \frac{z}{v_g}\\
 	\tau' = t - \frac{z}{v_g'}.
 \end{eqnarray}
-Essas velocidade de grupo, assim como para o caso de $\theta=2\pi$, obedece a relação
+Essas velocidades de grupo, assim como o caso de $\theta=2\pi$, obedece a relação
 \begin{eqnarray}
 	v_g = \frac{c}{1+\alpha T_r}\\
 	v_g' = \frac{c}{1+\alpha T_r'}
@@ -1435,7 +1607,7 @@ Na figura \ref{fig:4pimaxwellbloch} temos a solução numérica para frequência de 
 
 Para um pulso com área $\theta=6\pi$, é esperado que o pulso se decomponha em três pulsos de área $\theta=2\pi$, conforme resultado analitico presente em ~\cite{gl1971analytical}.
   
-Na figura \ref{fig:6pimaxwellbloch} temos a solução numérica para frequência de Rabi $\Omega_0$ para a propagação de um pulso de área $\theta=4\pi$. Em (A) temos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar pelo meio. Em (b) temos $\Omega_0$ em $z=0$  e em (c) temos o pulso em $z=1$ cm. Podemos ver que o pulso de área $\theta = 4\pi$ se divide em dois pulsos de área $\theta\approx2\pi$, com largura temporal diferentes, assim como a descrição analítica \eqref{eq:4pianalitico}. O segundo pulso se afasta do primeiro conforme se propaga pelo meio. Isso significa que possuem velocidades de grupo $v_g$ diferentes, sendo que o primeiro mantem a velocidade grupo do pulso inicial (sem propagação). 
+A figura \ref{fig:6pimaxwellbloch} traz a solução numérica para frequência de Rabi $\Omega_0$ para a propagação de um pulso de área $\theta=4\pi$. Em (A) temos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar pelo meio. Em (b) temos $\Omega_0$ em $z=0$  e em (c) temos o pulso em $z=15$ cm. Observamos a tendencia do pulso de área $\theta = 6\pi$ ser divido em três pulsos de área $\theta\approx2\pi$, com largura temporal diferentes, assim como a descrição analítica apresentado em \cite{gl1971analytical}. vemos que os três pulsos tem velocidades $v_g$ diferentes, pois se afastam conforme se propaga pelo meio.
 
 \begin{figure}[H]
 	\centering

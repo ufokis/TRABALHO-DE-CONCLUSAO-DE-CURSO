@@ -5,8 +5,12 @@
 % Modificação na estrutura do de oneside para twoside 1 de setembro de 2019
 %Resolução de warning.
 
-\documentclass[a4paper,reqno,12pt,twoside]{book}
+\documentclass[a4paper,reqno,12pt,oneside]{book}
 \small
+
+\usepackage{tkz-berge}
+\usepackage{tkz-graph}
+\usepackage{pgfplots}
 \RequirePackage{fix-cm}
 \usepackage{amsmath}%
 \usepackage{amsfonts}%
@@ -69,6 +73,7 @@ portuguese] % Para algoritmos em português.
 \input{macros.tex}
 \input{estilo.tex}
 
+\pgfplotsset{compat=1.6}
 \begin{document}
 	\pagenumbering{Alph}
 	\renewcommand{\bibname}{Referências}
