@@ -41,10 +41,6 @@ R.~Field and A.~Tokmakoff, {\em 5.74 Introductory Quantum Mechanics II}.
 \newblock Massachusetts Institute of Technology: MIT OpenCourseWare, Spring
   2004.
 
-\bibitem{taylor2013mecanica}
-J.~Taylor, {\em Mec{\^a}nica Cl{\'a}ssica}.
-\newblock Bookman Editora, 2013.
-
 \bibitem{scullyquantum}
 M.~Scully and M.~Zubairy, {\em Quantum Optics}.
 \newblock Cambridge University Press, 1997.
@@ -52,6 +48,10 @@ M.~Scully and M.~Zubairy, {\em Quantum Optics}.
 \bibitem{meystre2007elements}
 P.~Meystre and M.~Sargent, {\em Elements of Quantum Optics}.
 \newblock SpringerLink: Springer e-Books, Springer Berlin Heidelberg, 2007.
+
+\bibitem{foot2005atomic}
+C.~Foot, D.~Foot, and C.~Foot, {\em Atomic Physics}.
+\newblock Oxford Master Series in Physics, OUP Oxford, 2005.
 
 \bibitem{atkinson1989}
 K.~Atkinson, {\em An Introduction to Numerical Analysis}.

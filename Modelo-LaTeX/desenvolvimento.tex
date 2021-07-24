@@ -251,9 +251,9 @@ Esse tipo de onda é idealizado, pois ondas eletromagnética tem duração finita e 
 \end{equation}
 Assim, essa onda possui uma distribuição de velocidades de fases, e deixa de significado físico de velocidade da onda. Felizmente, esse tipo de onda Eletromagnética tem uma velocidade definida que chamamos de velocidade de grupo $v_g$. É complexo derivar essa velocidade de grupo a partir da expressão (), se temos uma distribuição grande de frequências. Por isso, usaremos a superposição de duas ondas com mesma amplitude, com frequências $\omega_1 = \omega-\Delta\omega$ e $\omega_2 = \omega+\Delta\omega$ e números de ondas $k_1 = k - \Delta k $ e $k_2 = k + \Delta k $, como exemplificado na figura \eqref{fig:superposicao}.De forma que:
 \begin{eqnarray}
-	\Lambda(z,t) &=& Ae^{i[(\omega-\Delta\omega)t-(k-\Delta k)z]} + Ae^{i[(\omega+\Delta\omega)t-(k+\Delta k)z]} \nonumber\\ &=& Ae^{i(\omega t - k z)}[e^{-i(\Delta\omega t - \Delta k z)} + e^{i(\Delta\omega t-\Delta kz)}]\nonumber\\ &=& 2Acos(\Delta\omega t-\Delta kz)e^{i(\omega t - k z)}
+	\Lambda(z,t) &=& Ae^{i[(\omega-\Delta\omega)t-(k-\Delta k)z]} + Ae^{i[(\omega+\Delta\omega)t-(k+\Delta k)z]} \nonumber\\ &=& Ae^{i(\omega t - k z)}[e^{-i(\Delta\omega t - \Delta k z)} + e^{i(\Delta\omega t-\Delta kz)}]\nonumber\\ &=& 2Acos(\Delta\omega t-\Delta kz)e^{i(\omega t - k z)},
 \end{eqnarray} 
-onde a exponencial é o termo de propagação com velocidade $v_p = \omega/k = c/n(\omega)$. O cosseno é o termo que modula a equação de onda. Se supormos que  $\Delta\omega$ e $\Delta k$ são muito pequenos comparados a $\omega$ e $k$, respectivamente, a envoltória desse campo varia lentamente no espaço e no tempo, comparado ao temo de propagação. Assim, o termo de modulações propagação com velocidade
+onde a exponencial é o termo de propagação com velocidade $v_p = \omega/k = c/n(\omega)$. O cosseno é o termo que modula a equação de onda. Se supormos que  $\Delta\omega$ e $\Delta k$ são muito pequenos comparados a $\omega$ e $k$, respectivamente, a envoltória desse campo varia lentamente no espaço e no tempo, comparado ao temo de propagação. Assim, o termo de modulações  se propaga com velocidade
 \begin{equation}
 	v_g = \dv{\omega}{k} = \frac{\Delta \omega}{\Delta k}.
 \end{equation}
@@ -305,15 +305,16 @@ onde a exponencial é o termo de propagação com velocidade $v_p = \omega/k = c/n(
 	\end{tikzpicture}
 	\label{fig:superposicao}
 \end{figure}
-A partir desse resultado podemos dizer que para o caso de sobreposição de um sistema infinito de ondas, onde  a frequências $\omega$  e numero de onda $k_c$ são continuamente distribuídas e variam em torno de uma frequência central $\omega_c$ e numero de onda central $k_c$, que é o caso de um pulso eletromagnético, teremos de forma semelhante um termo de propagação  com velocidade de fase $v_f=c/n(w_c)$ e um termos de modulação que se propaga com velocidade 
+A partir desse resultado podemos dizer que para o caso de sobreposição de um sistema infinito de ondas, onde  a frequências $\omega$  e numero de onda $k_c$ são continuamente distribuídas e variam em torno de uma frequência central $\omega_c$ e número de onda central $k_c$, que é o caso de um pulso eletromagnético, teremos de forma semelhante um termo de propagação  com velocidade de fase $v_f=c/n(w_c)$ e um termos de modulação que se propaga com velocidade 
 \begin{equation}
 	\frac{1}{v_g} = \dv{k(\omega)}{\omega}\Big|_{\omega_c}.
 \end{equation}     
-Essa é a fórmula correta da velocidade de grupo. Como definimos em \eqref{eq:3.26} , $k(\omega) = \omega_c \sqrt{\epsilon(\omega_c) \mu_0}$, então temos \begin{equation}
+Essa é a fórmula correta da velocidade de grupo. A partir da definição de $k(\omega)$ em \eqref{eq:3.26} ,  temos que 
+\begin{equation}
 	\frac{1}{v_g}  = \frac{\mu_0\omega_c}{2k_c}\qty[\omega_c\epsilon^{(1)}(\omega_c) + 2\epsilon(\omega_c)] = \frac{n(\omega_c) + \omega_cn^{(1)}(\omega_{c})}{c}.
 	\label{eq:3.39}
 \end{equation}
-Podemos ver que se o meio é não dispersivo ($n(\omega_c) = 0$), $v_g = v_f$. Para um meio dispersivo com $n^{(1)}(\omega_{c}) > 0$, $v_g<v_f$ e se $n^{(1)}(\omega_{c}) < 0$, $v_g > v_f$.
+Podemos ver que se o meio é não dispersivo ($n^{(1)}(\omega_c) = 0$), $v_g = v_f$. Para um meio dispersivo com $n^{(1)}(\omega_{c}) > 0$, $v_g<v_f$ e se $n^{(1)}(\omega_{c}) < 0$, $v_g > v_f$.
 
 Outro conceito importante quando estamos tratando de pulsos eletromagnéticos, é a dispersão de velocidade de grupo (GVD), uma característica de um meio dispersivo que descreve como este meio altera a duração de um pulso eletromagnético ao se propagar por ele. A dispersão de velocidade de grupo é usualmente definida como
 \begin{equation}
@@ -423,8 +424,9 @@ Na figura \ref{fig:gvd}, como exemplo, temos dois gráficos que apresentam o perf
 	\end{tikzpicture}
 	\label{fig:gvd}
 \end{figure}
-  
-\sageplot[scale=0.8]{D, figsize=(6,8), axes_labels = ("Tempo","$E(z,t)$")}
+ 
+%\sageplot[scale=0.8]{D, figsize=(6,8), axes_labels = ("Tempo","$E(z,t)$")}
+
 \section{Propagação de onda em um meio não linear}\label{sec:naolinear}
 
 A discussão sobre propagação de onda  na Seção \ref{sec:linear} se limitava a interação com meios lineares. Porém, o que nos interessa neste TCC é descrever a interação de campo elétrico com meio atômico de dois níveis, que possui polarização não linear em ressonância com o campo elétrico. Para isso, precisamos complementar a equação \eqref{eq:3.44} adicionando a polarização do meio atômico não linear, definindo que essa polarização também pode ser decomposta em uma envoltória que varia lentamente no tempo e no espaço e outra contribuição que oscila rapidamente:
@@ -457,31 +459,34 @@ e
 \pdv{z} = \pdv{\eta} - \frac{1}{v_g}\pdv{\tau}~~~~~~~\pdv{t} = \pdv{\tau}.
 \label{eq:3.51}
 \end{equation}
-
+Desse modo, podemos reescrever  a  equação\eqref{eq:3.47} da seguinte forma:  
+\begin{equation}
+	\pdv{\eta}\tilde{\mathcal{E}}(\eta,\tau)  = -\frac{i\mu_0}{2k_c}{\omega_c}^2\tilde{\mathcal{P}}^{NL}(\eta,\tau).
+	\label{eq:3.52}
+\end{equation}
+Este resultado final é a equação de onda em sua forma reduzida, que permite descrever o comportamento da propagação do campo eletromagnético através de um certo meio atômico. Ela será aplicada no Capítulo \ref{cap:maxwellbloch} para um meio atômico de dois níveis.
 \begin{sagesilent}
 	Tp=1
-	w=5
-	c=1
-	k=w/c
-	k1=w/k
+	c=3e8
+	k1=1/c
 
 	f(t,z) = exp(-(k1*z-t)^2/Tp^2)
 	f2(t,z) = exp(-(t)^2/Tp^2)
 	
-	A=contour_plot(f(t,z),(t,-2,10),(z,0,12),frame=true,thickness=1, color='green',axes=False, colorbar=true,cmap='jet',plot_points=150,contours=100)
+	A=contour_plot(f(t,z),(t,-2,4),(z,0,10e8),frame=true,thickness=1, color='green',axes=False, colorbar=true,cmap='jet',plot_points=150,contours=100,aspect_ratio='automatic')
 	p = A[0]
 	opt = p.options()
 	print(opt)
 	opt['colorbar_options']
-	opt['colorbar_options']['label'] = '$E(z,t)$'
+	opt['colorbar_options']['label'] = '$\mathcal{E}(z,t)$'
 	p.set_options(opt)
 	A[0] = p
-	B=contour_plot(f2(t,z),(t,-2,10),(z,0,12),frame=true,thickness=1, color='green',axes=False, colorbar=true,cmap='jet',plot_points=150,contours=100)
+	B=contour_plot(f2(t,z),(t,-2,4),(z,0,10e8),frame=true,thickness=1, color='green',axes=False, colorbar=true,cmap='jet',plot_points=150,contours=100,aspect_ratio='automatic')
 	p = B[0]
 	opt = p.options()
 	print(opt)
 	opt['colorbar_options']
-	opt['colorbar_options']['label'] = '$E(\eta,\\tau)$'
+	opt['colorbar_options']['label'] = '$\mathcal{E}(\eta,\\tau)$'
 	p.set_options(opt)
 	B[0] = p
 	A.show()
@@ -495,16 +500,9 @@ e
 \begin{figure}[ht]
 	\centering
 	\caption{O primeiro gráfico representa um pulso em um referencial em repouso e o segundo representa um pulso no referencial com velocidade $v_g$ }
-    \sageplot[scale=0.50]{A, axes_labels=("$t$","$z$")}\sageplot[scale=0.50]{B, axes_labels=("$\\tau$","$\eta$")}
+    \sageplot[scale=0.6]{A, axes_labels=("$t$ (s)","$z$ (m)"), figsize=(5,4)}\sageplot[scale=0.6]{B, axes_labels=("$\\tau$ (s)","$\eta$ (m)"), figsize=(5,4)}
 	\label{fig:referencial}
 \end{figure}
-Desse modo, podemos reescrever  a  equação\eqref{eq:3.47} da seguinte forma:  
-\begin{equation}
-\pdv{\eta}\tilde{\mathcal{E}}(\eta,\tau)  = -\frac{i\mu_0}{2k_c}{\omega_c}^2\tilde{\mathcal{P}}^{NL}(\eta,\tau).
-\label{eq:3.52}
-\end{equation}
-Este resultado final é a equação de onda em sua forma reduzida, que permite descrever o comportamento da propagação do campo eletromagnético através de um certo meio atômico. Ela será aplicada no Capítulo \ref{cap:maxwellbloch} para um meio atômico de dois níveis.
-
 \chapter{Mecânica Quântica e Operador Densidade}\label{cap:capitulo2}
 
 %Para cada capítulo adicional, digite o comando \chapter{Título do Capítulo}
@@ -514,7 +512,7 @@ Neste capítulo nos dedicamos a apresentar o formalismo do operador densidade, de
 \section{Matriz densidade}
 \label{secao2.1}
 
-Como sabemos, o formalismo usual da mecânica quântica, onde trabalhamos com autoestados e autovalores de um determinado observável (formalismo de Dirac), nos permite fazer previsões sobre um conjunto de sistemas físicos preparados de forma idêntica \cite{breuer2002theory}. Em termos mais específicos, garantimos que todos os sistemas membros deste ensemble sejam caracterizados por um mesmo ket de estado $\ket{\psi}$(ensemble puro). Assim, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\psi_1}$ e $30\%$ pelo ket de estado $\ket{\psi_2}$ (ensemble misto). Para lidar com essa situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros e ensemble misto. 
+Como sabemos, o formalismo usual da mecânica quântica, onde trabalhamos com autoestados e autovalores de um determinado observável (formalismo de Dirac), nos permite fazer previsões sobre um conjunto de sistemas físicos preparados de forma idêntica \cite{breuer2002theory}. Em termos mais específicos, garantimos que todos os sistemas membros deste ensemble sejam caracterizados por um mesmo ket de estado $\ket{\psi}$(Ensemble puro). Assim, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\psi_1}$ e $30\%$ pelo ket de estado $\ket{\psi_2}$ (ensemble misto). Para lidar com essa situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros e ensemble misto. 
 
 Consideremos o ensemble misto, onde uma fração de sistemas com população relativa $w_1$ estão no estado $\ket{\psi_1}$; outra fração $w_2$ estão no estado $\ket{\psi_2}$, e assim sucessivamente. Podemos dizer, com certa precisão, que um ensemble misto pode ser visto como uma mistura de ensembles puros. As populações $w_i$ devem satisfazer a condição de normalização, ou seja,
 \begin{equation} 
@@ -551,7 +549,7 @@ Para o caso mistos podemos obter o valor média de $A$, através da soma dos valor
 	   	      & = & \sum_i \sum_{a'} w_i \qty|\braket{n}{\psi_i}|^2n, 
 	\label{eq:2} 
 \end{eqnarray}
-sendo que $\ket{n}$ é um autovetor do operador $\hat{A}$ (com autovalor $a'$ ) e que $\mel{\psi_i}{\hat{A}}{\psi_i}$ trata-se do valor esperado habitual para $\hat{A}$ em relação a um estado $\ket{\psi_i}$. Vemos na equação \eqref{eq:2} que este valores esperados são ponderados pelas populações relativas $w_i$. É possível observar também que $\qty|\braket*{n}{\psi_i}|^2$ é a probabilidade do estado $\ket*{\psi_i}$ de ser colapsado em um autoestado $\ket*{n}$ após uma medida em $\hat{A}$ e que $w_i$ identifica a quantidade relativa de sistemas no estado estado quântico caracterizado por $\ket*{\psi_i}$.  
+sendo que $\ket{n}$ é um autovetor do operador $\hat{A}$ (com autovalor $n$ ) e que $\mel{\psi_i}{\hat{A}}{\psi_i}$ trata-se do valor esperado habitual para $\hat{A}$ em relação a um estado $\ket{\psi_i}$. Vemos na equação \eqref{eq:2} que este valores esperados são ponderados pelas populações relativas $w_i$. É possível observar também que $\qty|\braket*{n}{\psi_i}|^2$ é a probabilidade do estado $\ket*{\psi_i}$ de ser colapsado em um autoestado $\ket*{n}$ após uma medida em $\hat{A}$ e que $w_i$ identifica a quantidade relativa de sistemas no estado estado quântico caracterizado por $\ket*{\psi_i}$.  
 
 Se considerarmos uma base genérica \{$\ket*{n}$, $\ket*{m}$\}, podemos reescrever a média sobre o ensemble \eqref{eq:2} da seguinte forma:
 \begin{eqnarray} 
@@ -729,29 +727,50 @@ conhecida como equação de \textbf{Liouville-von Neumann}, que descreve a evoluçã
 
 \chapter{Interação sistema atômico de dois níveis com radiação}\label{cap:capitulo4}
 
-Neste Capítulo aplicaremos a equação von-Newmann, que obtemos no Capítulo \ref{cap:capitulo2}, e a equação reduzida, obtida ao final do capitulo \ref{cap:capitulo3}, a um sistema de dois níveis que sofre pertubação de um pulso de campo elétrico. Para isso, primeiramente, vamos obter o hamiltoniano que  descreve a interação do átomo de dois níveis com a onda eletromagnética.    
+Neste Capítulo aplicaremos a equação von-Newmann, que obtemos no Capítulo \ref{cap:capitulo2}, a um sistema de dois níveis que sofre pertubação de um campo elétrico. Para isso, primeiramente, precisamos obter uma aproximação semi-clássica para o hamiltoniano que  descreve a interação do átomo de dois níveis com a onda eletromagnética.    
 
 \section{Hamiltoniano para um sistema atômico de dois níveis }\label{sec:seção4.1}
-Antes de obtermos o hamiltoniano para um sistema de dois níveis, vamos nos ater a um sistema clássico composto de uma partícula  carregada na presença de um campo eletromagnético \cite{taylor2013mecanica}. Nesta condição, a força que atua na partícula com carga $q$ corresponde à 
+Antes de obtermos o hamiltoniano para um sistema de dois níveis, vamos nos ater a um sistema clássico composto de uma partícula  carregada na presença de um campo eletromagnético (Figura \ref{fig:particulaq}). Nesta condição, a força que atua na partícula com carga $q$ corresponde à
 
 \begin{equation}
 \vb{F} = q\qty(\vb{E}+\vb{v}\cross\vb{B}).
 \label{eq:4.1}
 \end{equation}
+\begin{figure}[H]
+	\caption{Representação de uma partícula de carga $q$ na presença de um campo eletromagnético.}
+	\centering
+	\begin{tikzpicture}
+		\path[draw,thick,-latex] (0,0)--(0,5) node[above]{$y$};
+		\path[draw,thick, -latex] (0,0)--(5,0)node[right]{$x$};
+		\foreach \i in {0.5,1.5,...,4.5}{
+			\foreach \j in {0.5,1.5,...,4.5}{
+				\node at (\i,\j){$\otimes$};
+			}
+		}
+		\path[draw, -latex] (5,2.5)--node[right]{$E$}(5,3.5);
+		\node at (2.5,5){$B\perp$};
+		\draw[black, thick] (2,3) node{$q$} circle (0.2);
+		\draw[black,-latex] (2,3.2) -- (2,4) node[above]{$F_e$} ;
+		\draw[black,-latex] (2,2.8) -- (2,2) node[below]{$F_b$} ;
+		\draw[black,-latex] (2.2,3) -- (3,3) node[right]{$v$};
+	\end{tikzpicture}
+	\label{fig:particulaq}
+\end{figure}
 
-Podemos reescrever o campo elétrico ($\vb{E}$) e magnético ($\vb{B}$) escolhendo o potencial escalar $\phi(\vb{r},t)$ e o potencial vetor $\vb{A}(\vb{r},t)$ :
+
+Podemos reescrever o campo elétrico ($\vb{E}$) e magnético ($\vb{B}$) em termos do potencial escalar $\phi(\vb{r},t)$ e do potencial vetor $\vb{A}(\vb{r},t)$ :
 \begin{eqnarray}
 \vb{E} & = &-\pdv{\vb{A}}{t} - \grad{\phi}\label{eq:4.2}\\
 \vb{B} & = &\curl{\vb{A}}\label{eq:4.3}.
 \end{eqnarray} 
 Assim, reescrevendo a força de Lorentz \eqref{eq:4.1} em termos destes potenciais, temos que
 \begin{equation}
-\vb{F} = q\qty(-\pdv{\vb{A}}{t} - \grad{\phi}+\vb{v}\cross\curl{\vb{A}}).
+\vb{F} = q\qty[-\pdv{\vb{A}}{t} - \grad{\phi}+\vb{v}\cross(\curl{\vb{A}})].
 \label{eq:4.4}
 \end{equation}
 Usando a identidade vetorial
 \begin{equation}
-\vb{v}\cross\curl{\vb{A}} = \grad(\vb{v}\vdot\vb{A}) - (\vb{v}\vdot\grad)\vb{A},
+\vb{v}\cross(\curl{\vb{A}}) = \grad(\vb{v}\vdot\vb{A}) - (\vb{v}\vdot\grad)\vb{A},
 \label{eq:4.5}
 \end{equation}
 obtemos
@@ -788,7 +807,7 @@ ou
 m\dv{t}[\vb{v} + q\vb{A}] = \grad{\qty[q(\vb{v}\vdot\vb{A}) -q\phi]}.
 \label{eq:4.11}
 \end{equation}
-examinando esta equação, podemos reescreve-la na forma de uma equação de Euler-Lagrange
+Examinando esta equação, podemos reescrevê-la na forma de uma equação de Euler-Lagrange
 \begin{equation}
 \dv{t}(\pdv{L}{\vb{v}}) = \grad L,
 \label{eq:4.12}
@@ -804,52 +823,46 @@ L = \frac{1}{2}m\vb{v}^2 + e(\vb{v}\vdot\vb{A}) - e\phi - V(\vb{r}).
 \label{eq:4.14}
 \end{equation}
 
-Aplicando a transformação de legendre apropriada a lagrangiana, usando a definição de momento conjugado $p_i \equiv \pdv{L}{\dot{r}_i} = mv_i + eA_i$, obtemos o hamiltoniano de acoplamento mínimo \cite{scullyquantum,meystre2007elements}:
-\begin{equation}
-H =  \frac{1}{2m}(\vb{p}-e\vb{A})^2 + e\phi + V(\vb{r}).
+Aplicando a transformação de legendre apropriada a lagrangiana, usando a definição de momento conjugado $p_i \equiv \pdv{L}{\dot{q}_i} = m\dot{q}_i + eA_i$, obtemos o hamiltoniano de acoplamento mínimo \cite{scullyquantum,meystre2007elements}:
+\begin{eqnarray}
+H &=&  \sum_i p_i \dot{q}_i -L\nonumber\\&=& \vb{p}\cdot\frac{(\vb{p}-e\vb{A})}{m} -\frac{(\vb{p}-e\vb{A})^2}{2m} - e\qty[\frac{(\vb{p}-e\vb{A})}{m}\vdot\vb{A}] + e\phi + V(\vb{r}) \nonumber\\&=& \frac{1}{2m}(\vb{p}-e\vb{A})^2 + e\phi + V(\vb{r}).
 \label{eq:4.15}
-\end{equation}
+\end{eqnarray}
 Esse hamiltoniano é invariante à transformação de calibre  
 \begin{eqnarray}
 \vb{A}' & = & A + \grad \gamma \label{eq:4.16}\\
 \phi' & = & \phi - \pdv{\gamma}{t}, \label{eq:4.17}
 \end{eqnarray}
-onde $\lambda$ é a função de calibre.
+onde $\gamma$ é a função de calibre.
 
-A equação de Schrödinger dependente do tempo é 
+Obtemos o análogo quântico do hamiltoniano fazendo a transformações
+\begin{eqnarray}
+	r &\longrightarrow& \hat{r} = r\\
+	p &\longrightarrow& \hat{p} = -i\hbar\grad.
+\end{eqnarray} 
+Assim, podemos aplicá-la a equação de Schrödinger dependente do tempo  
 \begin{equation}
 \hat{H}\ket{\psi}=i\hbar\pdv{t}\ket{\psi}.
 \label{eq:4.18}
 \end{equation}
-Para resolvermos esta equação é ideal realizar uma transformação unitária $\hat{U}$, considerando que $\psi' = \hat{U}\psi$. Isso é necessário para simplificarmos  a equação que obteremos do termo responsável pela interação da radiação com o átomo. Precisamos manter a equação de Schrödinger invariante a esta transformação unitária, então escrevemos o novo hamiltoniano da seguinte forma: \begin{equation}
-\hat{H}' = \hat{U}\hat{H}\hat{U}^\dag + i\hbar\pdv{\hat{U}}{t}\hat{U}^\dag.
-\label{eq:4.19}
-\end{equation}
-Escolhendo a transformação unitária $\hat{U} = e^{i\frac{e}{\hbar}\gamma}$, obtemos o seguinte hamiltoniano $\hat{H}'$ 
+Para resolvermos esta equação é ideal realizar uma transformação unitária $\hat{U}$ , considerando que $\ket{\psi} = \hat{U}\ket{\psi'}$. Essa transformação deve nos dar uma nova hamiltoniana escrita em termos de \eqref{eq:4.16} e \eqref{eq:4.17} da seguinte forma:
 \begin{equation}
-\hat{H}' =  (\vb{p}-e\vb{A}')^2 + q\phi' + V(\vb{r}),
-\label{eq:4.20}
+	\hat{H}' =  (\vb{p}-e\vb{A}')^2 + q\phi' + V(\vb{r}).
+	\label{eq:4.20}
 \end{equation}
-onde $\vb{A}'$ e $\phi'$ são dados pelas equações \eqref{eq:4.16} e \eqref{eq:4.17}.
-
-Fazendo $\phi = 0$ e realizando a escolha do calibre de Coulomb, onde $\div \vb{A} = 0$, temos:
-\begin{equation}
-\hat{H}' =  \frac{1}{2m}(\vb{p}-e\vb{A}-e\grad\gamma)^2 - e\pdv{\gamma}{t} + V(\vb{r}).
-\label{eq:4.21}
-\end{equation}
+Para isso, precisamos escolher transformação unitária $\hat{U} = e^{i\frac{e}{\hbar}\gamma}$ e assim garantimos que a física do problema não se altere, qualquer seja o valor de $\gamma$.
 
 Supondo que os átomos estão imersos em uma onda plana monocromática, podemos escrever o potencial vetor da seguinte forma:
 \begin{equation}
 \vb{A}(\vb{r},t) =\frac{A_0(\omega)\hat{\epsilon}}{2} e^{i(\vb{k}\vdot\vb{r} - \omega t)} + c.c.
 \label{eq:4.22}
 \end{equation}
-$\vb{k}\vdot\vb{r}  = 2\pi\vdot\frac{r}{\lambda}$, onde $\lambda$ é o comprimento de onda do campo. Em geral, o comprimento de onda é muito maior, $4000\leq 8000\leq ^0A$, comparadas as dimensões atômicas, $|\vb{r}|\simeq 10 ^0A$. Por isso, $\vb{k}\vdot\vb{r}\ll 1$. Assim, podemos desconsiderar os termos de ordem maior que $0$ da seguinte expansão em série de Taylor de $\vb{A}(\vb{r}, t)$
-
+$\vb{k}\vdot\vb{r}  = 2\pi\vdot\frac{r}{\lambda}$, onde $\lambda$ é o comprimento de onda do campo. Em geral, o comprimento de onda é muito maior que as dimensões atômicas, $|\vb{r}|\simeq 10 ^0A$. Por isso, $\vb{k}\vdot\vb{r}\ll 1$. Assim, podemos podemos considerar a pena o primeiro termo da seguinte expansão em série de Taylor 
 \begin{equation}
-\vb{A}(\vb{r}, t) = \frac{A_0(\omega)\hat{\epsilon}}{2}e^{-i\omega t}\qty[1 + (i\vb{k}\vdot\vb{r}) + \frac{1}{2}(i\vb{k}\vdot\vb{r})^2 +\cdots],
+\vb{A}(\vb{r}, t) = \frac{A_0(\omega)\hat{\epsilon}}{2}e^{-i\omega t}\qty[1 + (i\vb{k}\vdot\vb{r}) + \frac{1}{2}(i\vb{k}\vdot\vb{r})^2 +\cdots] + c.c.,
 \label{eq:4.23}
 \end{equation}
-implicando que $\vb{A}(\vb{r}, t) \simeq \vb{A}(t) = \frac{A_0(\omega)\hat{\epsilon}}{2}e^{-i\omega t} $. Agora, escolhendo a função de calibre de Coulomb como $\gamma = -\vb{A}(t)\vdot \vb{r}$, obtemos
+de forma que $\vb{A}(\vb{r}, t) \simeq \vb{A}(t) = \frac{A_0(\omega)\hat{\epsilon}}{2}e^{-i\omega t} + c.c. $. Escolhendo a função de calibre como $\gamma = -\vb{A}(t)\vdot \vb{r}$, obtemos
 \begin{equation}
 \grad{\lambda} = -\vb{A}(t)
 \label{eq:4.24}
@@ -859,16 +872,16 @@ e
 \pdv{\lambda}{t} = -\vb{r}\pdv{\vb{A}(t)}{t} = \vb{r}\vdot\vb{E}(t).
 \label{eq:4.25}
 \end{equation}
-Substituindo estes resultados na equação do hamiltoniano $\hat{H}'$ \eqref{eq:4.21}, obtemos
+Fazendo $\phi = 0$ e realizando a escolha do calibre de Coulomb, onde $\div \vb{A} = 0$ e usando \eqref{eq:4.24} e \eqref{eq:4.25} em \eqref{eq:4.20},  obtemos
 \begin{equation}
 \hat{H}'=\frac{\vb{p}^2}{2m} + V(\vb{r}) - \vb{d}\vdot\vb{E},
 \label{eq:4.26}
 \end{equation}
-onde $\vb{d}=e\vb{r}$ é o momento de dipolo elétrico e $e$ é a carga do elétron. Os dois primeiro termos se referem ao átomo não perturbado ($H_0 =\vb{p}^2/2m + V(\vb{r})$) e o último termo é referente a interação com o campo elétrico na aproximação de dipolo $(H_{int} = -\vb{d}\vdot\vb{E})$ \cite{scullyquantum,meystre2007elements}. Esta aproximação  será utilizada no decorrer deste trabalho.
+onde $\vb{d}=e\vb{r}$ é o momento de dipolo elétrico. Os dois primeiro termos se referem ao átomo não perturbado ($H_0 =\vb{p}^2/2m + V(\vb{r})$) e o último termo é referente a interação com o campo elétrico na aproximação de dipolo $(H_{int} = -\vb{d}\vdot\vb{E})$ \cite{scullyquantum,meystre2007elements}. Esta aproximação  será utilizada no decorrer deste TCC.
 
 \section{Sistema atômico de dois níveis}\label{sec:2niveis}
 
-Neste TCC, trabalharemos com um sistema de dois níveis, sistema quântico simples que é descrito em duas dimensões no espaço de Hibert. Com esse sistema, poderemos estudar de maneira simples e detalhada as principais propriedades físicas inerentes ao processo de iteração de radiação com a matéria. Isso é possível, pois, apesar de sua simplicidade, existem diversos fenômenos quânticos que são descritos de forma satisfatória. Alguns exemplos  são problemas que envolvem polarização de fótons, spin do elétron, oscilações dos neutrino e o caso deste TCC, um sistema atômico que possui dois níveis em ressonância (ou próximo da ressonância) com o campo eletromagnético aplicado e onde os demais níveis estão em dessintonia total com esse campo \cite{allen1987optical}.
+Neste TCC, trabalharemos com um sistema de dois níveis, sistema quântico simples que é descrito em duas dimensões no espaço de Hibert. Com esse sistema, poderemos estudar de maneira simples e detalhada as principais propriedades físicas inerentes ao processo de iteração de radiação com a matéria. Isso é possível, pois, apesar de sua simplicidade, existem diversos fenômenos quânticos que são descritos de forma satisfatória. Alguns exemplos  são problemas que envolvem polarização de fótons, spin do elétron, oscilações dos neutrinos e o caso deste TCC, um sistema atômico que possui dois níveis em ressonância (ou próximo da ressonância) com o campo eletromagnético aplicado e onde os demais níveis estão em dessintonia total com esse campo \cite{allen1987optical}.
 
 Para um sistema de dois níveis interagindo com campo eletromagnético, utilizamos o Hamiltoniano com aproximação dipolar, que apresentamos na Seção \ref{sec:seção4.1}. 
 
@@ -883,6 +896,11 @@ O sistema de dois níveis sem pertubação possui dois valores prováveis de energia
 \omega_{21} & = & \omega_2 - \omega_1\label{eq:4.28}\\
 & = & (E_2-E_1)/\hbar \label{eq:4.29}.
 \end{eqnarray}
+Então, o hamiltoniano do átomo livre, na aproximação de dois níveis, é dado por  
+\begin{equation}
+	\hat{H_0} = \hbar \omega _1\dyad{1}{1} +\hbar \omega _2\dyad{2}{2}.
+	\label{eq:4.33}
+\end{equation}
 \begin{figure}[H]
 	\caption{Níveis de energia de um hipotético átomo de dois níveis. A dessintonia $\delta = \omega_{ab} - \omega$ é a diferença entre $(E_2-E_1)/\hbar$ e $\omega_c$, onde $\omega_c$ é a frequência angular da radiação eletromagnética do laser incidente.} 
 	\centering 
@@ -906,27 +924,19 @@ onde $c_1$ e $c_2$ são as amplitudes de probabilidade de encontrar o átomo nos e
 A matriz densidade para um sistema de dois níveis descrito pela equação \eqref{eq:4.30} é dada por:
 \begin{eqnarray}
 	\hat{\rho}(t)&=& \sum_{i} w_i \dyad{\psi_i(t)}{\psi_i(t)} \\
-	&=& \sum_{i} w_i \mqty(\qty|c_1|^2 & c_1c_2^* \\ c_2c_1^* & \qty|c_1|^2)\\
+	&=& \sum_{i} w_i \mqty(\qty|c_1^i|^2 & c_1^ic_2^{i*} \\ c_2^ic_1^{i*} & \qty|c_1^i|^2)\\
 	&=& \mqty(\overline{\qty|c_1|^2} & \overline{c_1c_2^*} \\ \overline{c_2c_1^*} & \overline{\qty|c_1|^2})\\&=& \mqty(\rho_{11} & \rho_{12} \\ \rho_{21} & \rho_{22}).
 	\label{eq:4.31}
 \end{eqnarray}
-Os elementos da diagonal principal correspondem às probabilidades de encontrar as populações atômicas no estado fundamental ($\ket{1}$) ou no estado excitado ($\ket{2}$). Os elementos fora da diagonal principal correspondem à coerência entre os estados $\ket{1}$ e $\ket{2}$. Os elementos $\rho_{nm}$ da matriz densidade se relacionam com as amplitudes de probabilidade da seguinte forma:
+Os elementos da diagonal principal correspondem às probabilidades de encontrar as populações atômicas no estado fundamental ($\ket{1}$) ou no estado excitado ($\ket{2}$). Os elementos fora da diagonal principal correspondem à coerência entre os estados $\ket{1}$ e $\ket{2}$. Assim, os elementos $\rho_{nm}$ da matriz densidade se relacionam com as amplitudes de probabilidade da seguinte forma:
 \begin{equation}
 	\rho_{nm} = \sum_i w_i c_n^ic_m^{i*},
 	\label{eq:4.32}
 \end{equation}
-onde $\omega_i$ é ...
-
-O hamiltoniano do átomo livre, na aproximação de dois níveis, é dado por  
-\begin{equation}
-\hat{H_0} = \hbar \omega _1\dyad{1}{1} +\hbar \omega _2\dyad{2}{2},
-\label{eq:4.33}
-\end{equation}
-sendo $\hbar \omega_{1}$ e $\hbar \omega_{2}$ os valores de energia para os estado $\ket{1}$ e $\ket{2}$, respectivamente. 
 
 Um campo eletromagnético externo clássico, com frequência $\omega_c$, é dado por
 \begin{equation}
-	 \vb{E} =  \frac{1}{2}\vb{E_0}e^{iw_ct} + c.c.
+	 \vb{E}(t) =  \frac{1}{2}\vb{\mathcal{E}}(t)e^{iw_ct} + c.c.
 	\label{eq:4.34}
 \end{equation}
 O átomo não possui momento de dipolo quanto está em um de seus estados estacionários, então $\mel{1}{\hat{d}}{1}=\mel{2}{\hat{d}}{2}=0$. Assim, podemos escrever o operador momento de dipolo como
@@ -934,9 +944,9 @@ O átomo não possui momento de dipolo quanto está em um de seus estados estacioná
 	\hat{d}  =  d_{12}\dyad{1}{2} + d_{21}\dyad{2}{1}.
 	\label{eq:4.35}
 \end{equation} 
-A partir das equações \eqref{eq:4.34} e \eqref{eq:4.35}, podemos reescrever o hamiltoniano da interação na aproximação de dipolo \eqref{eq:4.27} da seguinte forma:
+A partir das equações \eqref{eq:4.34} e \eqref{eq:4.35} e levando em conta que o momento de dipolo tem a mesma direção do campo, podemos reescrever o hamiltoniano da interação na aproximação de dipolo \eqref{eq:4.27} da seguinte forma:
 \begin{equation}
-	\hat{H}_{int}  =  -(\frac{1}{2}\vb{E_0}e^{iw_ct}+\frac{1}{2}\vb{E_0*}e^{-iw_ct})d_{12}\dyad{1}{2} - (\frac{1}{2}\vb{E_0}e^{iw_ct}+\frac{1}{2}\vb{E_0*}e^{-iw_ct})d_{21}\dyad{2}{1}.
+	\hat{H}_{int}  =  -(\frac{1}{2}\mathcal{E}e^{iw_ct}+\frac{1}{2}\mathcal{E}^*e^{-iw_ct})d_{12}\dyad{1}{2} - (\frac{1}{2}\mathcal{E}e^{iw_ct}+\frac{1}{2}\mathcal{E}^*e^{-iw_ct})d_{21}\dyad{2}{1}.
 	\label{eq:4.36}
 \end{equation}
 
@@ -948,91 +958,82 @@ Agora vamos nos aproveitar do fato que o sistema atômico de dois níveis está pró
 e, assim, obtemos o seguinte hamiltoniano:
 \begin{eqnarray}
 	\hat{H}_{D,int} &  =  & 	\hat{U}\hat{H}_{int}\hat{U}^\dagger\nonumber\\
-				  &  =  & 	\mqty( e^{i\omega_{1}t} & 0 \\ 0 & e^{i\omega_{2}t}) \mqty(0 & -d_{12}\vb{E} \nonumber\\ -d_{21}\vb{E} & 0) \mqty( e^{-i\omega_{1}t} & 0 \\ 0 & e^{-i\omega_{2}t})\nonumber\\
-				   &  =  & (\vb{E_0}e^{iw_ct}+\vb{E_0^*}e^{-iw_ct})\frac{d_{12}}{2}e^{-i\omega_{21}t}\dyad{1}{2}\nonumber\\& +& (\vb{E_0}e^{iw_ct}+\vb{E_0^*}e^{-iw_ct})\frac{d_{21}}{2}e^{i\omega_{21}t}\dyad{2}{1}\nonumber\\
-				   &  =  & (\vb{E_0}e^{i\delta t}+\vb{E_0^*}e^{-i(w_c+\omega_{21})t})\frac{d_{12}}{2}\dyad{1}{2}\nonumber\\& +& (\vb{E_0}e^{i(\omega_c +\omega_{21}) t}+\vb{E_0^*}e^{-i\delta t})\frac{d_{21}}{2}\dyad{2}{1},
+				  &  =  & 	\mqty( e^{i\omega_{1}t} & 0 \\ 0 & e^{i\omega_{2}t}) \mqty(0 & -d_{12}E\nonumber\\ -d_{21}E & 0) \mqty( e^{-i\omega_{1}t} & 0 \\ 0 & e^{-i\omega_{2}t})\nonumber\\
+				   &  =  & (\mathcal{E}e^{iw_ct}+\mathcal{E}^*e^{-iw_ct})\frac{d_{12}}{2}e^{-i\omega_{21}t}\dyad{1}{2}\nonumber\\& +& (\mathcal{E}e^{iw_ct}+\mathcal{E}^*e^{-iw_ct})\frac{d_{21}}{2}e^{i\omega_{21}t}\dyad{2}{1}\nonumber\\
+				   &  =  & (\mathcal{E}e^{i\delta t}+\mathcal{E}^*e^{-i(w_c+\omega_{21})t})\frac{d_{12}}{2}\dyad{1}{2}\nonumber\\& +& (\mathcal{E}e^{i(\omega_c +\omega_{21}) t}+\mathcal{E}^*e^{-i\delta t})\frac{d_{21}}{2}\dyad{2}{1},
 	\label{eq:4.38}
 \end{eqnarray}
-onde $\delta = \omega_c - \omega_{21}$ é a dessintonia entre o campo e o átomo. Como o campo está próximo da ressonância com átomo, $\delta \ll \omega_c + \omega_{21}$. Isso significa que os termos que oscilam com frequência ($\omega_c + \omega_{21}$) alteram rapidamente em relação ao termos que oscilam com frequência $\delta$, por isso podemos ignorar esse termos, utilizando  a aproximação de onda girante (RWA - Rotating Wave Approximation) \cite{scullyquantum}. Nestas condições, a equação do hamiltoniano (equação anterior) se reduz em
+onde $\delta = \omega_c - \omega_{21}$ é a dessintonia entre o campo e o átomo. Como o campo está próximo da ressonância com átomo, $\delta \ll \omega_c + \omega_{21}$. Isso significa que os termos que oscilam com frequência ($\omega_c + \omega_{21}$) alteram rapidamente em relação ao termos que oscilam com frequência $\delta$, por isso podemos ignorar esse termos, utilizando  a aproximação de onda girante (RWA - Rotating Wave Approximation) \cite{scullyquantum}. Nestas condições, a equação do hamiltoniano \eqref{eq:4.38} se reduz em
 \begin{equation}
-		\hat{H}_{D,int} = \frac{d_{12}}{2}\vb{E_0}e^{i\delta t}\dyad{1}{2} + \frac{d_{21}}{2}\vb{E_0^*}e^{-i\delta t}\dyad{2}{1},
+		\hat{H}_{D,int} = \frac{d_{12}}{2}\mathcal{E}e^{i\delta t}\dyad{1}{2} + \frac{d_{21}}{2}\mathcal{E}^*e^{-i\delta t}\dyad{2}{1},
 	\label{eq:4.39}
 \end{equation}
 Finalmente, podemos retornar o hamiltoniano à representação de Schrödinger:
 \begin{eqnarray}
 	\hat{H}_{int} &  =  & 	\hat{U}^\dagger\hat{H}_{D,int}\hat{U}\nonumber\\
-	&  =  & 	\mqty( e^{-i\omega_{1}t} & 0 \\ 0 & e^{-i\omega_{2}t}) \mqty(0 & \frac{d_{12}}{2}\vb{E_0}e^{i\delta t} \nonumber\\ \frac{d_{21}}{2}\vb{E_0^*}e^{-i\delta t}  & 0) \mqty( e^{i\omega_{1}t} & 0 \\ 0 & e^{i\omega_{2}t})\nonumber\\
-	&  =  & \frac{d_{12}}{2}\vb{E_0}e^{i\delta t}e^{i\omega_{21}t}\dyad{1}{2} + \frac{d_{21}}{2}\vb{E_0^*}e^{-i\delta t}e^{-i\omega_{21}t}\dyad{2}{1}\nonumber\\
-	&  =  & \frac{d_{12}}{2}\vb{E_0}e^{i\omega_c t}\dyad{1}{2} + \frac{d_{21}}{2}\vb{E_0^*}e^{-i\omega_c t}\dyad{2}{1}.
+	&  =  & 	\mqty( e^{-i\omega_{1}t} & 0 \\ 0 & e^{-i\omega_{2}t}) \mqty(0 & \frac{d_{12}}{2}\mathcal{E}e^{i\delta t} \nonumber\\ \frac{d_{21}}{2}\mathcal{E}^*e^{-i\delta t}  & 0) \mqty( e^{i\omega_{1}t} & 0 \\ 0 & e^{i\omega_{2}t})\nonumber\\
+	&  =  & \frac{d_{12}}{2}\mathcal{E}e^{i\delta t}e^{i\omega_{21}t}\dyad{1}{2} + \frac{d_{21}}{2}\mathcal{E}^*e^{-i\delta t}e^{-i\omega_{21}t}\dyad{2}{1}\nonumber\\
+	&  =  & \frac{d_{12}}{2}\mathcal{E}e^{i\omega_c t}\dyad{1}{2} + \frac{d_{21}}{2}\mathcal{E}^*e^{-i\omega_c t}\dyad{2}{1}.
 	\label{eq:4.40}
 \end{eqnarray}
 Com isso, a expressão para o Hamiltoniano total  do sistema de dois níveis com pertubação de campo eletromagnético é dada por:
 \begin{equation}
-	\hat{H} = \hbar \omega _1\dyad{1}{1} +\hbar \omega _2\dyad{2}{2} - \frac{d_{12}}{2}\vb{E_0}e^{i\omega_c t}\dyad{1}{2} - \frac{d_{21}}{2}\vb{E_0^*}e^{-i\omega_c t}\dyad{2}{1}
+	\hat{H} = \hbar \omega _1\dyad{1}{1} +\hbar \omega _2\dyad{2}{2} - \frac{d_{12}}{2}\mathcal{E}e^{i\omega_c t}\dyad{1}{2} - \frac{d_{21}}{2}\mathcal{E}^*e^{-i\omega_c t}\dyad{2}{1}
 	\label{eq:4.41}
 \end{equation}
 
-No capítulo \ref{cap:capitulo2} nós obtemos a equação de J. von-Newman \eqref{eq:27}, que descreve a evolução temporal da matriz densidade. Vamos utilizar essa equação para obtermos a evolução temporal para o sistema interagente, mas precisaremos inserir de forma fenomenológica o termo de decaimento referente a emissão espontânea ou ocasionados por colisões entre átomos \cite{boyd2008nonlinear}. Assim, equação \eqref{eq:27} para o elemento da matriz densidade se torna
-\begin{equation}
-	\dv{\hat{\rho}_{nm}}{t} = \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nm} - \gamma_{nm}(\rho_{nm} - \rho_{nm}^{(eq)})
-\label{eq:4.42}	
-\end{equation}
-O termo à direita é o termo fenomenológico de decaimento, que indica  que a relaxação da população $\rho_{nm}$ para seu valor de equilíbrio  $\rho_{nm}^{(eq)}$ ocorre  a uma taxa $\gamma_{nm}$. Assumimos que $\gamma_{nm}=\gamma_{mn}$, por se tratar de uma taxa de decaimento. Além disso, supomos que 
-\begin{equation}
-	\rho_{nm}^{(eq)}=0 \textnormal{	para	} n\neq m .
-	\label{eq:4.43}
-\end{equation} 
-Isso significa que, no equilíbrio térmico, os estados excitados podem conter população mesmo na ausência do campo eletromagnético do laser ($\rho_{nn}^{(eq)}$ pode ser diferente de zero), porém essa excitação térmica não pode produzir superposição coerente de estados atômicos ($\rho_{nm}^{(eq)}=0$  para $n\neq m$). Outra maneira de descrever os fenômenos de decaimento é considerarmos que os elementos fora da diagonal principal da matriz densidade relaxam, conforme descrito acima, mas para descrevermos os termos da diagonal principal, de forma a permitir que a população decaia dos níveis mais altos para níveis mais baixos, representamos da seguinte forma:
+No capítulo \ref{cap:capitulo2} obtemos a equação de J. von-Newman \eqref{eq:27}, que descreve a evolução temporal da matriz densidade. Vamos utilizar essa equação para descrevermos a evolução temporal para o sistema interagente, mas precisaremos inserir de forma fenomenológica o termo de decaimento referente a emissão espontânea ou ocasionados por colisões entre átomos \cite{boyd2008nonlinear}. Assim, equação \eqref{eq:27} para o elemento da matriz densidade se torna
 \begin{eqnarray}
-	\dv{\hat{\rho}_{nm}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nm} - \gamma_{nm}\rho_{nm} \textnormal{ para } n\neq m	\label{eq:4.44}\\
-	\dv{\hat{\rho}_{nn}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}, \hat{H}]_{nn} + \sum_{E_m>E_n}\Gamma_{nm}\rho_{mm} - \sum_{E_m<E_n}\Gamma_{mn}\rho_{nn},
+	\dv{{\rho}'_{nm}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}', \hat{H}]_{nm} - \gamma_{nm}\rho'_{nm} \textnormal{ para } n\neq m	\label{eq:4.44}\\
+	\dv{{\rho}'_{nn}}{t} &=& \frac{i}{\hbar}\qty[\hat{\rho}', \hat{H}]_{nn} + \sum_{E_m>E_n}\Gamma_{nm}\rho'_{mm} - \sum_{E_m<E_n}\Gamma_{mn}\rho'_{nn}.
 	\label{eq:4.45}	
 \end{eqnarray}
-onde $\Gamma_{nm}$ representa a taxa por átomo em que a população decai do estado $\ket{m}$ para o estado $\ket{n}$ e $\gamma_{nm}$ representa a taxa de relaxamento de $\rho_{nm}$.
-
-Considerando que o estado $\ket{n}$ tem um tempo de vida $\tau=1/\Gamma_{n}$, onde $\Gamma_{n}$ é a taxa de decaimento total da população fora do nível $\ket{n}$ dada por 
+Aqui, $\gamma_{nm}$ é a taxa de relaxamento da coerência $\rho_{nm}$, onde $\gamma_{nm} = \gamma_{mn}$. O termo $\Gamma_{nm}$ é a taxa de decaimento do estado $\ket{m}$ para um estado $\ket{n}$. O tempo de vida de um estado $\ket{n}$ é $T_n=1/\Gamma_{n}$, onde $\Gamma_{n}$ é a taxa de decaimento total dada pela soma de todas a taxa de decaimento do estado $\ket{n}$ para estados de menor energia, ou seja,
 \begin{equation}
-	\Gamma_{n}=\sum_{E_n'<E_n}\Gamma_{n'n},
+	\Gamma_{n}=\sum_{E_n'<E_n}\Gamma_{n'n}.
 	\label{eq:4.46}	
 \end{equation}
+
+\begin{sagesilent}
+	cn(t) = exp(-((2*pi*5)/2)*t)
+\end{sagesilent}
 
 \begin{figure}[H]
 	\caption{Amplitude de probabilidade $c_n(t)$ decai conforme \eqref{eq:4.48}.}
 	\centering
-	\def\svgscale{0.5}
-	\includesvg{figuras_do_trabalho/grafico_decay}
+	\sageplot[scale=1]{plot(cn(t),t,0,0.5),frame=true,figsize = (4,4)}
 	\label{fig:delay}
 	\caption*{Fonte: Do autor}
 \end{figure}
-
-Podemos dizer que a probabilidade de encontrar o sistema no estado $\ket{n}$ (exceto o estado fundamental) diminui da seguinte forma:
+Agora, a probabilidade de encontrar um átomo no estado $\ket{n}$ (exceto o estado fundamental) diminui ao longo do tempo da seguinte forma:
 \begin{equation}
-	\qty|c_n(t)|^2 = \qty|c_n(0)|^2 e^{-\Gamma_n t}.
+	\qty|C_n^{i}(t)|^2 = \qty|c_n^{i}(t)|^2 e^{-\Gamma_n t}.
 	\label{eq:4.47}	
 \end{equation}
-Assim, a amplitude de probabilidade, que varia no tempo, obedece a relação 
+Isso significa que a amplitude de probabilidade obedece a relação  
 \begin{equation}
-	c_n(t) =c_n(0) e^{-i \omega_{n}t} e^{-\frac{\Gamma_n }{2}t},
+	C_n^i(t) =c_n^i(t)e^{-\frac{\Gamma_n }{2}t},
 	\label{eq:4.48}	
 \end{equation}
-conforme podemos ver na figura \ref{fig:delay}.
-A amplitude de probabilidade para um estado $\ket{m}$ pode então ser escrita como 
+conforme vemos na figura \ref{fig:delay}. Com isso, temos que $c_n^i(t)c^{i*}_m(t)$ é escrita como
 \begin{equation}
-	c_m(t) =c_m(0) e^{-i \omega_{m}t} e^{-\frac{\Gamma_m }{2}t}.
-	\label{eq:4.49}	
-\end{equation}
-Isso significa que a coerência entre os dois estados deve variar, já que
-\begin{equation}
-	c_n(t)c_m^*(t) =c_n(0)c_m^*(0) e^{-i \omega_{mn}t} e^{-(\Gamma_n + \Gamma_m)\frac{t}{2}}.
+	C_n^i(t)C^{i*}_m(t) =c_n^i(t)c_m^{i*}(t)e^{-(\Gamma_n + \Gamma_m)\frac{t}{2}}.
 	\label{eq:4.50}		
 \end{equation}
-Sabemos que $\rho_{mn}$ é obtido a partir da média dos ensembles de $c_nc_m^*$ e sua taxa de decaimento é $\gamma_{mn}$. Com isso, obtemos uma relação entre as taxas de decaimento dos elementos fora da diagonal principal com os elementos da diagonal principal, dada por
+Da mesma maneira que \eqref{eq:4.32}, podemos espressar o novo $\rho'_{mn}$ em termos de $C_n^i(t)C^{i*}_m(t)$. Assim, obtemos
+\begin{eqnarray}
+	\rho'_{mn} &=& \rho_{mn}e^{-(\Gamma_n + \Gamma_m)\frac{t}{2}}\text{~se~}n\neq m\\
+	\rho'_{nn} &=& \rho_{nn}e^{-\Gamma_nt}
+\end{eqnarray}
+
+Sabemos que a taxa de decaimento de $\rho_{mn}$ (trabalharemos com o novo operador densidade ignorando  ($'$) a partir daqui) é $\gamma_{mn}$. Assim, obtemos uma relação entre as taxas de decaimento dos elementos fora da diagonal principal com os elementos da diagonal principal, dada por
 \begin{equation}
-	\gamma_{mn} =\frac{1}{2}(\Gamma_n + \Gamma_m).
+	\gamma_{mn} =\frac{1}{2}(\Gamma_n + \Gamma_m) + \gamma_{mn}^{(c)}.
 	\label{eq:4.51}
 \end{equation}
+onde adicionamos o termo $\gamma_{mn}^{(c)}$ que se refere a taxa de defasagem de dipolo, em consequência de colisões entre átomos. 
 
-Para calculamos os elementos $\rho_{nm}$ da matriz densidade com $n\neq m$, para sistema de dois níveis, partimos da equação \eqref{eq:4.44}. Assim, podemos calcular  $\dot{\rho}_{12}$:
+Para calcularmos os elementos $\rho_{nm}$ da matriz densidade com $n\neq m$, para sistema de dois níveis, partimos da equação \eqref{eq:4.45}. Assim, podemos calcular  $\dot{\rho}_{12}$:
 \begin{eqnarray}
 	\pdv{t}\mel{1}{\hat{\rho}}{2} & = &  \frac{i}{\hbar}\mel{1}{\qty[\hat{\rho},\hat{H}]}{2} - \gamma_{12}\rho_{12}\nonumber\\
 	 							  & = &  \frac{i}{\hbar}\mel{1}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{2} - \gamma_{12}\rho_{12}\nonumber\\
@@ -1042,30 +1043,30 @@ Para calculamos os elementos $\rho_{nm}$ da matriz densidade com $n\neq m$, para
 \end{eqnarray}
 e  $\dot{\rho}_{21}$ 
 \begin{eqnarray}
-	\pdv{t}\mel{2}{\hat{\rho}}{1} & = &  \frac{i}{\hbar}\mel{2}{\qty[\hat{\rho},\hat{H}]}{1} - \gamma_{21}\rho_{21}\nonumber\\
-	& = &  \frac{i}{\hbar}\mel{2}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{1} - \gamma_{21}\rho_{21}\nonumber\\
-	& = &  \frac{i}{\hbar}(\mel{2}{\hat{\rho}\hat{H}}{1} - \mel{2}{\hat{H}\hat{\rho} }{1})- \gamma_{21}\rho_{21}\nonumber\\
-	& = &  \frac{i}{\hbar}(\hbar \omega_{1}\rho_{21} -  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{22}-\hbar \omega_{2} \rho_{21} +  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{11}) - \gamma_{21}\rho_{21}\nonumber\\
-	& = &  -(i \omega_{21} + \gamma_{21})\rho_{21} -  i\frac{d_{21}}{2\hbar}E_0^*e^{-i\omega_c t}(\rho_{22}-\rho_{11}). 
+	\pdv{t}\mel{2}{\hat{\rho}}{1} & = &  \frac{i}{\hbar}\mel{2}{\qty[\hat{\rho},\hat{H}]}{1} - \Gamma_{12}\rho_{21}\nonumber\\
+	& = &  \frac{i}{\hbar}\mel{2}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{1} - \Gamma_{12}\rho_{21}\nonumber\\
+	& = &  \frac{i}{\hbar}(\mel{2}{\hat{\rho}\hat{H}}{1} - \mel{2}{\hat{H}\hat{\rho} }{1})- \Gamma_{12}\rho_{21}\nonumber\\
+	& = &  \frac{i}{\hbar}(\hbar \omega_{1}\rho_{21} -  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{22}-\hbar \omega_{2} \rho_{21} +  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{11}) - \Gamma_{12}\rho_{21}\nonumber\\
+	& = &  -(i \omega_{21} + \Gamma_{12})\rho_{21} -  i\frac{d_{21}}{2\hbar}E_0^*e^{-i\omega_c t}(\rho_{22}-\rho_{11}). 
 \end{eqnarray}
-O cálculo para os elementos da diagonal principal da matriz densidade são obtidos pela equação \eqref{eq:4.45}. Assim, $\dot{\rho}_{11}$ é dado por 
+O cálculo para os elementos da diagonal principal da matriz densidade são obtidos pela equação \eqref{eq:4.46}. Assim, $\dot{\rho}_{11}$ é dado por 
 \begin{eqnarray}
-	\pdv{t}\mel{1}{\hat{\rho}}{1} & = &  \frac{i}{\hbar}\mel{1}{\qty[\hat{\rho},\hat{H}]}{1} + \Gamma_{21}\rho_{22}\nonumber\\
-	& = &  \frac{i}{\hbar}\mel{1}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{1} + \Gamma_{21}\rho_{22}\nonumber\\
-	& = &  \frac{i}{\hbar}(\mel{1}{\hat{\rho}\hat{H}}{1} - \mel{1}{\hat{H}\hat{\rho} }{1})+ \Gamma_{21}\rho_{22}\nonumber\\
-	& = &  \frac{i}{\hbar}(\hbar \omega_{1}\rho_{11} -  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12}-\hbar \omega_{1} \rho_{11} +  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{21}) + \Gamma_{21}\rho_{22}\nonumber\\
-	& = &  \frac{d_{12}}{2\hbar}E_0e^{i\omega_c t} \rho_{21} - \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12} + \Gamma_{21}\rho_{22}
+	\pdv{t}\mel{1}{\hat{\rho}}{1} & = &  \frac{i}{\hbar}\mel{1}{\qty[\hat{\rho},\hat{H}]}{1} + \Gamma_{12}\rho_{22}\nonumber\\
+	& = &  \frac{i}{\hbar}\mel{1}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{1} + \Gamma_{12}\rho_{22}\nonumber\\
+	& = &  \frac{i}{\hbar}(\mel{1}{\hat{\rho}\hat{H}}{1} - \mel{1}{\hat{H}\hat{\rho} }{1})+ \Gamma_{12}\rho_{22}\nonumber\\
+	& = &  \frac{i}{\hbar}(\hbar \omega_{1}\rho_{11} -  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12}-\hbar \omega_{1} \rho_{11} +  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{21}) + \Gamma_{12}\rho_{22}\nonumber\\
+	& = &  \frac{d_{12}}{2\hbar}E_0e^{i\omega_c t} \rho_{21} - \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12} + \Gamma_{12}\rho_{22}
 \end{eqnarray}
 e $\dot{\rho}_{22}$ 
 \begin{eqnarray}
-	\pdv{t}\mel{2}{\hat{\rho}}{2} & = &  \frac{i}{\hbar}\mel{2}{\qty[\hat{\rho},\hat{H}]}{2} - \Gamma_{21}\rho_{22}\nonumber\\
-	& = &  \frac{i}{\hbar}\mel{2}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{2} - \Gamma_{21}\rho_{22}\nonumber\\
-	& = &  \frac{i}{\hbar}(\mel{2}{\hat{\rho}\hat{H}}{2} - \mel{2}{\hat{H}\hat{\rho} }{2})- \Gamma_{21}\rho_{22}\nonumber\\
-	& = &  \frac{i}{\hbar}(\hbar \omega_{2}\rho_{22} -  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{21}-\hbar \omega_{2} \rho_{22} +  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12}) - \Gamma_{21}\rho_{22}\nonumber\\
-	& = &  -\frac{d_{12}}{2\hbar}E_0e^{i\omega_c t} \rho_{21} + \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12} - \Gamma_{21}\rho_{22}
+	\pdv{t}\mel{2}{\hat{\rho}}{2} & = &  \frac{i}{\hbar}\mel{2}{\qty[\hat{\rho},\hat{H}]}{2} - \Gamma_{12}\rho_{22}\nonumber\\
+	& = &  \frac{i}{\hbar}\mel{2}{\hat{\rho}\hat{H} - \hat{H}\hat{\rho} }{2} - \Gamma_{12}\rho_{22}\nonumber\\
+	& = &  \frac{i}{\hbar}(\mel{2}{\hat{\rho}\hat{H}}{2} - \mel{2}{\hat{H}\hat{\rho} }{2})- \Gamma_{12}\rho_{22}\nonumber\\
+	& = &  \frac{i}{\hbar}(\hbar \omega_{2}\rho_{22} -  \frac{d_{12}}{2}E_0e^{i\omega_c t} \rho_{21}-\hbar \omega_{2} \rho_{22} +  \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12}) - \Gamma_{12}\rho_{22}\nonumber\\
+	& = &  -\frac{d_{12}}{2\hbar}E_0e^{i\omega_c t} \rho_{21} + \frac{d_{21}}{2}E_0^*e^{-i\omega_c t} \rho_{12} - \Gamma_{12}\rho_{22}
 \end{eqnarray}
 
-Para simplificarmos essas equações, devemos considerar o fato que  $\rho_{11}+\rho_{22}=1$ e  $\rho_{12}=\rho_{21}^*$. Fazendo $d_{12} = d_{21}$, definimos a frequência de Rabi como
+Para simplificarmos essas equações, devemos considerar o fato que  $\rho_{11}+\rho_{22}=1$ , $\rho_{12}=\rho_{21}^*$, $d_{12} = d_{21}$ e definirmos a frequência de Rabi como
 \begin{equation}
 	\Omega_0 \equiv \frac{d_{12}}{\hbar}E_0.
 	\label{eq:4.56}
@@ -1073,18 +1074,23 @@ Para simplificarmos essas equações, devemos considerar o fato que  $\rho_{11}+\r
 Assim, obtemos
 \begin{eqnarray}
 	\dot{\rho}_{12} & = &  (i \omega_{21} - \gamma_{12})\rho_{12} -  i\frac{\Omega_0}{2}e^{i\omega_c t}(1 - 2\rho_{22})\\
-	\dot{\rho}_{22} & = &  -i\frac{\Omega_0}{2}e^{i\omega_c t} \rho_{12}^* + i\frac{\Omega_0^*}{2}e^{-i\omega_c t} \rho_{12} - \Gamma_{21}\rho_{22}
+	\dot{\rho}_{22} & = &  -i\frac{\Omega_0}{2}e^{i\omega_c t} \rho_{12}^* + i\frac{\Omega_0^*}{2}e^{-i\omega_c t} \rho_{12} - \Gamma_{12}\rho_{22}
 \end{eqnarray}
 Podemos reescrever as equações acima, realizando as seguintes mudanças de variáveis
 \begin{eqnarray}
 \rho_{12} & \equiv &  \sigma_{12}e^{i\omega_c t}\\
 \rho_{22} & \equiv &  \sigma_{22}.
 \end{eqnarray}
-Assim, obtemos as equações de bloch ópticas
+Assim, obtemos
 \begin{eqnarray}
 	\dot{\sigma}_{12} & = &  (i \delta - \gamma_{12})\sigma_{12} -  i\frac{\Omega_0}{2}(1 - 2\sigma_{22})\label{eq:4.61}\\
-	\dot{\sigma}_{22} & = &  -i\frac{\Omega_0}{2}\sigma_{12}^* + i\frac{\Omega_0^*}{2} \sigma_{12} - \Gamma_{21}\sigma_{22}\label{eq:4.62}
+	\dot{\sigma}_{22} & = &  -i\frac{\Omega_0}{2}\sigma_{12}^* + i\frac{\Omega_0^*}{2} \sigma_{12} - \Gamma_{12}\sigma_{22}\label{eq:4.62},
 \end{eqnarray}
+que são conhecidas na literatura como equações de bloch ópticas~\cite{foot2005atomic}.
+\subsection{O átomo de Rubídio ($^{87}Rb$) e sua transição $5S1/2 \longrightarrow 5P1/2$ }
+
+nesta seção vamos dicutir como
+
 \subsection{Solução numérica para campos contínuos}
 As equação de bloch ópticas \eqref{eq:4.61} e \eqref{eq:4.62} possuem solução exata quando consideramos um campo contínuo. Essas soluções são obtidas a partir de métodos perturbativos, como vemos em \cite{allen1987optical}. Apesar disso, preferimos resolver essa equações numericamente, utilizando o algoritmo de runge-kutta de quarta ordem. Esse algoritmo é bastante popular na literatura, pois oferece uma boa precisão na resolução de equações diferenciais \cite{atkinson1989}. Para uma equação diferencial de primeira ordem do tipo  
 \begin{equation}
@@ -1122,7 +1128,7 @@ O parâmetros presentes no incremento dessas expressões são dados por:
 O algoritmo de Runge-Kutta foi implementado em linguagem C, conforme apresentado a seguir:
 
 \begin{algorithm}[H]
-	\Entrada{$\Gamma_{21}$, $\gamma_{22}$, $\delta$ e $\Omega_0$}
+	\Entrada{$\Gamma_{12}$, $\gamma_{22}$, $\delta$ e $\Omega_0$}
 	\Saida{$\sigma_{12}$ e $\sigma_{22}$ }
 	\Inicio{
 		inicializa\c{c}\~ao\;
@@ -1271,7 +1277,7 @@ Para estudarmos um campo contínuo, vamos utilizar uma interação de campo contínu
 	\hline
 	Tempo de vida & $\tau$ & $27,70$ ns \\
 	\hline
-	Taxa de decaimento & $\Gamma_{21}$ & $2\pi\cdot5,746$ MHz \\
+	Taxa de decaimento & $\Gamma_{12}$ & $2\pi\cdot5,746$ MHz \\
 	\hline
 	momento de dipolo da transição $D1(5^2S_{1/2}\longrightarrow 5^2P_{1/2})$ & $d_{12}$ & $2,537\times10^{-29}$Cm  \\
 	\hline
@@ -1297,9 +1303,9 @@ O laser CW é identificado usualmente pela sua potência. Podemos calcular a potên
 	\label{eq:4.77}
 \end{equation}
 
-onde $P$ é a potência irradiada, $A$ é a área de seção transversal do feixe e I é a intensidade de radiação. Para o caso em que estamos interessados, vamos utilizar uma  área $A$ circular $\pi R^2$, com o raio $R = 1$ m e, também, vamos adotar uma frequência de rabi $\Omega_0=\Gamma_{21}$. Atribuindo na equação  \eqref{eq:4.77} os valores de momento de dipolo transição $d_{12}$ e a taxa de decaimento $\Gamma_{21}$ apresentados na tabela \ref{tab:rubidio97}, obtemos uma potência de $P=5$ mm para nosso laser.
+onde $P$ é a potência irradiada, $A$ é a área de seção transversal do feixe e I é a intensidade de radiação. Para o caso em que estamos interessados, vamos utilizar uma  área $A$ circular $\pi R^2$, com o raio $R = 1$ m e, também, vamos adotar uma frequência de rabi $\Omega_0=\Gamma_{12}$. Atribuindo na equação  \eqref{eq:4.77} os valores de momento de dipolo transição $d_{12}$ e a taxa de decaimento $\Gamma_{12}$ apresentados na tabela \ref{tab:rubidio97}, obtemos uma potência de $P=5$ mm para nosso laser.
 
-A figura \ref{fig:p22xt} mostra os resultados numéricos obtidos para a evolução temporal da população $\sigma_{22}$, conforme o campo contínuo se propaga pelo ensemble de átomos de rubídio 87. A taxa de relaxação $\gamma_{12}$ é calculado a partir da equação \eqref{eq:4.51}, onde obtemos que $\gamma_{12} = \Gamma_{21}/2$. No primeiro caso apresentado em (a), os átomos de dois níveis estão em ressonância ($\delta=0$) com o campo CW. O que acarreta interferências construtivas e assim faz a população de $\sigma_{22}$ variar positivamente ao longo do tempo até atingir um platô de aproximadamente $\sigma_{22} \approx 1\vdot 10^{-3}$ . Os gráficos apresentado em (b), (c) e (d) representam casos dissonantes com $\delta/{2\pi}=10$ Mhz, $\delta/{2\pi}=50$ Mhz e $\delta/{2\pi}=100$ Mhz, respectivamente. Nestes casos, observamos que a população $\sigma_{22}$ sofre oscilações que vão sendo amortecidas ao longo do tempo, conforme o campo interage com os átomos. Podemos ver também que quanto maior o valor de $\delta$, maior é a frequência em que $\sigma_{22}$ oscila. Isso ocorre devido à interferência destrutiva neste processo. Por fim, podemos ver que todas as curvas tendem a estados aproximadamente estacionários. Aproveitando deste fato, elaboramos os gráficos presente na figura \ref{fig:p22xdelta}.
+A figura \ref{fig:p22xt} mostra os resultados numéricos obtidos para a evolução temporal da população $\sigma_{22}$, conforme o campo contínuo se propaga pelo ensemble de átomos de rubídio 87. A taxa de relaxação $\gamma_{12}$ é calculado a partir da equação \eqref{eq:4.51}, onde obtemos que $\gamma_{12} = \Gamma_{12}/2$. No primeiro caso apresentado em (a), os átomos de dois níveis estão em ressonância ($\delta=0$) com o campo CW. O que acarreta interferências construtivas e assim faz a população de $\sigma_{22}$ variar positivamente ao longo do tempo até atingir um platô de aproximadamente $\sigma_{22} \approx 1\vdot 10^{-3}$ . Os gráficos apresentado em (b), (c) e (d) representam casos dissonantes com $\delta/{2\pi}=10$ Mhz, $\delta/{2\pi}=50$ Mhz e $\delta/{2\pi}=100$ Mhz, respectivamente. Nestes casos, observamos que a população $\sigma_{22}$ sofre oscilações que vão sendo amortecidas ao longo do tempo, conforme o campo interage com os átomos. Podemos ver também que quanto maior o valor de $\delta$, maior é a frequência em que $\sigma_{22}$ oscila. Isso ocorre devido à interferência destrutiva neste processo. Por fim, podemos ver que todas as curvas tendem a estados aproximadamente estacionários. Aproveitando deste fato, elaboramos os gráficos presente na figura \ref{fig:p22xdelta}.
 
 \begin{figure}[H]
 	\centering
@@ -1307,7 +1313,7 @@ A figura \ref{fig:p22xt} mostra os resultados numéricos obtidos para a evolução 
 	\label{fig:p22xt}
 	\includegraphics[width=0.8\linewidth]{figuras_do_trabalho/p22xt}
 \end{figure}
-Na figura \ref{fig:p22xdelta} apresentamos os resultados numéricos para população $\sigma_{22}$ e coerência $\sigma_{12}$ em função da dessintonia no estado estacionário. Adotamos os mesmos parâmetros $\Omega_0$, $\Gamma_{21}$ e $\gamma_{12}$ utilizados nos resultados mostrados na figura \ref{fig:p22xt}. Na curva (a) podemos ver que quanto mais próximo da ressonância, maior é a Amplitude da população $\sigma_{22}$. Em (b) e (c) está representada coerência $\sigma_{12}$. Na componente real (b) podemos ver que na ressonância está a maior taxa de variação. A componente imaginaria (c) possui seu valor mínimo na ressonância. Os três resultados tendem a zero para valores grande de dessintonia.
+Na figura \ref{fig:p22xdelta} apresentamos os resultados numéricos para população $\sigma_{22}$ e coerência $\sigma_{12}$ em função da dessintonia no estado estacionário. Adotamos os mesmos parâmetros $\Omega_0$, $\Gamma_{12}$ e $\gamma_{12}$ utilizados nos resultados mostrados na figura \ref{fig:p22xt}. Na curva (a) podemos ver que quanto mais próximo da ressonância, maior é a Amplitude da população $\sigma_{22}$. Em (b) e (c) está representada coerência $\sigma_{12}$. Na componente real (b) podemos ver que na ressonância está a maior taxa de variação. A componente imaginaria (c) possui seu valor mínimo na ressonância. Os três resultados tendem a zero para valores grande de dessintonia.
 \begin{figure}[H]
 	\centering
 	\caption{População $\sigma_{22}$ em função da dessintonia $\delta$ em um estado estacionário.}
@@ -1361,7 +1367,7 @@ Como as equações de bloch ópticas foram escritas  em termos da frequência de rab
 onde $\alpha\equiv\mu_0{\omega_c}^2\mathcal{N}{d_{12}}^2/k_c\hbar$ é uma constante. As equações óptica de bloch \eqref{eq:4.61} e \eqref{eq:4.62} precisam passar pela mesma mudança de coordenadas que aplicamos à \eqref{eq:5.12}. Assim, precisamos rescreve-las da seguinte forma:
 \begin{eqnarray}
 	\pdv{\tau}\sigma_{12}(\eta, \tau) & = &  [i \delta - \gamma_{12}]\sigma_{12}(\eta, \tau) -  i\frac{1}{2}\Omega_0(\eta, \tau)[1 - 2\sigma_{22}(\eta, \tau)]\label{eq:5.13}\\
-	\pdv{\tau}\sigma_{22}(\eta, \tau) & = &  -i\frac{1}{2}\Omega_0(\eta, \tau)\sigma_{12}^*(\eta, \tau) + i\frac{1}{2}\Omega_0^*(\eta, \tau)\sigma_{12}(\eta, \tau) - \Gamma_{21}\sigma_{22}(\eta, \tau).\label{eq:5.14}
+	\pdv{\tau}\sigma_{22}(\eta, \tau) & = &  -i\frac{1}{2}\Omega_0(\eta, \tau)\sigma_{12}^*(\eta, \tau) + i\frac{1}{2}\Omega_0^*(\eta, \tau)\sigma_{12}(\eta, \tau) - \Gamma_{12}\sigma_{22}(\eta, \tau).\label{eq:5.14}
 \end{eqnarray} 
 O conjunto das equações \eqref{eq:5.12}, \eqref{eq:5.13} e \eqref{eq:5.14}  são conhecidas na literatura como equações de Maxwell-Bloch. Neste TCC, essa equações são resolvidas numéricamente, conforme resultados apresentados na seção 1 deste Capítulo.
 
@@ -1372,7 +1378,7 @@ Pra trabalharmos com pulsos eletromagnéticos ultracurtos, é importante conhecerm
 	\theta(\eta) \equiv \int_{-\infty}^{\infty} \Omega_0(\eta, \tau) dt
 \end{equation}
 onde $\theta(\eta)$ é a área do pulso e $\Omega_0(\eta, \tau)$ é a frequência de Rabi. Aplicando essa definição as equações de Maxwell-Bloch para um meio ressonante, cujo tempo de decaimento é muito maior que a largura temporal do pulso 
-($1/\Gamma_{21} \gg T_p$). É possível calcular a variação da área do pulso, conforme o pulso se propaga no meio,  como descrito em [eberly]. Assim, obtemos que 
+($1/\Gamma_{12} \gg T_p$). É possível calcular a variação da área do pulso, conforme o pulso se propaga no meio,  como descrito em [eberly]. Assim, obtemos que 
 \begin{equation}
 	\pdv{\theta}{z} = -\frac{\alpha'}{2}sin(\theta)
 	\label{eq:theta}
@@ -1439,7 +1445,7 @@ Nos resultados obtidos, foram utilizados os parâmetros da transição 5s1/2 e 6p1/
 	\Omega(0,\tau) = \frac{1,76}{T_p}\frac{\theta_0}{\pi}sech\qty(\frac{1,76\tau}{T_p})
 	\label{sech}
 \end{equation} 
-onde $t_p$ é a largura temporal do pulso e $\theta_0$ é a área. Utilizamos um pulso de $T_p=100$ fs e consideramos que todos os átomos de Rubídio estão em ressonância com o campo, onde ignoramos efeito doppler. Como o tempo de vida da transição  5s1/2 e 6p1/2 é $T_{21}=27,70$ ns, conseguimos garantir que o teorema da área seja respeitado, visto que $T_{21}=1/\Gamma_{21}\gg T_p$.
+onde $t_p$ é a largura temporal do pulso e $\theta_0$ é a área. Utilizamos um pulso de $T_p=100$ fs e consideramos que todos os átomos de Rubídio estão em ressonância com o campo, onde ignoramos efeito doppler. Como o tempo de vida da transição  5s1/2 e 6p1/2 é $T_{21}=27,70$ ns, conseguimos garantir que o teorema da área seja respeitado, visto que $T_{21}=1/\Gamma_{12}\gg T_p$.
 
 \subsection{Propagação de pulso com área pequena em meio ressonante}
 
@@ -1448,7 +1454,7 @@ Na literatura temos solução analítica para equações de Maxwell-Bloch, quando tra
 Na figura \ref{fig:0pimaxwellbloch} apresentamos o resultado numérico para a frequência de rabi $\Omega_0(z,\tau)$, conforme o pulso interage no meio. Em \ref{fig:0pimaxwellbloch}(a) mostramos o mapa de calor, onde $\Omega_0(z, \tau)$ é representado em cores. Em \ref{fig:0pimaxwellbloch}(b) temos o pulso secante hiperbólico antes de interagir com o meio. Em \ref{fig:0pimaxwellbloch}(c) temos representado o pulso na saída do meio atômico ($z=1$cm). Vemos que a após interagir com o meio atômico a envoltória do pulso adquire um caráter oscilatório que varia entre valores negativos e positivos o que faz com que a área seja aproximadamente $\theta \approx 0$, o que é esperado pelo teorema da área apresentado (ver figura \ref{fig:teoremaarea}).
 \begin{figure}[H]
 	\centering
-	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubídio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm.}
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis. (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm.}
 	\label{fig:0pimaxwellbloch}
 	\begin{tikzpicture}
 		\node (figura)at(0,0){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/pequenomaxwellbloch}};
@@ -1478,7 +1484,8 @@ A figura \ref{fig:0pimaxwellbloch_s22} mostra os resultado numéricos para a popu
 		\node[below of= figura,yshift=0.00\linewidth,xshift=0.32\linewidth](a){(c)};
 	\end{tikzpicture}
 \end{figure}
-\begin{figure}[ht]
+Na figura \ref{fig:0pimaxwellbloch_s12} temos os resultados numéricos para a coerência $\imaginary{(\sigma_{12})}$. A coerência dos primeiro átomos ($z=0$) é representa na figura \ref{fig:0pimaxwellbloch_s12}(a)  e em \ref{fig:0pimaxwellbloch_s12}(b) temos a coerência do últimos átomos ($z=1$ cm). A coerência atômica obedece a taxa de relaxação $\gamma_{12} = \Gamma_{12}/2$. Por isso, é praticamente desprezível em fig. \ref{fig:0pimaxwellbloch_s12}(a) para o tempo representado.
+\begin{figure}[H]
 	\centering
 	\caption{Coerência atômica $\sigma_{12}(z,t)$ para um sistema de dois níveis (transição 5s1/2 6s3/2 do Rubídio 87) que interage com um pulso de área pequena $\theta = 5,7*10^{-4}\pi$. (a) Gráfico de temperatura para $\sigma_{12}(z,t)$. (b) Curva de $\sigma_{12}$ para $z=0$. (c) Curva de $\sigma_{12}$ para $z=1$ cm.}
 	\label{fig:0pimaxwellbloch_s12}
@@ -1493,9 +1500,6 @@ A figura \ref{fig:0pimaxwellbloch_s22} mostra os resultado numéricos para a popu
 		\node[below of= figura,yshift=0.00\linewidth,xshift=0.31\linewidth](a){(c)};
 	\end{tikzpicture}
 \end{figure}
-\vspace{12cm}
-Na figura \ref{fig:0pimaxwellbloch_s12} temos os resultados numéricos para a coerência $\imaginary{(\sigma_{12})}$. A coerência dos primeiro átomos ($z=0$) é representa na figura \ref{fig:0pimaxwellbloch_s12}(a)  e em \ref{fig:0pimaxwellbloch_s12}(b) temos a coerência do últimos átomos ($z=1$ cm). A coerência atômica obedece a taxa de relaxação $\gamma_{12} = \Gamma_{21}/2$. Por isso, é praticamente desprezível em fig. \ref{fig:0pimaxwellbloch_s12}(a) para o tempo representado.
-
 Na figura \ref{fig:0pimaxwellbloch_freq} apresentamos o resultados para $\Omega_0$ no domínio da frequência. Esses resultados foram obtidos a partir de  FFT (Transformada de Fourier rápida) no resultados numéricos obtidos no domínio do tempo. Em Fig.\ref{fig:0pimaxwellbloch_freq}(a) temos o resultado para $z=0$, em Fig.\ref{fig:0pimaxwellbloch_freq}(b) $z = 0,05$ cm e Fig.\ref{fig:0pimaxwellbloch_freq}(c) $z=1,0$ cm. Observamos que ao se propagar pelo meio a frequências próximas ao centro são absorvidas, pois estão em ressonância com o meio(transição 5s1/2-6p1/2).
 \begin{figure}[H]
 	\centering
@@ -1503,12 +1507,12 @@ Na figura \ref{fig:0pimaxwellbloch_freq} apresentamos o resultados para $\Omega_
 	\label{fig:0pimaxwellbloch_freq}
 	\usetikzlibrary{arrows}
 	\begin{tikzpicture}[centered]
-		\node at (0,0) (figura){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/absorcao}};
-		\node[left of=figura,rotate=90, yshift=0.31\linewidth] (legendax) {$\Omega_0(z,\omega)$ [Unid. Arbtrária]};
-		\node[below of=figura,yshift=-0.344\linewidth,xshift=0.02\linewidth] (legenday) {($\omega-\omega_0$) [THz]};
-		\node[below of= figura,yshift=0.40\linewidth,xshift=0.31\linewidth](a){(a)};
-		\node[below of= figura,yshift=0.16\linewidth,xshift=0.31\linewidth](b){(b)};
-		\node[below of= figura,yshift=-0.08\linewidth,xshift=0.31\linewidth](a){(c)};
+		\node at (0,0) (figura){\includegraphics[width=0.4\linewidth]{figuras_do_trabalho/absorcao}};
+%		\node[left of=figura,rotate=90, yshift=0.26\linewidth] (legendax) {$\Omega_0(z,\omega)$ [Unid. Arbtrária]};
+%		\node[below of=figura,yshift=-0.29\linewidth,xshift=0.02\linewidth] (legenday) {($\omega-\omega_0$) [THz]};
+%		\node[below of= figura,yshift=0.40\linewidth,xshift=0.31\linewidth](a){(a)};
+%		\node[below of= figura,yshift=0.16\linewidth,xshift=0.31\linewidth](b){(b)};
+%		\node[below of= figura,yshift=-0.08\linewidth,xshift=0.31\linewidth](a){(c)};
 	\end{tikzpicture}
 	
 \end{figure}

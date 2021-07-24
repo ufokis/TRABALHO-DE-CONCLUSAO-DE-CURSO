@@ -7,15 +7,15 @@ The style file: ieeetr.bst
 Database file #1: referencias.bib
 You've used 15 entries,
             1876 wiz_defined-function locations,
-            558 strings with 5129 characters,
-and the built_in function-call counts, 2554 in all, are:
-= -- 236
-> -- 107
+            560 strings with 5178 characters,
+and the built_in function-call counts, 2589 in all, are:
+= -- 238
+> -- 114
 < -- 0
-+ -- 43
-- -- 28
-* -- 127
-:= -- 387
++ -- 45
+- -- 30
+* -- 133
+:= -- 394
 add.period$ -- 27
 call.type$ -- 15
 change.case$ -- 3
@@ -23,18 +23,18 @@ chr.to.int$ -- 0
 cite$ -- 15
 duplicate$ -- 138
 empty$ -- 304
-format.name$ -- 28
-if$ -- 643
+format.name$ -- 30
+if$ -- 650
 int.to.chr$ -- 0
 int.to.str$ -- 15
 missing$ -- 26
 newline$ -- 60
 num.names$ -- 15
-pop$ -- 77
+pop$ -- 75
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 37
+skip$ -- 38
 stack$ -- 0
 substring$ -- 23
 swap$ -- 22
@@ -45,4 +45,4 @@ type$ -- 0
 warning$ -- 0
 while$ -- 19
 width$ -- 17
-write$ -- 141
+write$ -- 142

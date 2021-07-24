@@ -53,7 +53,7 @@ try:
  _st_.plot(2, format='notprovided', _p_=C)
 except:
  _st_.goboom(299)
-_st_.current_tex_line = 383
+_st_.current_tex_line = 384
 _st_.blockbegin()
 try:
  t = var('t')
@@ -80,69 +80,74 @@ try:
  
  
 except:
- _st_.goboom(407)
+ _st_.goboom(408)
 _st_.blockend()
 try:
- _st_.current_tex_line = 415
- _st_.plot(3, format='notprovided', _p_=A)
-except:
- _st_.goboom(415)
-try:
  _st_.current_tex_line = 416
- _st_.plot(4, format='notprovided', _p_=B)
+ _st_.plot(3, format='notprovided', _p_=A)
 except:
  _st_.goboom(416)
 try:
  _st_.current_tex_line = 417
- _st_.plot(5, format='notprovided', _p_=C)
+ _st_.plot(4, format='notprovided', _p_=B)
 except:
  _st_.goboom(417)
 try:
- _st_.current_tex_line = 427
- _st_.plot(6, format='notprovided', _p_=D, figsize=(6,8), axes_labels = ("Tempo","$E(z,t)$"))
+ _st_.current_tex_line = 418
+ _st_.plot(5, format='notprovided', _p_=C)
 except:
- _st_.goboom(427)
-_st_.current_tex_line = 461
+ _st_.goboom(418)
+_st_.current_tex_line = 468
 _st_.blockbegin()
 try:
  Tp=1
- w=5
- c=1
- k=w/c
- k1=w/k
+ c=3e8
+ k1=1/c
  
  f(t,z) = exp(-(k1*z-t)^2/Tp^2)
  f2(t,z) = exp(-(t)^2/Tp^2)
  
- A=contour_plot(f(t,z),(t,-2,10),(z,0,12),frame=true,thickness=1, color='green',axes=False, colorbar=true,cmap='jet',plot_points=150,contours=100)
+ A=contour_plot(f(t,z),(t,-2,4),(z,0,10e8),frame=true,thickness=1, color='green',axes=False, colorbar=true,cmap='jet',plot_points=150,contours=100,aspect_ratio='automatic')
  p = A[0]
  opt = p.options()
  print(opt)
  opt['colorbar_options']
- opt['colorbar_options']['label'] = '$E(z,t)$'
+ opt['colorbar_options']['label'] = '$\mathcal{E}(z,t)$'
  p.set_options(opt)
  A[0] = p
- B=contour_plot(f2(t,z),(t,-2,10),(z,0,12),frame=true,thickness=1, color='green',axes=False, colorbar=true,cmap='jet',plot_points=150,contours=100)
+ B=contour_plot(f2(t,z),(t,-2,4),(z,0,10e8),frame=true,thickness=1, color='green',axes=False, colorbar=true,cmap='jet',plot_points=150,contours=100,aspect_ratio='automatic')
  p = B[0]
  opt = p.options()
  print(opt)
  opt['colorbar_options']
- opt['colorbar_options']['label'] = '$E(\eta,\\tau)$'
+ opt['colorbar_options']['label'] = '$\mathcal{E}(\eta,\\tau)$'
  p.set_options(opt)
  B[0] = p
  A.show()
  
 except:
- _st_.goboom(489)
+ _st_.goboom(494)
 _st_.blockend()
 try:
- _st_.current_tex_line = 498
- _st_.plot(7, format='notprovided', _p_=A, axes_labels=("$t$","$z$"))
+ _st_.current_tex_line = 503
+ _st_.plot(6, format='notprovided', _p_=A, axes_labels=("$t$ (s)","$z$ (m)"), figsize=(5,4))
 except:
- _st_.goboom(498)
+ _st_.goboom(503)
 try:
- _st_.current_tex_line = 498
- _st_.plot(8, format='notprovided', _p_=B, axes_labels=("$\\tau$","$\eta $"))
+ _st_.current_tex_line = 503
+ _st_.plot(7, format='notprovided', _p_=B, axes_labels=("$\\tau$ (s)","$\eta $ (m)"), figsize=(5,4))
 except:
- _st_.goboom(498)
+ _st_.goboom(503)
+_st_.current_tex_line = 997
+_st_.blockbegin()
+try:
+ cn(t) = exp(-((2*pi*5)/2)*t)
+except:
+ _st_.goboom(999)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 1004
+ _st_.plot(8, format='notprovided', _p_=plot(cn(t),t,0,0.5),frame=true,figsize = (4,4))
+except:
+ _st_.goboom(1004)
 _st_.endofdoc()
