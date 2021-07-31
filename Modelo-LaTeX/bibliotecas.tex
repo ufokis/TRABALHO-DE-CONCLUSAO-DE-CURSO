@@ -1,4 +1,4 @@
-\usepackage[imagemagick]{sagetex}
+\usepackage{sagetex}
 
 \usepackage{calc}
 %\usepackage{svg}
@@ -47,8 +47,9 @@
 \definecolor{verde}{rgb}{0,0.5,0}
 \usepackage{showexpl} % exibe codigos de figuras
 \usepackage{listings}
+
 \lstset{
-	language=C++,
+	language=C,
 	basicstyle=\ttfamily\small, 
 	keywordstyle=\color{blue}, 
 	stringstyle=\color{verde}, 
@@ -56,31 +57,18 @@
 	extendedchars=true, 
 	showspaces=false, 
 	showstringspaces=false, 
-	numbers=left,
-	numberstyle=\tiny,
+	%numberstyle=\tiny,
 	breaklines=true, 
 	backgroundcolor=\color{green!10}, 
-	breakautoindent=true, 
-	captionpos=b,
+    %captionpos=b,
 	xleftmargin=0pt,
 	emph={main, printf, scanf},
 	emphstyle={\color{black}\bf},
-	morekeywords={comando1, comando2},language=C++,
-	basicstyle=\ttfamily\small,
-	keywordstyle=\color{blue},
-	stringstyle=\color{verde},
-	commentstyle=\color{red},
-	extendedchars=true,
-	showspaces=false,
-	showstringspaces=false,
-	numbers=left,
-	numberstyle=\tiny,
-	breaklines=true,
-	backgroundcolor=\color{green!10},
-	breakautoindent=true,
-	captionpos=b,
-	xleftmargin=0pt,
+	morekeywords={comando1, comando2},
+	frame=tb
 }
+
+
 \usepackage{amsmath}
 \usepackage[font=footnotesize, labelfont=bf, margin=0.5cm]{caption} %Altera formatação das legendas
 \usepackage{indentfirst} %Espaçamento aplicado à primeira linha do primeiro parágrafo

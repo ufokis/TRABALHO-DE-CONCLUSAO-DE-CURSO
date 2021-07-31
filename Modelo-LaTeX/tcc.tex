@@ -7,7 +7,7 @@
 
 \documentclass[a4paper,reqno,12pt,oneside]{book}
 \small
-
+%\usepackage[alf]{abntex2cite}
 \usepackage{tkz-berge}
 \usepackage{tkz-graph}
 \usepackage{pgfplots}
@@ -25,6 +25,7 @@ portuguese] % Para algoritmos em português.
 {algorithm2e} % Enfim o pacote.
 %Veja o arquivo abaixo antes de adicionar outras bibliotecas
 \usepackage[mode=buildnew]{standalone}% requires -shell-escape
+\usepackage[export]{adjustbox}
 
 \input{bibliotecas.tex}
 
@@ -74,6 +75,11 @@ portuguese] % Para algoritmos em português.
 \input{estilo.tex}
 
 \pgfplotsset{compat=1.6}
+
+%\renewenvironment{eqnarray}{\begin{equation}\begin{array}{lcl} }{\end{array}\end{equation}}
+
+\setlength{\sagetexindent}{1.25cm}
+
 \begin{document}
 	\pagenumbering{Alph}
 	\renewcommand{\bibname}{Referências}
@@ -89,6 +95,7 @@ portuguese] % Para algoritmos em português.
 	\input{conclusao.tex}
 	%Digite as referências abaixo
 	\bibliography{referencias.bib}
+	
 	\bibliographystyle{ieeetr}
 	
 	
