@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.23)  30 JUL 2021 14:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.23)  30 JUL 2021 21:22
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -2217,7 +2217,7 @@ s-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 pequenomaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/pequenomaxwellbloc
 h.eps>
-(epstopdf)             \includegraphics on input line 1568.
+(epstopdf)             \includegraphics on input line 1573.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/pequenomaxwellbloch-eps-converted-to.pdf, id=1350, 350.308
 75pt x 227.85126pt>
@@ -2225,10 +2225,10 @@ File: figuras_do_trabalho/pequenomaxwellbloch-eps-converted-to.pdf Graphic file
  (type pdf)
 <use figuras_do_trabalho/pequenomaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/pequenomaxwellbloch-eps-converted-
-to.pdf  used on input line 1568.
+to.pdf  used on input line 1573.
 (pdftex.def)             Requested size: 318.66948pt x 207.28586pt.
 
-Overfull \hbox (3.71666pt too wide) in paragraph at lines 1562--1577
+Overfull \hbox (3.71666pt too wide) in paragraph at lines 1567--1582
 []\T1/ptm/m/n/10.95 O grá-fico ilus-trado na fi-gura [][]5.3[][] apre-senta o r
 e-sul-tado nu-mé-rico para a frequên-cia de rabi $\OT1/cmr/m/n/10.95 
 [](\OML/cmm/m/it/10.95 z; \OT1/cmr/m/n/10.95 )$\T1/ptm/m/n/10.95 ,
@@ -2246,7 +2246,7 @@ Package epstopdf Info: Source file: <figuras_do_trabalho/s22pequenomaxwellbloch
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 s22pequenomaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/s22pequenomaxwe
 llbloch.eps>
-(epstopdf)             \includegraphics on input line 1585.
+(epstopdf)             \includegraphics on input line 1590.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/s22pequenomaxwellbloch-eps-converted-to.pdf, id=1361, 383.
 4325pt x 227.85126pt>
@@ -2254,7 +2254,7 @@ File: figuras_do_trabalho/s22pequenomaxwellbloch-eps-converted-to.pdf Graphic f
 ile (type pdf)
 <use figuras_do_trabalho/s22pequenomaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/s22pequenomaxwellbloch-eps-convert
-ed-to.pdf  used on input line 1585.
+ed-to.pdf  used on input line 1590.
 (pdftex.def)             Requested size: 318.66948pt x 189.37724pt.
  [41 <./figuras_do_trabalho/pequenomaxwellbloch-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figuras_do_trabalho/s12pequenomaxwellbloch
@@ -2268,7 +2268,7 @@ Package epstopdf Info: Source file: <figuras_do_trabalho/s12pequenomaxwellbloch
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 s12pequenomaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/s12pequenomaxwe
 llbloch.eps>
-(epstopdf)             \includegraphics on input line 1601.
+(epstopdf)             \includegraphics on input line 1606.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/s12pequenomaxwellbloch-eps-converted-to.pdf, id=1377, 385.
 44pt x 226.8475pt>
@@ -2276,7 +2276,7 @@ File: figuras_do_trabalho/s12pequenomaxwellbloch-eps-converted-to.pdf Graphic f
 ile (type pdf)
 <use figuras_do_trabalho/s12pequenomaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/s12pequenomaxwellbloch-eps-convert
-ed-to.pdf  used on input line 1601.
+ed-to.pdf  used on input line 1606.
 (pdftex.def)             Requested size: 318.66948pt x 187.54955pt.
 Package epstopdf Info: Source file: <figuras_do_trabalho/absorcao.eps>
 (epstopdf)                    date: 2021-06-25 12:05:11
@@ -2287,7 +2287,7 @@ Package epstopdf Info: Source file: <figuras_do_trabalho/absorcao.eps>
 (epstopdf)                    size: 33024 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 absorcao-eps-converted-to.pdf figuras_do_trabalho/absorcao.eps>
-(epstopdf)             \includegraphics on input line 1618.
+(epstopdf)             \includegraphics on input line 1623.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/absorcao-eps-converted-to.pdf, id=1382, 246.9225pt x 266.9
 975pt>
@@ -2295,7 +2295,7 @@ File: figuras_do_trabalho/absorcao-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras_do_trabalho/absorcao-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/absorcao-eps-converted-to.pdf  use
-d on input line 1618.
+d on input line 1623.
 (pdftex.def)             Requested size: 182.09486pt x 196.89874pt.
 
 [42 <./figuras_do_trabalho/s22pequenomaxwellbloch-eps-converted-to.pdf> <./figu
@@ -2311,7 +2311,7 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 0.7-1.7_maxwellbloch-eps-converted-to.pdf figuras_do_trabalho/0.7-1.7_maxwellbl
 och.eps>
-(epstopdf)             \includegraphics on input line 1642.
+(epstopdf)             \includegraphics on input line 1647.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted-to.pdf, id=1404, 384.43
 625pt x 354.32375pt>
@@ -2319,7 +2319,7 @@ File: figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted
--to.pdf  used on input line 1642.
+-to.pdf  used on input line 1647.
 (pdftex.def)             Requested size: 318.66948pt x 293.7264pt.
  [43 <./figuras_do_trabalho/absorcao-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figuras_do_trabalho/2pimaxwellbloch.eps>
@@ -2331,7 +2331,7 @@ nverted-to.pdf>
 (epstopdf)                    size: 87054 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 2pimaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/2pimaxwellbloch.eps>
-(epstopdf)             \includegraphics on input line 1674.
+(epstopdf)             \includegraphics on input line 1679.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.pdf, id=1419, 353.32pt x 
 227.85126pt>
@@ -2339,7 +2339,7 @@ File: figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.p
-df  used on input line 1674.
+df  used on input line 1679.
 (pdftex.def)             Requested size: 318.66948pt x 205.50925pt.
  [44 <./figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figuras_do_trabalho/4pimaxwellbloch.eps>
@@ -2351,7 +2351,7 @@ nverted-to.pdf>
 (epstopdf)                    size: 173926 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 4pimaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/4pimaxwellbloch.eps>
-(epstopdf)             \includegraphics on input line 1709.
+(epstopdf)             \includegraphics on input line 1714.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.pdf, id=1438, 351.3125pt 
 x 227.85126pt>
@@ -2359,7 +2359,7 @@ File: figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.p
-df  used on input line 1709.
+df  used on input line 1714.
 (pdftex.def)             Requested size: 318.66948pt x 206.69481pt.
  [45 <./figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figuras_do_trabalho/6pimaxwellbloch.eps>
@@ -2371,7 +2371,7 @@ nverted-to.pdf>
 (epstopdf)                    size: 214763 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 6pimaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/6pimaxwellbloch.eps>
-(epstopdf)             \includegraphics on input line 1729.
+(epstopdf)             \includegraphics on input line 1734.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/6pimaxwellbloch-eps-converted-to.pdf, id=1457, 351.3125pt 
 x 227.85126pt>
@@ -2379,7 +2379,7 @@ File: figuras_do_trabalho/6pimaxwellbloch-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figuras_do_trabalho/6pimaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/6pimaxwellbloch-eps-converted-to.p
-df  used on input line 1729.
+df  used on input line 1734.
 (pdftex.def)             Requested size: 318.66948pt x 206.69481pt.
  [46 <./figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.pdf> <./figuras_do
 _trabalho/6pimaxwellbloch-eps-converted-to.pdf>] [47]
@@ -2389,7 +2389,7 @@ Cap\'{\i }tulo 6.
 File: figuras_do_trabalho/Graph2.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/Graph2.pdf>
 Package pdftex.def Info: figuras_do_trabalho/Graph2.pdf  used on input line 184
-1.
+6.
 (pdftex.def)             Requested size: 273.14923pt x 211.4841pt.
 (figuras_do_trabalho/Graph2.pdf_tex
 <figuras_do_trabalho/Graph2.pdf, id=1498, page=1, 426.8454pt x 330.48444pt>
@@ -2408,7 +2408,7 @@ nverted-to.pdf>
 (epstopdf)                    size: 19749 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 graficop22theta-eps-converted-to.pdf figuras_do_trabalho/graficop22theta.eps>
-(epstopdf)             \includegraphics on input line 1855.
+(epstopdf)             \includegraphics on input line 1860.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/graficop22theta-eps-converted-to.pdf, id=1499, 248.93pt x 
 197.73875pt>
@@ -2416,12 +2416,12 @@ File: figuras_do_trabalho/graficop22theta-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figuras_do_trabalho/graficop22theta-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/graficop22theta-eps-converted-to.p
-df  used on input line 1855.
+df  used on input line 1860.
 (pdftex.def)             Requested size: 273.14923pt x 216.99734pt.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 1860.
+less on input line 1865.
 
 [49
 
@@ -2440,14 +2440,14 @@ Package epstopdf Info: Source file: <figuras_do_trabalho/pulso.eps>
 (epstopdf)                    size: 23197 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 pulso-eps-converted-to.pdf figuras_do_trabalho/pulso.eps>
-(epstopdf)             \includegraphics on input line 1865.
+(epstopdf)             \includegraphics on input line 1870.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/pulso-eps-converted-to.pdf, id=1507, 268.00125pt x 196.735
 pt>
 File: figuras_do_trabalho/pulso-eps-converted-to.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/pulso-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/pulso-eps-converted-to.pdf  used o
-n input line 1865.
+n input line 1870.
 (pdftex.def)             Requested size: 273.14923pt x 200.51392pt.
 Package epstopdf Info: Source file: <figuras_do_trabalho/pulsofinal.eps>
 (epstopdf)                    date: 2021-04-23 09:39:51
@@ -2458,7 +2458,7 @@ ed-to.pdf>
 (epstopdf)                    size: 31629 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 pulsofinal-eps-converted-to.pdf figuras_do_trabalho/pulsofinal.eps>
-(epstopdf)             \includegraphics on input line 1872.
+(epstopdf)             \includegraphics on input line 1877.
 Package epstopdf Info: Output file is already uptodate.
 <figuras_do_trabalho/pulsofinal-eps-converted-to.pdf, id=1508, 269.005pt x 196.
 735pt>
@@ -2466,7 +2466,7 @@ File: figuras_do_trabalho/pulsofinal-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figuras_do_trabalho/pulsofinal-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/pulsofinal-eps-converted-to.pdf  u
-sed on input line 1872.
+sed on input line 1877.
 (pdftex.def)             Requested size: 273.14923pt x 199.76643pt.
  [50 <./figuras_do_trabalho/graficop22theta-eps-converted-to.pdf> <./figuras_do
 _trabalho/pulso-eps-converted-to.pdf>]) (conclusao.tex [51 <./figuras_do_trabal
@@ -2546,7 +2546,7 @@ m/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10
 /Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKT
 eX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/ti
 mes/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tcc.pdf (66 pages, 3949302 bytes).
+Output written on tcc.pdf (66 pages, 3949545 bytes).
 PDF statistics:
  1726 PDF objects out of 1728 (max. 8388607)
  416 named destinations out of 1000 (max. 500000)
