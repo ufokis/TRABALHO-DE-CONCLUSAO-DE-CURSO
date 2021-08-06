@@ -53,12 +53,12 @@ P.~Meystre and M.~Sargent, {\em Elements of Quantum Optics}.
 C.~Foot, D.~Foot, and C.~Foot, {\em Atomic Physics}.
 \newblock Oxford Master Series in Physics, OUP Oxford, 2005.
 
-\bibitem{atkinson1989}
-K.~Atkinson, {\em An Introduction to Numerical Analysis}.
-\newblock Wiley, 1989.
-
 \bibitem{steck2001rubidium}
 D.~A. Steck, ``Rubidium 87 d line data,'' 2001.
+
+\bibitem{crisp1970propagation}
+M.~Crisp, ``Propagation of small-area pulses of coherent light through a
+  resonant medium,'' {\em Physical Review A}, vol.~1, no.~6, p.~1604, 1970.
 
 \bibitem{gl1971analytical}
 J.~GL~LAMB, ``Analytical descriptions of ultrashort optical pulse propagation

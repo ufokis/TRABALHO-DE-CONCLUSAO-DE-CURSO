@@ -4,29 +4,24 @@
 \contentsline {section}{\numberline {2.1}Equa\c c\~oes de Maxwell}{2}{section.2.1}%
 \contentsline {section}{\numberline {2.2}propaga\c c\~ao de onda em meio linear}{3}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Propaga\c c\~ao de onda em um meio n\~ao linear}{13}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Mec\^anica Qu\^antica e Operador Densidade}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Matriz densidade}{15}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Propriedades do Operador Densidade}{17}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Evolu\c c\~ao Temporal do Operador Densidade}{19}{subsection.3.1.2}%
-\contentsline {chapter}{\numberline {4}Intera\c c\~ao sistema at\^omico de dois n\IeC {\'\i }veis com radia\c c\~ao}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Hamiltoniano para um sistema at\^omico de dois n\IeC {\'\i }veis }{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Sistema at\^omico de dois n\IeC {\'\i }veis}{23}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}O \'atomo de Rub\IeC {\'\i }dio ($^{87}Rb$) e sua transi\c c\~ao ($5^2S_{1/2}\DOTSB \relbar \joinrel \rightarrow 5^2P_{1/2}$) }{29}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Solu\c c\~ao num\'erica das equa\c c\~oes opticas de bloch para campos cont\IeC {\'\i }nuos}{31}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Metodologia}{31}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Resultados}{34}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Propaga\c c\~ao de pulso de Luz em sistema at\^omicos}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Equa\c c\~oes de Maxwell-bloch para um sistema de dois n\IeC {\'\i }veis}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Teorema de \'Area}{38}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Metodologia}{39}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Resultados}{40}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Propaga\c c\~ao de pulso com \'area pequena em meio ressonante}{40}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Transpar\^encia auto induzida}{43}{subsection.5.4.2}%
-\contentsline {section}{\numberline {5.5}RESULTADOS EXPERIMENTAIS ENCONTRADO NA LITERATURA}{47}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Tabelas}{47}{section.5.6}%
-\contentsline {section}{\numberline {5.7}C\'odigos}{47}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Cita\c c\~ao}{47}{section.5.8}%
-\contentsline {chapter}{\numberline {6}Outro cap\IeC {\'\i }tulo}{49}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclus\~ao}{52}{chapter.7}%
-\contentsline {chapter}{T\IeC {\'\i }tulo do Primeiro Ap\^endice}{54}{appendix*.43}%
-\contentsline {chapter}{T\IeC {\'\i }tulo do Segundo Ap\^endice}{55}{appendix*.44}%
+\contentsline {chapter}{\numberline {3}Mec\^anica Qu\^antica e Operador Densidade}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Matriz densidade}{16}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Propriedades do Operador Densidade}{18}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Evolu\c c\~ao Temporal do Operador Densidade}{20}{subsection.3.1.2}%
+\contentsline {chapter}{\numberline {4}Intera\c c\~ao sistema at\^omico de dois n\IeC {\'\i }veis com radia\c c\~ao}{22}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Hamiltoniano para um sistema at\^omico de dois n\IeC {\'\i }veis }{22}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Sistema at\^omico de dois n\IeC {\'\i }veis}{24}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}O \'atomo de Rub\IeC {\'\i }dio ($^{87}Rb$) e sua transi\c c\~ao ($5^2S_{1/2}\DOTSB \relbar \joinrel \rightarrow 5^2P_{1/2}$) }{30}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Solu\c c\~ao num\'erica das equa\c c\~oes \'opticas de bloch para campos cont\IeC {\'\i }nuos}{32}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Metodologia}{32}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Resultados}{35}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Propaga\c c\~ao de pulso de Luz em sistema at\^omicos}{38}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Equa\c c\~oes de Maxwell-bloch para um sistema de dois n\IeC {\'\i }veis}{38}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Teorema de \'Area}{39}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Metodologia}{40}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Resultados}{46}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Propaga\c c\~ao de pulso com \'area pequena em meio ressonante}{46}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Transpar\^encia auto induzida}{49}{subsection.5.4.2}%
+\contentsline {chapter}{\numberline {6}Conclus\~ao}{53}{chapter.6}%
+\contentsline {chapter}{T\IeC {\'\i }tulo do Primeiro Ap\^endice}{55}{appendix*.35}%
+\contentsline {chapter}{T\IeC {\'\i }tulo do Segundo Ap\^endice}{56}{appendix*.36}%

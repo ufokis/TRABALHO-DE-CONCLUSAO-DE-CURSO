@@ -96,7 +96,7 @@ try:
  _st_.plot(5, format='notprovided', _p_=C)
 except:
  _st_.goboom(417)
-_st_.current_tex_line = 467
+_st_.current_tex_line = 466
 _st_.blockbegin()
 try:
  Tp=1
@@ -125,31 +125,50 @@ try:
  A.show()
  
 except:
- _st_.goboom(493)
+ _st_.goboom(492)
 _st_.blockend()
 try:
- _st_.current_tex_line = 502
+ _st_.current_tex_line = 501
  _st_.plot(6, format='notprovided', _p_=A, axes_labels=("$t$ (s)","$z$ (m)"), figsize=(5,4))
 except:
- _st_.goboom(502)
+ _st_.goboom(501)
 try:
- _st_.current_tex_line = 502
+ _st_.current_tex_line = 501
  _st_.plot(7, format='notprovided', _p_=B, axes_labels=("$\\tau$ (s)","$\eta $ (m)"), figsize=(5,4))
 except:
- _st_.goboom(502)
-_st_.current_tex_line = 996
+ _st_.goboom(501)
+_st_.current_tex_line = 1000
 _st_.blockbegin()
 try:
- cn(t) = exp(-((2*pi*5)/2)*t)
+ cn(t) = exp(-t)
 except:
- _st_.goboom(998)
+ _st_.goboom(1002)
 _st_.blockend()
 try:
- _st_.current_tex_line = 1003
- _st_.plot(8, format='notprovided', _p_=plot(cn(t),t,0,0.5),frame=true,figsize = (4,4),axes=false, axes_labels=("tempo(s)", "$C_n^{i}(t)/c_n^{i}(t)$"))
+ _st_.current_tex_line = 1007
+ _st_.plot(8, format='notprovided', _p_=plot(cn(t),t,0,5),frame=true,figsize = (4,4),axes=false, axes_labels=("$t/\Gamma _n$", "$C_n^{i}(t)/c_n^{i}(t)$"))
 except:
- _st_.goboom(1003)
-_st_.current_tex_line = 1302
+ _st_.goboom(1007)
+_st_.current_tex_line = 1166
+_st_.blockbegin()
+try:
+ c=3e8
+ omega=2*pi*5.746e6/4
+ e0=8.8541878176e-12
+ h = 1.05457168e-34
+ d12 = 2.537e-29
+ R = 1e-3
+ A= pi*R^2
+ P = (c*e0/2.0)*A*(h*omega/d12)^2
+except:
+ _st_.goboom(1175)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 1180
+ _st_.inline(0, latex(N(P/1e-6)))
+except:
+ _st_.goboom(1180)
+_st_.current_tex_line = 1318
 _st_.blockbegin()
 try:
  import pandas as pd
@@ -172,14 +191,14 @@ try:
  
  E = graphics_array([[A,B],[C,D]])
 except:
- _st_.goboom(1322)
+ _st_.goboom(1338)
 _st_.blockend()
 try:
- _st_.current_tex_line = 1327
+ _st_.current_tex_line = 1343
  _st_.plot(9, format='notprovided', _p_=E,xmin=0,xmax=1, axes_labels=['$t$($\mu s$)','$\sigma _{22}\cdot 10^3$'], figsize=(8,7))
 except:
- _st_.goboom(1327)
-_st_.current_tex_line = 1332
+ _st_.goboom(1343)
+_st_.current_tex_line = 1348
 _st_.blockbegin()
 try:
  import pandas as pd
@@ -196,14 +215,14 @@ try:
  
  E = graphics_array([[A],[B],[C]])
 except:
- _st_.goboom(1346)
+ _st_.goboom(1362)
 _st_.blockend()
 try:
- _st_.current_tex_line = 1351
+ _st_.current_tex_line = 1367
  _st_.plot(10, format='notprovided', _p_=E, figsize=(8,10))
 except:
- _st_.goboom(1351)
-_st_.current_tex_line = 1447
+ _st_.goboom(1367)
+_st_.current_tex_line = 1469
 _st_.blockbegin()
 try:
  alpha = 2*3.1415
@@ -239,11 +258,24 @@ try:
  
  A.show(frame=true, axes=false, axes_labels=("$z$","$\\theta$"))
 except:
- _st_.goboom(1480)
+ _st_.goboom(1502)
 _st_.blockend()
 try:
- _st_.current_tex_line = 1486
+ _st_.current_tex_line = 1508
  _st_.plot(11, format='notprovided', _p_=A, frame=true, axes=false, axes_labels=["$z$","$\\theta$"])
 except:
- _st_.goboom(1486)
+ _st_.goboom(1508)
+_st_.current_tex_line = 1530
+_st_.blockbegin()
+try:
+ E(t) = sech(t)*cos(5*t)
+ A=plot(E(t), t,-10,10,thickness=4, figsize= (6,3))
+except:
+ _st_.goboom(1533)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 1569
+ _st_.plot(12, format='notprovided', _p_=A, frame=false, axes = false,transparent=True)
+except:
+ _st_.goboom(1569)
 _st_.endofdoc()

@@ -3,7 +3,7 @@
 
 \chapter{Propagação de ondas eletromagnéticas em meio linear}\label{cap:capitulo3}
 
-Neste Capítulo, revisitamos conceitos importantes do eletromagnetismo, que permitirá estudarmos a propagação de pulsos eletromagnéticos através de um ensemble de sistemas de 2 níveis. Para isso, primeiramente apresentaremos a propagação num meio linear e depois expandiremos para o caso de um meio atômico, onde efeitos não lineares estão presentes.
+Neste Capítulo, revisitamos conceitos importantes do eletromagnetismo, que permitirá estudarmos a propagação de pulsos eletromagnéticos através de um ensemble de sistemas de 2 níveis. Para isso, primeiramente apresentaremos a propagação num meio linear usando aproximação de envoltória lenta e depois expandiremos para o caso de um meio atômico, onde efeitos não lineares estão presentes.
 
 
 \section{Equações de Maxwell}
@@ -428,7 +428,7 @@ Na figura \ref{fig:gvd}, como exemplo, temos dois gráficos que apresentam o perf
 
 \section{Propagação de onda em um meio não linear}\label{sec:naolinear}
 
-A discussão sobre propagação de onda  na Seção \ref{sec:linear} se limitava a interação com meios lineares. Porém, o que nos interessa neste TCC é descrever a interação de campo elétrico com meio atômico de dois níveis, que possui polarização não linear em ressonância com o campo elétrico. Para isso, precisamos complementar a equação \eqref{eq:3.44} adicionando a polarização do meio atômico não linear, definindo que essa polarização também pode ser decomposta em uma envoltória que varia lentamente no tempo e no espaço e outra contribuição que oscila rapidamente:
+A discussão sobre propagação de onda  na Seção \ref{sec:linear} se limitava a interação com meios lineares. Porém, o que nos interessa neste TCC é descrever a interação de campo elétrico com meio atômico de dois níveis, que possui polarização não linear em ressonância com o campo elétrico. Assumindo que esses átomos estão envoltos de um material transparente em que o campo obedece a equação \eqref{eq:3.44}. Desta forma, podemos complementar a equação \eqref{eq:3.44} adicionando a polarização do meio atômico não linear, definindo que essa polarização também pode ser decomposta em uma envoltória que varia lentamente no tempo e no espaço e outra contribuição que oscila rapidamente:
 \begin{equation}
 P^{NL}(z,t) \equiv \frac{1}{2}\mathcal{\tilde{P}}^{NL}(z,t)e^{iw_ct-ik_cz} + c.c.
 \label{eq:3.46}
@@ -437,18 +437,18 @@ Assim, obtemos a seguinte equação de propagação:
 \begin{equation}
 \pdv{z}\tilde{\mathcal{E}}(z,t) + \frac{1}{v_g}\pdv{t}\tilde{\mathcal{E}}(z,t) - \frac{ik_c''}{2}\pdv[2]{t}\tilde{\mathcal{E}}(z,t) + \mathcal{D} = \frac{i\mu_0}{2k_c}\qty(\pdv[2]{t}+2i\omega_c\pdv{t} - {\omega_c}^2)\tilde{\mathcal{P}}^{NL}(z,t).\label{eq:3.47}
 \end{equation}
-Como estamos interessados em efeito não lineares da matéria, desconsideramos o termo de dispersão  de velocidade de grupo GVD e os termos de ordem superior ($k_c''= \mathcal{D} = 0$) e  partimos do  fato que
+Como estamos interessados em efeito não lineares da matéria, consideramos que o meio transparente que envolve a amostra tem $k''$ e $D$ desprezíveis. Assim, fazemos $k_c''= \mathcal{D} = 0$. Outra simplificação é feita considerando o fato que
 \begin{equation}
-\qty|\pdv[2]{t}\tilde{\mathcal{P}}^{NL}(z,t)| \ll \omega_c\qty|\pdv[]{t}\tilde{\mathcal{P}}^{NL}(z,t)| \ll {\omega_c}^2\qty|\tilde{\mathcal{P}}^{NL}(z,t)|, 
+\qty|\pdv[2]{t}\tilde{\mathcal{P}}^{NL}(z,t)| \ll \omega_c\qty|\pdv[]{t}\tilde{\mathcal{P}}^{NL}(z,t)| \ll {\omega_c}^2\qty|\tilde{\mathcal{P}}^{NL}(z,t)|.
 \label{eq:3.48}
 \end{equation}  
-para obtermos a seguinte aproximação para equação de onda:
+Dessa maneira, obtemos a seguinte aproximação para equação de onda:
 \begin{equation}
 \pdv{z}\tilde{\mathcal{E}}(z,t) + \frac{1}{v_g}\pdv{t}\tilde{\mathcal{E}}(z,t) = -\frac{i\mu_0}{2k_c}{\omega_c}^2\tilde{\mathcal{P}}^{NL}(z,t).
 \label{eq:3.49}
 \end{equation}
 
-Por conveniência, vamos fazer uma mudança para um sistema de coordenadas ($\eta, \tau$) movendo-se com a velocidade do grupo $v_g = \qty(\dv{k}{\omega}\Big|_{w_c})^{-1}$ conforme representado na figura \ref{fig:referencial}, realizando as seguintes trocas de variáveis:
+Por conveniência, vamos fazer uma mudança para um sistema de coordenadas ($\eta, \tau$) movendo-se com a velocidade do grupo $v_g = \qty(\dv{k}{\omega}\Big|_{w_c})^{-1}$, como exemplificado na figura \ref{fig:referencial}, realizando as seguintes trocas de variáveis:
 \begin{equation}
 \eta = z~~~~~~~\tau = t-\frac{z}{v_g}
 \label{eq:3.50}
@@ -463,12 +463,11 @@ Desse modo, podemos reescrever  a  equação\eqref{eq:3.47} da seguinte forma:
 	\pdv{\eta}\tilde{\mathcal{E}}(\eta,\tau)  = -\frac{i\mu_0}{2k_c}{\omega_c}^2\tilde{\mathcal{P}}^{NL}(\eta,\tau).
 	\label{eq:3.52}
 \end{equation}
-Este resultado final é a equação de onda em sua forma reduzida, que permite descrever o comportamento da propagação do campo eletromagnético através de um certo meio atômico. Ela será aplicada no Capítulo \ref{cap:maxwellbloch} para um meio atômico de dois níveis.
 \begin{sagesilent}
 	Tp=1
 	c=3e8
 	k1=1/c
-
+	
 	f(t,z) = exp(-(k1*z-t)^2/Tp^2)
 	f2(t,z) = exp(-(t)^2/Tp^2)
 	
@@ -499,9 +498,11 @@ Este resultado final é a equação de onda em sua forma reduzida, que permite desc
 \begin{figure}[ht]
 	\centering
 	\caption{O primeiro gráfico representa um pulso em um referencial em repouso e o segundo representa um pulso no referencial com velocidade $v_g$ }
-    \sageplot[scale=0.6]{A, axes_labels=("$t$ (s)","$z$ (m)"), figsize=(5,4)}\sageplot[scale=0.6]{B, axes_labels=("$\\tau$ (s)","$\eta$ (m)"), figsize=(5,4)}
+	\sageplot[scale=0.62]{A, axes_labels=("$t$ (s)","$z$ (m)"), figsize=(5,4)}\sageplot[scale=0.62]{B, axes_labels=("$\\tau$ (s)","$\eta$ (m)"), figsize=(5,4)}
 	\label{fig:referencial}
 \end{figure}
+Este resultado final é a equação de onda em sua forma reduzida, que permite descrever o comportamento da propagação do campo eletromagnético através de um certo meio atômico. Ela será aplicada no Capítulo \ref{cap:maxwellbloch} para um meio atômico de dois níveis.
+
 \chapter{Mecânica Quântica e Operador Densidade}\label{cap:capitulo2}
 
 %Para cada capítulo adicional, digite o comando \chapter{Título do Capítulo}
@@ -511,7 +512,17 @@ Neste capítulo nos dedicamos a apresentar o formalismo do operador densidade, de
 \section{Matriz densidade}
 \label{secao2.1}
 
-Como sabemos, o formalismo usual da mecânica quântica, onde trabalhamos com autoestados e autovalores de um determinado observável (formalismo de Dirac), nos permite fazer previsões sobre um conjunto de sistemas físicos preparados de forma idêntica \cite{breuer2002theory}. Em termos mais específicos, garantimos que todos os sistemas membros deste ensemble sejam caracterizados por um mesmo ket de estado $\ket{\psi}$(Ensemble puro). Assim, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\psi_1}$ e $30\%$ pelo ket de estado $\ket{\psi_2}$ (ensemble misto). Para lidar com essa situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros e ensemble misto. 
+A mecânica quântica assumimos que as propriedades quânticas de um sistema é dado pela função de onda que no formalismo de dirac (auto valores e auto estado) é representada da seguinte forma:
+\begin{equation}
+	\ket{\psi(t)} = \sum_n c_n(t) \ket{n}
+\end{equation}
+onde $\ket{n}$ é um auto estado no espaço de Hilbert de um determinado observável A , $c_n$ é amplitude de probabilidade que pondera a possibilidade de encontrarmos o observável A neste estado. A evolução temporal da função de onda $\ket{\psi(t)}$ é dada pela equação de Shr\"{o}dinger
+\begin{equation}
+	i\hbar\pdv{t}\ket{\psi_i(t)} = \hat{H}\ket{\psi_i(t)}.
+	\label{eq:25}
+\end{equation}
+
+Nesse formalismo, conseguimos fazer previsões sobre um conjunto de sistemas físicos preparados de forma idêntica \cite{breuer2002theory}. Em termos mais específicos, garantimos que todos os sistemas membros deste ensemble sejam caracterizados por um mesmo ket de estado $\ket{\psi}$ ( Ensemble puro ). Diante dessa construção, este formalismo não é válido se considerarmos, por exemplo, que $70\%$ desses sistemas são caracterizados pelo ket de estado $\ket{\psi_1}$ e $30\%$ pelo ket de estado $\ket{\psi_2}$ ( ensemble misto ). Para lidar com essa nova situação, precisamos introduzir o conceito de operador densidade, que nos permitirá descrever quantitativamente conjuntos de sistemas quântico para ensemble puros e ensemble misto. 
 
 Consideremos o ensemble misto, onde uma fração de sistemas com população relativa $w_1$ estão no estado $\ket{\psi_1}$; outra fração $w_2$ estão no estado $\ket{\psi_2}$, e assim sucessivamente. Podemos dizer, com certa precisão, que um ensemble misto pode ser visto como uma mistura de ensembles puros. As populações $w_i$ devem satisfazer a condição de normalização, ou seja,
 \begin{equation} 
@@ -545,7 +556,7 @@ Para o caso mistos podemos obter o valor média de $A$, através da soma dos valor
 	   	      & = & \sum_i \sum_{n} w_i \mel{\psi_i}{\hat{A}}{n}\braket{n}{\psi_i} \nonumber\\
 	   	      & = & \sum_i \sum_{n} w_i \braket{\psi_i}{n}\braket{n}{\psi_i}n \nonumber\\
 	   	      & = & \sum_i \sum_{n} w_i \braket{n}{\psi_i}^*\braket{\psi_i}{n}n \nonumber\\
-	   	      & = & \sum_i \sum_{a'} w_i \qty|\braket{n}{\psi_i}|^2n, 
+	   	      & = & \sum_i \sum_{n} w_i \qty|\braket{n}{\psi_i}|^2n, 
 	\label{eq:2} 
 \end{eqnarray}
 sendo que $\ket{n}$ é um autovetor do operador $\hat{A}$ (com autovalor $n$ ) e que $\mel{\psi_i}{\hat{A}}{\psi_i}$ trata-se do valor esperado habitual para $\hat{A}$ em relação a um estado $\ket{\psi_i}$. Vemos na equação \eqref{eq:2} que este valores esperados são ponderados pelas populações relativas $w_i$. É possível observar também que $\qty|\braket*{n}{\psi_i}|^2$ é a probabilidade do estado $\ket*{\psi_i}$ de ser colapsado em um autoestado $\ket*{n}$ após uma medida em $\hat{A}$ e que $w_i$ identifica a quantidade relativa de sistemas no estado estado quântico caracterizado por $\ket*{\psi_i}$.  
@@ -704,12 +715,7 @@ Consideremos que o ensemble não sofre pertubação conforme evolui no tempo, ou se
 	\ket{\psi_i(t_0)} \xrightarrow{\textrm{evolução temporal}} \ket{\psi_i(t)}
 	\label{eq:24}
 \end{equation}
-Sabemos que $\ket{\psi_i(t)}$ satisfaz equação de Schrödinger 
-\begin{equation}
-	i\hbar\pdv{t}\ket{\psi_i(t)} = \hat{H}\ket{\psi_i(t)},
-	\label{eq:25}
-\end{equation}
-então podemos derivar a equação \eqref{eq:23} em relação ao tempo $t$ de modo que:
+Sabemos que $\ket{\psi_i(t)}$ satisfaz equação de Schrödinger \eqref{eq:25}, então podemos derivar a equação \eqref{eq:23} em relação ao tempo $t$ de modo que:
 \begin{eqnarray}
 	\pdv{t}\hat{\rho}(t) 
 						& = &\pdv{t} \sum_i w_i \dyad{\psi_i(t)}{\psi_i(t)}\nonumber\\
@@ -722,17 +728,17 @@ Substituindo \eqref{eq:25} em \eqref{eq:26}, obtemos a equação
 	\pdv{t}\hat{\rho}(t) &= &\frac{1}{i\hbar}\hat{H}\qty(\sum_i w_i \ket{\psi_i(t)}\bra{\psi_i(t)}) -\frac{1}{i\hbar}\qty(\sum_i w_i \ket{\psi_i(t)} \bra{\psi_i(t)})\hat{H}\nonumber\\ & = &\frac{1}{i\hbar}\hat{H}\hat{\rho} -\frac{1}{i\hbar}\hat{\rho}\hat{H}\nonumber\\& = & -\frac{1}{i\hbar}\qty[\hat{\rho},\hat{H}],
 	\label{eq:27}
 \end{eqnarray}
-conhecida como equação de \textbf{Liouville-von Neumann}, que descreve a evolução temporal do operador densidade \cite{sakurai2013mecanica,RobertField}. Embora essa equação seja semelhante a equação de Heisenberg, exceto por um sinal negativo ($-$), é preciso lembrar que estamos trabalhando na formulação Schrödinger, visto que $\hat{\rho}$ é construído a partir de kets e bras que evoluem no tempo e obedecem a equação de Schrödinger.
+conhecida como equação de \textbf{Liouville-von Neumann}, que descreve a evolução temporal do operador densidade \cite{sakurai2013mecanica,RobertField}. Embora essa equação seja semelhante a equação de Heisenberg, exceto por um sinal negativo ($-$), é preciso lembrar que estamos trabalhando na formulação Schrödinger, visto que o operador densidade $\hat{\rho}$ é construído a partir de kets e bras que evoluem no tempo e obedecem a equação de Schrödinger.
 
 \chapter{Interação sistema atômico de dois níveis com radiação}\label{cap:capitulo4}
 
-Neste Capítulo aplicaremos a equação von-Newmann, que obtemos no Capítulo \ref{cap:capitulo2}, a um sistema de dois níveis que sofre pertubação de um campo elétrico. Para isso, primeiramente, precisamos obter uma aproximação semi-clássica para o hamiltoniano que  descreve a interação do átomo de dois níveis com a onda eletromagnética.    
+Neste Capítulo aplicaremos a equação Liouville-Von-Newmann, que obtemos no Capítulo \ref{cap:capitulo2}, a um sistema de dois níveis que sofre pertubação de um campo elétrico. Essa interação é estudada aqui no ponto vista semiclássico , em que os átomos são tratados pela quântica e o campo é tratado classicamente. Para isso, primeiramente, obtemos uma aproximação semi-clássica para o hamiltoniano que  descreve essa interação.    
 
 \section{Hamiltoniano para um sistema atômico de dois níveis }\label{sec:seção4.1}
-Antes de obtermos o hamiltoniano para um sistema de dois níveis, vamos nos ater a um sistema clássico composto de uma partícula  carregada na presença de um campo eletromagnético (figura \ref{fig:particulaq}). Nesta condição, a força que atua na partícula com carga $q$ corresponde à
+Antes de obtermos o hamiltoniano para interação entre um campo e um átomo, vamos nos ater a um sistema clássico composto de uma partícula  carregada na presença de um campo eletromagnético (figura \ref{fig:particulaq}). Nesta condição, a força de Lorentz que atua na partícula com carga $q$ corresponde à:
 
 \begin{equation}
-\vb{F} = q\qty(\vb{E}+\vb{v}\cross\vb{B}).
+\vb{F} = q\qty(\vb{E}+\vb{v}\cross\vb{B}),
 \label{eq:4.1}
 \end{equation}
 \begin{figure}[H]
@@ -839,7 +845,7 @@ Obtemos o análogo quântico do hamiltoniano fazendo a transformações
 	r &\longrightarrow& \hat{r} = r\\
 	p &\longrightarrow& \hat{p} = -i\hbar\grad.
 \end{eqnarray} 
-Assim, podemos aplicá-la a equação de Schrödinger dependente do tempo  
+Assim, podemos aplicá-lo a equação de Schrödinger dependente do tempo  
 \begin{equation}
 \hat{H}\ket{\psi}=i\hbar\pdv{t}\ket{\psi}.
 \label{eq:4.18}
@@ -856,7 +862,7 @@ Supondo que os átomos estão imersos em uma onda plana monocromática, podemos esc
 \vb{A}(\vb{r},t) =\frac{A_0(\omega)\hat{\epsilon}}{2} e^{i(\vb{k}\vdot\vb{r} - \omega t)} + c.c.
 \label{eq:4.22}
 \end{equation}
-$\vb{k}\vdot\vb{r}  = 2\pi\vdot\frac{r}{\lambda}$, onde $\lambda$ é o comprimento de onda do campo. Em geral, o comprimento de onda é muito maior que as dimensões atômicas, $|\vb{r}|\simeq 10 ^0A$. Por isso, $\vb{k}\vdot\vb{r}\ll 1$. Assim, podemos podemos considerar a pena o primeiro termo da seguinte expansão em série de Taylor 
+$\vb{k}\vdot\vb{r}  = 2\pi\vdot\frac{r}{\lambda}$, onde $\lambda$ é o comprimento de onda do campo. Em geral, o comprimento de onda é muito maior que as dimensões atômicas, $|\vb{r}|\simeq 10$ \AA. Assim, $\vb{k}\vdot\vb{r}\ll 1$. Com isso podemos  considerar apenas o primeiro termo da seguinte expansão em série de Taylor 
 \begin{equation}
 \vb{A}(\vb{r}, t) = \frac{A_0(\omega)\hat{\epsilon}}{2}e^{-i\omega t}\qty[1 + (i\vb{k}\vdot\vb{r}) + \frac{1}{2}(i\vb{k}\vdot\vb{r})^2 +\cdots] + c.c.,
 \label{eq:4.23}
@@ -876,19 +882,12 @@ Fazendo $\phi = 0$ e realizando a escolha do calibre de Coulomb, onde $\div \vb{
 \hat{H}'=\frac{\vb{p}^2}{2m} + V(\vb{r}) - \vb{d}\vdot\vb{E},
 \label{eq:4.26}
 \end{equation}
-onde $\vb{d}=e\vb{r}$ é o momento de dipolo elétrico. Os dois primeiro termos se referem ao átomo não perturbado ($H_0 =\vb{p}^2/2m + V(\vb{r})$) e o último termo é referente a interação com o campo elétrico na aproximação de dipolo $(H_{int} = -\vb{d}\vdot\vb{E})$ \cite{scullyquantum,meystre2007elements}. Esta aproximação  será utilizada no decorrer deste TCC.
+em que  $\vb{d}=e\vb{r}$ é o momento de dipolo elétrico. Os dois primeiro termos se referem ao átomo não perturbado ($H_0 =\vb{p}^2/2m + V(\vb{r})$) e o último termo é referente a interação com o campo elétrico na aproximação de dipolo $(H_{int} = -\vb{d}\vdot\vb{E})$ \cite{scullyquantum,meystre2007elements}. Essa equação representa a energia de um dipolo elétrico inserido num campo elétrico $\vb{E}$. Para isso, consideramos que um único elétron é o responsável pelo surgimento do  momento de dipolo elétrico.
+ Esta aproximação  será utilizada no decorrer deste TCC.
 
 \section{Sistema atômico de dois níveis}\label{sec:2niveis}
 
 Neste TCC, trabalharemos com um sistema de dois níveis, sistema quântico simples que é descrito em duas dimensões no espaço de Hibert. Com esse sistema, poderemos estudar de maneira simples e detalhada as principais propriedades físicas inerentes ao processo de iteração de radiação com a matéria. Isso é possível, pois, apesar de sua simplicidade, existem diversos fenômenos quânticos que são descritos de forma satisfatória. Alguns exemplos  são problemas que envolvem polarização de fótons, spin do elétron, oscilações dos neutrinos e o caso deste TCC, um sistema atômico que possui dois níveis em ressonância (ou próximo da ressonância) com o campo eletromagnético aplicado e onde os demais níveis estão em dessintonia total com esse campo \cite{allen1987optical}.
-
-Para um sistema de dois níveis interagindo com campo eletromagnético, utilizamos o Hamiltoniano com aproximação dipolar, que apresentamos na Seção \ref{sec:seção4.1}. 
-
-\begin{equation}
-H_{int}  = - \vb{d}\vdot\vb{E}.
-\label{eq:4.27}
-\end{equation}
-Essa equação representa a energia de um dipolo elétrico inserido num campo elétrico $\vb{E}$. Para isso, consideramos que um único elétron é o responsável pelo surgimento do  momento de dipolo elétrico.
 
 O sistema de dois níveis sem pertubação possui dois valores prováveis de energia. O estado $\ket{1} $ com energia $E_1 = \hbar \omega_1$ e o estado $\ket{2}$ com energia $E_2 = \hbar \omega_2$, como representado na figura \ref{fig:1}. De acordo com descrição de Bohr, a transição entre os níveis atômicos $\ket{1}$ e $\ket{2}$ é dada pela frequência 
 \begin{eqnarray}
@@ -933,12 +932,17 @@ Os elementos da diagonal principal correspondem às probabilidades de encontrar a
 	\label{eq:4.32}
 \end{equation}
 
+Vimos na Seção \ref{sec:seção4.1} que A energia de interação na aproximação dipolar é 
+\begin{equation}
+	H_{int}  = - \vb{d}\vdot\vb{E}.
+	\label{eq:4.27}
+\end{equation}
 Um campo eletromagnético externo clássico, com frequência $\omega_c$, é dado por
 \begin{equation}
 	 \vb{E}(t) =  \frac{1}{2}\vb{\mathcal{E}}(t)e^{iw_ct} + c.c.
 	\label{eq:4.34}
 \end{equation}
-O átomo não possui momento de dipolo quanto está em um de seus estados estacionários, então $\mel{1}{\hat{d}}{1}=\mel{2}{\hat{d}}{2}=0$. Assim, podemos escrever o operador momento de dipolo como
+O átomo não possui momento de dipolo quanto está em um de seus estados estacionários, então $\mel{1}{\hat{d}}{1}=\mel{2}{\hat{d}}{2}=0$. Assim, para um sitema de dois níveis,podemos escrever o operador momento de dipolo como
 \begin{equation}
 	\hat{d}  =  d_{12}\dyad{1}{2} + d_{21}\dyad{2}{1}.
 	\label{eq:4.35}
@@ -994,27 +998,26 @@ Aqui, $\gamma_{nm}$ é a taxa de relaxamento da coerência $\rho_{nm}$, onde $\gam
 \end{equation}
 
 \begin{sagesilent}
-	cn(t) = exp(-((2*pi*5)/2)*t)
+	cn(t) = exp(-t)
 \end{sagesilent}
 
 \begin{figure}[H]
 	\caption{Amplitude de probabilidade $c_n(t)$ decai conforme \eqref{eq:4.48}.}
 	\centering
-	\sageplot[scale=0.7]{plot(cn(t),t,0,0.5),frame=true,figsize = (4,4),axes=false, axes_labels=("tempo(s)", "$C_n^{i}(t)/c_n^{i}(t)$")}
+	\sageplot[scale=0.7]{plot(cn(t),t,0,5),frame=true,figsize = (4,4),axes=false, axes_labels=("$t/\Gamma_n$", "$C_n^{i}(t)/c_n^{i}(t)$")}
 	\label{fig:delay}
-	\caption*{Fonte: Do autor}
 \end{figure}
 Agora, a probabilidade de encontrar um átomo no estado $\ket{n}$ (exceto o estado fundamental) diminui ao longo do tempo da seguinte forma:
 \begin{equation}
 	\qty|C_n^{i}(t)|^2 = \qty|c_n^{i}(t)|^2 e^{-\Gamma_n t}.
 	\label{eq:4.47}	
 \end{equation}
-Isso significa que a amplitude de probabilidade obedece a relação  
+Isso significa que a nova amplitude de probabilidade obedece a relação  
 \begin{equation}
 	C_n^i(t) =c_n^i(t)e^{-\frac{\Gamma_n }{2}t},
 	\label{eq:4.48}	
 \end{equation}
-conforme vemos na figura \ref{fig:delay}. Com isso, temos que $c_n^i(t)c^{i*}_m(t)$ é escrita como
+conforme vemos na figura \ref{fig:delay}. Com isso, temos que $C_n^i(t)C^{i*}_m(t)$ é escrita como
 \begin{equation}
 	C_n^i(t)C^{i*}_m(t) =c_n^i(t)c_m^{i*}(t)e^{-(\Gamma_n + \Gamma_m)\frac{t}{2}}.
 	\label{eq:4.50}		
@@ -1025,7 +1028,7 @@ Da mesma maneira que \eqref{eq:4.32}, podemos espressar o novo $\rho'_{mn}$ em t
 	\rho'_{nn} &=& \rho_{nn}e^{-\Gamma_nt}
 \end{eqnarray}
 
-Sabemos que a taxa de decaimento de $\rho_{mn}$ (trabalharemos com o novo operador densidade ignorando  ($'$) a partir daqui) é $\gamma_{mn}$. Assim, obtemos uma relação entre as taxas de decaimento dos elementos fora da diagonal principal com os elementos da diagonal principal, dada por
+Sabemos que a taxa de relaxação de $\rho_{mn}$ (trabalharemos com o novo operador densidade ignorando  ($'$) a partir daqui) é $\gamma_{mn}$. Assim, obtemos uma relação entre as taxas de decaimento dos elementos fora da diagonal principal com os elementos da diagonal principal, dada por
 \begin{equation}
 	\gamma_{mn} =\frac{1}{2}(\Gamma_n + \Gamma_m) + \gamma_{mn}^{(c)}.
 	\label{eq:4.51}
@@ -1085,7 +1088,7 @@ Assim, obtemos
 	\dot{\sigma}_{12} & = &  (i \delta - \gamma_{12})\sigma_{12} -  i\frac{\Omega_0}{2}(1 - 2\sigma_{22})\label{eq:4.61}\\
 	\dot{\sigma}_{22} & = &  -i\frac{\Omega_0}{2}\sigma_{12}^* + i\frac{\Omega_0^*}{2} \sigma_{12} - \Gamma_{12}\sigma_{22}\label{eq:4.62},
 \end{eqnarray}
-que são conhecidas na literatura como equações de bloch ópticas~\cite{foot2005atomic}.
+que são conhecidas na literatura como equações  ópticas de bloch~\cite{foot2005atomic}.
 \subsection{O átomo de Rubídio ($^{87}Rb$) e sua transição ($5^2S_{1/2}\longrightarrow5^2P_{1/2}$) }
 
 Para estudarmos as interações entre o campo eletromagnético com sistemas de dois níveis, vamos utilizar parâmetros da transição $5^2S_{1/2}\longrightarrow5^2P_{1/2}$ do isótopo Rubídio-$87$, que é um isótopo natural do elemento químico Rubídio~(Rb) (compõe aproximadamente $27,83$ do rubídio encontrado na natureza) que faz parte do metais alcalinos, representados no grupo 1 da tabela periódica.
@@ -1131,10 +1134,10 @@ $5^2S_{1/2}\longrightarrow5^2P_{1/2}$, que utilizaremos neste TCC, temos esses v
 		\hline
 		Taxa de decaimento & $\Gamma_{12}$ & $2\pi\cdot5,746$ MHz \\
 		\hline
-		momento de dipolo da transição $D1(5^2S_{1/2}\longrightarrow 5^2P_{1/2})$ & $d_{12}$ & $2,537\times10^{-29}$Cm  \\
+		momento de dipolo da transição $5^2S_{1/2}\longrightarrow 5^2P_{1/2}$ & $d_{12}$ & $2,537\times10^{-29}$Cm  \\
 		\hline
 	\end{tabular}
-	\caption*{Fonte:Adaptada de \cite{steck2001rubidium} }
+	\caption*{Fonte: Valores tabelados em~\cite{steck2001rubidium}.}
 	\label{tab:rubidio97}
 \end{table}
 %\begin{figure}[H]
@@ -1155,17 +1158,30 @@ $5^2S_{1/2}\longrightarrow5^2P_{1/2}$, que utilizaremos neste TCC, temos esses v
 %		\node at(1,-1){$(S)$}; \node at(5,-1){$(P)$}; \node at(9,-1){$(D)$};
 %	\end{tikzpicture}
 %\end{figure}
-\section{Solução numérica das equações opticas de bloch para campos contínuos}
+\section{Solução numérica das equações ópticas de bloch para campos contínuos}
 
-Para estudarmos um campo contínuo, vamos utilizar uma interação de campo contínuo produzido por um laser CW com átomos de Rubídio 87, onde estamos interessados em estudar a transição do estado fundamental $5^2 S_{1/2}$ para o estado excitado $5^2 P_{1/2}$. 
+Para estudarmos um campo contínuo, vamos utilizar uma interação produzida por um laser CW em átomos de Rubídio 87, onde estamos interessados em estudar a transição do estado fundamental $5^2 S_{1/2}$ para o estado excitado $5^2 P_{1/2}$. 
 
 O laser CW é identificado usualmente pela sua potência. Podemos calcular a potência de um laser a partir da frequência de rabi $\Omega_0$, utilizando a seguinte relação \cite{griffiths2011elet}:
+\begin{sagesilent}
+	c=3e8
+	omega=2*pi*5.746e6/4
+	e0=8.8541878176e-12
+	h = 1.05457168e-34
+	d12 = 2.537e-29
+	R = 1e-3
+	A= pi*R^2
+	P = (c*e0/2.0)*A*(h*omega/d12)^2
+\end{sagesilent}
 \begin{equation}
 	\frac{P}{A} = I = \frac{c\epsilon_0}{2}\qty(\frac{\hbar}{d_{12}})^2\qty(\Omega_0)^2,
 	\label{eq:4.77}
 \end{equation}
-onde $P$ é a potência irradiada, $A$ é a área de seção transversal do feixe e I é a intensidade de radiação. Para o caso em que estamos interessados, vamos utilizar uma  área $A$ circular $\pi R^2$, com o raio $R = 1$ mm e, também, vamos adotar uma frequência de rabi $\Omega_0=\gamma_{12}/2$. Atribuindo na equação  \eqref{eq:4.77} os valores de momento de dipolo transição $d_{12}$ e a taxa de decaimento $\gamma_{12}$ apresentados na tabela \ref{tab:rubidio97}, obtemos uma potência de $P=5$ mm para nosso laser.
+onde $P$ é a potência irradiada, $A$ é a área de seção transversal do feixe e I é a intensidade de radiação. Para o caso em que estamos interessados, vamos utilizar uma  área $A$ circular $\pi R^2$, com o raio $R = 1$ mm e, também, vamos adotar uma frequência de rabi $\Omega_0=\gamma_{12}/2$. Atribuindo na equação  \eqref{eq:4.77} os valores de momento de dipolo transição $d_{12}$ e a taxa de decaimento $\gamma_{12}$ apresentados na tabela \ref{tab:rubidio97}, obtemos uma potência de $P=\sage{N(P/1e-6)}~\upmu$W para nosso laser.
+
+
 \subsection{Metodologia}
+\label{sec:metodo1}
 As equação de bloch ópticas \eqref{eq:4.61} e \eqref{eq:4.62} possuem solução exata quando consideramos um campo contínuo. Essas soluções são obtidas a partir de métodos perturbativos, como vemos em \cite{allen1987optical}. Apesar disso, preferimos resolver essa equações numericamente, utilizando o método de runge-kutta de quarta ordem, muito popular na literatura 
 \begin{equation}
 	\dv{y}{x}= f(x,y),
@@ -1348,7 +1364,7 @@ Na figura \ref{fig:p22xdelta} apresentamos os resultados numéricos para populaçã
 	\centering
 	\caption{População $\sigma_{22}$ em função da dessintonia $\delta$ em um estado estacionário.}
 	\label{fig:p22xdelta}
-	\sageplot[scale=0.8]{E, figsize=(8,10)}
+	\sageplot[scale=0.7]{E, figsize=(8,10)}
 \end{figure}
 %\begin{figure}[H]
 %	\centering
@@ -1369,62 +1385,67 @@ Estudamos até aqui as transições populacionais ocorrendo em um ensemble de siste
 No Capítulo \ref{cap:capitulo3}, reduzimos equação de propagação de onda em meios não lineares, obtendo a seguinte equação:
 
 \begin{equation}
-	\pdv{\eta}\tilde{\mathcal{E}}(\eta,\tau)  = -\frac{i\mu_0}{2k_c}{\omega_c}^2\tilde{\mathcal{P}}^{NL}(\eta,\tau).
+	\pdv{z}\tilde{\mathcal{E}}(z,\tau)  = -\frac{i\mu_0}{2k_c}{\omega_c}^2\tilde{\mathcal{P}}^{NL}(z,\tau).
 	\label{eq:5.1}
 \end{equation}
-Sendo que $\mathcal{\tilde{P}}$ é a parte lenta da polarização do meio não linear. A forma mais geral de representar a polarização é através do somatório dos momentos de dipolos induzidos em cada átomo pelo campo por unidade de volume, conforme definimos em \eqref{eq:3.7}. Como estamos trabalhando com um sistema de muitos átomos idênticos, podemos reescrevê-la da seguinte forma:
+Sendo que $\mathcal{\tilde{P}}^{NL}$ é a parte lenta da polarização do meio não linear. A forma mais geral de representar a polarização é através do somatório dos momentos de dipolos induzidos em cada átomo pelo campo por unidade de volume, conforme definimos em \eqref{eq:3.7}. Como estamos trabalhando com um sistema de muitos átomos idênticos, podemos reescrevê-la da seguinte forma:
 \begin{eqnarray}
-\vb{P} &=& \frac{1}{V}\sum_i \vb{d}_i * \qty(\frac{N_{\text{átomos}}}{N_{\text{átomos}}})\nonumber\\
+\vb{P}^{NL} &=& \frac{1}{V}\sum_i \vb{d}_i * \qty(\frac{N_{\text{átomos}}}{N_{\text{átomos}}})\nonumber\\
 &=& \mathcal{N}\qty(\frac{1}{N_{\text{átomos}}}\sum_i \vb{d}_i)\nonumber\\
 &=& \mathcal{N}\langle \vb{d}_i\rangle_{\text{átomos}}, \label{eq:5.2}
 \end{eqnarray}
-onde $\mathcal{N}=N_\text{átomos}/V$ é o número de átomos por unidade de volume e $\langle \vb{d}_i\rangle_{atomos}$ é o momento de dipolo médio da amostra de átomos. 
+onde $\mathcal{N}=N_\text{átomos}/V$ é o número de átomos por unidade de volume e $\langle \vb{d}_i\rangle_\text{átomos}$ é o momento de dipolo médio da amostra de átomos. 
 
 Observamos no Capítulo \ref{cap:capitulo2} que, na representação de matriz densidade, o valor médio de um dado observável obedece à equação \eqref{eq:6}. Aplicando à equação da polarização \eqref{eq:5.2} para um sistema de dois níveis, obtemos:
 \begin{eqnarray}
-	\vb{P} &=& \mathcal{N}\Tr(\hat{\rho} \hat{d})\\
-	\vb{P} &=& \mathcal{N}(d_{12} p_{21} + d_{21} p_{12}).
+	P^{NL} &=& \mathcal{N}\Tr(\hat{\rho} \hat{d})\\
+	&=& \mathcal{N}(d_{12} p_{21} + d_{21} p_{12}).
 \end{eqnarray}
-Significa que a polarização é proporcional a coerência atômica. Como estamos trabalhando com campo que se propaga no eixo z, é conveniente redefinirmos $\rho_{12} \equiv \sigma_{12}e^{i(kz-\omega t)}$. Assim, considerando o fato que $\rho_{12}=\rho_{21}^*$ e usando \eqref{eq:3.46}, temos que:
+Significa que a polarização é proporcional a coerência atômica. Como estamos trabalhando com campo que se propaga no eixo z, é conveniente redefinirmos $\rho_{12} \equiv \sigma_{12}e^{i(kz-\omega t)}$. Assim, considerando o fato que $\rho_{21}=\rho_{12}^*$ e $d_{21} = d_{12}$, e usando \eqref{eq:3.46}, temos que:
 \begin{eqnarray}
-	\frac{1}{2}\mathcal{P}e^{i(k_cz-\omega_ct)} + \frac{1}{2}\mathcal{P}^*e^{-i((k_cz-\omega_ct)}= \mathcal{N}(d_{12} \sigma_{21}\mathcal{P}e^{i((k_cz-\omega_ct)} + d_{21}\sigma_{12}^*e^{-i((k_cz-\omega_ct)}).
+	\frac{1}{2}\mathcal{P}^{NL}(z, t)e^{i(k_cz-\omega_ct)} + \frac{1}{2}\mathcal{P}^{NL*}(z, t)e^{-i(k_cz-\omega_ct)}= \mathcal{N}(d_{12} \sigma_{12}e^{i(k_cz-\omega_ct)} + d_{12}\sigma_{12}^*e^{-i((k_cz-\omega_ct)}).
 \end{eqnarray}
 Analisando os dois lados da equação, é razoável concluirmos que 
 \begin{eqnarray}
-	\mathcal{P}= 2\mathcal{N}d_{12} \sigma_{21}.
+	\mathcal{P}= 2\mathcal{N}d_{12} \sigma_{12}.
 	\label{eq:polar1}
 \end{eqnarray} 
 
 Para meios não homogêneos em que o efeito doppler é significativo a equação se torna:
 \begin{eqnarray}
-	\mathcal{P}= 2\mathcal{N}d_{12} \int_{-\infty}^{\infty} d\delta G(\delta,t) \sigma_{21}(\delta,t).
+	\mathcal{P}^{NL}= 2\mathcal{N}d_{12} \int_{-\infty}^{\infty} d\delta G(\delta,t) \sigma_{21}(\delta,t),
 	\label{eq:polar2}
+\end{eqnarray}
+onde
+\begin{eqnarray}
+	\int_{-\infty}^{\infty} d\delta G(\delta,t) = 1 .
+	\label{eq:funcg}
 \end{eqnarray} 
-Trabalharemos com átomos frios de forma que $G(\delta) \approx \delta_d(\delta)$ onde $\delta_d$ é a função delta de Dirac. Com isso, a equação \eqref{eq:polar2} recai em \eqref{eq:polar2} e podemos reescrever a equação \eqref{eq:5.1} da seguinte maneira:
+Trabalharemos com átomos frios, onde $G(\delta) \approx \delta_d(\delta)$ ($\delta_d$ é a função delta de Dirac). Com isso, a equação \eqref{eq:polar2} recai em \eqref{eq:polar1} e podemos reescrever a equação \eqref{eq:5.1} da seguinte maneira:
 \begin{equation}
-	\pdv{\eta}\tilde{\mathcal{E}}(\eta,\tau)  = -\frac{i\mu_0}{k_c}{\omega_c}^2\mathcal{N}d_{12} \sigma_{21}(\eta,\tau).
+	\pdv{z}\tilde{\mathcal{E}}(z,\tau)  = -\frac{i\mu_0}{k_c}{\omega_c}^2\mathcal{N}d_{12} \sigma_{12}(z,\tau).
 	\label{eq:5.11}
 \end{equation}
 Como as equações de bloch ópticas foram escritas  em termos da frequência de rabi, é conveniente substituirmos \eqref{eq:4.56} em \eqref{eq:5.11}. Assim, obtemos
 \begin{equation}
-	\pdv{\eta}\Omega_0(\eta,\tau)  = - i\alpha\sigma_{21}(\eta,\tau),
+	\pdv{\eta}\Omega_0(z,\tau)  = - i\alpha\sigma_{21}(z,\tau),
 	\label{eq:5.12}
 \end{equation}
-onde $\alpha\equiv\mu_0{\omega_c}^2\mathcal{N}{d_{12}}^2/k_c\hbar$ é uma constante. As equações óptica de bloch \eqref{eq:4.61} e \eqref{eq:4.62} precisam passar pela mesma mudança de coordenadas que aplicamos à \eqref{eq:5.12}. Assim, precisamos rescreve-las da seguinte forma:
+onde $\alpha\equiv\mu_0{\omega_c}^2\mathcal{N}{d_{12}}^2/k_c\hbar$ é uma constante. As equações óptica de bloch \eqref{eq:4.61} e \eqref{eq:4.62} precisam passar pela mesma mudança de coordenadas que aplicamos à \eqref{eq:5.12}. Assim, precisamos rescrevê-las da seguinte forma:
 \begin{eqnarray}
-	\pdv{\tau}\sigma_{12}(\eta, \tau) & = &  [i \delta - \gamma_{12}]\sigma_{12}(\eta, \tau) -  i\frac{1}{2}\Omega_0(\eta, \tau)[1 - 2\sigma_{22}(\eta, \tau)]\label{eq:5.13}\\
-	\pdv{\tau}\sigma_{22}(\eta, \tau) & = &  -i\frac{1}{2}\Omega_0(\eta, \tau)\sigma_{12}^*(\eta, \tau) + i\frac{1}{2}\Omega_0^*(\eta, \tau)\sigma_{12}(\eta, \tau) - \Gamma_{12}\sigma_{22}(\eta, \tau).\label{eq:5.14}
+	\pdv{\tau}\sigma_{12}(z, \tau) & = &  [i \delta - \gamma_{12}]\sigma_{12}(z, \tau) -  i\frac{1}{2}\Omega_0(z, \tau)[1 - 2\sigma_{22}(z, \tau)]\label{eq:5.13}\\
+	\pdv{\tau}\sigma_{22}(z, \tau) & = &  -i\frac{1}{2}\Omega_0(z, \tau)\sigma_{12}^*(z, \tau) + i\frac{1}{2}\Omega_0^*(z, \tau)\sigma_{12}(z, \tau) - \Gamma_{12}\sigma_{22}(z, \tau).\label{eq:5.14}
 \end{eqnarray} 
 
 O conjunto das equações \eqref{eq:5.12}, \eqref{eq:5.13} e \eqref{eq:5.14} são conhecidas na literatura como equações de Maxwell-Bloch. Neste TCC, essa equações são resolvidas numericamente e os resultados estão apresentados na Seção \ref{sec:res_maxwell_bloch} deste Capítulo.
 
 \section{Teorema de Área}
-
+\label{sec:area}
 Pra trabalharmos com pulsos eletromagnéticos ultracurtos é importante conhecermos a área da envoltória pulso.  Essa área é obtida a partir da seguinte integral:
 \begin{equation}
-	\theta(\eta) \equiv \int_{-\infty}^{\infty} \Omega_0(\eta, \tau) dt
+	\theta(z) \equiv \int_{-\infty}^{\infty} \Omega_0(z, \tau) dt
 \end{equation}
-onde $\theta(\eta)$ é a área do pulso e $\Omega_0(\eta, \tau)$ é a frequência de Rabi. Aplicando essa definição as equações de Maxwell-Bloch para um meio ressonante, cujo tempo de decaimento é muito maior que a largura temporal do pulso 
+onde $\theta(z)$ é a área do pulso e $\Omega_0(z, \tau)$ é a frequência de Rabi. Aplicando essa definição as equações de Maxwell-Bloch para um meio ressonante, cujo tempo de decaimento é muito maior que a largura temporal do pulso 
 ($1/\Gamma_{12} \gg T_p$),  é possível calcular a variação da área do pulso, conforme o pulso se propaga no meio,  como descrito em Erbely \cite{allen1987optical}. Assim, obtemos que 
 \begin{equation}
 	\pdv{\theta}{z} = -\frac{\alpha'}{2}sin(\theta)
@@ -1435,8 +1456,9 @@ onde $\alpha'$ é  o coeficiente de absorção e difere da constante $\alpha$, pois
 	tan\qty(\frac{\theta}{2}) = tan\qty(\frac{\theta_0}{2})e^{-\frac{\alpha'}{2}z}, 
 	\label{eq:teo_area}
 \end{equation}
+onde $\theta_0$ e a área inicial do pulso.
 
-Na figura \ref{fig:teoremaarea} apresentamos os resultado da equação \eqref{eq:teo_area} para diferente valores $theta_0$ entre $0$ e $8\pi$. Para isso, utilizamos o valor genérico para o coeficiente de absorção $\alpha'= 2\pi$. Podemos ver que após o pulso ultracurtos ao ser propagado pela amostra, os valores das áreas tendem para $\theta(z) = \{0, 2\pi, 4\pi, 6\pi~~\text{e}~~8\pi\}$, onde o valor $n$ que acompanha o $\pi$ é par. Para $0<\theta_0<\pi$, a área do pulso diminui até chegar à zero. Enquanto, para $\pi < \theta_0 < 2\pi$ aumenta para $2\pi$. A mesma tendência é observada para as demais valores de $\theta_0$. Na Seção \ref{sec:res_maxwell_bloch} discutimos mais a fundo esse comportamento a partir dos resultados das equações de Maxwell-bloch.    
+Na figura \ref{fig:teoremaarea} apresentamos os resultado da equação \eqref{eq:teo_area} para diferentes valores $\theta_0$ entre $0$ e $7\pi$. Para isso, utilizamos o valor genérico para o coeficiente de absorção $\alpha'= 2\pi$. Podemos ver que após o pulso ultracurto ser propagado pela amostra, os valores das áreas tendem para $\theta(z) = \{0, 2\pi, 4\pi, 6\pi, dots, n\pi\}$, onde $n$ é par. Para $0<\theta_0<\pi$ a área do pulso diminui até chegar à zero. Para $\pi < \theta_0 < 2\pi$ a área do pulso aumenta para $2\pi$. A mesma tendência é observada para as demais valores de $\theta_0$. Na Seção \ref{sec:res_maxwell_bloch} discutimos mais a fundo esse comportamento a partir dos resultados das equações de Maxwell-bloch.    
 %\begin{figure}[H]
 %	\centering
 %	\caption{Resultado da equação \eqref{eq:teo_area} para um pulso ultracurto, conforme ele se propaga em um meio atômico de dois níveis}
@@ -1483,91 +1505,333 @@ A.show(frame=true, axes=false, axes_labels=("$z$","$\\theta$"))
 	\centering
 	\caption{Resultado da equação \eqref{eq:teo_area} para um pulso ultracurto, conforme ele se propaga em um meio atômico de dois níveis}
 	\label{fig:teoremaarea}
-	\sageplot[scale=0.6]{A, frame=true, axes=false, axes_labels=["$z$","$\\theta$"]}
+	\sageplot[scale=0.7]{A, frame=true, axes=false, axes_labels=["$z$","$\\theta$"]}
 \end{figure}
 
 \section{Metodologia}
 
-Pa resolver a equação de Maxwel bloch apara um pulso ultracurto, adotamos como metologia o calculo numérico através dos método de Runge-Kutta, apresentado no capitulo 4 quando resolvemos a equações ópticas para interação o campo continuo. Para isso foi preciso realizar as seguinte condição de contorno:
-Dividimo o e
 
 
+Para resolver a equação de Maxwel-Bloch numericamente, precisaremos discretizar o meio atômico no eixo $z$. Assim, teremos um conjunto de seções com largura $dz$ (ver figura \ref{fig:secoes_meio}), onde estabelecemos como condição de contorno, que cada seção possui um sistema de átomos de dois níveis caracterizado por $\sigma_{22}$ e $\sigma_{12}$. Desta forma, o pulso interage com a primeira seção sofre modificações devido ao fenômenos de absorção e dispersão. Esse novo pulso interage com a próxima seção e sofre novamente modificações. Esse processo se repete por todo o meio e o pulso sempre encontra uma seção na condição inicial ($\sigma_{22}[z,\tau=0]=0$ e $\sigma_{12}[z,\tau=0]=0$). Isso é possível, pois nos aproximamos do resultado correto quando $dz$ é muito pequeno.
 
-   conforme apresentado   na Para    Nesta seção apresentamos o algoritmo utilizado para resolver as equações de Maxwell-Bloch, antes temos  Esses resultados foram calculados usando algoritmo de Runge-Kutta escrito  em linguagem C apresentado no apêndice B, seguindo o fluxograma mostrado na figura 2.
+A população $\sigma_{22}$ e coerência $\sigma_{12}$ é calculada, usando método de Runge-Kutta descrito na Seção \ref{sec:metodo1}. Também aplicaremos esse método para calcular a frequencia de Rabi $\Omega_0$. Assim,  a frequência de Rabi  $\Omega_0(z+dz,\tau)$ é obtida da seguinte forma:
+\begin{equation}
+	\Omega_0(z+dz,\tau) = \Omega_0(z,\tau) + \frac{dz}{6}\qty(k1 + 2k_2 + 2k_3 + k_4),
+\end{equation}
+onde
+\begin{eqnarray}
+	k_1 & = & -\frac{i\mu_0}{k_c}{\omega_c}^2\mathcal{N}d_{12} \sigma_{21}[\Omega_0(z,\tau),\tau] \\
+	k_2 & = & -\frac{i\mu_0}{k_c}{\omega_c}^2\mathcal{N}d_{12} \sigma_{21}[\Omega_0(z,\tau) + k_1 \frac{dz}{2},\tau] \\
+	k_3 & = & \frac{i\mu_0}{k_c}{\omega_c}^2\mathcal{N}d_{12} \sigma_{21}[\Omega(z,\tau) + k_2 \frac{dz}{2},\tau] \\
+	k_4 & = & -\frac{i\mu_0}{k_c}{\omega_c}^2\mathcal{N}d_{12} \sigma_{21}[\Omega(z,\tau) + k_3 dz,\tau]
+\end{eqnarray}
 
 
-\begin{figure}[H]
+\begin{sagesilent}
+	E(t) = sech(t)*cos(5*t)
+	A=plot(E(t), t,-10,10,thickness=4, figsize= (6,3))
+\end{sagesilent}
+
+\begin{figure}
 	\centering
+	\caption{Representação da condição de contorno realizada em $\sigma_{12}$ e $\sigma_{22}$}
+	\label{fig:secoes_meio}
 	\begin{tikzpicture}
-		\draw[fill=green!50!blue] (0,1) -- (0,3) -- (2,4) -- (2,0) -- (0,1) ;
-		\draw[fill=green!50!blue] (2,0) -- (2,4) -- (3,3.5) -- (3,3.5) -- (3,0.5) -- (2,0);
-	
-		\foreach \i in {0.5,1.0,...,1.5} {
-			\foreach \j in {1,1.3,...,3} {
-				\node at (\i,\j) {2};
-		    }	
-	    }	
-
 		
+		\draw[fill=black!30!white] (0,1.5) -- (0,2.5) -- (1.6,3.8) -- (1.6,0.1) -- (0,1.5) ;
+		\draw[fill=black!30!white] (1.6,0.1) -- (1.6,3.8) -- (2.2,3.4) -- (2.2,0.7) -- node[rotate=44, below]{$\underbrace{~~~~~~~~}_{dz}$} (1.6,0.1);
+		
+		\begin{scope}[rotate=180]
+			\foreach \i in {1.65}{
+				\foreach \j in {1.05*\i,1.25*\i,1.45*\i,1.65*\i,1.85*\i,2.05*\i,2.25*\i,2.45*\i}{
+					\shade[ball color=green!5!red](\i-3.6,\j-2.2-1.6*\i) circle (0.09*\i);
+				}
+			}
+		\end{scope}
+		
+		\begin{scope}
+			\foreach \i in {0.5,0.6,0.75,0.9,1.1,1.35,1.65,2}{
+				\foreach \j in {1.05*\i,1.25*\i,1.45*\i,1.65*\i,1.85*\i,2.05*\i,2.25*\i,2.45*\i}{
+					\shade[ball color=green!5!red](\i-0.4,\j+2-1.8*\i) circle (0.09*\i);
+				}
+			}
+		\end{scope}
+		\draw (1.6,3.8) -- (1.6,0.1);
+		\draw[fill=black!30!white] (5,0) -- (5,3) -- (10,3) -- (10,0) -- (5,0);
+		\draw[-latex] (5,3.2) -- node[above]{$z$}(6,3.2);
+		\foreach \x in {6,7,...,10}{
+			\draw (\x,0) -- (\x,3);
+			\node at (\x-0.5,-0.4){$\underbrace{~~~~~~~~~}_{dz}$};
+			\node at (\x-0.5,1.2){$_{\sigma_{12} = 0}$};
+			\node at (\x-0.5,1.7){$_{\sigma_{22} = 0}$};
+		}
+		
+		\node[rotate=0.4] at (-0.8,2) {\sageplot[scale=0.2]{A, frame=false, axes = false,transparent=True}};
+		
+		\node[rectangle, draw,text width=11.2em,text badly centered] (r) at (7.5,4.3) {Meio atômico dividido em seções};
 	\end{tikzpicture}
 \end{figure}
+%\begin{figure}[H]
+%	\caption{\label{metodoestatisto.fluxograma} Fluxograma mostrando os passos do Método Científico.}
+%	
+%	\usetikzlibrary{shapes,arrows}
+%	\usetikzlibrary{positioning}
+%	\usetikzlibrary{shadows}
+%	\centering
+%	
+%	% Define block styles
+%	\tikzstyle{block} = [rectangle, draw, fill=green, 
+%	text width=6em, text centered, rounded corners, node distance=1cm, minimum height=2em]
+%	\tikzstyle{line} = [draw, -latex]
+%	\tikzstyle{cloud} = [draw, ellipse,fill=white, node distance=1cm,
+%	minimum height=2em]
+%	\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+%	text width=4.5em, text badly centered, node distance=1cm, inner sep=0pt]
+%	
+%	\begin{tikzpicture}[node distance = 3cm, auto]
+%		
+%		% Place nodes
+%		\node[cloud](inicio){início};
+%		\node[decision, below=of inicio](does){$z<Z$};
+%		\node[decision, below=of does](does2){$t<T$};
+%		\node [block, right= of does2 ](omega) {Calcula Runge-Kutta para $\Omega_0(z,t)$};
+%		\node [block, right = of omega] (s22) {Calcula Runge-Kutta para $\sigma_{22}(z,t)$ e $\sigma_{12}(z,t)$};
+%		\node[cloud,right=of does](fim){fim};
+%		
+%		% Draw edges
+%		\path [line] (inicio) -- (does);
+%		\path [line] (does) -- node{sim}(does2);
+%		\path [line] (does2) -- node{sim} (omega);
+%		\path [line] (omega) -- (s22);
+%		\path [line] (s22) |- (5,-7.8) -| (does2);
+%		\path [line] (does2) -| node{não}(-2,-5.7) |- (does);
+%		\path [line](does) -- node{não}(fim);
+%	
+%	\end{tikzpicture}
+%\end{figure}
+O algoritmo é escrito em linguagem C e inicia com as seguintes bibliotecas e variáveis globais~($delta=\delta$, $gamma \_ populacao \_ 12 = \Gamma_{12}$, $alpha = \alpha$, $gamma \_ coerencia \_ 12 = \gamma_{12}$, $Tp=T_p$, $N = \theta_0/\pi$, $dz=$ largura~de~cada~passo~de~$z$, $dt=$ largura~de~cada~passo~de~$\tau$, $T=$ número de passo em $\tau$ e $Z=$ número de passo em $z$):
+\begin{lstlisting}
+//Bibliotecas
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <complex.h>
+#include <stdbool.h> 
 
+//PARÂMETROS DA INTERAÇÃO
+double delta, gama_populacao_12,alpha,gamma_coerencia_12,Tp,N, omega_0,dz,dt,t; 
+int Z,T;
+\end{lstlisting}  
 
-\begin{figure}[H]
-	\caption{\label{metodoestatisto.fluxograma} Fluxograma mostrando os passos do Método Científico.}
+Para calcular $\sigma_{12}(t+dt)$ e $\sigma_{22}(t+dt)$, incluímos  as funções $rk4s(\dots)$, $f(\dots)$ e $g(\dots)$ que apresentamos na Seção~\ref{sec:metodo1}. Para o cálculo de $\omega_0(z+dz)$, implementamos o método de Runge-Kutta na função $rk4o(\dots)$:   
+\begin{lstlisting}
+//Método de Runge-kutta omega
+void rk4o(double complex(*f)(double complex, double complex, double complex), double complex(*g)(double complex, double complex, double complex), double complex(*h)(double complex),  double complex *omega, double complex omega_ant, double complex *omega_k, double complex *sigma_12, double complex *sigma_22, double complex *sigma_12_k, double complex *sigma_22_k, bool cond_t)
+{   
+	double complex k1,k2,k3,k4;
 	
-	\usetikzlibrary{shapes,arrows}
-	\usetikzlibrary{positioning}
-	\usetikzlibrary{shadows}
-	\centering
-	
-	% Define block styles
-	\tikzstyle{block} = [rectangle, draw, fill=green, 
-	text width=6em, text centered, rounded corners, node distance=1cm, minimum height=2em]
-	\tikzstyle{line} = [draw, -latex]
-	\tikzstyle{cloud} = [draw, ellipse,fill=white, node distance=1cm,
-	minimum height=2em]
-	\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
-	text width=4.5em, text badly centered, node distance=1cm, inner sep=0pt]
-	
-	\begin{tikzpicture}[node distance = 3cm, auto]
+	if(cond_t)
+	{   
+		k1=0;k2=0;k3=0;k4=0;
+	}
+	else
+	{
+		rk4s(f, g , dt, sigma_12, sigma_22, *omega, omega_ant);
+		k1 = h(*sigma_12);
 		
-		% Place nodes
-		\node[cloud](inicio){início};
-		\node[decision, below=of inicio](does){$z<Z$};
-		\node[decision, below=of does](does2){$t<T$};
-		\node [block, right= of does2 ](omega) {Calcula Runge-Kutta para $\Omega_0(z,t)$};
-		\node [block, right = of omega] (s22) {Calcula Runge-Kutta para $\sigma_{22}(z,t)$ e $\sigma_{12}(z,t)$};
-		\node[cloud,right=of does](fim){fim};
+		rk4s(f, g , dt, &sigma_12_k[0], &sigma_22_k[0], *omega + k1*dz/2.0, omega_k[0]);
+		omega_k[0] = *omega + k1/2.0;
+		k2 = h(sigma_12_k[0]);
 		
-		% Draw edges
-		\path [line] (inicio) -- (does);
-		\path [line] (does) -- node{sim}(does2);
-		\path [line] (does2) -- node{sim} (omega);
-		\path [line] (omega) -- (s22);
-		\path [line] (s22) |- (5,-7.8) -| (does2);
-		\path [line] (does2) -| node{não}(-2,-5.7) |- (does);
-		\path [line](does) -- node{não}(fim);
+		rk4s(f, g , dt, &sigma_12_k[1], &sigma_22_k[1], *omega + k2*dz/2.0, omega_k[1]);
+		omega_k[1] = *omega + k2*dz/2.0;
+		k3 = h(sigma_12_k[1]);
+		
+		rk4s(f, g , dt, &sigma_12_k[2], &sigma_22_k[2], *omega + k3*dz, omega_k[2]);
+		omega_k[2] = *omega + k3*dz;
+		k4 = h(sigma_12_k[2]);
+	}
+	*omega = *omega + dz*(k1+2.0*k2+2.0*k3+k4)/6.0;       
+}
+\end{lstlisting}
+
+A função $h(\dots)$ acima é $\Omega_0'$, implementada no algoritmo da seguinte forma:
+\begin{lstlisting}
+//omega'()
+double complex h( double complex sigma_12) 
+{
+	return -I*alpha*sigma_12;
+}
+\end{lstlisting}
+
+Os resultados são gravados em arquivos, através das funções:
+\begin{lstlisting}
+//Função que cria arquivo
+void cria_arquivo_matriz()
+{
+	FILE *arquivo;
+	arquivo=fopen("runge_cutta_omega.dat","w");
+	FILE *arquivo2;
+	arquivo2=fopen("runge_cutta_sigmaR.dat","w");
+	FILE *arquivo3;
+	arquivo3=fopen("runge_cutta_sigmaI.dat","w");
+	FILE *arquivo4;
+	arquivo4=fopen("runge_cutta_rho.dat","w");
 	
-	\end{tikzpicture}
-\end{figure}
+	fclose(arquivo);
+	fclose(arquivo2);
+	fclose(arquivo3);
+	fclose(arquivo4);
+}
+//Função que salva os resultados em arquivo 
+void imprimir_matriz(double complex **omega, double complex **sigma_22, double complex **sigma_12)
+{
+	FILE *arquivo;
+	arquivo=fopen("runge_cutta_omega.dat","a+");
+	FILE *arquivo2;
+	arquivo2=fopen("runge_cutta_sigmaR.dat","a+");
+	FILE *arquivo3;
+	arquivo3=fopen("runge_cutta_sigmaI.dat","a+");
+	FILE *arquivo4;
+	arquivo4=fopen("runge_cutta_rho.dat","a+");
+	
+	for (int p = 0; p < Z+1; p++)
+	{   
+		if(p==0)
+		{
+			fprintf(arquivo , "t\\z ");
+			fprintf(arquivo2, "t\\z ");
+			fprintf(arquivo3, "t\\z ");	
+			fprintf(arquivo4, "t\\z ");
+		}
+		else 
+		{
+			fprintf(arquivo, "%e ", (p-1)*dz);
+			fprintf(arquivo2, "%e ", (p-1)*dz);
+			fprintf(arquivo3, "%e ", (p-1)*dz);
+			fprintf(arquivo4, "%e ", (p-1)*dz);
+		}
+	}
+	fprintf(arquivo, "\n");
+	fprintf(arquivo2, "\n");
+	fprintf(arquivo3, "\n");
+	fprintf(arquivo4, "\n");
+	
+	for (int k=0; k<T; k++){ 
+		fprintf(arquivo, "%e ", (k-120)*dt/(2*M_PI*5.746e6));
+		fprintf(arquivo2, "%e ", (k-120)*dt/(2*M_PI*5.746e6));
+		fprintf(arquivo3, "%e ", (k-120)*dt/(2*M_PI*5.746e6));
+		fprintf(arquivo4, "%e ", (k-120)*dt/(2*M_PI*5.746e6));
+		
+		for (int p=0; p<Z; p++){
+			fprintf(arquivo, "%e ",(creal(omega[p][k]*(2*M_PI*5.746e6))));
+			fprintf(arquivo2, "%e ",creal(sigma_12[p][k]));
+			fprintf(arquivo3, "%e ", cimag(sigma_12[p][k]));
+			fprintf(arquivo4, "%e ",creal(sigma_22[p][k]));
+		}
+		fprintf(arquivo, "\n");
+		fprintf(arquivo2, "\n");
+		fprintf(arquivo3, "\n");
+		fprintf(arquivo4, "\n");
+	}
+	fclose(arquivo);
+	fclose(arquivo2);
+	fclose(arquivo3);
+	fclose(arquivo4);
+}
+\end{lstlisting}  
+
+Por fim, temos a função $main(\dots)$ onde estabelecemos as condições iniciais e condições de contorno, definimos os parâmetros da interação e implementamos o laço de repetição para obtermos $\sigma_{12}(z,\tau)$, $\sigma_{22}(z,\tau)$ e $\Omega_0(z,\tau)$ para diferentes valores de $z$ e $\tau$.  
+\begin{lstlisting}
+int main(void)
+{
+	//parametros
+	delta=0;
+	gama_populacao_12=1; // 5,746*2pi MHz
+	alpha= 1e5; //5,746*2pi MHz/cm
+	gamma_coerencia_12=1/2.0; //5,746*2pi MHz
+	Tp=1.510231827e-5; // 1/5,746*2pi MHz
+	N = 2.0;// area/pi 
+	Z=15000; 
+	T=1200;
+	dz=0.001;//cm
+	dt=0.1e-5; // 1/5,746*2pi MHz
+	
+	double complex **sigma_12 , **sigma_22, **omega, temp_s12, temp_s22, s12_k[3],s22_k[3],omega_k[3], temp_omega, temp_omega_ant;
+	bool cond;
+	
+	sigma_12 = malloc((Z-1)*sizeof(complex double*));
+	sigma_22 = malloc((Z-1)*sizeof(complex double*));
+	omega = malloc((Z)*sizeof(complex double*));
+	
+	for(int p=0; p<Z; p++)
+	{
+		sigma_12[p] = malloc((T)*sizeof(complex double));
+		sigma_22[p] = malloc((T)*sizeof(complex double));
+		omega[p] = malloc((T)*sizeof(complex double));
+	}
+	
+	cria_arquivo_matriz();
+	
+	for (int i = 0; i < Z; i++)
+	{
+		for (int j = 0; j < T; j++)
+		{
+			if (i==0)
+			{ 
+				t= (j-120)*dt;
+				omega[i][j] = omega_0*(1/cosh(1.76*t/Tp));
+			}
+			else
+			{   
+				if (j==0)
+				{
+					sigma_12[i-1][j] = 0;
+					sigma_22[i-1][j] = 0;
+					cond = true;
+					for(int k=0; k<3; k++)
+					{
+						s12_k[k] = 0; s22_k[k] = 0; omega_k[k] = omega[i-1][j];
+					}
+				}
+				else
+				{
+					cond = false;
+				}
+				
+				temp_omega = omega[i-1][j]; temp_omega_ant= omega[i-1][j-1]; temp_s12 = sigma_12[i-1][j-1]; temp_s22 = sigma_22[i-1][j-1]; 
+				rk4o(f,g,h, &temp_omega, temp_omega_ant, omega_k,  &temp_s12, &temp_s22, s12_k,  s22_k, cond);
+				
+				omega[i][j] = temp_omega; sigma_12[i-1][j] = temp_s12; sigma_22[i-1][j]= temp_s22;
+				
+			}
+		}
+	}
+	
+	imprimir_matriz(omega, sigma_22, sigma_12);
+	
+	free(sigma_12);
+	free(sigma_22);
+	free(omega);
+}
+\end{lstlisting} 
 \section{Resultados}
 \label{sec:res_maxwell_bloch}
-Nos resultados obtidos, foram utilizados os parâmetros da transição 5s1/2 e 6p1/2 do rubídio 87, apresentados na tabela 1, do capitulo 3. Para a interação aplicamos com um pulso ultracurto que parte da posição inicial do meio, com formato dado pela secante hiperbólica
+Nos resultados obtidos foram utilizados os parâmetros da transição $5^2S_{1/2} \longrightarrow 5^2P_{1/2}$ do Rubídio-87, apresentados na tabela \ref{tab:rubidio97}. Para a interação aplicamos um pulso ultracurto que parte da posição inicial do meio com formato dado pela secante hiperbólica:
 \begin{equation}
 	\Omega(0,\tau) = \frac{1,76}{T_p}\frac{\theta_0}{\pi}sech\qty(\frac{1,76\tau}{T_p})
 	\label{sech}
 \end{equation} 
-onde $t_p$ é a largura temporal do pulso e $\theta_0$ é a área. Utilizamos um pulso de $T_p=100$ fs e consideramos que todos os átomos de Rubídio estão em ressonância com o campo, onde ignoramos efeito doppler. Como o tempo de vida da transição  5s1/2 e 6p1/2 é $T_{21}=27,70$ ns, conseguimos garantir que o teorema da área seja respeitado, visto que $T_{21}=1/\Gamma_{12}\gg T_p$.
+onde $T_p$ é a largura temporal do pulso e $\theta_0$ é a área. Utilizamos um pulso de $T_p=100$ fs e consideramos que todos os átomos de Rubídio-87 estão em ressonância com o campo ($\delta=0$). Para isso, ignoramos o efeito doppler. Como o tempo de vida da transição $5^2S_{1/2} \longrightarrow 5^2P_{1/2}$ é de $T_{12}=27,70$ ns, conseguimos garantir que o teorema da área seja respeitado, visto que $T_{12}=1/\Gamma_{12}\gg T_p$. Por fim, para obtermos todos os efeitos de interesse desse TCC, adotamos $\alpha = 1\cdot10^5 \Gamma/$cm.
 
 \subsection{Propagação de pulso com área pequena em meio ressonante}
 
-Na literatura temos solução analítica para equações de Maxwell-Bloch, quando tratamos um pulso com área muito pequena ($\theta \ll 1$), onde é adotado o limite de Beer's Law, conforme vemos em []. Assim, o nosso primeiro resultado foi obtido para um pulso desse tipo com área $\theta = 5,7*10^{-4}\pi$.
+Na literatura temos solução analítica para equações de Maxwell-Bloch quando tratamos um pulso com área muito pequena ($\theta \ll 1$). Para isso, e adotado o limite de Beer's Law, como vemos em trabalho de Crisp~\cite{crisp1970propagation}. Assim, o nosso primeiro resultado numérico foi obtido para um pulso desse tipo com área $\theta_0 = 5,7*10^{-4}\pi$.
 
-O gráfico ilustrado na figura \ref{fig:0pimaxwellbloch} apresenta o resultado numérico para a frequência de rabi $\Omega_0(z,\tau)$, conforme o pulso interage no meio. Em \ref{fig:0pimaxwellbloch}(a) mostramos o mapa de calor, onde $\Omega_0(z, \tau)$ é representado em cores. Em \ref{fig:0pimaxwellbloch}(b) temos o pulso secante hiperbólico antes de interagir com o meio. Em \ref{fig:0pimaxwellbloch}(c) temos representado o pulso na saída do meio atômico ($z=1$cm). Vemos que a após interagir com o meio atômico a envoltória do pulso adquire um caráter oscilatório que varia entre valores negativos e positivos o que faz com que a área seja aproximadamente $\theta \approx 0$, o que é esperado pelo teorema da área apresentado (ver figura \ref{fig:teoremaarea}).
+O gráfico ilustrado na figura \ref{fig:0pimaxwellbloch} apresenta o resultado numérico para a frequência de rabi $\Omega_0(z,\tau)$, conforme o pulso interage no meio. Na Fig.\ref{fig:0pimaxwellbloch}(a) mostramos o mapa de calor, onde o valor de $\Omega_0(z, \tau)$ é representado em cores. Na Fig.\ref{fig:0pimaxwellbloch}(b) apresentamos o pulso antes de interagir com o meio. Jà, na Fig.\ref{fig:0pimaxwellbloch}(c) temos o pulso na saída do meio atômico ($z=1$ cm). Vemos que a após interagir com o meio atômico a envoltória do pulso adquire um caráter oscilatório que varia entre valores negativos e positivos. Com isso, a área do pulso resultante é de aproximadamente $\theta \approx 0$, como esperado pelo teorema da área apresentado (ver figura \ref{fig:teoremaarea}).
 \begin{figure}[H]
 	\centering
-	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis. (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm.}
+	\caption{Frequência de Rabi $\Omega_0(z,\tau)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis. (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,\tau)$. (b) Curva de $\Omega_0(z,\tau)$ para $z=0$. (c) Curva de $\Omega_0(z,\tau)$ para $z=1$cm.}
 	\label{fig:0pimaxwellbloch}
 	\begin{tikzpicture}
 		\node (figura)at(0,0){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/pequenomaxwellbloch}};
@@ -1581,10 +1845,10 @@ O gráfico ilustrado na figura \ref{fig:0pimaxwellbloch} apresenta o resultado nu
 	\end{tikzpicture}
 \end{figure}
 
-A figura \ref{fig:0pimaxwellbloch_s22} mostra os resultado numéricos para a população $\sigma_{22}$ para todo o meio atômico. Em \ref{fig:0pimaxwellbloch_s22}(a) e \ref{fig:0pimaxwellbloch_s22}(b) temos a excitação da população $\sigma_{22}$, da entrada e saída do meio atômico, respectivamente. Podemos  ver que o campo não consegue produzir excitação significante do nível 5S1/2 para 6p3/2 logo nos primeiros átomos presentes em $z= 0$, e o decaimento espontâneo é desprezível no tempo representado. Os átomos presentes em $z=1$ cm  sofrem excitação ainda menor que a encontrada no início e tem um caráter oscilatório, pois o pulso que gera essas transições oscila entre valores negativo e positivos como representados em \ref{fig:0pimaxwellbloch}(c).
+A figura \ref{fig:0pimaxwellbloch_s22} mostra os resultado numéricos para a população $\sigma_{22}$ para todo o meio atômico.  Na Fig.\ref{fig:0pimaxwellbloch}(a) apresentamos o mapa de calor, em que $\sigma_{22}(z, \tau)$ é representado em cores. Na Fig.\ref{fig:0pimaxwellbloch_s22}(b) e Fig.\ref{fig:0pimaxwellbloch_s22}(c) temos a excitação da população $\sigma_{22}$ do inicio e fim do meio atômico, respectivamente. Podemos  ver que o campo não consegue produzir excitação significante do nível $5^2S_{1/2}$ para $5^2P_{1/2}$ átomos presentes em $z=0$ ( Fig.\ref{fig:0pimaxwellbloch_s22}(b) ) e o decaimento espontâneo é desprezível no tempo representado após a interação. Nos átomos presentes em $z=1$~cm ( Fig.\ref{fig:0pimaxwellbloch_s22}(c) )  a excitação é ainda mais desprezível que a encontrada no início e tem um caráter oscilatório.
 \begin{figure}[H]
 	\centering
-	\caption{População $\sigma_{22}$ para um sistema de dois níveis (transição 5s1/2 6s3/2 do Rubídio 87) que interage com um pulso de área pequena $\theta = 5,7*10^{-4}\pi$. (a) Gráfico de temperatura para população $\sigma_{22}(z,t)$. (b) Curva de $\sigma_{22}$ para $z=0$. (c) Curva de $\sigma_{22}$ para $z=1$ cm.}
+	\caption{População $\sigma_{22}(z,\tau)$ para um sistema de dois níveis ( transição $5^2S_{1/2} \longrightarrow 5^2P_{1/2}$ do Rubídio-87 ) que interage com um pulso de área pequena $\theta = 5,7*10^{-4}\pi$. (a) Gráfico de temperatura para população $\sigma_{22}(z,t)$. (b) Curva de $\sigma_{22}(z,\tau)$ para $z=0$. (c) Curva de $\sigma_{22}(z,\tau)$ para $z=1$ cm.}
 	\label{fig:0pimaxwellbloch_s22}
 	\begin{tikzpicture}
 		\node (figura)at(0,0){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/s22pequenomaxwellbloch}};
@@ -1597,10 +1861,10 @@ A figura \ref{fig:0pimaxwellbloch_s22} mostra os resultado numéricos para a popu
 		\node[below of= figura,yshift=0.00\linewidth,xshift=0.32\linewidth](a){(c)};
 	\end{tikzpicture}
 \end{figure}
-Na figura \ref{fig:0pimaxwellbloch_s12} temos os resultados numéricos para a coerência $\imaginary{(\sigma_{12})}$. A coerência dos primeiro átomos ($z=0$) é representa na figura \ref{fig:0pimaxwellbloch_s12}(a)  e em \ref{fig:0pimaxwellbloch_s12}(b) temos a coerência do últimos átomos ($z=1$ cm). A coerência atômica obedece a taxa de relaxação $\gamma_{12} = \Gamma_{12}/2$. Por isso, é praticamente desprezível em fig. \ref{fig:0pimaxwellbloch_s12}(a) para o tempo representado.
+Na figura \ref{fig:0pimaxwellbloch_s12} temos os resultados numéricos para a coerência $\imaginary{(\sigma_{12}(z,\tau))}$. A Fig.\ref{fig:0pimaxwellbloch}(a) mostra o mapa de calor, no qual $\sigma_{12}(z, \tau)$ é representado em cores. A coerência dos primeiro átomos ($z=0$) é representa na Fig.\ref{fig:0pimaxwellbloch_s12}(b)  e na Fig.\ref{fig:0pimaxwellbloch_s12}(c) temos a coerência do últimos átomos ($z=1$ cm). A coerência atômica obedece a taxa de relaxação $\gamma_{12} = \Gamma_{12}/2$ (ignorando termo desfasador). Por isso, $\imaginary{(\sigma_{12})}$ é praticamente estacionário para o tempo representado na Fig.\ref{fig:0pimaxwellbloch_s12}(a).
 \begin{figure}[H]
 	\centering
-	\caption{Coerência atômica $\sigma_{12}(z,t)$ para um sistema de dois níveis (transição 5s1/2 6s3/2 do Rubídio 87) que interage com um pulso de área pequena $\theta = 5,7*10^{-4}\pi$. (a) Gráfico de temperatura para $\sigma_{12}(z,t)$. (b) Curva de $\sigma_{12}$ para $z=0$. (c) Curva de $\sigma_{12}$ para $z=1$ cm.}
+	\caption{Coerência atômica $\sigma_{12}(z,t)$ para um sistema de dois níveis ( transição $5^2S_{1/2} \longrightarrow 5^2P_{1/2}$ do Rubídio-87 ) que interage com um pulso de área pequena ($\theta = 5,7*10^{-4}\pi$). (a) Gráfico de temperatura para $\sigma_{12}(z,t)$. (b) Curva de $\sigma_{12}$ para $z=0$. (c) Curva de $\sigma_{12}$ para $z=1$~cm.}
 	\label{fig:0pimaxwellbloch_s12}
 	\begin{tikzpicture}
 		\node (figura)at(0,0){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/s12pequenomaxwellbloch}};
@@ -1613,34 +1877,35 @@ Na figura \ref{fig:0pimaxwellbloch_s12} temos os resultados numéricos para a coe
 		\node[below of= figura,yshift=0.00\linewidth,xshift=0.31\linewidth](a){(c)};
 	\end{tikzpicture}
 \end{figure}
-Na figura \ref{fig:0pimaxwellbloch_freq} apresentamos o resultados para $\Omega_0$ no domínio da frequência. Esses resultados foram obtidos a partir de  FFT (Transformada de Fourier rápida) no resultados numéricos obtidos no domínio do tempo. Em Fig.\ref{fig:0pimaxwellbloch_freq}(a) temos o resultado para $z=0$, em Fig.\ref{fig:0pimaxwellbloch_freq}(b) $z = 0,05$ cm e Fig.\ref{fig:0pimaxwellbloch_freq}(c) $z=1,0$ cm. Observamos que ao se propagar pelo meio a frequências próximas ao centro são absorvidas, pois estão em ressonância com o meio(transição 5s1/2-6p1/2).
 \begin{figure}[H]
 	\centering
-	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubidio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm.}
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis. (a) Gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm.}
 	\label{fig:0pimaxwellbloch_freq}
 	\usetikzlibrary{arrows}
 	\begin{tikzpicture}[centered]
-		\node at (0,0) (figura){\includegraphics[width=0.4\linewidth]{figuras_do_trabalho/absorcao}};
-%		\node[left of=figura,rotate=90, yshift=0.26\linewidth] (legendax) {$\Omega_0(z,\omega)$ [Unid. Arbtrária]};
-%		\node[below of=figura,yshift=-0.29\linewidth,xshift=0.02\linewidth] (legenday) {($\omega-\omega_0$) [THz]};
-%		\node[below of= figura,yshift=0.40\linewidth,xshift=0.31\linewidth](a){(a)};
-%		\node[below of= figura,yshift=0.16\linewidth,xshift=0.31\linewidth](b){(b)};
-%		\node[below of= figura,yshift=-0.08\linewidth,xshift=0.31\linewidth](a){(c)};
+		\node at (0,0) (figura){\includegraphics[width=0.5\linewidth]{figuras_do_trabalho/absorcao}};
+				\node[left of=figura,rotate=90, yshift=0.23\linewidth] (legendax) {$\Omega_0(z,\omega)$ [Unid. Arbtrária]};
+				\node[below of=figura,yshift=-0.25\linewidth,xshift=0.02\linewidth] (legenday) {$(\omega-\omega_0)/2\pi$ [THz]};
+				\node[below of= figura,yshift=0.30\linewidth,xshift=0.22\linewidth](a){(a)};
+				\node[below of= figura,yshift=0.12\linewidth,xshift=0.22\linewidth](b){(b)};
+				\node[below of= figura,yshift=-0.04\linewidth,xshift=0.22\linewidth](a){(c)};
 	\end{tikzpicture}
 	
 \end{figure}
+Na figura \ref{fig:0pimaxwellbloch_freq} apresentamos o resultados para $\Omega_0$ no domínio da frequência. Esses resultados foram obtidos a partir de  FFT (Transformada de Fourier rápida) no resultados numéricos obtidos no domínio do tempo. Em Fig.\ref{fig:0pimaxwellbloch_freq}(a) temos o resultado para $z=0$, em Fig.\ref{fig:0pimaxwellbloch_freq}(b) $z = 0,05$ cm e Fig.\ref{fig:0pimaxwellbloch_freq}(c) $z=1,0$ cm. Observamos que ao se propagar pelo meio apenas as frequências próximas ao centro são absorvidas, pois estão em ressonância com a transição $5^2S_{1/2}\longrightarrow5^2P_{1/2}$.
+
  
  
 \subsection{Transparência auto induzida} 
 
-O teorema da área apresentado na seção anterior, indica que para pulso com área menor que $\pi$ a área deve  ir a zero, conforme o pulso se propaga no meio. Porém, quando o pulso possui área maior que $\pi$ e menor que $2\pi$, temos que área desse pulso deve aumentar até chegar em $2\pi$. Para verificar esse comportamento, aplicamos um pulso de área de $\theta=0,7\pi$ e $\theta=1,7\pi$ ao nosso algoritmo.
+O teorema da área apresentado na Seção \ref{sec:area}, indica que para pulso com área menor que $\pi$ a área vai a zero, conforme o pulso se propaga no meio. Porém, quando o pulso possui área maior que $\pi$ e menor que $2\pi$, temos que área desse pulso deve aumentar até chegar em $2\pi$. Para verificar esse comportamento, aplicamos um pulso de área de $\theta=0,7\pi$ e $\theta=1,7\pi$ ao nosso algoritmo.
 
 
-Na figura \ref{fig:0.7e1.7pimaxwellbloch} temos representado a propagação de dois pulsos diferentes. Na figura \ref{fig:0.7e1.7pimaxwellbloch}(a) o pulso possui área $\theta = 0,7 \pi$. Neste caso, podemos ver que, ao propaga no meio, sua área se aproxima a $\theta=0$ e o pulso adquire o mesmo comportamento oscilatório que observamos no pulso de pequena área \ref{fig:0pimaxwellbloch}. A figura \ref{fig:0.7e1.7pimaxwellbloch}(b) mostra um pulso de área $\theta= 1,7\pi$. Neste caso, observamos um aumento da área do pulso que se aproxima de $\theta=2\pi$, o que está de acordo com o teorema da área.
+Na figura \ref{fig:0.7e1.7pimaxwellbloch} temos representado a propagação de dois pulsos diferentes. Na esquerda temos o pulso com área $\theta = 0,7 \pi$. Neste caso, podemos ver que, ao propaga no meio, sua área se aproxima a $\theta=0$ e o pulso adquire comportamento oscilatório assim como observado no pulso de pequena área (figura \ref{fig:0pimaxwellbloch}). os gráficos a direita mostram um pulso de área $\theta= 1,7\pi$. Neste caso, observamos um aumento da área do pulso que se aproxima de $\theta=2\pi$, o que está de acordo com o teorema da área.
 
 \begin{figure}[H]
 	\centering
-	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área pequena $\theta = 5,7*10^{-4}\pi$ que interage sistema de dois níveis (transição 5s1/2 6s3/2 do Rubidio 87). (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$cm}
+	\caption{ Na esquerda temos a solução para pulso com $\theta_0 = 0,7$. Na direita temos a solução para pulso com $\theta_0 = 1,7$.}
 	\label{fig:0.7e1.7pimaxwellbloch}
 	\usetikzlibrary{arrows}
 	\begin{tikzpicture}
@@ -1660,7 +1925,7 @@ Na figura \ref{fig:0.7e1.7pimaxwellbloch} temos representado a propagação de doi
 	\end{tikzpicture}
 \end{figure}   
 
-Para pulsos com áreas ($2\pi$,$4\pi$, $6\pi$, $\dots$, $2n\pi$), de acordo com o teorema da área, é esperado que a área não mude conforme o pulso se propaga no meio. Esse fenômeno recebe o nome de transparência auto induzida. Em Eberly \cite{allen1987optical} é obtido a solução para um pulso com $\theta=2\pi$, onde é considerado o fato que $\dv*{\theta}{z}=0$ para obter a seguinte equação para $\Omega_0(z,t)$:
+Para pulsos com áreas ($2\pi$,$4\pi$, $6\pi$), de acordo com o teorema da área, é esperado que a área não mude conforme o pulso se propaga no meio. Esse fenômeno recebe o nome de transparência auto induzida. Em Eberly \cite{allen1987optical} é apresentado a solução para um pulso com $\theta=2\pi$, onde é considerado o fato que $\dv*{\theta}{z}=0$ para obter a seguinte equação para $\Omega_0(z,t)$:
 \begin{equation}
 	\Omega_0(z,t) = \frac{2*1,76}{T_p}sech\qty[\frac{1,76}{T_p}\qty(t-\frac{z}{v_g})], 
 	\label{eq:2pianalitico}
@@ -1670,10 +1935,10 @@ onde a velocidade de grupo é dada por
 	v_g = \frac{c}{1+\alpha c T_p/1,76}.
 \end{equation}
 
-Na figura \ref{fig:2pimaxwellbloch} temos a solução numérica para frequência de Rabi $\Omega_0$ para a propagação de um pulso de área $\theta=2\pi$. em (A) temos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar por todo o meio. Em (b) temos $\Omega_0$ em $z=0$  e em (c) temos o pulso ao final. Podemos ver que a envoltória do pulso não sofre mudança ao se propagar pelo meio atômico em mantem $\theta \approx 2\pi$. resultado coerente com o teorema da área e o resultado analítico \eqref{eq:2pianalitico}.  
+Na figura \ref{fig:2pimaxwellbloch} temos a solução numérica para frequência de Rabi $\Omega_0$ para a propagação de um pulso de área $\theta=2\pi$. Na Fig.\ref{fig:2pimaxwellbloch}(a) temos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar por todo o meio. Em Fig.\ref{fig:2pimaxwellbloch}(b) temos $\Omega_0$ em $z=0$  e na Fig.\ref{fig:2pimaxwellbloch}(c) temos o pulso na saída do meio. Podemos ver que o pulso não sofre mudança significativa ao se propagar pelo meio atômico e mantem $\theta \approx 2\pi$. Resultado coerente com o teorema da área e o resultado analítico \eqref{eq:2pianalitico}.  
 \begin{figure}[H]
 	\centering
-	\caption{Resultado}
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área $\theta = 2\pi$ que interage sistema de dois níveis. (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=1$ cm.}
 	\label{fig:2pimaxwellbloch}
 	\begin{tikzpicture}
 		\node (figura)at(0,0){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/2pimaxwellbloch}};
@@ -1687,7 +1952,7 @@ Na figura \ref{fig:2pimaxwellbloch} temos a solução numérica para frequência de 
 	\end{tikzpicture}
 \end{figure}
 
-Em  G. L. Lamb, Jr~\cite{gl1971analytical,allen1987optical} encontramos resultados analíticos para $\theta = $\{$4\pi$, $6\pi$ e $0\pi$\}. Um pulso de área $\theta = 4\pi$ pode ser descrito pela colisão de dois pulsos com velocidades de grupos $v_g$ e largura temporal $T_p$ diferentes. Assim, temos a seguinte expressão analítica para $\Omega_0(z,t)$:
+Em  G. L. Lamb, Jr~\cite{gl1971analytical,allen1987optical} encontramos resultados analíticos para $\theta_0 = $\{$4\pi$ e $6\pi$\}. Um pulso de área $\theta_0 = 4\pi$ pode ser descrito pela colisão de dois pulsos com velocidades de grupos $v_g$ e largura temporal $T_p$ diferentes. Assim, temos a seguinte expressão analítica para $\Omega_0(z,t)$:
 \begin{equation}
 	\Omega_0(z,t) = \qty(\frac{T_{r}^2 - T_{r'}^2}{T_{r}^2 + T_{r'}^2})\frac{\frac{2}{T_{r}}sech\qty(\frac{\tau}{T_{r}})+\frac{2}{T_{r'}}sech\qty(\frac{\tau'}{T_{r'}})}{1 - \frac{2T_{r}T_{r'}}{T_{r}^2 + T_{r'}^2}\qty[tanh\qty(\frac{\tau}{T_{r}})tanh\qty(\frac{\tau'}{T_{r'}})-sech\qty(\frac{\tau}{T_{r}})sech\qty(\frac{\tau'}{T_{r'}})]},
 	\label{eq:4pianalitico}
@@ -1699,16 +1964,16 @@ onde $T_{r} = T_p/1,76$ e $T_{r'} = T_{p'}/1,76$. Os tempos $\tau$ e $\tau'$ são
 \end{eqnarray}
 Essas velocidades de grupo, assim como o caso de $\theta=2\pi$, obedece a relação
 \begin{eqnarray}
-	v_g = \frac{c}{1+\alpha T_r}\\
-	v_g' = \frac{c}{1+\alpha T_r'}
+	v_g = \frac{c}{1+\alpha c T_r}\\
+	v_g' = \frac{c}{1+\alpha c T_r'}
 \end{eqnarray}
 
 
-Na figura \ref{fig:4pimaxwellbloch} temos a solução numérica para frequência de Rabi $\Omega_0$ para a propagação de um pulso de área $\theta=4\pi$. Em (A) temos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar pelo meio. Em (b) temos $\Omega_0$ em $z=0$  e em (c) temos o pulso em $z=10$ cm. Podemos ver que o pulso de área $\theta = 4\pi$ se divide em dois pulsos de área $\theta\approx2\pi$, com largura temporal diferentes, assim como a descrição analítica \eqref{eq:4pianalitico}. O segundo pulso se afasta do primeiro conforme se propaga pelo meio. Isso significa que possuem velocidades de grupo $v_g$ diferentes, sendo que o primeiro mantem a velocidade grupo do pulso inicial (sem propagação). 
+Na figura \ref{fig:4pimaxwellbloch} temos a solução numérica para frequência de Rabi $\Omega_0$ para a propagação de um pulso de área $\theta=4\pi$. Na Fig.\ref{fig:4pimaxwellbloch}(A) temos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar pelo meio. Na Fig.\ref{fig:4pimaxwellbloch}(b) temos $\Omega_0$ em $z=0$  e na Fig.\ref{fig:4pimaxwellbloch}(c) temos o pulso em $z=10$ cm. Podemos ver que o pulso de área $\theta = 4\pi$ se divide em dois pulsos de área $\theta\approx2\pi$, com largura temporal diferentes, assim como a descrição analítica \eqref{eq:4pianalitico}. O segundo pulso se afasta do primeiro conforme se propaga pelo meio. Isso significa que possuem velocidades de grupo $v_g$ diferentes, sendo que o primeiro mantem a velocidade grupo do pulso inicial (sem propagação). 
 
 \begin{figure}[H]
 	\centering
-	\caption{Resultado}
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área $\theta = 4\pi$ que interage sistema de dois níveis. (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=10$cm.}
 	\label{fig:4pimaxwellbloch}
 	\begin{tikzpicture}
 		\node (figura)at(0,0){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/4pimaxwellbloch}};
@@ -1722,13 +1987,13 @@ Na figura \ref{fig:4pimaxwellbloch} temos a solução numérica para frequência de 
 	\end{tikzpicture}
 \end{figure}
 
-Para um pulso com área $\theta=6\pi$, é esperado que o pulso se decomponha em três pulsos de área $\theta=2\pi$, conforme resultado analitico presente em ~\cite{gl1971analytical}.
+Para um pulso com área $\theta=6\pi$, é esperado que o pulso se decomponha em três pulsos de área $\theta=2\pi$, conforme resultado analítico presente em~\cite{gl1971analytical}.
   
-A figura \ref{fig:6pimaxwellbloch} traz a solução numérica para frequência de Rabi $\Omega_0$ para a propagação de um pulso de área $\theta=4\pi$. Em (A) temos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar pelo meio. Em (b) temos $\Omega_0$ em $z=0$  e em (c) temos o pulso em $z=15$ cm. Observamos a tendencia do pulso de área $\theta = 6\pi$ ser divido em três pulsos de área $\theta\approx2\pi$, com largura temporal diferentes, assim como a descrição analítica apresentado em \cite{gl1971analytical}. vemos que os três pulsos tem velocidades $v_g$ diferentes, pois se afastam conforme se propaga pelo meio.
+A figura \ref{fig:6pimaxwellbloch} traz a solução numérica para frequência de Rabi $\Omega_0(z, \tau)$ para a propagação de um pulso de área $\theta=4\pi$. Na Fig.\ref{fig:6pimaxwellbloch}(a) mostramos o gráfico de temperatura onde podemos ver o comportamento do pulso ao se propagar pelo meio. A Fig.\ref{fig:6pimaxwellbloch}(b) apresenta $\Omega_0$ em $z=0$  e a Fig.\ref{fig:6pimaxwellbloch}(c) temos o pulso em $z=15$~cm. Observamos a tendência do pulso de área $\theta = 6\pi$ ser divido em três pulsos de área $\theta\approx2\pi$, com largura temporal diferentes, assim como a descrição analítica apresentado em \cite{gl1971analytical}. vemos que os três pulsos tem velocidades $v_g$ diferentes, pois se afastam conforme se propagam pelo meio.
 
 \begin{figure}[H]
 	\centering
-	\caption{Resultado}
+	\caption{Frequência de Rabi $\Omega_0(z,t)$ para pulso de área $\theta = 6\pi$ que interage sistema de dois níveis. (a) gráfico de temperatura para a frequência de Rabi $\omega_0(z,t)$. (b) Curva de $\Omega_0(z,t)$ para $z=0$. (c) Curva de $\Omega_0(z,t)$ para $z=10$ cm.}
 	\label{fig:6pimaxwellbloch}
 	\begin{tikzpicture}
 		\node (figura)at(0,0){\includegraphics[width=0.7\linewidth]{figuras_do_trabalho/6pimaxwellbloch}};
@@ -1741,141 +2006,3 @@ A figura \ref{fig:6pimaxwellbloch} traz a solução numérica para frequência de Ra
 		\node[below of= figura,yshift=0.00\linewidth,xshift=0.31\linewidth](a){(c)};
 	\end{tikzpicture}
 \end{figure}
-
-
-
-\section{RESULTADOS EXPERIMENTAIS ENCONTRADO NA LITERATURA}
-Exemplo de equação centralizada:
-
-\begin{equation}
-\label{pitagoras}
-a^2 = b^2 + c^2.
-\end{equation}
-
-Substituindo esse resultado o hamiltoniana H'
-
-Exemplo de equação no texto: $e^{ix} = \cos{x} + i\sin{x}$. Citação de equação: \ref{pitagoras}.
-
-\section{Tabelas}
-
-Exemplo de tabela:
-
-\begin{table}[H]
-	\begin{center}
-		\begin{tabular}{|c|c|c|}
-			\hline
-			$\sin{x}$ & $\cos{x}$ & $\tan{x}$ \\
-			\hline
-			$\sec{x}$ & $\csc{x}$ & $\cot{x}$ \\
-			\hline
-			$\arcsin{x}$ & $\arccos{x}$ & $\arctan{x}$ \\
-			\hline
-			$\sinh{x}$ & $\cosh{x}$ & $\tanh{x}$ \\
-			\hline
-		\end{tabular}
-		\vspace{0.3cm}
-		\caption{Funções trigonométricas e hiperbólicas.}
-		\label{funcoes}
-	\end{center}
-\end{table}
-
-%Citação de tabela: \ref{funcoes}
-
-\section{Códigos}
-
-Exemplo de código (linguagem C):
-
-\vspace{0.5cm}
-\begin{lstlisting}
-#include<stdio.h>
-
-int k;
-
-main()
-{
-for (k=1; k<=5; k++)
-printf("Física - UNIR - Ji-Paraná\n");
-}
-\end{lstlisting}
-
-\section{Citação}
-
-Exemplo de citação:
-
-\vspace{0.5cm}
-\begin{addmargin}[3cm]{0.0cm}\small{
-		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-		Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla
-}\end{addmargin}
-\vspace{0.5cm}
-
-Citando um trabalho: (ARAÚJO, 2004).
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter[Outro capítulo]{Outro capítulo}
-
-Digite aqui o conteúdo de outro capítulo.
-
-\begin{table}[H]
-	\begin{center}
-		\begin{tabular}{|c|c|c|}
-			\hline
-			$\sin{x}$ & $\cos{x}$ & $\tan{x}$ \\
-			\hline
-			$\sec{x}$ & $\csc{x}$ & $\cot{x}$ \\
-			\hline
-			$\arcsin{x}$ & $\arccos{x}$ & $\arctan{x}$ \\
-			\hline
-			$\sinh{x}$ & $\cosh{x}$ & $\tanh{x}$ \\
-			\hline
-		\end{tabular}
-		\vspace{0.3cm}
-		\caption{Funções trigonométricas e hiperbólicas.}
-		\label{funcoes2}
-	\end{center}
-\end{table}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/Graph2.pdf}
-	\label{fig2}
-	\caption{Espectro de um laser de femtossegundos.}
-\end{figure}
-\begin{figure}[H]
-\centering
- \def\svgscale{0.6}
- \includesvg{figuras_do_trabalho/Graph2}
-\label{fig3}
-\caption{Espectro de um laser de femtossegundos.}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/graficop22theta}
-	\label{fig:graficop22theta}
-	\captionsetup{margin=3cm}
-	\caption[Níveis de energia de um hipotético "átomo de dois níveis".]{Níveis de energia de um hipotético "átomo de dois níveis". A "dessintonia" $ \delta = \omega_{ab} - \omega$ é a diferença entre $(E_2-E_1)/\hbar$ e $\omega$. A radiação da frequência angular $\omega$ é quase ressonante com a transição $E_1\rightarrow E_2$, quando $\delta\ll\omega_{ab} - \omega$.} 
-\end{figure}
-
-\begin{figure}[H]
-	\caption[descrição top]{descrição comum}
-	\centering
-	\label{fig:graficop22theta}
-	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/pulso}
-\end{figure}
-
-\begin{figure}[H]
-	\caption[descrição top]{descrição comum}
-	\centering
-	\label{fig:graficop22theta}
-	\includegraphics[width=0.6\linewidth]{figuras_do_trabalho/pulsofinal}
-	\caption*{Fonte:Elaborada pelo Autor}
-\end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
