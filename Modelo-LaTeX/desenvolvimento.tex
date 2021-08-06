@@ -208,7 +208,7 @@ Substituindo \eqref{eq:3.27} em \eqref{eq:3.34} e fazendo a mudança de  notação 
 P^{L+}(z,t) & = & \frac{1}{2} \qty{\frac{1}{2\pi} \int_{-\infty}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{\epsilon^{(n)}(\omega_c)}{n!}\omega^n]\tilde{\mathcal{E}}(z, \omega)e^{i\omega t }}e^{i\omega_c t - ik_cz}\nonumber\\& = & \frac{1}{2} \qty{\frac{1}{2\pi}\int_{-\infty}^{\infty} d\omega \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-1)^n\epsilon^{(n)}(\omega_c)}{n!}\pdv[n]{t}]\tilde{\mathcal{E}}(z, \omega)e^{i\omega t }}e^{i\omega_c t - ik_cz}\nonumber\\& = & \frac{1}{2} \qty{ \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-1)^n\epsilon^{(n)}(\omega_c)}{n!}\pdv[n]{t}]\frac{1}{2\pi}\int_{-\infty}^{\infty} d\omega\tilde{\mathcal{E}}(z, \omega)e^{i\omega t }}e^{i\omega_c t - ik_cz}\nonumber\\& = & \frac{1}{2} \qty{ \qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-1)^n\epsilon^{(n)}(\omega_c)}{n!}\pdv[n]{t}]\tilde{\mathcal{E}}(z, t)}e^{i\omega_c t - ik_cz}\nonumber\\& = & \frac{1}{2}\tilde{\mathcal{P}}^\mathcal{L}(z,t)e^{i\omega t - ik_cz},
 \label{eq:3.35}
 \end{eqnarray}
-onde $\tilde{\mathcal{P}}^\mathcal{L}(z,t)$ é a envoltória da polarização que varia lentamente em relação ao espaço e o tempo. O próximo passo é substituir o campo elétrico \eqref{eq:3.32} e a polarização \eqref{eq:3.35} na equação de propagação de onda \eqref{eq:3.14}. Assim, temos: 
+onde $\tilde{\mathcal{P}}^\mathcal{L+}(z,t)$ é a envoltória da polarização que varia lentamente em relação ao espaço e o tempo. O próximo passo é substituir o campo elétrico \eqref{eq:3.32} e a polarização \eqref{eq:3.35} na equação de propagação de onda \eqref{eq:3.14}. Assim, temos: 
 \begin{eqnarray}
 &&\qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t) -  \frac{1}{c^2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t)\nonumber\\&& =  \mu_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{P}}^\mathcal{L}(z,t)\nonumber\\\nonumber\\\nonumber\\&& \qty[\pdv[2]{z} - 2ik_c\pdv{z} - {k_c}^2]\tilde{\mathcal{E}}(z,t) -  \mu_0\epsilon_0\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\tilde{\mathcal{E}}(z,t) \nonumber\\&& =\frac{\mu_0}{2}\bigg[\pdv[2]{t} + 2i\omega_c\pdv{t} - {\omega_c}^2\bigg]\qty[\epsilon(\omega_c) - \epsilon_0  + \sum_{n=1}^\infty \frac{(-i)^n}{n!}\epsilon^{(n)}(\omega_c)\pdv[n]{t}]\tilde{\mathcal{E}}(z, t). 
 \label{eq:3.36}
@@ -247,8 +247,9 @@ Para ondas eletromagnéticas, como vemos em \eqref{eq:3.26}, $k=\omega n/c$. Assi
 Esse tipo de onda é idealizado, pois ondas eletromagnética tem duração finita e e possuem uma distribuição de frequências e é escrita da seguinte forma 
 \begin{equation}
 	\Lambda(z,t) = \sum_nA_ne^{i(\omega_n t-k_nz)}.
+	\label{eq:onda}
 \end{equation}
-Assim, essa onda possui uma distribuição de velocidades de fases, e deixa de significado físico de velocidade da onda. Felizmente, esse tipo de onda Eletromagnética tem uma velocidade definida que chamamos de velocidade de grupo $v_g$. É complexo derivar essa velocidade de grupo a partir da expressão (), se temos uma distribuição grande de frequências. Por isso, usaremos a superposição de duas ondas com mesma amplitude, com frequências $\omega_1 = \omega-\Delta\omega$ e $\omega_2 = \omega+\Delta\omega$ e números de ondas $k_1 = k - \Delta k $ e $k_2 = k + \Delta k $, como exemplificado na figura \eqref{fig:superposicao}.De forma que:
+Assim, essa onda possui uma distribuição de velocidades de fases, e deixa de significado físico de velocidade da onda. Felizmente, esse tipo de onda Eletromagnética tem uma velocidade definida que chamamos de velocidade de grupo $v_g$. É complexo derivar essa velocidade de grupo a partir da expressão \eqref{eq:onda} quando temos uma distribuição grande de frequências. Por isso, usaremos a superposição de duas ondas com mesma amplitude, com frequências $\omega_1 = \omega-\Delta\omega$ e $\omega_2 = \omega+\Delta\omega$ e números de ondas $k_1 = k - \Delta k $ e $k_2 = k + \Delta k $, como exemplificado na figura \eqref{fig:superposicao}. De forma que:
 \begin{eqnarray}
 	\Lambda(z,t) &=& Ae^{i[(\omega-\Delta\omega)t-(k-\Delta k)z]} + Ae^{i[(\omega+\Delta\omega)t-(k+\Delta k)z]} \nonumber\\ &=& Ae^{i(\omega t - k z)}[e^{-i(\Delta\omega t - \Delta k z)} + e^{i(\Delta\omega t-\Delta kz)}]\nonumber\\ &=& 2Acos(\Delta\omega t-\Delta kz)e^{i(\omega t - k z)},
 \end{eqnarray} 
@@ -297,7 +298,7 @@ onde a exponencial é o termo de propagação com velocidade $v_p = \omega/k = c/n(
 		\node[below of=figura1] (figura2) {\sageplot[scale=0.8]{B}};
 		\node[below of=figura2] (figura3) {\sageplot[scale=0.8]{C}};
 		\node[rotate=90,above of= figura2,xshift=0.3cm ] {$E(z,t)$};
-		\node[below of= figura3,yshift= 3cm, xshift=0.4cm ] {Tempo};
+		\node[below of= figura3,yshift= 3cm, xshift=0.4cm ] {$t$ (s)};
 		\node[right of = figura1,yshift= 2.4cm, xshift=-0.6cm] (labela) {(a)};
 		\node[right of = figura2,yshift= 2.4cm, xshift=-0.6cm] (labelb) {(b)};
 		\node[right of = figura3,yshift= 2.4cm, xshift=-0.6cm] (labelc) {(c)};	

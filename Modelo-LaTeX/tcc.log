@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.23)  6 AUG 2021 18:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.23)  6 AUG 2021 19:08
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1582,23 +1582,23 @@ Overfull \hbox (5.75826pt too wide) in alignment at lines 200--203
  []
 
 [7] [8]
-<sage-plots-for-tcc.tex/plot-0.pdf, id=439, 426.3673pt x 208.81198pt>
+<sage-plots-for-tcc.tex/plot-0.pdf, id=440, 426.3673pt x 208.81198pt>
 File: sage-plots-for-tcc.tex/plot-0.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-0.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-0.pdf  used on input line 
-296.
+297.
 (pdftex.def)             Requested size: 341.0943pt x 167.0498pt.
-<sage-plots-for-tcc.tex/plot-1.pdf, id=440, 426.3673pt x 208.81198pt>
+<sage-plots-for-tcc.tex/plot-1.pdf, id=441, 426.3673pt x 208.81198pt>
 File: sage-plots-for-tcc.tex/plot-1.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-1.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-1.pdf  used on input line 
-297.
+298.
 (pdftex.def)             Requested size: 341.0943pt x 167.0498pt.
-<sage-plots-for-tcc.tex/plot-2.pdf, id=441, 426.3673pt x 208.81198pt>
+<sage-plots-for-tcc.tex/plot-2.pdf, id=442, 426.3673pt x 208.81198pt>
 File: sage-plots-for-tcc.tex/plot-2.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-2.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-2.pdf  used on input line 
-298.
+299.
 (pdftex.def)             Requested size: 341.0943pt x 167.0498pt.
  [9] [10 <./sage-plots-for-tcc.tex/plot-0.pdf> <./sage-plots-for-tcc.tex/plot-1
 .pdf
@@ -1610,23 +1610,23 @@ clusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./sage-plots-for-tcc.tex/plot-2.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >] [11]
-<sage-plots-for-tcc.tex/plot-3.pdf, id=516, 426.37418pt x 209.17334pt>
+<sage-plots-for-tcc.tex/plot-3.pdf, id=517, 426.37418pt x 209.17334pt>
 File: sage-plots-for-tcc.tex/plot-3.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-3.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-3.pdf  used on input line 
-415.
+416.
 (pdftex.def)             Requested size: 341.0998pt x 167.33888pt.
-<sage-plots-for-tcc.tex/plot-4.pdf, id=517, 426.37418pt x 209.17334pt>
+<sage-plots-for-tcc.tex/plot-4.pdf, id=518, 426.37418pt x 209.17334pt>
 File: sage-plots-for-tcc.tex/plot-4.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-4.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-4.pdf  used on input line 
-416.
+417.
 (pdftex.def)             Requested size: 341.0998pt x 167.33888pt.
-<sage-plots-for-tcc.tex/plot-5.pdf, id=518, 426.37418pt x 209.17334pt>
+<sage-plots-for-tcc.tex/plot-5.pdf, id=519, 426.37418pt x 209.17334pt>
 File: sage-plots-for-tcc.tex/plot-5.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-5.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-5.pdf  used on input line 
-417.
+418.
 (pdftex.def)             Requested size: 341.0998pt x 167.33888pt.
  [12] [13 <./sage-plots-for-tcc.tex/plot-3.pdf> <./sage-plots-for-tcc.tex/plot-
 4.pdf
@@ -1638,17 +1638,17 @@ clusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./sage-plots-for-tcc.tex/plot-5.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >]
-<sage-plots-for-tcc.tex/plot-6.pdf, id=573, 350.61272pt x 279.83105pt>
+<sage-plots-for-tcc.tex/plot-6.pdf, id=574, 350.61272pt x 279.83105pt>
 File: sage-plots-for-tcc.tex/plot-6.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-6.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-6.pdf  used on input line 
-501.
+502.
 (pdftex.def)             Requested size: 217.37762pt x 173.49345pt.
-<sage-plots-for-tcc.tex/plot-7.pdf, id=574, 350.04234pt x 279.83105pt>
+<sage-plots-for-tcc.tex/plot-7.pdf, id=575, 350.04234pt x 279.83105pt>
 File: sage-plots-for-tcc.tex/plot-7.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-7.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-7.pdf  used on input line 
-501.
+502.
 (pdftex.def)             Requested size: 217.024pt x 173.49345pt.
  [14 <./sage-plots-for-tcc.tex/plot-6.pdf> <./sage-plots-for-tcc.tex/plot-7.pdf
 
@@ -1659,7 +1659,7 @@ clusion: multiple pdfs with page group included in a single page
 Cap\'{\i }tulo 3.
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 550.
+less on input line 551.
 
 [16
 
@@ -1668,402 +1668,402 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
 4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.550 \end{equation}
+l.551 \end{equation}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{equation.3.1.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.550 \end{equation}
+l.551 \end{equation}
                     ] [17pdfTeX warning (ext4): destination with the same ident
 ifier (name{equation.3.1.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.585 \begin{eqnarray}
+l.586 \begin{eqnarray}
                       ] [18] [19] [20] [21]
 Cap\'{\i }tulo 4.
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 794.
+less on input line 795.
 
 [22
 
 
 ] [23] [24] [25]
-Overfull \hbox (0.84047pt too wide) in paragraph at lines 944--946
+Overfull \hbox (0.84047pt too wide) in paragraph at lines 945--947
 \T1/ptm/m/n/10.95 O átomo não pos-sui mo-mento de di-polo quanto está em um de 
 seus es-ta-dos es-ta-ci-o-ná-rios, en-tão $[] [] \OT1/cmr/m/n/10.95 =
  []
 
 [26] [27]
-<sage-plots-for-tcc.tex/plot-8.pdf, id=872, 279.43398pt x 277.99045pt>
+<sage-plots-for-tcc.tex/plot-8.pdf, id=873, 279.43398pt x 277.99045pt>
 File: sage-plots-for-tcc.tex/plot-8.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-8.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-8.pdf  used on input line 
-1007.
+1008.
 (pdftex.def)             Requested size: 195.60243pt x 194.59198pt.
  [28 <./sage-plots-for-tcc.tex/plot-8.pdf>] [29]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1092.
+(hyperref)                removing `superscript' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1092.
+(hyperref)                removing `superscript' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1092.
+(hyperref)                removing `subscript' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathrel' on input line 1092.
+(hyperref)                removing `\mathrel' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathchoice' on input line 1092.
+(hyperref)                removing `\mathchoice' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 1092.
+(hyperref)                removing `\setbox' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 1092.
+(hyperref)                removing `\hbox' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 1092.
+(hyperref)                removing `\mathsurround' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\displaystyle' on input line 1092.
+(hyperref)                removing `\displaystyle' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\std@minus' on input line 1092.
+(hyperref)                removing `\std@minus' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ht' on input line 1092.
+(hyperref)                removing `\ht' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dp' on input line 1092.
+(hyperref)                removing `\dp' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1092.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\box' on input line 1092.
+(hyperref)                removing `\box' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 1092.
+(hyperref)                removing `\setbox' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 1092.
+(hyperref)                removing `\hbox' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 1092.
+(hyperref)                removing `\mathsurround' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textstyle' on input line 1092.
+(hyperref)                removing `\textstyle' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\std@minus' on input line 1092.
+(hyperref)                removing `\std@minus' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ht' on input line 1092.
+(hyperref)                removing `\ht' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dp' on input line 1092.
+(hyperref)                removing `\dp' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1092.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\box' on input line 1092.
+(hyperref)                removing `\box' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 1092.
+(hyperref)                removing `\setbox' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 1092.
+(hyperref)                removing `\hbox' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 1092.
+(hyperref)                removing `\mathsurround' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\scriptstyle' on input line 1092.
+(hyperref)                removing `\scriptstyle' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\std@minus' on input line 1092.
+(hyperref)                removing `\std@minus' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ht' on input line 1092.
+(hyperref)                removing `\ht' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dp' on input line 1092.
+(hyperref)                removing `\dp' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1092.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\box' on input line 1092.
+(hyperref)                removing `\box' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 1092.
+(hyperref)                removing `\setbox' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 1092.
+(hyperref)                removing `\hbox' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 1092.
+(hyperref)                removing `\mathsurround' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\scriptscriptstyle' on input line 1092.
+(hyperref)                removing `\scriptscriptstyle' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\std@minus' on input line 1092.
+(hyperref)                removing `\std@minus' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ht' on input line 1092.
+(hyperref)                removing `\ht' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dp' on input line 1092.
+(hyperref)                removing `\dp' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1092.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\box' on input line 1092.
+(hyperref)                removing `\box' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1092.
+(hyperref)                removing `\z@' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathrel' on input line 1092.
+(hyperref)                removing `\mathrel' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mkern' on input line 1092.
+(hyperref)                removing `\mkern' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 1092.
+(hyperref)                removing `\rightarrow' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1092.
+(hyperref)                removing `superscript' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1092.
+(hyperref)                removing `subscript' on input line 1093.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1092.
+(hyperref)                removing `math shift' on input line 1093.
 
-<figuras_do_trabalho/Rubidio.jpg, id=929, 513.92pt x 385.44pt>
+<figuras_do_trabalho/Rubidio.jpg, id=930, 513.92pt x 385.44pt>
 File: figuras_do_trabalho/Rubidio.jpg Graphic file (type jpg)
 <use figuras_do_trabalho/Rubidio.jpg>
-Package pdftex.def Info: figuras_do_trabalho/Rubidio.jpg  used on input line 10
-99.
+Package pdftex.def Info: figuras_do_trabalho/Rubidio.jpg  used on input line 11
+00.
 (pdftex.def)             Requested size: 227.62206pt x 170.71745pt.
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
-00.
+01.
 (C:\Users\Eliton\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1100--1100
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 []|\T1/ptm/m/n/10 Fonte: <[][]$\T1/pcr/m/n/10 https : / / upload . wikimedia . 
 org / wikipedia / commons / thumb / d / d2 / RbH .
  []
 
 
-Overfull \hbox (9.86278pt too wide) in paragraph at lines 1102--1103
+Overfull \hbox (9.86278pt too wide) in paragraph at lines 1103--1104
 []\T1/ptm/m/n/10.95 O Rubídio-$\OT1/cmr/m/n/10.95 87$ \T1/ptm/m/n/10.95 pos-sui
  nú-mero atô-mico $\OT1/cmr/m/n/10.95 37$ \T1/ptm/m/n/10.95 e sua massa atô-mic
 a é de apro-xi-ma-da-mente $\OT1/cmr/m/n/10.95 86\OML/cmm/m/it/10.95 ; \OT1/cmr
@@ -2071,53 +2071,53 @@ a é de apro-xi-ma-da-mente $\OT1/cmr/m/n/10.95 86\OML/cmm/m/it/10.95 ; \OT1/cmr
  []
 
 [30 <./figuras_do_trabalho/Rubidio.jpg>]
-<figuras_do_trabalho/Rb_energy.pdf, id=946, 614.295pt x 794.97pt>
+<figuras_do_trabalho/Rb_energy.pdf, id=947, 614.295pt x 794.97pt>
 File: figuras_do_trabalho/Rb_energy.pdf Graphic file (type pdf)
 <use figuras_do_trabalho/Rb_energy.pdf>
 Package pdftex.def Info: figuras_do_trabalho/Rb_energy.pdf  used on input line 
-1109.
+1110.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
  [31 <./figuras_do_trabalho/Rb_energy.pdf>] [32] [33] [34] [35]
-<sage-plots-for-tcc.tex/plot-9.pdf, id=1106, 567.46924pt x 495.8042pt>
+<sage-plots-for-tcc.tex/plot-9.pdf, id=1107, 567.46924pt x 495.8042pt>
 File: sage-plots-for-tcc.tex/plot-9.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-9.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-9.pdf  used on input line 
-1343.
+1344.
 (pdftex.def)             Requested size: 453.976pt x 396.64389pt.
-<sage-plots-for-tcc.tex/plot-10.pdf, id=1114, 567.26076pt x 711.61047pt>
+<sage-plots-for-tcc.tex/plot-10.pdf, id=1115, 567.26076pt x 711.61047pt>
 File: sage-plots-for-tcc.tex/plot-10.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-10.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-10.pdf  used on input line
- 1367.
+ 1368.
 (pdftex.def)             Requested size: 397.07982pt x 498.12393pt.
  [36 <./sage-plots-for-tcc.tex/plot-9.pdf>] [37 <./sage-plots-for-tcc.tex/plot-
 10.pdf>]
 Cap\'{\i }tulo 5.
 
-Overfull \hbox (1.32315pt too wide) in alignment at lines 1405--1407
+Overfull \hbox (1.32315pt too wide) in alignment at lines 1406--1408
  [][][] []
  []
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 1418.
+less on input line 1419.
 
 [38
 
 
 ] [39]
-<sage-plots-for-tcc.tex/plot-11.pdf, id=1257, 452.8649pt x 338.1797pt>
+<sage-plots-for-tcc.tex/plot-11.pdf, id=1258, 452.8649pt x 338.1797pt>
 File: sage-plots-for-tcc.tex/plot-11.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-11.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-11.pdf  used on input line
- 1508.
+ 1509.
 (pdftex.def)             Requested size: 317.00327pt x 236.72417pt.
  [40 <./sage-plots-for-tcc.tex/plot-11.pdf>]
-<sage-plots-for-tcc.tex/plot-12.pdf, id=1296, 426.39299pt x 209.58301pt>
+<sage-plots-for-tcc.tex/plot-12.pdf, id=1297, 426.39299pt x 209.58301pt>
 File: sage-plots-for-tcc.tex/plot-12.pdf Graphic file (type pdf)
 <use sage-plots-for-tcc.tex/plot-12.pdf>
 Package pdftex.def Info: sage-plots-for-tcc.tex/plot-12.pdf  used on input line
- 1569.
+ 1570.
 (pdftex.def)             Requested size: 85.27708pt x 41.91585pt.
  [41 <./sage-plots-for-tcc.tex/plot-12.pdf>] [42] [43] [44] [45]
 Package epstopdf Info: Source file: <figuras_do_trabalho/pequenomaxwellbloch.ep
@@ -2131,18 +2131,18 @@ s-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 pequenomaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/pequenomaxwellbloc
 h.eps>
-(epstopdf)             \includegraphics on input line 1837.
+(epstopdf)             \includegraphics on input line 1838.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/pequenomaxwellbloch-eps-converted-to.pdf, id=1519, 350.308
+<figuras_do_trabalho/pequenomaxwellbloch-eps-converted-to.pdf, id=1520, 350.308
 75pt x 227.85126pt>
 File: figuras_do_trabalho/pequenomaxwellbloch-eps-converted-to.pdf Graphic file
  (type pdf)
 <use figuras_do_trabalho/pequenomaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/pequenomaxwellbloch-eps-converted-
-to.pdf  used on input line 1837.
+to.pdf  used on input line 1838.
 (pdftex.def)             Requested size: 318.66948pt x 207.28586pt.
 
-Overfull \hbox (3.71666pt too wide) in paragraph at lines 1831--1846
+Overfull \hbox (3.71666pt too wide) in paragraph at lines 1832--1847
 []\T1/ptm/m/n/10.95 O grá-fico ilus-trado na fi-gura [][]5.3[][] apre-senta o r
 e-sul-tado nu-mé-rico para a frequên-cia de rabi $\OT1/cmr/m/n/10.95 
 [](\OML/cmm/m/it/10.95 z; \OT1/cmr/m/n/10.95 )$\T1/ptm/m/n/10.95 ,
@@ -2160,15 +2160,15 @@ Package epstopdf Info: Source file: <figuras_do_trabalho/s22pequenomaxwellbloch
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 s22pequenomaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/s22pequenomaxwe
 llbloch.eps>
-(epstopdf)             \includegraphics on input line 1854.
+(epstopdf)             \includegraphics on input line 1855.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/s22pequenomaxwellbloch-eps-converted-to.pdf, id=1541, 383.
+<figuras_do_trabalho/s22pequenomaxwellbloch-eps-converted-to.pdf, id=1542, 383.
 4325pt x 227.85126pt>
 File: figuras_do_trabalho/s22pequenomaxwellbloch-eps-converted-to.pdf Graphic f
 ile (type pdf)
 <use figuras_do_trabalho/s22pequenomaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/s22pequenomaxwellbloch-eps-convert
-ed-to.pdf  used on input line 1854.
+ed-to.pdf  used on input line 1855.
 (pdftex.def)             Requested size: 318.66948pt x 189.37724pt.
 Package epstopdf Info: Source file: <figuras_do_trabalho/s12pequenomaxwellbloch
 .eps>
@@ -2181,15 +2181,15 @@ Package epstopdf Info: Source file: <figuras_do_trabalho/s12pequenomaxwellbloch
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 s12pequenomaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/s12pequenomaxwe
 llbloch.eps>
-(epstopdf)             \includegraphics on input line 1870.
+(epstopdf)             \includegraphics on input line 1871.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/s12pequenomaxwellbloch-eps-converted-to.pdf, id=1547, 385.
+<figuras_do_trabalho/s12pequenomaxwellbloch-eps-converted-to.pdf, id=1548, 385.
 44pt x 226.8475pt>
 File: figuras_do_trabalho/s12pequenomaxwellbloch-eps-converted-to.pdf Graphic f
 ile (type pdf)
 <use figuras_do_trabalho/s12pequenomaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/s12pequenomaxwellbloch-eps-convert
-ed-to.pdf  used on input line 1870.
+ed-to.pdf  used on input line 1871.
 (pdftex.def)             Requested size: 318.66948pt x 187.54955pt.
  [47 <./figuras_do_trabalho/pequenomaxwellbloch-eps-converted-to.pdf> <./figura
 s_do_trabalho/s22pequenomaxwellbloch-eps-converted-to.pdf>]
@@ -2202,15 +2202,15 @@ Package epstopdf Info: Source file: <figuras_do_trabalho/absorcao.eps>
 (epstopdf)                    size: 33024 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 absorcao-eps-converted-to.pdf figuras_do_trabalho/absorcao.eps>
-(epstopdf)             \includegraphics on input line 1886.
+(epstopdf)             \includegraphics on input line 1887.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/absorcao-eps-converted-to.pdf, id=1565, 246.9225pt x 266.9
+<figuras_do_trabalho/absorcao-eps-converted-to.pdf, id=1566, 246.9225pt x 266.9
 975pt>
 File: figuras_do_trabalho/absorcao-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras_do_trabalho/absorcao-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/absorcao-eps-converted-to.pdf  use
-d on input line 1886.
+d on input line 1887.
 (pdftex.def)             Requested size: 227.62206pt x 246.12547pt.
  [48 <./figuras_do_trabalho/s12pequenomaxwellbloch-eps-converted-to.pdf> <./fig
 uras_do_trabalho/absorcao-eps-converted-to.pdf>]
@@ -2225,15 +2225,15 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 0.7-1.7_maxwellbloch-eps-converted-to.pdf figuras_do_trabalho/0.7-1.7_maxwellbl
 och.eps>
-(epstopdf)             \includegraphics on input line 1912.
+(epstopdf)             \includegraphics on input line 1913.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted-to.pdf, id=1590, 384.43
+<figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted-to.pdf, id=1591, 384.43
 625pt x 354.32375pt>
 File: figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted
--to.pdf  used on input line 1912.
+-to.pdf  used on input line 1913.
 (pdftex.def)             Requested size: 318.66948pt x 293.7264pt.
  [49 <./figuras_do_trabalho/0.7-1.7_maxwellbloch-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figuras_do_trabalho/2pimaxwellbloch.eps>
@@ -2245,15 +2245,15 @@ nverted-to.pdf>
 (epstopdf)                    size: 87054 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 2pimaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/2pimaxwellbloch.eps>
-(epstopdf)             \includegraphics on input line 1944.
+(epstopdf)             \includegraphics on input line 1945.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.pdf, id=1608, 353.32pt x 
+<figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.pdf, id=1609, 353.32pt x 
 227.85126pt>
 File: figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.p
-df  used on input line 1944.
+df  used on input line 1945.
 (pdftex.def)             Requested size: 318.66948pt x 205.50925pt.
  [50 <./figuras_do_trabalho/2pimaxwellbloch-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figuras_do_trabalho/4pimaxwellbloch.eps>
@@ -2265,15 +2265,15 @@ nverted-to.pdf>
 (epstopdf)                    size: 173926 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 4pimaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/4pimaxwellbloch.eps>
-(epstopdf)             \includegraphics on input line 1979.
+(epstopdf)             \includegraphics on input line 1980.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.pdf, id=1632, 351.3125pt 
+<figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.pdf, id=1633, 351.3125pt 
 x 227.85126pt>
 File: figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.p
-df  used on input line 1979.
+df  used on input line 1980.
 (pdftex.def)             Requested size: 318.66948pt x 206.69481pt.
 Package epstopdf Info: Source file: <figuras_do_trabalho/6pimaxwellbloch.eps>
 (epstopdf)                    date: 2021-07-05 16:24:02
@@ -2284,15 +2284,15 @@ nverted-to.pdf>
 (epstopdf)                    size: 214763 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figuras_do_trabalho/
 6pimaxwellbloch-eps-converted-to.pdf figuras_do_trabalho/6pimaxwellbloch.eps>
-(epstopdf)             \includegraphics on input line 1999.
+(epstopdf)             \includegraphics on input line 2000.
 Package epstopdf Info: Output file is already uptodate.
-<figuras_do_trabalho/6pimaxwellbloch-eps-converted-to.pdf, id=1639, 351.3125pt 
+<figuras_do_trabalho/6pimaxwellbloch-eps-converted-to.pdf, id=1640, 351.3125pt 
 x 227.85126pt>
 File: figuras_do_trabalho/6pimaxwellbloch-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figuras_do_trabalho/6pimaxwellbloch-eps-converted-to.pdf>
 Package pdftex.def Info: figuras_do_trabalho/6pimaxwellbloch-eps-converted-to.p
-df  used on input line 1999.
+df  used on input line 2000.
 (pdftex.def)             Requested size: 318.66948pt x 206.69481pt.
 ) (conclusao.tex [51 <./figuras_do_trabalho/4pimaxwellbloch-eps-converted-to.pd
 f>] [52 <./figuras_do_trabalho/6pimaxwellbloch-eps-converted-to.pdf>]
@@ -2338,10 +2338,10 @@ Package rerunfilecheck Info: File `tcc.out' has not changed.
  )
 (\end occurred when \ifx on line 22 was incomplete) 
 Here is how much of TeX's memory you used:
- 45905 strings out of 479321
- 960721 string characters out of 2866498
+ 45906 strings out of 479321
+ 960730 string characters out of 2866498
  1867956 words of memory out of 3000000
- 61834 multiletter control sequences out of 15000+600000
+ 61835 multiletter control sequences out of 15000+600000
  446906 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  143i,17n,144p,1503b,1959s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2369,9 +2369,9 @@ Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Program
 Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tcc.pdf (67 pages, 3905645 bytes).
+Output written on tcc.pdf (67 pages, 3905856 bytes).
 PDF statistics:
- 1894 PDF objects out of 2073 (max. 8388607)
+ 1895 PDF objects out of 2073 (max. 8388607)
  589 named destinations out of 1000 (max. 500000)
  352 words of extra memory for PDF output out of 10000 (max. 10000000)
 
